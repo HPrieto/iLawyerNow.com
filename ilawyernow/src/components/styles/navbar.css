@@ -1,0 +1,57 @@
+.navbar {
+	background-color: transparent;
+}
+
+.btn-lawyer {
+	font-size: 12px;
+	font-weight: lighter;
+	padding-top: 10px;
+	margin-top: 10px;
+	background-color: #377037;
+	color: white;
+}
+
+.btn-lawyer: hover {
+	background-color: #306130!important;
+	color: white;
+}
+
+.navbtn {
+	padding: 10px 5px 0 5px;
+	border-top-color: transparent;
+	border-top-width: 5px;
+	border-right: none;
+	border-left: none;
+	border-bottom: none;
+}
+
+.navbtn:hover {
+	border-top-color: #265328;
+	color: #265328;
+	background-color: transparent;
+	height: 100%!important;
+}
+
+.navbtn:focus {
+	outline: none !important;
+	box-shadow: none;
+	background-color: transparent;
+}
+
+.btn {
+	margin-right: 10px;
+	border-radius: 0;
+}
+
+.navbar-brand {
+	color:#306130;
+	font-weight: bold;
+}
+
+/*
+green button light: #377037
+green button dark: #285228;
+light grey: #C6C6C6;
+med grey: #939393;
+demi white: #f8f8f9;
+*/

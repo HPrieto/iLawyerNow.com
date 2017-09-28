@@ -1,5 +1,6 @@
 {
   "name": "ilawyernow",
+  "homepage":"https://github.com/HPrieto/iLawyerNow.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
