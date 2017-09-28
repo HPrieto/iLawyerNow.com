@@ -3,26 +3,36 @@
 }
 
 .btn-lawyer {
-	font-size: 12px;
+	font-size: 1.0em;
 	font-weight: lighter;
 	padding-top: 10px;
+	padding-bottom: 10px;
 	margin-top: 10px;
+	margin-left: 15px;
 	background-color: #377037;
 	color: white;
 }
 
-.btn-lawyer: hover {
+.btn-lawyer:hover {
 	background-color: #306130!important;
 	color: white;
 }
 
+.navbar-right {
+	margin-top: 0;
+	padding-top: 0;
+}
+
 .navbtn {
+	font-weight: medium;
 	padding: 10px 5px 0 5px;
 	border-top-color: transparent;
 	border-top-width: 5px;
 	border-right: none;
 	border-left: none;
 	border-bottom: none;
+	font-size: 1.2em;
+	margin-top: 0;
 }
 
 .navbtn:hover {
@@ -39,13 +49,23 @@
 }
 
 .btn {
-	margin-right: 10px;
+	font-family: 'Ubuntu';
+	margin-right: 5px;
 	border-radius: 0;
 }
 
 .navbar-brand {
-	color:#306130;
+	color:black;
+	font-size: 1.7em;
 	font-weight: bold;
+	font-family: 'Ubuntu';
+	margin-left: 15px;
+	letter-spacing: 3px;
+	margin-top: 5px;
+}
+
+.navbar-brand:hover {
+	color: black;
 }
 
 /*
