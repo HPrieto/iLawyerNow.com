@@ -5,6 +5,7 @@ import './App.css';
 // components
 import Navbar from './components/navbar.js';
 import Home from './components/home.js';
+import SignupLawyerFrom from './components/partials/sign_up_lawyer_form.js';
 
 class App extends Component {
   render() {
@@ -12,7 +13,9 @@ class App extends Component {
       <div className="App">
         <div className="body-container">
           <Navbar></Navbar>
-          <Home></Home>
+          <Home>
+            <SignupLawyerFrom/>
+          </Home>
         </div>
       </div>
     );
