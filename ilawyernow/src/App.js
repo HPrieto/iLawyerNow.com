@@ -4,12 +4,16 @@ import './App.css';
 
 // components
 import Navbar from './components/navbar.js';
+import Home from './components/home.js';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navbar/>
+        <div className="body-container">
+          <Navbar></Navbar>
+          <Home></Home>
+        </div>
       </div>
     );
   }

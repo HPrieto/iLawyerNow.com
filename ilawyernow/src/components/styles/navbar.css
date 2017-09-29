@@ -1,21 +1,40 @@
 .navbar {
-	background-color: transparent;
+	background-color: white;
+	margin: 0 auto;
+	width: 85%;
+}
+
+.navbar-brand {
+	color:black;
+	font-size: 1.5em;
+	font-weight: bold;
+	font-family: 'Ubuntu';
+	letter-spacing: 3px;
+	margin-top: 5px;
+}
+
+.navbar-brand:hover {
+	color: black;
+}
+
+.navbar-brand:focus {
+	color: black;
 }
 
 .btn-lawyer {
-	font-size: 1.0em;
+	font-size: 0.95em;
 	font-weight: lighter;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	margin-top: 10px;
-	margin-left: 15px;
+	margin-top: 5px;
+	margin-left: 10px;
 	background-color: #377037;
 	color: white;
 }
 
 .btn-lawyer:hover {
 	background-color: #306130!important;
-	color: white;
+	color: white !important;
 }
 
 .navbar-right {
@@ -23,49 +42,47 @@
 	padding-top: 0;
 }
 
-.navbtn {
+.navbtn-right {
 	font-weight: medium;
-	padding: 10px 5px 0 5px;
-	border-top-color: transparent;
-	border-top-width: 5px;
-	border-right: none;
-	border-left: none;
-	border-bottom: none;
-	font-size: 1.2em;
-	margin-top: 0;
-}
-
-.navbtn:hover {
-	border-top-color: #265328;
-	color: #265328;
-	background-color: transparent;
-	height: 100%!important;
-}
-
-.navbtn:focus {
-	outline: none !important;
-	box-shadow: none;
-	background-color: transparent;
+	font-size: 1.1em;
+	margin-top: 0!important;
+	margin-right: 5px;
 }
 
 .btn {
 	font-family: 'Ubuntu';
-	margin-right: 5px;
 	border-radius: 0;
 }
 
-.navbar-brand {
-	color:black;
-	font-size: 1.7em;
-	font-weight: bold;
-	font-family: 'Ubuntu';
-	margin-left: 15px;
-	letter-spacing: 3px;
-	margin-top: 5px;
+.navbtn-left {
+	font-weight: lighter;
+	font-size: 1.2em;
+	margin-top: 0!important;
+	margin-left: 10px;
 }
 
-.navbar-brand:hover {
-	color: black;
+.navbtn {
+	padding: 14px 5px 10px 5px;
+	border-top-color: transparent;
+	border-top-width: 4px;
+	border-right: none;
+	border-left: none;
+	border-bottom: none;
+}
+
+.btn:hover {
+	border-top-color: #377037;
+	color: #377037;
+	background-color: transparent;
+	height: 100%!important;
+}
+
+.btn:focus {
+	outline: none !important;
+	box-shadow: none !important;
+	background-color: transparent;
+	border-color: #265328;
+	color: #265328;
 }
 
 /*

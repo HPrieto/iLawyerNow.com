@@ -13,12 +13,14 @@ class Navbar extends React.Component {
 				            <span className="icon-bar"></span>
 				            <span className="icon-bar"></span>
 			          	</button>
-			          	<a className="navbar-brand" href="#">ILAWYER</a>
+			          	<a className="navbar-brand" href="/">ILAWYER</a>
+			          	<button className="navbtn-left navbtn btn btn-default">Defendant</button>
+			            <button className="navbtn-left navbtn btn btn-default">Lawyer</button>
 			        </div>
 			        <div id="navbar" className="navbar-collapse collapse">
 			        	<div className="navbar-right">
-			        		<button className="navbtn btn btn-default">HELP</button>
-			            	<button className="navbtn btn btn-default">SIGN IN</button>
+			        		<button className="navbtn-right navbtn btn btn-default">HELP</button>
+			            	<button className="navbtn-right navbtn btn btn-default">SIGN IN</button>
 			            	<button type="submit" className="btn btn-lawyer" id="">BECOME AN ILAWYER</button>
 			        	</div>
 			        </div>
