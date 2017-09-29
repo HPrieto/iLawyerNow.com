@@ -6,9 +6,10 @@ class Home extends React.Component {
 		return (
 			<div className="container home-container">
 				<div className="mission-statement">
-					<h1>Deep Breath</h1>
-					<h2>Let the professionals handle it for you</h2>
+					<h1>Relax</h1>
+					<h2>Let an iLawyer handle it for you</h2>
 				</div>
+				<div className="home-img"/>
 			</div>
 		);
 	}

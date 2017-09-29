@@ -5,7 +5,7 @@
 }
 
 .mission-statement {
-	width: 75%;
+	width: 65%;
 	text-align: left;
 	margin: 0 auto;
 }
@@ -21,4 +21,7 @@
 	margin-top: 10px;
 	font-family: 'Lato';
 	font-weight: 100;
+}
+
+.home-img {
 }
