@@ -1,10 +1,85 @@
 .signup-lawyer-form-container {
-	width: 200px;
-	height: 1500px;
+	width: 425px;
+	height: 850px;
 	background-color: #F8F8F9;
-	margin-top: 200px;
+	position: absolute;
+	margin-top: 100px;
+	margin-left: 65%;
+	border-top-width: 10px;
+	border-color: black;
+	border-radius: 0;
+}
+
+.form-padding-container {
+	width: 95%;
+	height: 90%;
+	position: relative;
+	background-color: #F8F8F9;
+	margin: 0 auto;
+}
+
+.form-header-row {
+	text-align: left;
+}
+
+.form-padding-container h1 {
+	font-weight: 300;
+	font-size: 1.9em;
+	margin-top: 50px;
+	margin-left: -10%;
+}
+
+.form-padding-container button {
+	margin-left: -10%;
+	color: #377037;
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	font-weight: 400;
+	font-size: 1.1em;
+}
+
+.signup-form-button: hover {
+	color: #285228;
+}
+
+.electronics-icon {
+	width: 64px;
+	height: 64px;
+	background-image: url('../../../img/electronics_icon.png');
+	position: relative;
+	margin: 0 auto;
+	margin-top: 50%;
+}
+
+.form-divider {
+	color: #9A9A9B;
+}
+
+.signup-form {
+	padding-top: 0;
+}
+
+.signup-form h1 {
+	text-align: left;
+	margin-left: -10%;
+}
+
+.agree-icon {
+	width: 64px;
+	height: 64px;
+	background-image: url('../../../img/agree_icon.png');
+	position: relative;
+	margin: 30% auto;
 }
 
 /* 
+grey border color: #9A9A9B;
 form grey background : #F8F8F9;
+form dark grey : #F1F1F1;
+green button light: #377037
+green button dark: #285228;
+light grey: #C6C6C6;
+med grey: #939393;
+demi white: #f8f8f9;
 */
