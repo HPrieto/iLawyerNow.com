@@ -97,6 +97,10 @@
 	width: 100%;
 }
 
+.signup-form:placeholder-shown {
+	color: #CECECE;
+}
+
 .form-input {
 	height: 50px;
 	font-size: 1.1em;

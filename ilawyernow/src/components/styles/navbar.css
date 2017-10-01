@@ -70,14 +70,14 @@
 	border-bottom: none;
 }
 
-.btn:hover {
+.navbtn:hover {
 	border-top-color: #377037;
 	color: #377037;
 	background-color: transparent;
 	height: 100%!important;
 }
 
-.btn:focus {
+.navbtn:focus {
 	outline: none !important;
 	box-shadow: none !important;
 	background-color: transparent;
