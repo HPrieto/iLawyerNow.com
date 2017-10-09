@@ -1,6 +1,6 @@
-// mongoose module import
 var mongoose = require('mongoose');
 
+/* Mongoose database schema */
 var AttorneySchema = new mongoose.Schema({
 	firstName: {type: String, default: ''},
 	lastName: {type: String, default: ''},
