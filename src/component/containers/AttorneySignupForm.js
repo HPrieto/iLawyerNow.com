@@ -53,7 +53,7 @@ class AttorneySignupForm extends Component {
 									<input type='text' placeholder="Bar Number" className='form-control form-input form-id'></input>
 								</div>
 							</div>
-							<button className="btn signup-btn">SIGN UP TO BECOME AN ILAWYER &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="glyphicon glyphicon-chevron-right"></span></button>
+							<button className="btn signup-btn">SIGN UP TO BECOME AN ILAWYER &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="glyphicon glyphicon-chevron-right"></span></button>
 							<p className="signup-text">Or <a className="signup-tag">sign up </a> with your iLawyer account.</p>
 							<p className="disclaimer">By proceeding, I agree that Uber or its representatives may contact me by email, phone, or SMS (including by automatic telephone dialing system) at the email address or number I provide, including for marketing purposes. I have read and understand the relevant Driver Privacy Statement.</p>
 						</div>

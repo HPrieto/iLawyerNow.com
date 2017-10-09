@@ -133,12 +133,13 @@
 	background-color: #377037 !important;
 	width: 335px !important;
 	margin-top: 20px;
-	margin-left: 0px !important;
+	margin-left: 37px !important;
 	height: 50px;
 	text-align: left;
 	color: #F8F8F9 !important;
 	padding-left: 15px !important;
 	font-size: 0.8em;
+	border-radius: 0;
 }
 
 .signup-form p {
