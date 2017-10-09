@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
+// Component Modules
+import Home from './component/layout/Home.js';
+
 class App extends Component {
 	render() {
 		return (
-			<div>iLawyer Connected!</div>
+			<Home />
 		)
 	}
 }

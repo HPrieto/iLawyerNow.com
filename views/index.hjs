@@ -2,7 +2,18 @@
 <html>
 <head>
 	<title>{{ title }}</title>
+	<!-- Bootstrap CSS CDN -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Ubuntu font CDN -->
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:100,200,300,400,500,700" rel="stylesheet">
+	<!-- Lato font CDN -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <title>Sign Up to Become an iLawyer or Get Defended By An iLawyer</title>
+    <style type="text/css" media="screen">
+        body {
+          background-color: white;
+        }
+    </style>
 </head>
 <body>
 	<div id='root'></div>

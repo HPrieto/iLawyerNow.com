@@ -80,6 +80,10 @@ var _reactDom = __webpack_require__(18);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
+var _Home = __webpack_require__(32);
+
+var _Home2 = _interopRequireDefault(_Home);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -87,6 +91,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+// Component Modules
+
 
 var App = function (_Component) {
 	_inherits(App, _Component);
@@ -100,11 +107,7 @@ var App = function (_Component) {
 	_createClass(App, [{
 		key: 'render',
 		value: function render() {
-			return _react2.default.createElement(
-				'div',
-				null,
-				'iLawyer Connected!'
-			);
+			return _react2.default.createElement(_Home2.default, null);
 		}
 	}]);
 
@@ -21200,6 +21203,120 @@ module.exports = function() {
   return ReactPropTypes;
 };
 
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(7);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _styles = __webpack_require__(33);
+
+var _styles2 = _interopRequireDefault(_styles);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Home = function (_Component) {
+	_inherits(Home, _Component);
+
+	function Home() {
+		_classCallCheck(this, Home);
+
+		return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
+	}
+
+	_createClass(Home, [{
+		key: 'render',
+		value: function render() {
+			// Component Style Objects
+			var Home = _styles2.default.Home;
+			var homeContainer = Home.homeContainer;
+			var missionStatement = Home.missionStatement;
+			var missionStatementH1 = Home.missionStatementH1;
+			var missionStatementH2 = Home.missionStatementH2;
+			var img = Home.img;
+			return _react2.default.createElement(
+				'div',
+				{ className: 'container', style: homeContainer },
+				_react2.default.createElement(
+					'div',
+					{ style: missionStatement },
+					_react2.default.createElement(
+						'h1',
+						{ style: missionStatementH1 },
+						'Breath in'
+					),
+					_react2.default.createElement(
+						'h2',
+						{ style: missionStatementH2 },
+						'Let an iLawyer handle it for you'
+					)
+				),
+				_react2.default.createElement('div', { style: img })
+			);
+		}
+	}]);
+
+	return Home;
+}(_react.Component);
+
+exports.default = Home;
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+exports.default = {
+	Home: {
+		homeContainer: {
+			height: 300,
+			backgroundColor: 'white',
+			padding: 0
+		},
+		missionStatement: {
+			width: '65%',
+			textAlign: 'left',
+			margin: '0 auto'
+		},
+		missionStatementH1: {
+			marginTop: 120,
+			fontWeight: 300
+		},
+		missionStatementH2: {
+			marginTop: 10,
+			fontFamily: 'Lato',
+			fontWeight: 100
+		},
+		img: {
+			width: '100%',
+			height: '500px',
+			marginTop: '65px'
+		}
+	}
+};
 
 /***/ })
 /******/ ]);
