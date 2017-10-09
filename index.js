@@ -52,7 +52,14 @@ app.use((err, req, res, next) => {
 	res.render('error');
 });
 
-app.listen(3000);
+// DEFAULT PORT is 3000 unless specified by dotenv
+const ENV = process.env.NODE_ENV || 'development';
+const PORT = Number(JSON.stringify(process.env.PORT)) ?
+    Number(JSON.stringify(process.env.PORT)) : 3000;
+app.listen(PORT, () => {
+    console.log(`Server running in ${ENV.toUpperCase()} mode`);
+    console.log(`listening on Port ${PORT}`);
+});
 
 module.exports = app;
 // express iLawyer --hogan
