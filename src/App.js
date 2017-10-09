@@ -8,4 +8,4 @@ class App extends Component {
 		)
 	}
 }
-ReactDOM.render(<App />, document.findViewById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));

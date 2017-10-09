@@ -111,7 +111,7 @@ var App = function (_Component) {
 	return App;
 }(_react.Component);
 
-_reactDom2.default.render(_react2.default.createElement(App, null), document.findViewById('root'));
+_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('root'));
 
 /***/ }),
 /* 1 */
