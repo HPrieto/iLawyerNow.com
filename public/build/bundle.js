@@ -21221,7 +21221,11 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(33);
+__webpack_require__(41);
+
+var _AttorneySignupForm = __webpack_require__(38);
+
+var _AttorneySignupForm2 = _interopRequireDefault(_AttorneySignupForm);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21230,6 +21234,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+// Module components
+
 
 var Home = function (_Component) {
 	_inherits(Home, _Component);
@@ -21258,7 +21265,8 @@ var Home = function (_Component) {
 						'h2',
 						null,
 						'Let an iLawyer handle it for you'
-					)
+					),
+					_react2.default.createElement(_AttorneySignupForm2.default, null)
 				),
 				_react2.default.createElement('div', { className: 'home-img' })
 			);
@@ -21271,51 +21279,8 @@ var Home = function (_Component) {
 exports.default = Home;
 
 /***/ }),
-/* 33 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(34);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {"hmr":true}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(36)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./styles.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./styles.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 34 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(35)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, ".home-container {\n\theight: 300px;\n\tbackground-color: white;\n\tpadding: 0;\n}\n\n.mission-statement {\n\twidth: 65%;\n\ttext-align: left;\n\tmargin: 0 auto;\n}\n\n.mission-statement h1 {\n\tmargin-top: 120px;\n\tfont-weight: 300;\n}\n\n.mission-statement h2 {\n\tmargin-top: 10px;\n\tfont-family: 'Lato';\n\tfont-weight: 100;\n}\n\n.home-img {\n\twidth: 100%;\n\theight: 500px;\n\t/*background-image: url('../../img/meeting_bg.jpg');*/\n\tmargin-top: 65px;\n}\n\n@media screen and (min-width: 1550px) {\n\t.home-container {\n\t\twidth: 85%;\n\t}\n}\n\n@media screen and (max-width: 1549px) {\n\t.home-container {\n\t\twidth: 100%;\n\t}\n}", ""]);
-
-// exports
-
-
-/***/ }),
+/* 33 */,
+/* 34 */,
 /* 35 */
 /***/ (function(module, exports) {
 
@@ -21862,6 +21827,277 @@ module.exports = function (css) {
 	// send back the fixed css
 	return fixedCss;
 };
+
+
+/***/ }),
+/* 38 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__(43);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var AttorneySignupForm = function (_Component) {
+	_inherits(AttorneySignupForm, _Component);
+
+	function AttorneySignupForm() {
+		_classCallCheck(this, AttorneySignupForm);
+
+		return _possibleConstructorReturn(this, (AttorneySignupForm.__proto__ || Object.getPrototypeOf(AttorneySignupForm)).apply(this, arguments));
+	}
+
+	_createClass(AttorneySignupForm, [{
+		key: 'render',
+		value: function render() {
+			return _react2.default.createElement(
+				'div',
+				{ className: 'container signup-lawyer-form-container' },
+				_react2.default.createElement(
+					'div',
+					{ className: 'form-padding-container' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'row form-header-row' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'col-md-4' },
+							_react2.default.createElement('div', { className: 'electronics-icon' })
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'col-md-8' },
+							_react2.default.createElement(
+								'h1',
+								null,
+								'Need an iLawyer?'
+							),
+							_react2.default.createElement(
+								'button',
+								{ className: 'signup-form-button' },
+								'SIGN UP \xA0\xA0\xA0\xA0',
+								_react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-right' })
+							)
+						)
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'separator' },
+						'OR'
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'row signup-form-container' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'col-md-4' },
+							_react2.default.createElement('div', { className: 'agree-icon' })
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'col-md-8' },
+							_react2.default.createElement(
+								'h1',
+								null,
+								'Become an iLawyer'
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'input-group signup-form' },
+							_react2.default.createElement(
+								'div',
+								{ className: 'row signup-row1' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'col-md-6' },
+									_react2.default.createElement('input', { type: 'text', placeholder: 'First Name', className: 'form-control form-fname form-input' })
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'col-md-6' },
+									_react2.default.createElement('input', { type: 'text', placeholder: 'Last Name', className: 'form-control form-lname form-input' })
+								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'row signup-row' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'col-md-12' },
+									_react2.default.createElement('input', { type: 'text', placeholder: 'Email', className: 'form-control form-input form-email' })
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'col-md-12' },
+									_react2.default.createElement('input', { type: 'text', placeholder: 'Phone', className: 'form-control form-input form-phone' })
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'col-md-12' },
+									_react2.default.createElement('input', { type: 'text', placeholder: 'Create Password', className: 'form-control form-input form-pass' })
+								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'row signup-row' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'col-md-12' },
+									_react2.default.createElement('input', { type: 'text', placeholder: 'City', className: 'form-control form-input form-city' })
+								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'row signup-row' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'col-md-12' },
+									_react2.default.createElement('input', { type: 'text', placeholder: 'Bar Number', className: 'form-control form-input form-id' })
+								)
+							),
+							_react2.default.createElement(
+								'button',
+								{ className: 'btn signup-btn' },
+								'SIGN UP TO BECOME AN ILAWYER \xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0',
+								_react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-right' })
+							),
+							_react2.default.createElement(
+								'p',
+								{ className: 'signup-text' },
+								'Or ',
+								_react2.default.createElement(
+									'a',
+									{ className: 'signup-tag' },
+									'sign up '
+								),
+								' with your iLawyer account.'
+							),
+							_react2.default.createElement(
+								'p',
+								{ className: 'disclaimer' },
+								'By proceeding, I agree that Uber or its representatives may contact me by email, phone, or SMS (including by automatic telephone dialing system) at the email address or number I provide, including for marketing purposes. I have read and understand the relevant Driver Privacy Statement.'
+							)
+						)
+					)
+				)
+			);
+		}
+	}]);
+
+	return AttorneySignupForm;
+}(_react.Component);
+
+exports.default = AttorneySignupForm;
+
+/***/ }),
+/* 39 */,
+/* 40 */,
+/* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(42);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"hmr":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(36)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!./layout.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!./layout.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 42 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(35)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".home-container {\n\theight: 300px;\n\tbackground-color: white;\n\tpadding: 0;\n}\n\n.mission-statement {\n\twidth: 65%;\n\ttext-align: left;\n\tmargin: 0 auto;\n}\n\n.mission-statement h1 {\n\tmargin-top: 120px;\n\tfont-weight: 300;\n}\n\n.mission-statement h2 {\n\tmargin-top: 10px;\n\tfont-family: 'Lato';\n\tfont-weight: 100;\n}\n\n.home-img {\n\twidth: 100%;\n\theight: 500px;\n\t/*background-image: url('../../img/meeting_bg.jpg');*/\n\tmargin-top: 65px;\n}\n\n@media screen and (min-width: 1550px) {\n\t.home-container {\n\t\twidth: 85%;\n\t}\n}\n\n@media screen and (max-width: 1549px) {\n\t.home-container {\n\t\twidth: 100%;\n\t}\n}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 43 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(44);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"hmr":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(36)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!./containers.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!./containers.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 44 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(35)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".signup-lawyer-form-container {\n\twidth: 425px;\n\theight: 850px;\n\tbackground-color: #F8F8F9;\n\tposition: absolute;\n\tmargin-top: 100px;\n\tmargin-left: 65%;\n\tborder-radius: 0;\n}\n\n.form-padding-container {\n\twidth: 95%;\n\theight: 90%;\n\tposition: relative;\n\tbackground-color: #F8F8F9;\n\tmargin: 0 auto;\n}\n\n.form-header-row {\n\ttext-align: left;\n}\n\n.form-padding-container h1 {\n\tfont-weight: 300;\n\tfont-size: 1.9em;\n\tmargin-top: 50px;\n\tmargin-left: -10%;\n}\n\n.form-padding-container button {\n\tmargin-left: -10%;\n\tcolor: #377037;\n\tbackground-color: transparent;\n\tborder: none;\n\tpadding: 0;\n\tfont-weight: 400;\n\tfont-size: 1.1em;\n}\n\n.signup-form-button: hover {\n\tcolor: #285228;\n}\n\n.electronics-icon {\n\twidth: 64px;\n\theight: 64px;\n\tbackground-image: url('/img/electronics_icon.png');\n\tposition: relative;\n\tmargin: 0 auto;\n\tmargin-top: 50%;\n}\n\n.separator {\n\tmargin-top: 15px;\n    display: flex;\n    align-items: center;\n    text-align: center;\n    color: #CECECE;\n    padding-left: 20px;\n    padding-right: 20px;\n    font-size: 0.9em;\n}\n\n.separator::before, .separator::after {\n    content: '';\n    flex: 1;\n    border-bottom: 1px solid #CECECE;\n}\n\n.separator::before {\n    margin-right: .25em;\n}\n\n.separator::after {\n    margin-left: .25em;\n}\n\n.signup-form-container {\n\tpadding-top: 0;\n\tmargin-top: -20px;\n}\n\n.signup-form-container h1 {\n\ttext-align: left;\n\tmargin-left: -10%;\n}\n\n.agree-icon {\n\twidth: 64px;\n\theight: 64px;\n\tbackground-image: url('/img/agree_icon.png');\n\tposition: relative;\n\tmargin: 30% auto;\n}\n\n.signup-form {\n\twidth: 100%;\n}\n\n.signup-form:placeholder-shown {\n\tcolor: #CECECE;\n}\n\n.form-input {\n\theight: 50px;\n\tfont-size: 1.1em;\n\tcolor: #CECECE;\n\tborder-color: #CECECE !important;\n}\n\n.form-fname {\n\tmargin-left: 35px;\n\twidth: 170px !important;\n}\n\n.form-lname {\n\tmargin-left: -15px;\n\twidth: 170px !important;\n}\n\n.form-input:focus {\n\tborder-color: #CECECE;\n\tbox-shadow: none;\n}\n\n.signup-row {\n\tmargin-top: 20px;\n\tmargin-left: 20px;\n\twidth: 368px;\n}\n\n.signup-btn {\n\tbackground-color: #377037 !important;\n\twidth: 335px !important;\n\tmargin-top: 20px;\n\tmargin-left: 0px !important;\n\theight: 50px;\n\ttext-align: left;\n\tcolor: #F8F8F9 !important;\n\tpadding-left: 15px !important;\n\tfont-size: 0.8em;\n}\n\n.signup-form p {\n\ttext-align: left;\n\tmargin-left: 35px;\n\twidth: 340px;\n}\n\n.signup-text {\n\tmargin-top: 20px;\n}\n\n.signup-text a {\n\tcolor: #377037;\n}\n\n.signup-tag:hover {\n\ttext-decoration: none;\n\tcursor: pointer;\n}\n\n.disclaimer {\n\tfont-size: 0.8em;\n}\n\n/* \ngrey border color: #CECECE;\nform grey background : #F8F8F9;\nform dark grey : #F1F1F1;\ngreen button light: #377037\ngreen button dark: #285228;\nlight grey: #C6C6C6;\nmed grey: #939393;\ndemi white: #f8f8f9;\n*/", ""]);
+
+// exports
 
 
 /***/ })

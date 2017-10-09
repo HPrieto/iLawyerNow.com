@@ -1,0 +1,176 @@
+.signup-lawyer-form-container {
+	width: 425px;
+	height: 850px;
+	background-color: #F8F8F9;
+	position: absolute;
+	margin-top: 100px;
+	margin-left: 65%;
+	border-radius: 0;
+}
+
+.form-padding-container {
+	width: 95%;
+	height: 90%;
+	position: relative;
+	background-color: #F8F8F9;
+	margin: 0 auto;
+}
+
+.form-header-row {
+	text-align: left;
+}
+
+.form-padding-container h1 {
+	font-weight: 300;
+	font-size: 1.9em;
+	margin-top: 50px;
+	margin-left: -10%;
+}
+
+.form-padding-container button {
+	margin-left: -10%;
+	color: #377037;
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	font-weight: 400;
+	font-size: 1.1em;
+}
+
+.signup-form-button: hover {
+	color: #285228;
+}
+
+.electronics-icon {
+	width: 64px;
+	height: 64px;
+	background-image: url('/img/electronics_icon.png');
+	position: relative;
+	margin: 0 auto;
+	margin-top: 50%;
+}
+
+.separator {
+	margin-top: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #CECECE;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 0.9em;
+}
+
+.separator::before, .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #CECECE;
+}
+
+.separator::before {
+    margin-right: .25em;
+}
+
+.separator::after {
+    margin-left: .25em;
+}
+
+.signup-form-container {
+	padding-top: 0;
+	margin-top: -20px;
+}
+
+.signup-form-container h1 {
+	text-align: left;
+	margin-left: -10%;
+}
+
+.agree-icon {
+	width: 64px;
+	height: 64px;
+	background-image: url('/img/agree_icon.png');
+	position: relative;
+	margin: 30% auto;
+}
+
+.signup-form {
+	width: 100%;
+}
+
+.signup-form:placeholder-shown {
+	color: #CECECE;
+}
+
+.form-input {
+	height: 50px;
+	font-size: 1.1em;
+	color: #CECECE;
+	border-color: #CECECE !important;
+}
+
+.form-fname {
+	margin-left: 35px;
+	width: 170px !important;
+}
+
+.form-lname {
+	margin-left: -15px;
+	width: 170px !important;
+}
+
+.form-input:focus {
+	border-color: #CECECE;
+	box-shadow: none;
+}
+
+.signup-row {
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 368px;
+}
+
+.signup-btn {
+	background-color: #377037 !important;
+	width: 335px !important;
+	margin-top: 20px;
+	margin-left: 0px !important;
+	height: 50px;
+	text-align: left;
+	color: #F8F8F9 !important;
+	padding-left: 15px !important;
+	font-size: 0.8em;
+}
+
+.signup-form p {
+	text-align: left;
+	margin-left: 35px;
+	width: 340px;
+}
+
+.signup-text {
+	margin-top: 20px;
+}
+
+.signup-text a {
+	color: #377037;
+}
+
+.signup-tag:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.disclaimer {
+	font-size: 0.8em;
+}
+
+/* 
+grey border color: #CECECE;
+form grey background : #F8F8F9;
+form dark grey : #F1F1F1;
+green button light: #377037
+green button dark: #285228;
+light grey: #C6C6C6;
+med grey: #939393;
+demi white: #f8f8f9;
+*/
