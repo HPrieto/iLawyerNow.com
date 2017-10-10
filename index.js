@@ -36,7 +36,7 @@ app.use('/api', api);
 
 // Catch 404 and forward to error handler
 app.use((req, res, next) => {
-	var err = new Error('Not Found');
+	var err = new Error('Not Found' + req);
 	err.status = 404;
 	next(err);
 });

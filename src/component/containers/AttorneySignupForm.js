@@ -1,24 +1,27 @@
 import React, { Component } from 'react';
 import './containers.css';
+import agree from './img/agree_icon.png';
+import electronics from './img/electronics_icon.png';
 
 class AttorneySignupForm extends Component {
 		render() {
+			console.log(agree);
 		return (
 			<div className="container signup-lawyer-form-container">
 				<div className="form-padding-container">
 					<div className="row form-header-row">
 						<div className="col-md-4">
-							<div className='electronics-icon'/>
+							<div className='electronics-icon' src={{agree}}/>
 						</div>
 						<div className="col-md-8">
 							<h1>Need an iLawyer?</h1>
-							<button className="signup-form-button">SIGN UP &nbsp;&nbsp;&nbsp;&nbsp;<span className="glyphicon glyphicon-chevron-right"></span></button>
+							<button className="signup-form-button">SIGN UP &nbsp;&nbsp;&nbsp;&nbsp;<span className="glyphicon glyphicon-chevron-right"/></button>
 						</div>
 					</div>
 					<div className="separator">OR</div>
 					<div className="row signup-form-container">
 						<div className="col-md-4">
-							<div className='agree-icon'/>
+							<div className='agree-icon' src={{electronics}}/>
 						</div>
 						<div className="col-md-8">
 							<h1>Become an iLawyer</h1>
