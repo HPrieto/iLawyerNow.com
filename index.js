@@ -8,7 +8,8 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 var dbUrl = 'mongodb://localhost/iLawyerNow';
-mongoose.connect(dbUrl, {
+var herokuURL = 'https://ilawyer.herokuapp.com';
+mongoose.connect(herokuURL, {
   useMongoClient: true
 });
 
