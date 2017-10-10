@@ -56,7 +56,7 @@ app.use((err, req, res, next) => {
 const ENV = process.env.NODE_ENV || 'development';
 const PORT = Number(JSON.stringify(process.env.PORT)) ?
     Number(JSON.stringify(process.env.PORT)) : 3000;
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log(`Server running in ${ENV.toUpperCase()} mode`);
     console.log(`listening on Port ${PORT}`);
 });
