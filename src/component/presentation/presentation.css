@@ -1,0 +1,26 @@
+.mini-signup-form {
+	background-color: #377037;
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	left: 70%;
+	margin-top: 625px;
+}
+
+.mini-signup-form h2 {
+	font-family: 'Ubuntu';
+	color: white;
+	font-weight: 100;
+	font-size: 1.5em;
+	text-align: left;
+	padding-left: 20px;
+}
+
+.mini-signup-form h3 {
+	font-family: 'Ubuntu';
+	font-size: 1.1em;
+	color: white;
+	font-weight: 500;
+	text-align: right;
+	padding: 20px;
+}

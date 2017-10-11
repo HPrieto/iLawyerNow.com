@@ -42,7 +42,6 @@
 }
 
 .electronics-icon {
-	background-color: black;
 	width: 64px;
 	height: 64px;
 	position: relative;
@@ -86,7 +85,6 @@
 }
 
 .agree-icon {
-	background-color: black;
 	width: 64px;
 	height: 64px;
 	position: relative;
@@ -163,6 +161,29 @@
 
 .disclaimer {
 	font-size: 0.8em;
+}
+
+/* GRID xs -> sm */
+@media screen and (max-width: 575px) {
+}
+
+/* GRID sm -> med */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+}
+
+/* GRID med -> lg */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+}
+
+/* GRID lg -> xl */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+}
+
+/* GRID xl -> beyond */
+@media screen and (min-width: 1201px) {
+	.signup-lawyer-form-container {
+		margin-left: 55% !important;
+	}
 }
 
 /* 

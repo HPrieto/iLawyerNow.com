@@ -3,12 +3,36 @@ import './layout.css';
 
 // Module components
 import AttorneySignupForm from '../containers/AttorneySignupForm.js';
+import MiniSignupForm from '../presentation/MiniSignupForm.js';
 
 class Home extends Component {
+	constructor() {
+		super()
+		this.state = {
+			form: <div />
+		}
+		this.updateDimensions.bind(this);
+	}
+	componentWillMount() {
+	}
+	componentDidMount() {
+		window.addEventListener('resize', this.updateDimensions.bind(this));
+	}
+	componentWillUnmount() {
+		window.removeEventListener('resize', this.updateDimensions);
+	}
+	updateDimensions() {
+		let windowWidth = $(window).width();
+		let form = (windowWidth < 992) ? <MiniSignupForm /> : <AttorneySignupForm />; 
+		this.setState({
+			form: form
+		})
+	}
 	render() {
 		let tanColor = '#F7F7F8';
 		return (
 			<div className="container home-container">
+				{this.state.form}
 				<div className="row" style={{backgroundColor: 'white'}}>
 					<div className='container row-container mission-section'>
 						<h1>Get there</h1>
@@ -16,13 +40,13 @@ class Home extends Component {
 					</div>
 				</div>
 				<div className="row" style={{backgroundColor: 'black'}}>
-					<div className='container row-container image-section'/>
+					<img className='image-section'/>
 				</div>
 				<div className="row" style={{backgroundColor: 'white'}}>
 					<div className='container row-container product-section'>
 						<div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-rowcol" style={{margin: 0,padding: 0}}>
 							<div className="col-xs-12 col-sm-3 col-md-12 col-lg-12">
-								<img />
+								<img src={require('../img/oath_icon.png')}/>
 							</div>
 							<div className="col-xs-12 col-sm-8 col-md-12 col-lg-12">
 								<h1>Easiest way around</h1>
@@ -33,7 +57,7 @@ class Home extends Component {
 						</div>
 						<div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-rowcol" style={{margin: 0,padding: 0}}>
 							<div className="col-xs-12 col-sm-3 col-md-12 col-lg-12">
-								<img />
+								<img src={require('../img/court_icon.png')}/>
 							</div>
 							<div className="col-xs-12 col-sm-8 col-md-12 col-lg-12">
 								<h1>Anywhere, anytime</h1>
@@ -44,7 +68,7 @@ class Home extends Component {
 						</div>
 						<div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-rowcol" style={{margin: 0,padding: 0}}>
 							<div className="col-xs-12 col-sm-3 col-md-12 col-lg-12">
-								<img />
+								<img src={require('../img/book_icon.png')}/>
 							</div>
 							<div className="col-xs-12 col-sm-8 col-md-12 col-lg-12">
 								<h1>Low-cost to luxury</h1>
@@ -62,10 +86,7 @@ class Home extends Component {
 				</div>
 				<div className="row" style={{backgroundColor: tanColor}}>
 					<div className='container row-container founder-section'>
-						<div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-							<img />
-						</div>
-						<div className="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8" style={{align: 'left'}}>
+						<div className="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 founder-section-colrow">
 							<div className="founder-section-txt">
 								<h3>Our commitment to drivers</h3>
 								<h1>A better uberPOOL has arrived</h1>
@@ -75,6 +96,9 @@ class Home extends Component {
 								rides and ratings on POOL.</p>
 								<button className="btn inverse-btn">LEARN MORE&nbsp;&nbsp;&nbsp;<span className="glyphicon glyphicon-chevron-right"/></button>
 							</div>
+						</div>
+						<div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 founder-section-colrow">
+							<img/>
 						</div>
 					</div>
 				</div>
