@@ -94,6 +94,12 @@
 
 /* GRID xs -> sm */
 @media screen and (max-width: 575px) {
+	.mission-section h1 {
+		font-size: 1.5em !important;
+	}
+	.mission-section h2 {
+		font-size: 1.5em !important;
+	}
 }
 
 /* GRID sm -> med */
