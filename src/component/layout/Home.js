@@ -87,7 +87,7 @@ class Home extends Component {
 				</div>
 				<div className="row" style={{backgroundColor: tanColor}}>
 					<div className='container row-container founder-section'>
-						<div className="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 founder-section-colrow">
+						<div className="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 founder-section-colrow">
 							<div className="founder-section-txt">
 								<h3>Our commitment to lawyers</h3>
 								<h1>A better iLAWYER has arrived</h1>
@@ -99,7 +99,7 @@ class Home extends Component {
 								<button className="btn inverse-btn">ATTORNEY SIGN UP&nbsp;&nbsp;&nbsp;<span className="glyphicon glyphicon-chevron-right"/></button>
 							</div>
 						</div>
-						<div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 founder-section-colrow">
+						<div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 founder-section-colrow">
 							<img/>
 						</div>
 					</div>
