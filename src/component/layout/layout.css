@@ -100,6 +100,12 @@
 	.mission-section h2 {
 		font-size: 2.0em !important;
 	}
+	.founder-section h1 {
+		font-size: 1.0em !important;
+	}
+	.founder-section h3 {
+		font-size: 1.0em !important;
+	}
 }
 
 /* GRID sm -> med */
@@ -134,15 +140,15 @@
 	.product-section {
 		margin-top: 75px;
 	}
-	.founder-section h3 {
-		font-size: 2.0em !important;
-	}
 	.product-section-colrow {
 		margin-top: 25px !important;
 	}
 	.founder-section h1 {
-		font-size: 2.5em !important;
+		font-size: 2.0em !important;
 		margin-top: 0;
+	}
+	.founder-section h3 {
+		font-size: 2.0em !important;
 	}
 	.founder-section p {
 		font-size: 1.3em !important;
