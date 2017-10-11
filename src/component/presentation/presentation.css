@@ -1,6 +1,6 @@
 .mini-signup-form {
 	background-color: #377037;
-	position: relative;
+	position: absolute!important;
 	width: 180px;
 	height: 180px;
 	margin-top: 475px;
@@ -27,7 +27,6 @@
 
 @media screen and (max-width: 350px) {
 	.mini-signup-form {
-		left: -100px !important;
 		width: 100px !important;
 		height: 100px !important;
 	}
