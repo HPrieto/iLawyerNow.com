@@ -21751,12 +21751,12 @@ var Home = function (_Component) {
 						_react2.default.createElement(
 							'h1',
 							null,
-							'Get there'
+							'Get help'
 						),
 						_react2.default.createElement(
 							'h2',
 							null,
-							'Your day belongs to you'
+							'Your peace belongs to you'
 						)
 					)
 				),
@@ -21790,7 +21790,7 @@ var Home = function (_Component) {
 								_react2.default.createElement(
 									'p',
 									null,
-									'One tap and a car comes directly to you. Hop in\u2014your driver knows exactly where to go. And when you get there, just step out. Payment is completely seamless.'
+									'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
 								)
 							)
 						),
@@ -21813,7 +21813,7 @@ var Home = function (_Component) {
 								_react2.default.createElement(
 									'p',
 									null,
-									'Daily commute. Errand across town. Early morning flight. Late night drinks. Wherever you\u2019re headed, count on Uber for a ride\u2014no reservations required.'
+									'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
 								)
 							)
 						),
@@ -21836,7 +21836,7 @@ var Home = function (_Component) {
 								_react2.default.createElement(
 									'p',
 									null,
-									'Economy cars at everyday prices are always available. For special occasions, no occasion at all, or when you just need a bit more room, call a black car or SUV.'
+									'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
 								)
 							)
 						)
@@ -21851,7 +21851,7 @@ var Home = function (_Component) {
 						_react2.default.createElement(
 							'button',
 							{ className: 'btn green-btn' },
-							'REASONS TO RIDE\xA0\xA0\xA0\xA0',
+							'DEFENDANT SIGN UP\xA0\xA0\xA0\xA0',
 							_react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-right' })
 						)
 					)
@@ -21881,12 +21881,12 @@ var Home = function (_Component) {
 								_react2.default.createElement(
 									'p',
 									null,
-									'Our latest phase of 180 Days of Change is focused on POOL improvements that help you earn more and stress less. We\u2019re directly addressing your feedback, with a new way to earn and upgrades that will make for better rides and ratings on POOL.'
+									'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
 								),
 								_react2.default.createElement(
 									'button',
 									{ className: 'btn inverse-btn' },
-									'LEARN MORE\xA0\xA0\xA0',
+									'ATTORNEY SIGN UP\xA0\xA0\xA0',
 									_react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-right' })
 								)
 							)
@@ -22370,7 +22370,7 @@ var MiniSignupForm = function (_Component) {
 					_react2.default.createElement(
 						'h2',
 						null,
-						'Start riding with Uber'
+						'Get help from an Attorney'
 					)
 				),
 				_react2.default.createElement(
