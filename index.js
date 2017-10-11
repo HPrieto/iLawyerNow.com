@@ -12,6 +12,7 @@ var herokuURL = 'mongodb://Duskayame:Neuraln3t@ds117485.mlab.com:17485/ilawyerno
 mongoose.connect(herokuURL, {
   useMongoClient: true
 });
+//"start": "node ./bin/www"
 
 // Routes import
 var index = require('./routes/index');
