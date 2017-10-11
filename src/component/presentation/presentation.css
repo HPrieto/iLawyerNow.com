@@ -4,6 +4,7 @@
 	width: 180px;
 	height: 180px;
 	margin-top: 475px;
+	right: 20%;
 }
 
 .mini-signup-form h2 {
@@ -27,27 +28,18 @@
 
 @media screen and (max-width: 350px) {
 	.mini-signup-form {
-		left: 25px !important;
+		right: 10% !important;
 	}
 }
 
 /* GRID xs -> sm */
 @media screen and (max-width: 575px) and (min-width: 351px) {
-	.mini-signup-form {
-		left: 20%;
-	}
 }
 
 /* GRID sm -> med */
 @media screen and (min-width: 576px) and (max-width: 768px) {
-	.mini-signup-form {
-		left: 50%;
-	}
 }
 
 /* GRID med -> lg */
 @media screen and (min-width: 769px) and (max-width: 992px) {
-	.mini-signup-form {
-		left: 60%;
-	}
 }
