@@ -29,20 +29,20 @@
 /* GRID xs -> sm */
 @media screen and (max-width: 575px) {
 	.mini-signup-form {
-		left: 50%;
+		left: 40%;
 	}
 }
 
 /* GRID sm -> med */
 @media screen and (min-width: 576px) and (max-width: 768px) {
 	.mini-signup-form {
-		left: 60%;
+		left: 50%;
 	}
 }
 
 /* GRID med -> lg */
 @media screen and (min-width: 769px) and (max-width: 992px) {
 	.mini-signup-form {
-		left: 70%;
+		left: 60%;
 	}
 }
