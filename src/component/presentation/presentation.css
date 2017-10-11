@@ -1,9 +1,8 @@
 .mini-signup-form {
 	background-color: #377037;
-	position: absolute;
+	position: relative;
 	width: 180px;
 	height: 180px;
-	left: 70%;
 	margin-top: 475px;
 }
 
@@ -26,10 +25,18 @@
 	padding: 20px;
 }
 
-/* GRID xs -> sm */
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 350px) {
 	.mini-signup-form {
-		left: 40%;
+		left: -100px !important;
+		width: 100px !important;
+		height: 100px !important;
+	}
+}
+
+/* GRID xs -> sm */
+@media screen and (max-width: 575px) and (min-width: 351px) {
+	.mini-signup-form {
+		left: 20%;
 	}
 }
 
