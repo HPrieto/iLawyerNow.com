@@ -4,16 +4,17 @@
 	width: 180px;
 	height: 180px;
 	left: 70%;
-	margin-top: 625px;
+	margin-top: 475px;
 }
 
 .mini-signup-form h2 {
 	font-family: 'Ubuntu';
 	color: white;
 	font-weight: 100;
-	font-size: 1.5em;
+	font-size: 1.4em;
 	text-align: left;
-	padding-left: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .mini-signup-form h3 {
@@ -23,4 +24,25 @@
 	font-weight: 500;
 	text-align: right;
 	padding: 20px;
+}
+
+/* GRID xs -> sm */
+@media screen and (max-width: 575px) {
+	.mini-signup-form {
+		left: 50%;
+	}
+}
+
+/* GRID sm -> med */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+	.mini-signup-form {
+		left: 60%;
+	}
+}
+
+/* GRID med -> lg */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+	.mini-signup-form {
+		left: 70%;
+	}
 }

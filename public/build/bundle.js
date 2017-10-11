@@ -21772,7 +21772,7 @@ var Home = function (_Component) {
 						{ className: 'container row-container product-section' },
 						_react2.default.createElement(
 							'div',
-							{ className: 'col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-rowcol', style: { margin: 0, padding: 0 } },
+							{ className: 'col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-colrow', style: { margin: 0, padding: 0 } },
 							_react2.default.createElement(
 								'div',
 								{ className: 'col-xs-12 col-sm-3 col-md-12 col-lg-12' },
@@ -21784,7 +21784,7 @@ var Home = function (_Component) {
 								_react2.default.createElement(
 									'h1',
 									null,
-									'Easiest way around'
+									'Easiest way justice'
 								),
 								_react2.default.createElement(
 									'p',
@@ -21795,7 +21795,7 @@ var Home = function (_Component) {
 						),
 						_react2.default.createElement(
 							'div',
-							{ className: 'col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-rowcol', style: { margin: 0, padding: 0 } },
+							{ className: 'col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-colrow', style: { margin: 0, padding: 0 } },
 							_react2.default.createElement(
 								'div',
 								{ className: 'col-xs-12 col-sm-3 col-md-12 col-lg-12' },
@@ -21818,7 +21818,7 @@ var Home = function (_Component) {
 						),
 						_react2.default.createElement(
 							'div',
-							{ className: 'col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-rowcol', style: { margin: 0, padding: 0 } },
+							{ className: 'col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-colrow', style: { margin: 0, padding: 0 } },
 							_react2.default.createElement(
 								'div',
 								{ className: 'col-xs-12 col-sm-3 col-md-12 col-lg-12' },
@@ -21830,7 +21830,7 @@ var Home = function (_Component) {
 								_react2.default.createElement(
 									'h1',
 									null,
-									'Low-cost to luxury'
+									'Low-cost to justice'
 								),
 								_react2.default.createElement(
 									'p',
@@ -21870,12 +21870,12 @@ var Home = function (_Component) {
 								_react2.default.createElement(
 									'h3',
 									null,
-									'Our commitment to drivers'
+									'Our commitment to lawyers'
 								),
 								_react2.default.createElement(
 									'h1',
 									null,
-									'A better uberPOOL has arrived'
+									'A better iLAWYER has arrived'
 								),
 								_react2.default.createElement(
 									'p',
@@ -21961,7 +21961,7 @@ exports = module.exports = __webpack_require__(15)(undefined);
 
 
 // module
-exports.push([module.i, ".mission-section h1 {\n\tfont-family: 'Ubuntu';\n\tfont-weight: lighter;\n\tfont-size: 3.0em;\n\tpadding-top: 80px;\n}\n\n.mission-section h2 {\n\tmargin-top: -5px;\n\tfont-family: 'Lato';\n\tfont-weight: lighter;\n\tpadding-bottom: 50px;\n\tfont-size: 3.0em;\n}\n\n.image-section {\n\theight: 500px;\n\twidth: 100%;\n}\n\n.product-section {\n\tmargin-bottom: 25px;\n}\n\n.product-section img {\n\twidth: 150px;\n\theight: 150px;\n}\n\n.product-section h1 {\n\tfont-weight: 300 !important;\n\tfont-size: 1.8em !important;\n}\n\n.product-section p {\n\tfont-weight: 300 !important;\n\tfont-size: 1.15em !important;\n\tline-height: 1.7;\n}\n\n.product-section-signup {\n\tmargin-bottom: 75px;\n}\n\n.green-btn {\n\tbackground-color: #377037;\n\tcolor: white;\n\tpadding: 10px 20px;\n\tfont-size: 1.1em;\n\tborder-radius: 0;\n\tfont-weight: 400;\n\tmargin-top: 10px;\n}\n\n.green-btn:hover {\n\tcolor: white !important;\n}\n\n.inverse-btn {\n\tbackground-color: transparent;\n\tcolor: #377037;\n\tpadding-top: 10px;\n\tpadding-left: 0;\n\tfont-size: 1.1em;\n\tfont-weight: 500;\n\tmargin-top: 10px;\n}\n\n.inverse-btn:hover {\n\tcolor: #377037 !important;\n}\n\n.founder-section-txt {\n\tmargin-bottom: 50px;\n}\n\n.founder-section h3 {\n\tfont-weight: 100;\n}\n\n.founder-section h1 {\n\tfont-weight: 300;\n}\n\n.founder-section p {\n\tfont-weight: 200;\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) {\n}\n\n/* GRID sm -> med */\n@media screen and (min-width: 576px) and (max-width: 768px) {\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 769px) and (max-width: 992px) {\n}\n\n/* GRID lg -> xl */\n@media screen and (min-width: 993px) and (max-width: 1200px) {\n\t.founder-section-txt {\n\t\tmargin-top: 50px;\n\t\tmargin-bottom: 70px !important;\n\t}\n}\n\n/* GRID xl -> beyond */\n@media screen and (min-width: 1201px) {\n\t.founder-section-txt {\n\t\tmargin-top: 75px;\n\t\tmargin-bottom: 70px !important;\n\t}\n}\n\n/* small -> mid */\n@media screen and (max-width: 990px) {\n\t.row-container {\n\t\twidth: 100%;\n\t}\n\t.product-section {\n\t\tmargin-top: 75px;\n\t}\n\t.product-section-rowcol {\n\t\tmargin-top: 50px !important;\n\t}\n\t.founder-section h3 {\n\t\tfont-size: 2.0em !important;\n\t}\n\n\t.founder-section h1 {\n\t\tfont-size: 2.5em !important;\n\t\tmargin-top: 0;\n\t}\n\t.founder-section p {\n\t\tfont-size: 1.3em !important;\n\t\tline-height: 1.733;\n\t}\n}\n\n/* mid -> beyond */\n@media screen and (min-width: 991px) {\n\t.founder-section h3 {\n\t\tfont-size: 2.5em !important;\n\t}\n\n\t.founder-section h1 {\n\t\tfont-size: 3.0em !important;\n\t\tmargin-top: 0;\n\t}\n\n\t.founder-section p {\n\t\tfont-size: 1.3em !important;\n\t\tline-height: 1.733;\n\t}\n}\n\n/* mid -> large */\n@media screen and (min-width: 991px) and (max-width: 1024px) {\n\t.row-container {\n\t\twidth: 90%;\n\t}\n}\n\n/* small -> max */\n@media screen and (min-width: 991px) {\n}\n\n/* large -> max */\n@media screen and (min-width: 1025px) {\n\t.row-container {\n\t\twidth: 70%;\n\t}\n}\n\n/* md -> larger */\n@media screen and (min-width: 992px) and (max-width: 1550px) {\n\t.product-section {\n\t\tmargin-top: 195px;\n\t}\n}\n\n@media screen and (min-width: 1550px) {\n\t.home-container {\n\t\twidth: 85%;\n\t}\n\t.mission-section h1 {\n\t\tfont-size: 4.0em !important;\n\t\tpadding-top: 90px !important;\n\t}\n\t.mission-section h2 {\n\t\tfont-size: 4.0em !important;\n\t}\n\t.product-section {\n\t\tmargin-top: 155px;\n\t}\n}\n\n@media screen and (max-width: 1549px) {\n\t.home-container {\n\t\twidth: 100%;\n\t}\n}", ""]);
+exports.push([module.i, ".mission-section h1 {\n\tfont-family: 'Ubuntu';\n\tfont-weight: lighter;\n\tfont-size: 3.0em;\n\tpadding-top: 80px;\n}\n\n.mission-section h2 {\n\tmargin-top: -5px;\n\tfont-family: 'Lato';\n\tfont-weight: lighter;\n\tpadding-bottom: 50px;\n\tfont-size: 3.0em;\n}\n\n.image-section {\n\twidth: 100%;\n}\n\n.product-section {\n\tmargin-bottom: 25px;\n}\n\n.product-section img {\n\twidth: 150px;\n\theight: 150px;\n}\n\n.product-section h1 {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300 !important;\n\tfont-size: 1.8em !important;\n}\n\n.product-section p {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300 !important;\n\tfont-size: 1.15em !important;\n\tline-height: 1.7;\n}\n\n.product-section-signup {\n\tmargin-bottom: 75px;\n}\n\n.green-btn {\n\tbackground-color: #377037;\n\tcolor: white;\n\tpadding: 10px 20px;\n\tfont-family: 'Ubuntu';\n\tfont-size: 1.1em;\n\tborder-radius: 0;\n\tfont-weight: 400;\n\tmargin-top: 10px;\n}\n\n.green-btn:hover {\n\tcolor: white !important;\n}\n\n.inverse-btn {\n\tbackground-color: transparent;\n\tcolor: #377037;\n\tpadding-top: 10px;\n\tpadding-left: 0;\n\tfont-family: 'Ubuntu';\n\tfont-size: 1.1em;\n\tfont-weight: 500;\n\tmargin-top: 10px;\n}\n\n.inverse-btn:hover {\n\tcolor: #377037 !important;\n}\n\n.founder-section-txt {\n\tmargin-bottom: 50px;\n}\n\n.founder-section h3 {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 100;\n}\n\n.founder-section h1 {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300;\n}\n\n.founder-section p {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 200;\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) {\n}\n\n/* GRID sm -> med */\n@media screen and (min-width: 576px) and (max-width: 768px) {\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 769px) and (max-width: 992px) {\n}\n\n/* GRID lg -> xl */\n@media screen and (min-width: 993px) and (max-width: 1200px) {\n\t.founder-section-txt {\n\t\tmargin-top: 50px;\n\t\tmargin-bottom: 70px !important;\n\t}\n}\n\n/* GRID xl -> beyond */\n@media screen and (min-width: 1201px) {\n\t.founder-section-txt {\n\t\tmargin-top: 75px;\n\t\tmargin-bottom: 70px !important;\n\t}\n}\n\n/* small -> mid */\n@media screen and (max-width: 992px) {\n\t.row-container {\n\t\twidth: 100%;\n\t}\n\t.product-section {\n\t\tmargin-top: 75px;\n\t}\n\t.founder-section h3 {\n\t\tfont-size: 2.0em !important;\n\t}\n\t.product-section-colrow {\n\t\tmargin-top: 25px !important;\n\t}\n\t.founder-section h1 {\n\t\tfont-size: 2.5em !important;\n\t\tmargin-top: 0;\n\t}\n\t.founder-section p {\n\t\tfont-size: 1.3em !important;\n\t\tline-height: 1.733;\n\t}\n}\n\n/* mid -> beyond */\n@media screen and (min-width: 991px) {\n\t.founder-section h3 {\n\t\tfont-size: 2.5em !important;\n\t}\n\n\t.founder-section h1 {\n\t\tfont-size: 3.0em !important;\n\t\tmargin-top: 0;\n\t}\n\n\t.founder-section p {\n\t\tfont-size: 1.3em !important;\n\t\tline-height: 1.733;\n\t}\n}\n\n/* mid -> large */\n@media screen and (min-width: 991px) and (max-width: 1024px) {\n\t.row-container {\n\t\twidth: 90%;\n\t}\n}\n\n/* xl -> small */\n@media screen and (max-width: 990px) {\n\t.image-section {\n\t\theight: 350px;\n\t}\n}\n\n/* small -> max */\n@media screen and (min-width: 991px) {\n\t.image-section {\n\t\theight: 500px;\n\t}\n}\n\n/* large -> max */\n@media screen and (min-width: 1025px) {\n\t.row-container {\n\t\twidth: 70%;\n\t}\n}\n\n/* md -> larger */\n@media screen and (min-width: 992px) and (max-width: 1550px) {\n\t.product-section {\n\t\tmargin-top: 195px;\n\t}\n}\n\n@media screen and (min-width: 1550px) {\n\t.home-container {\n\t\twidth: 85%;\n\t}\n\t.mission-section h1 {\n\t\tfont-size: 4.0em !important;\n\t\tpadding-top: 90px !important;\n\t}\n\t.mission-section h2 {\n\t\tfont-size: 4.0em !important;\n\t}\n\t.product-section {\n\t\tmargin-top: 155px;\n\t}\n}\n\n@media screen and (max-width: 1549px) {\n\t.home-container {\n\t\twidth: 100%;\n\t}\n}", ""]);
 
 // exports
 
@@ -22125,7 +22125,7 @@ var AttorneySignupForm = function (_Component) {
 							_react2.default.createElement(
 								'button',
 								{ className: 'signup-form-button' },
-								'SIGN UP \xA0\xA0\xA0\xA0',
+								'DEFENDANT SIGN UP \xA0\xA0',
 								_react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-right' })
 							)
 						)
@@ -22209,7 +22209,7 @@ var AttorneySignupForm = function (_Component) {
 							_react2.default.createElement(
 								'button',
 								{ className: 'btn signup-btn' },
-								'SIGN UP TO BECOME AN ILAWYER \xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0',
+								'ATTORNEY SIGN UP \xA0\xA0',
 								_react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-right' })
 							),
 							_react2.default.createElement(
@@ -22378,7 +22378,8 @@ var MiniSignupForm = function (_Component) {
 					_react2.default.createElement(
 						'h3',
 						null,
-						'GET THE APP'
+						'GET THE APP\xA0\xA0\xA0',
+						_react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-right' })
 					)
 				)
 			);
@@ -22430,7 +22431,7 @@ exports = module.exports = __webpack_require__(15)(undefined);
 
 
 // module
-exports.push([module.i, ".mini-signup-form {\n\tbackground-color: #377037;\n\tposition: absolute;\n\twidth: 180px;\n\theight: 180px;\n\tleft: 70%;\n\tmargin-top: 625px;\n}\n\n.mini-signup-form h2 {\n\tfont-family: 'Ubuntu';\n\tcolor: white;\n\tfont-weight: 100;\n\tfont-size: 1.5em;\n\ttext-align: left;\n\tpadding-left: 20px;\n}\n\n.mini-signup-form h3 {\n\tfont-family: 'Ubuntu';\n\tfont-size: 1.1em;\n\tcolor: white;\n\tfont-weight: 500;\n\ttext-align: right;\n\tpadding: 20px;\n}", ""]);
+exports.push([module.i, ".mini-signup-form {\n\tbackground-color: #377037;\n\tposition: absolute;\n\twidth: 180px;\n\theight: 180px;\n\tleft: 70%;\n\tmargin-top: 475px;\n}\n\n.mini-signup-form h2 {\n\tfont-family: 'Ubuntu';\n\tcolor: white;\n\tfont-weight: 100;\n\tfont-size: 1.4em;\n\ttext-align: left;\n\tpadding-left: 15px;\n\tpadding-right: 15px;\n}\n\n.mini-signup-form h3 {\n\tfont-family: 'Ubuntu';\n\tfont-size: 1.1em;\n\tcolor: white;\n\tfont-weight: 500;\n\ttext-align: right;\n\tpadding: 20px;\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) {\n\t.mini-signup-form {\n\t\tleft: 50%;\n\t}\n}\n\n/* GRID sm -> med */\n@media screen and (min-width: 576px) and (max-width: 768px) {\n\t.mini-signup-form {\n\t\tleft: 60%;\n\t}\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 769px) and (max-width: 992px) {\n\t.mini-signup-form {\n\t\tleft: 70%;\n\t}\n}", ""]);
 
 // exports
 

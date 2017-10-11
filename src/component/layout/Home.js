@@ -44,18 +44,18 @@ class Home extends Component {
 				</div>
 				<div className="row" style={{backgroundColor: 'white'}}>
 					<div className='container row-container product-section'>
-						<div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-rowcol" style={{margin: 0,padding: 0}}>
+						<div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-colrow" style={{margin: 0,padding: 0}}>
 							<div className="col-xs-12 col-sm-3 col-md-12 col-lg-12">
 								<img src={require('../img/oath_icon.png')}/>
 							</div>
 							<div className="col-xs-12 col-sm-8 col-md-12 col-lg-12">
-								<h1>Easiest way around</h1>
+								<h1>Easiest way justice</h1>
 								<p>One tap and a car comes directly to you. Hop in—your 
 									driver knows exactly where to go. And when you get there, 
 									just step out. Payment is completely seamless.</p>
 							</div>
 						</div>
-						<div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-rowcol" style={{margin: 0,padding: 0}}>
+						<div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-colrow" style={{margin: 0,padding: 0}}>
 							<div className="col-xs-12 col-sm-3 col-md-12 col-lg-12">
 								<img src={require('../img/court_icon.png')}/>
 							</div>
@@ -66,12 +66,12 @@ class Home extends Component {
 								for a ride—no reservations required.</p>
 							</div>
 						</div>
-						<div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-rowcol" style={{margin: 0,padding: 0}}>
+						<div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-colrow" style={{margin: 0,padding: 0}}>
 							<div className="col-xs-12 col-sm-3 col-md-12 col-lg-12">
 								<img src={require('../img/book_icon.png')}/>
 							</div>
 							<div className="col-xs-12 col-sm-8 col-md-12 col-lg-12">
-								<h1>Low-cost to luxury</h1>
+								<h1>Low-cost to justice</h1>
 								<p>Economy cars at everyday prices are always available. 
 								For special occasions, no occasion at all, or when you 
 								just need a bit more room, call a black car or SUV.</p>
@@ -88,8 +88,8 @@ class Home extends Component {
 					<div className='container row-container founder-section'>
 						<div className="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 founder-section-colrow">
 							<div className="founder-section-txt">
-								<h3>Our commitment to drivers</h3>
-								<h1>A better uberPOOL has arrived</h1>
+								<h3>Our commitment to lawyers</h3>
+								<h1>A better iLAWYER has arrived</h1>
 								<p>Our latest phase of 180 Days of Change is focused on POOL improvements 
 								that help you earn more and stress less. We’re directly addressing your 
 								feedback, with a new way to earn and upgrades that will make for better 

@@ -9,7 +9,7 @@ class MiniSignupForm extends Component {
 					<h2>Start riding with Uber</h2>
 				</div>
 				<div className='row'>
-					<h3>GET THE APP</h3>
+					<h3>GET THE APP&nbsp;&nbsp;&nbsp;<span className="glyphicon glyphicon-chevron-right"/></h3>
 				</div>
 			</div>
 		)
