@@ -9,20 +9,21 @@ class Home extends Component {
 	constructor() {
 		super()
 		this.state = {
-			form: <div />
+			form: <MiniSignupForm />
 		}
 		this.updateDimensions.bind(this);
 	}
 	componentWillMount() {
 	}
 	componentDidMount() {
+		this.updateDimensions();
 		window.addEventListener('resize', this.updateDimensions.bind(this));
 	}
 	componentWillUnmount() {
 		window.removeEventListener('resize', this.updateDimensions);
 	}
 	updateDimensions() {
-		let windowWidth = $(window).width();
+		let windowWidth = window.innerWidth;
 		let form = (windowWidth < 992) ? <MiniSignupForm /> : <AttorneySignupForm />; 
 		this.setState({
 			form: form

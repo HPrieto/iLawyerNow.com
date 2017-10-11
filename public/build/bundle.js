@@ -21705,7 +21705,7 @@ var Home = function (_Component) {
 		var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this));
 
 		_this.state = {
-			form: _react2.default.createElement('div', null)
+			form: _react2.default.createElement(_MiniSignupForm2.default, null)
 		};
 		_this.updateDimensions.bind(_this);
 		return _this;
@@ -21717,6 +21717,7 @@ var Home = function (_Component) {
 	}, {
 		key: 'componentDidMount',
 		value: function componentDidMount() {
+			this.updateDimensions();
 			window.addEventListener('resize', this.updateDimensions.bind(this));
 		}
 	}, {
@@ -21727,7 +21728,7 @@ var Home = function (_Component) {
 	}, {
 		key: 'updateDimensions',
 		value: function updateDimensions() {
-			var windowWidth = $(window).width();
+			var windowWidth = window.innerWidth;
 			var form = windowWidth < 992 ? _react2.default.createElement(_MiniSignupForm2.default, null) : _react2.default.createElement(_AttorneySignupForm2.default, null);
 			this.setState({
 				form: form
