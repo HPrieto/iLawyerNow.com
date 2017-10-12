@@ -173,10 +173,16 @@
 
 /* GRID med -> lg */
 @media screen and (min-width: 769px) and (max-width: 992px) {
+	.signup-lawyer-form {
+		right: 10%;
+	}
 }
 
 /* GRID lg -> xl */
 @media screen and (min-width: 993px) and (max-width: 1200px) {
+	.signup-lawyer-form {
+		right: 20%;
+	}
 }
 
 /* GRID xl -> beyond */
