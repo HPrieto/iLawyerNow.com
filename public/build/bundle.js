@@ -22130,10 +22130,41 @@ var AttorneySignupForm = function (_Component) {
 	function AttorneySignupForm() {
 		_classCallCheck(this, AttorneySignupForm);
 
-		return _possibleConstructorReturn(this, (AttorneySignupForm.__proto__ || Object.getPrototypeOf(AttorneySignupForm)).apply(this, arguments));
+		var _this = _possibleConstructorReturn(this, (AttorneySignupForm.__proto__ || Object.getPrototypeOf(AttorneySignupForm)).call(this));
+
+		_this.state = {
+			form: {
+				firstname: '',
+				lastname: '',
+				email: '',
+				phone: '',
+				password: '',
+				city: '',
+				barnumber: ''
+			}
+		};
+		return _this;
 	}
 
 	_createClass(AttorneySignupForm, [{
+		key: 'onChange',
+		value: function onChange(event) {
+			var formObject = Object.assign({}, this.state.form);
+			formObject[event.target.id] = event.target.value;
+			this.setState({ form: formObject });
+		}
+	}, {
+		key: 'submitForm',
+		value: function submitForm() {
+			console.log('FirstName: ' + this.state.form.firstname);
+			console.log('LastName : ' + this.state.form.lastname);
+			console.log('Email    : ' + this.state.form.email);
+			console.log('Phone Num: ' + this.state.form.phone);
+			console.log('Password : ' + this.state.form.password);
+			console.log('City     : ' + this.state.form.city);
+			console.log('BarNumber: ' + this.state.form.barnumber);
+		}
+	}, {
 		key: 'render',
 		value: function render() {
 			return _react2.default.createElement(
@@ -22197,12 +22228,12 @@ var AttorneySignupForm = function (_Component) {
 								_react2.default.createElement(
 									'div',
 									{ className: 'col-md-6' },
-									_react2.default.createElement('input', { type: 'text', placeholder: 'First Name', className: 'form-control form-fname form-input' })
+									_react2.default.createElement('input', { type: 'text', placeholder: 'First Name', id: 'firstname', className: 'form-control form-fname form-input', onChange: this.onChange.bind(this) })
 								),
 								_react2.default.createElement(
 									'div',
 									{ className: 'col-md-6' },
-									_react2.default.createElement('input', { type: 'text', placeholder: 'Last Name', className: 'form-control form-lname form-input' })
+									_react2.default.createElement('input', { type: 'text', placeholder: 'Last Name', id: 'lastname', className: 'form-control form-lname form-input', onChange: this.onChange.bind(this) })
 								)
 							),
 							_react2.default.createElement(
@@ -22211,17 +22242,17 @@ var AttorneySignupForm = function (_Component) {
 								_react2.default.createElement(
 									'div',
 									{ className: 'col-md-12' },
-									_react2.default.createElement('input', { type: 'text', placeholder: 'Email', className: 'form-control form-input form-email' })
+									_react2.default.createElement('input', { type: 'text', placeholder: 'Email', id: 'email', className: 'form-control form-input form-email', onChange: this.onChange.bind(this) })
 								),
 								_react2.default.createElement(
 									'div',
 									{ className: 'col-md-12' },
-									_react2.default.createElement('input', { type: 'text', placeholder: 'Phone', className: 'form-control form-input form-phone' })
+									_react2.default.createElement('input', { type: 'text', placeholder: 'Phone', id: 'phone', className: 'form-control form-input form-phone', onChange: this.onChange.bind(this) })
 								),
 								_react2.default.createElement(
 									'div',
 									{ className: 'col-md-12' },
-									_react2.default.createElement('input', { type: 'text', placeholder: 'Create Password', className: 'form-control form-input form-pass' })
+									_react2.default.createElement('input', { type: 'password', placeholder: 'Create Password', id: 'password', className: 'form-control form-input form-pass', onChange: this.onChange.bind(this) })
 								)
 							),
 							_react2.default.createElement(
@@ -22230,7 +22261,7 @@ var AttorneySignupForm = function (_Component) {
 								_react2.default.createElement(
 									'div',
 									{ className: 'col-md-12' },
-									_react2.default.createElement('input', { type: 'text', placeholder: 'City', className: 'form-control form-input form-city' })
+									_react2.default.createElement('input', { type: 'text', placeholder: 'City', id: 'city', className: 'form-control form-input form-city', onChange: this.onChange.bind(this) })
 								)
 							),
 							_react2.default.createElement(
@@ -22239,12 +22270,12 @@ var AttorneySignupForm = function (_Component) {
 								_react2.default.createElement(
 									'div',
 									{ className: 'col-md-12' },
-									_react2.default.createElement('input', { type: 'text', placeholder: 'Bar Number', className: 'form-control form-input form-id' })
+									_react2.default.createElement('input', { type: 'text', placeholder: 'Bar Number', id: 'barnumber', className: 'form-control form-input form-id', onChange: this.onChange.bind(this) })
 								)
 							),
 							_react2.default.createElement(
 								'button',
-								{ className: 'btn signup-btn' },
+								{ onClick: this.submitForm.bind(this), className: 'btn signup-btn' },
 								'ATTORNEY SIGN UP \xA0\xA0',
 								_react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-right' })
 							),
@@ -22341,11 +22372,16 @@ var MiniSignupForm = function (_Component) {
 	}
 
 	_createClass(MiniSignupForm, [{
+		key: 'clicked',
+		value: function clicked(event) {
+			console.log('MiniSignupForm: Clicked');
+		}
+	}, {
 		key: 'render',
 		value: function render() {
 			return _react2.default.createElement(
-				'div',
-				{ className: 'container mini-signup-form' },
+				'button',
+				{ className: 'container mini-signup-form', onClick: this.clicked.bind(this) },
 				_react2.default.createElement(
 					'div',
 					{ className: 'row' },
@@ -22414,7 +22450,7 @@ exports = module.exports = __webpack_require__(10)(undefined);
 
 
 // module
-exports.push([module.i, ".mini-signup-form {\n\tbackground-color: #377037;\n\tposition: absolute!important;\n\twidth: 180px;\n\theight: 180px;\n\tmargin-top: 475px;\n\tright: 20%;\n}\n\n.mini-signup-form h2 {\n\tfont-family: 'Ubuntu';\n\tcolor: white;\n\tfont-weight: 100;\n\tfont-size: 1.4em;\n\ttext-align: left;\n\tpadding-left: 15px;\n\tpadding-right: 15px;\n}\n\n.mini-signup-form h3 {\n\tfont-family: 'Ubuntu';\n\tfont-size: 1.1em;\n\tcolor: white;\n\tfont-weight: 500;\n\ttext-align: right;\n\tpadding: 20px;\n}\n\n@media screen and (max-width: 250px) {\n\t.mini-signup-form {\n\t\tleft: 5% !important;\n\t}\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) {\n\t.mini-signup-form {\n\t\tright: 15% !important;\n\t}\n\t.mini-signup-form {\n\t\tmargin-top: 425px !important;\n\t}\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) and (min-width: 351px) {\n}\n\n/* GRID sm -> med */\n@media screen and (min-width: 576px) and (max-width: 768px) {\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 769px) and (max-width: 992px) {\n}", ""]);
+exports.push([module.i, ".mini-signup-form {\n\tbackground-color: #377037;\n\tposition: absolute!important;\n\twidth: 180px;\n\theight: 180px;\n\tmargin-top: 475px;\n\tright: 20%;\n\tborder: none;\n}\n\n.mini-signup-form h2 {\n\tfont-family: 'Ubuntu';\n\tcolor: white;\n\tfont-weight: 100;\n\tfont-size: 1.4em;\n\ttext-align: left;\n\tpadding-left: 15px;\n\tpadding-right: 15px;\n}\n\n.mini-signup-form h3 {\n\tfont-family: 'Ubuntu';\n\tfont-size: 1.1em;\n\tcolor: white;\n\tfont-weight: 500;\n\ttext-align: right;\n\tpadding: 20px;\n}\n\n@media screen and (max-width: 250px) {\n\t.mini-signup-form {\n\t\tleft: 5% !important;\n\t}\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) {\n\t.mini-signup-form {\n\t\tright: 15% !important;\n\t}\n\t.mini-signup-form {\n\t\tmargin-top: 425px !important;\n\t}\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) and (min-width: 351px) {\n}\n\n/* GRID sm -> med */\n@media screen and (min-width: 576px) and (max-width: 768px) {\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 769px) and (max-width: 992px) {\n}", ""]);
 
 // exports
 
