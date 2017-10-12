@@ -21745,7 +21745,6 @@ var Home = function (_Component) {
 			return _react2.default.createElement(
 				'div',
 				{ className: 'container home-container' },
-				_react2.default.createElement(_Navbar2.default, null),
 				this.state.form,
 				_react2.default.createElement(
 					'div',

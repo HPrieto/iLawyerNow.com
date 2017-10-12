@@ -34,7 +34,6 @@ class Home extends Component {
 		let tanColor = '#F7F7F8';
 		return (
 			<div className="container home-container">
-				<Navbar/>
 				{this.state.form}
 				<div className="row" style={{backgroundColor: 'white'}}>
 					<div className='container row-container mission-section'>
