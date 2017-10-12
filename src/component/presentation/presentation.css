@@ -26,9 +26,19 @@
 	padding: 20px;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 250px) {
 	.mini-signup-form {
-		right: 10% !important;
+		left: 5% !important;
+	}
+}
+
+/* GRID xs -> sm */
+@media screen and (max-width: 575px) {
+	.mini-signup-form {
+		right: 15% !important;
+	}
+	.mini-signup-form {
+		margin-top: 425px !important;
 	}
 }
 
