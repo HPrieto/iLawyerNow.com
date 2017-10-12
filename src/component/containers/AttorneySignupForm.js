@@ -18,7 +18,8 @@ class AttorneySignupForm extends Component {
 	}
 	onChange(event) {
 		let formObject = Object.assign({}, this.state.form);
-		formObject[event.target.id] = event.target.value;
+		formObject[event.target.id] = event.target.value.trim();
+		console.log('Event Listening: ' + formObject[event.target.id])
 		this.setState({form: formObject})
 	}
 	submitForm() {
