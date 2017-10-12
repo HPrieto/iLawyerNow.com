@@ -30,6 +30,9 @@ class Home extends Component {
 			form: form
 		})
 	}
+	onClick(event) {
+		console.log('Event: ' + event.target.id)
+	}
 	render() {
 		let tanColor = '#F7F7F8';
 		return (
@@ -83,7 +86,7 @@ class Home extends Component {
 				</div>
 				<div className="row" style={{backgroundColor: 'white'}}>
 					<div className='container row-container product-section-signup'>
-						<button className='btn green-btn'>DEFENDANT SIGN UP&nbsp;&nbsp;&nbsp;&nbsp;<span className="glyphicon glyphicon-chevron-right"/></button>
+						<button onClick={this.onClick.bind(this)} className='btn green-btn' id="DefendantSignup">DEFENDANT SIGN UP&nbsp;&nbsp;&nbsp;&nbsp;<span className="glyphicon glyphicon-chevron-right"/></button>
 					</div>
 				</div>
 				<div className="row" style={{backgroundColor: tanColor}}>
@@ -95,7 +98,7 @@ class Home extends Component {
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
 								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-								<button className="btn inverse-btn">ATTORNEY SIGN UP&nbsp;&nbsp;&nbsp;<span className="glyphicon glyphicon-chevron-right"/></button>
+								<button onClick={this.onClick.bind(this)} className="btn inverse-btn" id="AttorneySignup">ATTORNEY SIGN UP&nbsp;&nbsp;&nbsp;<span className="glyphicon glyphicon-chevron-right"/></button>
 							</div>
 						</div>
 						<div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 founder-section-colrow">

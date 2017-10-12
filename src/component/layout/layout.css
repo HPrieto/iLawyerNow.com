@@ -101,10 +101,10 @@
 
 @media screen and (max-width: 350px) {
 	.mission-section h1 {
-		font-size: 1.5em !important;
+		font-size: 1.8em !important;
 	}
 	.mission-section h2 {
-		font-size: 1.5em !important;
+		font-size: 1.8em !important;
 	}
 }
 
@@ -185,8 +185,8 @@
 		font-size: 2.0em !important;
 	}
 	.founder-section p {
-		font-size: 1.3em !important;
-		line-height: 1.733;
+		font-size: 1.2em !important;
+		line-height: 1.5;
 	}
 }
 
