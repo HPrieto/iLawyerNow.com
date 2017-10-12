@@ -147,6 +147,9 @@
 	.mission-section h1 {
 		padding-top: 60px !important;
 	}
+	.mission-section h2 {
+		padding-bottom: 25px !important;
+	}
 	.row-container {
 		width: 100%;
 	}
