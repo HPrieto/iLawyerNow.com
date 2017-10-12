@@ -1,3 +1,7 @@
+.home-container {
+	min-width: 300px !important;
+}
+
 .mission-section h1 {
 	font-family: 'Ubuntu';
 	font-weight: lighter;
@@ -122,6 +126,12 @@
 		margin-top: 50px;
 		margin-bottom: 70px !important;
 	}
+	.mission-section h1 {
+		font-size: 2.5em !important;
+	}
+	.mission-section h2 {
+		font-size: 2.5em !important;
+	}
 }
 
 /* GRID xl -> beyond */
@@ -134,6 +144,9 @@
 
 /* small -> mid */
 @media screen and (max-width: 992px) {
+	.mission-section h1 {
+		padding-top: 60px !important;
+	}
 	.row-container {
 		width: 100%;
 	}
