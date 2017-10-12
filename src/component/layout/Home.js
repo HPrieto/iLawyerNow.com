@@ -42,7 +42,7 @@ class Home extends Component {
 					</div>
 				</div>
 				<div className="row" style={{backgroundColor: 'black'}}>
-					<img className='image-section' src={require('../img/ilawyer_bg1.jpg')}/>
+					<img className='image-section'/>
 				</div>
 				<div className="row" style={{backgroundColor: 'white'}}>
 					<div className='container row-container product-section'>
