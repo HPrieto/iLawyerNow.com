@@ -307,7 +307,7 @@ demi white: #f8f8f9;
 	margin: 0 auto;
 	width: 170vh !important;
 	font-family: 'Ubuntu';
-	padding: 25px 50px 50px 25px;
+	padding: 25px 100px 25px 100px;
 }
 
 .footer-top h1 {
@@ -318,6 +318,9 @@ demi white: #f8f8f9;
 .footer-bottom {
 	font-family: 'Ubuntu';
 	color: #C0C0C0 !important;
+	border-top-style: solid;
+	border-top-width: 0.05px;
+	border-top-color: #C0C0C0 !important; 
 }
 
 .footer-bottom h4 {

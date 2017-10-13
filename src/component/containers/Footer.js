@@ -14,15 +14,17 @@ class Footer extends Component {
 						</div>
 					</div>
 					<div className='row footer-bottom'>
-						<div className='col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4'>
+						<div className='col-xs-6 col-sm-4 col-md-4 col-lg-4 col-xl-4' style={{paddingTop: '20px'}}>
 							<h4>®2017 iLawyer Technologies Inc.</h4>
 						</div>
-						<div className='col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4'>
-							<h4>Privacy</h4>
-							<h4>Accessibility</h4>
-						</div>
-						<div className='col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4'>
-							<h4>Terms</h4>
+						<div className='col-xs-6 col-sm-8 col-md-8 col-lg-8 col-xl-8' style={{paddingTop: '20px'}}>
+							<div className='col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6'>
+								<h4>Privacy</h4>
+								<h4>Accessibility</h4>
+							</div>
+							<div className='col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6'>
+								<h4>Terms</h4>
+							</div>
 						</div>
 					</div>
 				</div>
