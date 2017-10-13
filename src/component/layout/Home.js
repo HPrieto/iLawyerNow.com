@@ -91,7 +91,7 @@ class Home extends Component {
 				</div>
 				<div className="row" style={{backgroundColor: tanColor}}>
 					<div className='container row-container founder-section'>
-						<div className="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 founder-section-colrow">
+						<div className="col-xs-12 col-sm-10 col-md-8 col-lg-8 col-xl-8 founder-section-colrow">
 							<div className="founder-section-txt">
 								<h3>Our commitment to lawyers</h3>
 								<h1>A better iLAWYER has arrived</h1>
@@ -107,8 +107,14 @@ class Home extends Component {
 					</div>
 				</div>
 				<div className="row" style={{backgroundColor: 'white'}}>
-					<div className='container row-container'>
-						
+					<div className='container row-container map-section'>
+						<div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+							<h1>Cities we are at</h1>
+							<h2></h2>
+						</div>
+						<div className="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+							
+						</div>
 					</div>
 				</div>
 				<div className="row" style={{backgroundColor: tanColor}}>

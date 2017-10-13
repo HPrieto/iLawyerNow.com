@@ -4,7 +4,6 @@
 	<title>iLawyerNow</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
 	<!-- Bootstrap CSS CDN -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!-- Ubuntu font CDN -->
@@ -20,6 +19,10 @@
 </head>
 <body>
 	<div id='root'></div>
+	<!-- Google Maps Initialization -->
+	<script type='text/javascript'>
+		
+	</script>
 	<!-- webpack optimized package -->
     <script type='text/javascript' src='/build/bundle.js'></script>
 	<!-- jQuery CDN -->
