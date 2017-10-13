@@ -294,10 +294,36 @@ demi white: #f8f8f9;
 	color: #265328;
 }
 
-.footer-container {
+.footer {
+	margin: 0 auto;
+	width: 100%;
 	background-color: black;
-	width: 170vh;
+	text-align: left;
+	width: 100% !important;
 	min-width: 300px !important;
+}
+
+.footer-container {
+	margin: 0 auto;
+	width: 170vh !important;
+	font-family: 'Ubuntu';
+	padding: 25px 50px 50px 25px;
+}
+
+.footer-top h1 {
+	color: white;
+	font-weight: 300;
+}
+
+.footer-bottom {
+	font-family: 'Ubuntu';
+	color: #C0C0C0 !important;
+}
+
+.footer-bottom h4 {
+	color: white;
+	font-weight: 100;
+	font-size: 0.8em;
 }
 
 @media screen and (max-width: 1655px) {
