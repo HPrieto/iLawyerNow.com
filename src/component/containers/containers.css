@@ -293,3 +293,15 @@ demi white: #f8f8f9;
 	border-color: #265328;
 	color: #265328;
 }
+
+.footer-container {
+	background-color: black;
+	width: 170vh;
+	min-width: 300px !important;
+}
+
+@media screen and (max-width: 1655px) {
+	.footer-container {
+		width: 100% !important;
+	}
+}

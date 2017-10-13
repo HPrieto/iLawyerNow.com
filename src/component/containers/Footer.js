@@ -4,7 +4,9 @@ import './containers.css';
 class Footer extends Component {
 	render() {
 		return (
-			<div>Footer</div>
+			<div className='row footer-container' style={{margin: '0 auto'}}>
+				Footer
+			</div>
 		)
 	}
 }

@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom';
 
 // Component Modules
 import Home from './component/layout/Home.js';
+import Footer from './component/containers/Footer.js';
 
 class App extends Component {
 	render() {
 		return (
-			<Home />
+			<div style={{padding: 0, margin: 0}}>
+				<Home />
+			</div>
 		)
 	}
 }

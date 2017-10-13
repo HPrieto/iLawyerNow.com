@@ -109,11 +109,9 @@ class Home extends Component {
 				<div className="row" style={{backgroundColor: 'white'}}>
 					<div className='container row-container map-section'>
 						<div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-							<h1>Cities we are at</h1>
-							<h2></h2>
 						</div>
 						<div className="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
-							
+
 						</div>
 					</div>
 				</div>
