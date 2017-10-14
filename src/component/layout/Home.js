@@ -54,7 +54,7 @@ class Home extends Component {
 								<img src={require('../img/oath_icon.png')}/>
 							</div>
 							<div className="col-xs-12 col-sm-8 col-md-12 col-lg-12">
-								<h1>Easiest way justice</h1>
+								<h1>Easiest way to justice</h1>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
 								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 								Ut enim ad minim veniam.</p>
@@ -86,7 +86,7 @@ class Home extends Component {
 				</div>
 				<div className="row" style={{backgroundColor: 'white'}}>
 					<div className='container row-container product-section-signup'>
-						<button onClick={this.onClick.bind(this)} className='btn green-btn' id="DefendantSignup">DEFENDANT SIGN UP&nbsp;&nbsp;&nbsp;&nbsp;<span className="glyphicon glyphicon-chevron-right"/></button>
+						<button onClick={this.onClick.bind(this)} className='btn green-btn' id="DefendantSignup">MEMBER SIGN UP&nbsp;&nbsp;&nbsp;&nbsp;<span className="glyphicon glyphicon-chevron-right"/></button>
 					</div>
 				</div>
 				<div className="row" style={{backgroundColor: tanColor}}>
@@ -128,10 +128,10 @@ class Home extends Component {
 							</div>
 							<div className="zero-padding zero-margin col-xs-6 col-sm-6 col-md-8 col-lg-8 col-xl-8">
 								<div className="zero-padding zero-margin col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-									<button className="btn footer-lawyer-btn">LAWYER SIGN UP</button>
+									<button className="btn footer-lawyer-btn" id="LawyerSignup" onClick={this.onClick.bind(this)}>LAWYER SIGN UP</button>
 								</div>
 								<div className="zero-padding zero-margin col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-									<button className="btn footer-member-btn">MEMBER SIGN UP</button>
+									<button className="btn footer-member-btn" id="MemberSignup" onClick={this.onClick.bind(this)}>MEMBER SIGN UP</button>
 								</div>
 							</div>
 						</div>

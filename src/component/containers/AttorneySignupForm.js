@@ -40,8 +40,8 @@ class AttorneySignupForm extends Component {
 							<img className='electronics-icon' src={require('../img/electronics_icon.png')}/>
 						</div>
 						<div className="col-md-8">
-							<h1>Need an iLawyer?</h1>
-							<button className="signup-form-button">DEFENDANT SIGN UP &nbsp;&nbsp;<span className="glyphicon glyphicon-chevron-right"/></button>
+							<h1>Need an Attorney?</h1>
+							<button className="signup-form-button">MEMBER SIGN UP &nbsp;&nbsp;<span className="glyphicon glyphicon-chevron-right"/></button>
 						</div>
 					</div>
 					<div className="separator">OR</div>
