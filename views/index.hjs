@@ -3,7 +3,7 @@
 <head>
 	<title>The Law Club</title>
 	<!-- Tab icon -->
-	<link rel="icon" href="/lawyer_tab.png">
+	<link rel="icon" href="./lawyer_tab.png">
 	<meta charset="utf-8">
 	<!-- Mobile Phone Layout meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
