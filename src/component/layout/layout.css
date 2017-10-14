@@ -141,11 +141,12 @@
 	color: #C0C0C0;
 }
 
-.footer-bottom button {
+.footer-bottom-link {
 	border: none;
 	background-color: transparent;
 	color: #C0C0C0;
 	font-size: 0.8em;
+	padding-left: 0;
 }
 
 .footer-bottom-link: hover {
