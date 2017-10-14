@@ -189,12 +189,18 @@
 		font-size: 1.0em !important;
 	}
 	.founder-section h3 {
-		font-size: 1.0em !important;
+		font-size: 1.2em !important;
+	}
+	.footer-top h1 {
+		font-size: 1.2em;
 	}
 }
 
 /* GRID sm -> med */
 @media screen and (min-width: 576px) and (max-width: 768px) {
+	.footer-top h1 {
+		font-size: 1.0em;
+	}
 }
 
 /* GRID med -> lg */
@@ -250,6 +256,9 @@
 	.founder-section p {
 		font-size: 1.2em !important;
 		line-height: 1.5;
+	}
+	.footer-member-btn {
+		margin-top: 10px !important;
 	}
 }
 
