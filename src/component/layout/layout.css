@@ -1,3 +1,13 @@
+.row-container-shifted-right {
+	padding: 0 0 0 0;
+	margin-right: 0 !important;
+}
+
+.row-container-shifted-left {
+	padding: 0 0 0 0;
+	margin-left: 0 !important;
+}
+
 .home-container {
 	min-width: 300px !important;
 	width: 170vh;
@@ -81,10 +91,6 @@
 	color: #377037 !important;
 }
 
-.founder-section-txt {
-	margin-bottom: 50px;
-}
-
 .founder-section h3 {
 	font-family: 'Ubuntu';
 	font-weight: 100;
@@ -98,6 +104,20 @@
 .founder-section p {
 	font-family: 'Ubuntu';
 	font-weight: 200;
+}
+
+.map-section h1 {
+	margin-top: 0;
+	font-family: 'Ubuntu';
+	font-weight: 300;
+	font-size: 3.5em;
+}
+
+.map-section h2 {
+	font-family: 'Lato';
+	font-weight: 100;
+	padding-top: 100px;
+	font-size: 2.8em;
 }
 
 .footer-section {
@@ -215,6 +235,18 @@
 	}
 }
 
+/* GRID xs -> lg */
+@media screen and (max-width: 769px) {
+	.map-section-txt {
+		background-color: white;
+		margin-top: -120px;
+		margin-left: 50px;
+	}
+	.map-section h1 {
+		padding-bottom: 20px;
+	}
+}
+
 /* GRID med -> lg */
 @media screen and (min-width: 769px) and (max-width: 992px) {
 }
@@ -223,7 +255,6 @@
 @media screen and (min-width: 993px) and (max-width: 1200px) {
 	.founder-section-txt {
 		margin-top: 50px;
-		margin-bottom: 70px !important;
 	}
 	.mission-section h1 {
 		font-size: 2.5em !important;
@@ -237,8 +268,13 @@
 @media screen and (min-width: 1201px) {
 	.founder-section-txt {
 		margin-top: 75px;
-		margin-bottom: 70px !important;
 	}
+}
+
+@media screen (max-width: 1260px) and (min-width: 993px) {
+}
+
+@media screen (min-width: 1261px) {
 }
 
 /* small -> mid */
@@ -250,6 +286,12 @@
 		padding-bottom: 25px !important;
 	}
 	.row-container {
+		width: 100%;
+	}
+	.row-container-shifted-right {
+		width: 100%;
+	}
+	.row-container-shifted-left {
 		width: 100%;
 	}
 	.product-section {
@@ -269,6 +311,9 @@
 		font-size: 1.2em !important;
 		line-height: 1.5;
 	}
+	.founder-section-txt button {
+		padding-top: 0px !important;
+	}
 	.footer-member-btn {
 		margin-top: 10px !important;
 	}
@@ -279,25 +324,18 @@
 
 /* mid -> beyond */
 @media screen and (min-width: 991px) {
-	.founder-section h3 {
-		font-size: 2.5em !important;
-	}
-
-	.founder-section h1 {
-		font-size: 3.0em !important;
-		margin-top: 0;
-	}
-
-	.founder-section p {
-		font-size: 1.3em !important;
-		line-height: 1.733;
-	}
 }
 
 /* mid -> large */
 @media screen and (min-width: 991px) and (max-width: 1024px) {
 	.row-container {
 		width: 90%;
+	}
+	.row-container-shifted-right {
+		width: 95%;
+	}
+	.row-container-shifted-left {
+		width: 95%;
 	}
 }
 
@@ -320,12 +358,29 @@
 	.row-container {
 		width: 70%;
 	}
+	.row-container-shifted-right {
+		width: 85%;
+	}
+	.row-container-shifted-left {
+		width: 85%;
+	}
 }
 
 /* md -> larger */
 @media screen and (min-width: 992px) and (max-width: 1550px) {
 	.product-section {
 		margin-top: 195px;
+	}
+	.founder-section h3 {
+		font-size: 1.8em !important;
+	}
+	.founder-section h1 {
+		font-size: 2.2em !important;
+		margin-top: 0;
+	}
+	.founder-section p {
+		font-size: 1.2em !important;
+		line-height: 1.733;
 	}
 }
 
@@ -339,6 +394,17 @@
 	}
 	.product-section {
 		margin-top: 155px;
+	}
+	.founder-section h3 {
+		font-size: 2.5em !important;
+	}
+	.founder-section h1 {
+		font-size: 3.0em !important;
+		margin-top: 0;
+	}
+	.founder-section p {
+		font-size: 1.3em !important;
+		line-height: 1.733;
 	}
 }
 

@@ -90,9 +90,9 @@ class Home extends Component {
 					</div>
 				</div>
 				<div className="row" style={{backgroundColor: tanColor}}>
-					<div className='container row-container founder-section'>
-						<div className="col-xs-12 col-sm-10 col-md-8 col-lg-8 col-xl-8 founder-section-colrow">
-							<div className="founder-section-txt">
+					<div className='container row-container-shifted-right founder-section'>
+						<div className="col-xs-12 col-sm-10 col-md-6 col-lg-6 col-xl-6 founder-section-colrow">
+							<div className="founder-section-txt zero-margin zero-padding">
 								<h3>Our commitment to lawyers</h3>
 								<h1>A better iLAWYER has arrived</h1>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
@@ -101,17 +101,16 @@ class Home extends Component {
 								<button onClick={this.onClick.bind(this)} className="btn inverse-btn" id="AttorneySignup">ATTORNEY SIGN UP&nbsp;&nbsp;&nbsp;<span className="glyphicon glyphicon-chevron-right"/></button>
 							</div>
 						</div>
-						<div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 founder-section-colrow">
-							<img/>
+						<div className="zero-padding zero-margin col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 founder-section-colrow">
+							<div style={{width: '100%', height: 400, backgroundColor: 'black'}}/>
 						</div>
 					</div>
 				</div>
 				<div className="row" style={{backgroundColor: 'white'}}>
-					<div className='container row-container map-section'>
-						<div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+					<div className='container row-container-shifted-right map-section'>
+						<div className="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 map-section-txt">
 						</div>
-						<div className="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
-
+						<div className="zero-margin zero-padding col-xs-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
 						</div>
 					</div>
 				</div>

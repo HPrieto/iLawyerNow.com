@@ -24,7 +24,17 @@
 	<div id='root'></div>
 	<!-- Google Maps Initialization -->
 	<script type='text/javascript'>
-		
+		/* Initializes mapView object */
+		function myMap() {
+			// Map object specification
+			var mapOptions = {
+				center: new google.maps.LatLng(34.111603, -117.531065),
+        		zoom: 12,
+        		mapTypeId: 'roadmap'
+			}
+			// Set map to DOM element
+			var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+		}
 	</script>
 	<!-- webpack optimized package -->
     <script type='text/javascript' src='/build/bundle.js'></script>
@@ -32,5 +42,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- Bootstrap CDN -->
 	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+	<!-- Google Maps JavaScript Library -->
+	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 </body>
 </html>
