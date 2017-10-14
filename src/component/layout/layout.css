@@ -237,14 +237,6 @@
 
 /* GRID xs -> lg */
 @media screen and (max-width: 769px) {
-	.map-section-txt {
-		background-color: white;
-		margin-top: -120px;
-		margin-left: 50px;
-	}
-	.map-section h1 {
-		padding-bottom: 20px;
-	}
 }
 
 /* GRID med -> lg */
