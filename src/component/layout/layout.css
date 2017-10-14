@@ -106,10 +106,21 @@
 	font-family: 'Ubuntu';
 }
 
+.footer-top {
+	padding-bottom: 60px !important;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #282727;
+}
+
 .footer-top h1 {
 	color: white;
 	font-weight: 500;
 	font-size: 1.5em;
+}
+
+.footer-bottom {
+	padding-top: 20px;
 }
 
 .footer-lawyer-btn {
@@ -260,6 +271,9 @@
 	}
 	.footer-member-btn {
 		margin-top: 10px !important;
+	}
+	.footer-top {
+		padding-bottom: 105px !important;
 	}
 }
 
