@@ -100,6 +100,68 @@
 	font-weight: 200;
 }
 
+.footer-section {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	font-family: 'Ubuntu';
+}
+
+.footer-top h1 {
+	color: white;
+	font-weight: 500;
+	font-size: 1.5em;
+}
+
+.footer-lawyer-btn {
+	font-weight: 500;
+	border-radius: 0;
+	border-width: 2px;
+	border-color: white;
+	color: black;
+	background-color: white;
+	width: 150px;
+}
+
+.footer-member-btn {
+	font-weight: 500;
+	border-radius: 0;
+	border-width: 2px;
+	border-color: white;
+	background-color: black;
+	color: white;
+	width: 150px;
+}
+
+.footer-member-btn: hover {
+	color: white !important;
+}
+
+.footer-bottom h4 {
+	font-size: 0.8em;
+	color: #C0C0C0;
+}
+
+.footer-bottom button {
+	border: none;
+	background-color: transparent;
+	color: #C0C0C0;
+	font-size: 0.8em;
+}
+
+.footer-bottom-link: hover {
+	text-decoration: none !important;
+	border: none;
+	cursor: pointer;
+}
+
+.zero-padding {
+	padding: 0 0 0 0;
+}
+
+.zero-margin {
+	margin: 0 0 0 0;
+}
+
 @media screen and (max-width: 350px) {
 	.mission-section h1 {
 		font-size: 1.8em !important;
@@ -240,12 +302,6 @@
 @media screen and (min-width: 992px) and (max-width: 1550px) {
 	.product-section {
 		margin-top: 195px;
-	}
-}
-
-@media screen and (max-width: 1549px) {
-	.home-container {
-		width: 100% !important;
 	}
 }
 
