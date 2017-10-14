@@ -22500,7 +22500,7 @@ var AttorneySignupForm = function (_Component) {
 								_react2.default.createElement(
 									'a',
 									{ className: 'signup-tag' },
-									'sign up '
+									'sign in '
 								),
 								' with your iLawyer account.'
 							),
