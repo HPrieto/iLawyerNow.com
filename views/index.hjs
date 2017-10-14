@@ -43,6 +43,6 @@
 	<!-- Bootstrap CDN -->
 	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
 	<!-- Google Maps JavaScript Library -->
-	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?AIzaSyB6Pfvnefo67yC-fNpJaWAC60Rb76_uVpw&callback=myMap"></script>
 </body>
 </html>
