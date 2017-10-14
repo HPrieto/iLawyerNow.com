@@ -108,18 +108,22 @@
 	font-weight: 200;
 }
 
-.map-section h1 {
+.map-section-txt h2 {
 	margin-top: 0;
 	font-family: 'Ubuntu';
 	font-weight: 300;
-	font-size: 3.5em;
 }
 
-.map-section h2 {
+.map-section-txt h3 {
 	font-family: 'Lato';
 	font-weight: 100;
 	padding-top: 100px;
-	font-size: 2.8em;
+}
+
+.map-container {
+	background-color: white;
+	width: 100%;
+	height: 500px;
 }
 
 .footer-section {
@@ -239,10 +243,27 @@
 
 /* GRID xs -> lg */
 @media screen and (max-width: 769px) {
+	.map-container {
+		height: 300px;
+	}
+	#map {
+		width: 100%;
+		height: 300px;
+	}
 }
 
 /* GRID med -> lg */
 @media screen and (min-width: 769px) and (max-width: 992px) {
+	.map-container {
+		height: 350px;
+		margin-bottom: 20px;
+		padding-right: 10px;
+	}
+	#map {
+		width: 100%;
+		height: 350px;
+		margin: 20px auto;
+	}
 }
 
 /* GRID lg -> xl */
@@ -268,7 +289,7 @@
 @media screen (max-width: 1260px) and (min-width: 993px) {
 }
 
-@media screen (min-width: 1261px) {
+@media screen (min-width: 1261px) and (max-width: 1550px) {
 }
 
 /* small -> mid */
@@ -376,6 +397,14 @@
 		font-size: 1.2em !important;
 		line-height: 1.733;
 	}
+	#map {
+		width: 90%;
+		height: 375px;
+		margin: 25px auto;
+	}
+	.map-container {
+		height: 400px;
+	}
 }
 
 @media screen and (min-width: 1550px) {
@@ -399,6 +428,17 @@
 	.founder-section p {
 		font-size: 1.3em !important;
 		line-height: 1.733;
+	}
+	.map-section-txt h2 {
+		font-size: 3.0em;
+	}
+	.map-section-txt h3 {
+		font-size: 2.7em;
+	}
+	#map {
+		width: 90%;
+		height: 474px;
+		margin: 30px auto;
 	}
 }
 

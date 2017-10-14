@@ -108,9 +108,14 @@ class Home extends Component {
 				</div>
 				<div className="row" style={{backgroundColor: 'white'}}>
 					<div className='container row-container-shifted-right map-section'>
-						<div className="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 map-section-txt">
+						<div className="col-xs-12 col-sm-5 col-md-4 col-lg-4 col-xl-4 map-section-txt">
+							<h3>Pricing</h3>
+							<h2>Attorneys, anywhere</h2>
 						</div>
-						<div className="zero-margin zero-padding col-xs-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+						<div className="zero-margin zero-padding col-xs-12 col-sm-7 col-md-8 col-lg-8 col-xl-8">
+							<div className="map-container">
+								<div id="map"/>
+							</div>
 						</div>
 					</div>
 				</div>
