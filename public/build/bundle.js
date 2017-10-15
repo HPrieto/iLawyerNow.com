@@ -22102,8 +22102,8 @@ var Home = function (_Component) {
 									{ className: 'col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 zero-padding zero-margin' },
 									_react2.default.createElement(
 										'span',
-										{ id: 'userlocation', onClick: this.destinationClicked.bind(this), className: 'input-group-addon', style: { border: 'none', height: 50, backgroundColor: '#C6C6C6', color: 'white', fontSize: '1.5em' } },
-										_react2.default.createElement('i', { className: 'glyphicon glyphicon-menu-right' })
+										{ id: 'userlocation', onClick: this.destinationClicked.bind(this), className: 'input-group-addon', style: { border: 'none', height: 50, backgroundColor: 'white', color: '#C6C6C6', fontSize: '1.5em' } },
+										_react2.default.createElement('i', { className: 'glyphicon glyphicon-map-marker' })
 									)
 								)
 							)

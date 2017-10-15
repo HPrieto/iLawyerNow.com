@@ -127,7 +127,7 @@ class Home extends Component {
 									<input type='text' placeholder="Enter your location" id='userlocation' className='form-control form-userlocation form-input' onChange={this.onChange.bind(this)} />
 								</div>
 								<div className='col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 zero-padding zero-margin'>
-									<span id='userlocation' onClick={this.destinationClicked.bind(this)} className="input-group-addon" style={{border: 'none', height: 50, backgroundColor: '#C6C6C6', color: 'white', fontSize: '1.5em'}}><i className="glyphicon glyphicon-menu-right"></i></span>
+									<span id='userlocation' onClick={this.destinationClicked.bind(this)} className="input-group-addon" style={{border: 'none', height: 50, backgroundColor: 'white', color: '#C6C6C6', fontSize: '1.5em'}}><i className="glyphicon glyphicon-map-marker"></i></span>
 								</div>
 							</div>
 						</div>
