@@ -48,7 +48,7 @@ class Home extends Component {
 		console.log('Destination Clicked!');
 		console.log('User Coordinates: ' + userCoordinates)
 	}
-	/* Returns object LatLng from address input string */
+	/* Centers MapView to address coordinate location */
 	centerMapOnAddress(address) {
 		var geocoder = new google.maps.Geocoder();
 		geocoder.geocode( { 'address': address }, (results, status) => {
@@ -60,7 +60,7 @@ class Home extends Component {
 	        		mapTypeId: 'roadmap'
 				}
 				let map = new google.maps.Map(document.getElementById('map'), mapOptions);
-			} else {
+			} else if (status == 'OK' && address.length <= 5) {
 				var mapOptions = {
 					center: new google.maps.LatLng(34.020442, -118.501748),
 	        		zoom: 12,
