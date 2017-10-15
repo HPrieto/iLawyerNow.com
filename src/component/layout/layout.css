@@ -126,6 +126,18 @@
 	height: 500px;
 }
 
+.map-section-input {
+	width: 100%;
+	border-style: solid !important;
+	border-width: 0.1em !important;
+	border-color: #CECECE !important;
+}
+
+.form-userlocation {
+	border-radius: 0;
+	border: none;
+}
+
 .footer-section {
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -232,12 +244,18 @@
 	.footer-top h1 {
 		font-size: 1.2em;
 	}
+	.map-section-input {
+		width: 100% !important;
+	}
 }
 
 /* GRID sm -> med */
 @media screen and (min-width: 576px) and (max-width: 768px) {
 	.footer-top h1 {
 		font-size: 1.0em;
+	}
+	.map-section-input {
+		width: 60%;
 	}
 }
 
@@ -253,8 +271,8 @@
 	.map-section-txt h3 {
 		padding-top: 15px !important;
 	}
-	.map-section-txt h2 {
-		padding-bottom: 15px !important;
+	.map-section-input {
+		margin-bottom: 30px !important;
 	}
 }
 
