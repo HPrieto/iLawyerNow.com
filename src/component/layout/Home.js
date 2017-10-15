@@ -60,7 +60,7 @@ class Home extends Component {
 				</div>
 				<div className="row" style={{backgroundColor: 'white'}}>
 					<div className='container row-container product-section'>
-						<div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-colrow" style={{margin: 0,padding: 0}}>
+						<div className="zero-padding zero-margin col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-colrow" style={{margin: 0,padding: 0}}>
 							<div className="col-xs-12 col-sm-3 col-md-12 col-lg-12">
 								<img src={require('../img/oath_icon.png')}/>
 							</div>
@@ -71,7 +71,7 @@ class Home extends Component {
 								Ut enim ad minim veniam.</p>
 							</div>
 						</div>
-						<div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-colrow" style={{margin: 0,padding: 0}}>
+						<div className="zero-padding zero-margin col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-colrow" style={{margin: 0,padding: 0}}>
 							<div className="col-xs-12 col-sm-3 col-md-12 col-lg-12">
 								<img src={require('../img/court_icon.png')}/>
 							</div>
@@ -82,7 +82,7 @@ class Home extends Component {
 								Ut enim ad minim veniam.</p>
 							</div>
 						</div>
-						<div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-colrow" style={{margin: 0,padding: 0}}>
+						<div className="zero-padding zero-margin col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-colrow" style={{margin: 0,padding: 0}}>
 							<div className="col-xs-12 col-sm-3 col-md-12 col-lg-12">
 								<img src={require('../img/book_icon.png')}/>
 							</div>

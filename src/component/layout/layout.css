@@ -263,30 +263,30 @@
 /* GRID xs -> lg */
 @media screen and (max-width: 769px) {
 	.map-container {
-		height: 300px;
+		height: 350px;
 	}
 	#map {
 		width: 100%;
-		height: 300px;
+		height: 350px;
 	}
 	.map-section-txt h3 {
-		padding-top: 15px !important;
+		padding-top: 40px !important;
 	}
 	.map-section-input {
-		margin-bottom: 30px !important;
+		margin-bottom: 60px !important;
 	}
 }
 
 /* GRID med -> lg */
 @media screen and (min-width: 769px) and (max-width: 992px) {
 	.map-container {
-		height: 350px;
+		height: 400px;
 		margin-bottom: 20px;
 		padding-right: 10px;
 	}
 	#map {
 		width: 100%;
-		height: 350px;
+		height: 400px;
 		margin: 20px auto;
 	}
 }
@@ -294,7 +294,7 @@
 /* GRID lg -> xl */
 @media screen and (min-width: 993px) and (max-width: 1200px) {
 	.founder-section-txt {
-		margin-top: 50px;
+		margin-top: 75px;
 	}
 	.mission-section h1 {
 		font-size: 2.5em !important;
@@ -350,9 +350,14 @@
 	.founder-section p {
 		font-size: 1.2em !important;
 		line-height: 1.5;
+		margin-top: 20px;
 	}
 	.founder-section-txt button {
-		padding-top: 0px !important;
+		padding-top: 10px !important;
+	}
+	.founder-section-txt {
+		margin-top: 75px;
+		margin-bottom: 50px; 
 	}
 	.footer-member-btn {
 		margin-top: 10px !important;
