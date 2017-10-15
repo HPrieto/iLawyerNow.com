@@ -24,6 +24,7 @@
 	<div id='root'></div>
 	<!-- Google Maps Initialization -->
 	<script type='text/javascript'>
+		var map;
 		/* Initializes mapView object */
 		function myMap() {
 			// Map object specification
@@ -33,7 +34,7 @@
         		mapTypeId: 'roadmap'
 			}
 			// Set map to DOM element
-			var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+			map = new google.maps.Map(document.getElementById("map"), mapOptions);
 		}
 	</script>
 	<!-- webpack optimized package -->

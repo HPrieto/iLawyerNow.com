@@ -21858,19 +21858,22 @@ var Home = function (_Component) {
 
 		_this.state = {
 			form: _react2.default.createElement(_MiniSignupForm2.default, null),
-			userlocation: {
+			userLocation: {
 				address: '',
-				latitude: 0.0,
-				longitude: 0.0
-			}
+				coordinates: null
+			},
+			userMarker: null
 		};
 		_this.updateDimensions.bind(_this);
+		_this.centerMapOnAddress.bind(_this);
 		return _this;
 	}
 
 	_createClass(Home, [{
 		key: 'componentWillMount',
-		value: function componentWillMount() {}
+		value: function componentWillMount() {
+			// Initialize geocoder
+		}
 	}, {
 		key: 'componentDidMount',
 		value: function componentDidMount() {
@@ -21898,13 +21901,43 @@ var Home = function (_Component) {
 		}
 	}, {
 		key: 'onChange',
-		value: function onChange(even) {
-			console.log('Event: ' + event.target.id + ": " + event.target.value);
+		value: function onChange(event) {
+			console.log('Event: ' + event.target.id + ' changing!');
 		}
+		/* Handles address input change event */
+
+	}, {
+		key: 'onAddressChange',
+		value: function onAddressChange(event) {
+			var address = event.target.value;
+			this.centerMapOnAddress(address);
+		}
+		/* Handles location icon click event */
+
 	}, {
 		key: 'destinationClicked',
 		value: function destinationClicked(event) {
-			console.log('Event: ' + event.target.id);
+			console.log('Destination Clicked!');
+			console.log('User Coordinates: ' + userCoordinates);
+		}
+		/* Returns object LatLng from address input string */
+
+	}, {
+		key: 'centerMapOnAddress',
+		value: function centerMapOnAddress(address) {
+			var geocoder = new google.maps.Geocoder();
+			geocoder.geocode({ 'address': address }, function (results, status) {
+				if (status == 'OK') {
+					var coordinates = results[0].geometry.location;
+					var mapOptions = {
+						center: coordinates,
+						zoom: 12,
+						mapTypeId: 'roadmap'
+					};
+					var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+					map.setCenter(coordinates);
+				}
+			});
 		}
 	}, {
 		key: 'render',
@@ -22095,7 +22128,7 @@ var Home = function (_Component) {
 								_react2.default.createElement(
 									'div',
 									{ className: 'col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 zero-padding zero-margin' },
-									_react2.default.createElement('input', { type: 'text', placeholder: 'Enter your location', id: 'userlocation', className: 'form-control form-userlocation form-input', onChange: this.onChange.bind(this) })
+									_react2.default.createElement('input', { type: 'text', placeholder: 'Enter your location', id: 'userlocation', className: 'form-control form-userlocation form-input', onChange: this.onAddressChange.bind(this) })
 								),
 								_react2.default.createElement(
 									'div',

@@ -11,15 +11,17 @@ class Home extends Component {
 		super()
 		this.state = {
 			form: <MiniSignupForm />,
-			userlocation: {
+			userLocation: {
 				address: '',
-				latitude: 0.0,
-				longitude: 0.0
-			}
+				coordinates: null
+			},
+			userMarker: null
 		}
 		this.updateDimensions.bind(this);
+		this.centerMapOnAddress.bind(this);
 	}
 	componentWillMount() {
+		// Initialize geocoder
 	}
 	componentDidMount() {
 		this.updateDimensions();
@@ -38,11 +40,34 @@ class Home extends Component {
 	onClick(event) {
 		console.log('Event: ' + event.target.id + " clicked!")
 	}
-	onChange(even) {
-		console.log('Event: ' + event.target.id + ": " + event.target.value)
+	onChange(event) {
+		console.log('Event: ' + event.target.id + ' changing!')
 	}
+	/* Handles address input change event */
+	onAddressChange(event) {
+		let address = event.target.value;
+		this.centerMapOnAddress(address);
+	}
+	/* Handles location icon click event */
 	destinationClicked(event) {
-		console.log('Event: ' + event.target.id)
+		console.log('Destination Clicked!');
+		console.log('User Coordinates: ' + userCoordinates)
+	}
+	/* Returns object LatLng from address input string */
+	centerMapOnAddress(address) {
+		var geocoder = new google.maps.Geocoder();
+		geocoder.geocode( { 'address': address }, (results, status) => {
+			if (status == 'OK') {
+				let coordinates = results[0].geometry.location;
+				var mapOptions = {
+					center: coordinates,
+	        		zoom: 12,
+	        		mapTypeId: 'roadmap'
+				}
+				let map = new google.maps.Map(document.getElementById('map'), mapOptions);
+				map.setCenter(coordinates);
+			}
+		})
 	}
 	render() {
 		let tanColor = '#F7F7F8';
@@ -124,7 +149,7 @@ class Home extends Component {
 							<h2>Attorneys, anywhere</h2>
 							<div className='map-section-input col-xs-12 col-sm-8 col-md-8 zero-margin zero-padding'>
 								<div className='col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 zero-padding zero-margin'>
-									<input type='text' placeholder="Enter your location" id='userlocation' className='form-control form-userlocation form-input' onChange={this.onChange.bind(this)} />
+									<input type='text' placeholder="Enter your location" id='userlocation' className='form-control form-userlocation form-input' onChange={this.onAddressChange.bind(this)} />
 								</div>
 								<div className='col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 zero-padding zero-margin'>
 									<span id='userlocation' onClick={this.destinationClicked.bind(this)} className="input-group-addon" style={{border: 'none', height: 50, backgroundColor: 'white', color: '#C6C6C6', fontSize: '1.5em'}}><i className="glyphicon glyphicon-map-marker"></i></span>
