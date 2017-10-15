@@ -21922,7 +21922,7 @@ var Home = function (_Component) {
 		value: function centerMapOnAddress(address) {
 			var geocoder = new google.maps.Geocoder();
 			geocoder.geocode({ 'address': address }, function (results, status) {
-				if (status == 'OK') {
+				if (status == 'OK' && address.length > 5) {
 					var coordinates = results[0].geometry.location;
 					var mapOptions = {
 						center: coordinates,
@@ -21930,7 +21930,13 @@ var Home = function (_Component) {
 						mapTypeId: 'roadmap'
 					};
 					var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-					map.setCenter(coordinates);
+				} else {
+					var mapOptions = {
+						center: new google.maps.LatLng(34.020442, -118.501748),
+						zoom: 12,
+						mapTypeId: 'roadmap'
+					};
+					var _map = new google.maps.Map(document.getElementById('map'), mapOptions);
 				}
 			});
 		}
