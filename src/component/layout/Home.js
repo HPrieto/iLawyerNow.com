@@ -42,7 +42,7 @@ class Home extends Component {
 		console.log('Event: ' + event.target.id + ": " + event.target.value)
 	}
 	destinationClicked(event) {
-		console.log('Event: ' + event.target.id + ": " + event.target.value)
+		console.log('Event: ' + event.target.id)
 	}
 	render() {
 		let tanColor = '#F7F7F8';
@@ -124,10 +124,10 @@ class Home extends Component {
 							<h2>Attorneys, anywhere</h2>
 							<div className='map-section-input col-xs-12 col-sm-8 col-md-8 zero-margin zero-padding'>
 								<div className='col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 zero-padding zero-margin'>
-									<input type='text' placeholder="Enter location" id='userlocation' className='form-control form-userlocation form-input' onChange={this.onChange.bind(this)} />
+									<input type='text' placeholder="Enter your location" id='userlocation' className='form-control form-userlocation form-input' onChange={this.onChange.bind(this)} />
 								</div>
 								<div className='col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 zero-padding zero-margin'>
-									<span onClick={this.destinationClicked.bind(this)} className="input-group-addon" style={{border: 'none', height: 50, backgroundColor: '#C6C6C6', color: 'white', fontSize: '1.5em'}}><i className="glyphicon glyphicon-menu-right"></i></span>
+									<span id='userlocation' onClick={this.destinationClicked.bind(this)} className="input-group-addon" style={{border: 'none', height: 50, backgroundColor: '#C6C6C6', color: 'white', fontSize: '1.5em'}}><i className="glyphicon glyphicon-menu-right"></i></span>
 								</div>
 							</div>
 						</div>

@@ -112,6 +112,7 @@
 	margin-top: 0;
 	font-family: 'Ubuntu';
 	font-weight: 300;
+	padding-bottom: 15px !important;
 }
 
 .map-section-txt h3 {
