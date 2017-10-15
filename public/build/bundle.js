@@ -21857,7 +21857,12 @@ var Home = function (_Component) {
 		var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this));
 
 		_this.state = {
-			form: _react2.default.createElement(_MiniSignupForm2.default, null)
+			form: _react2.default.createElement(_MiniSignupForm2.default, null),
+			userlocation: {
+				address: '',
+				latitude: 0.0,
+				longitude: 0.0
+			}
 		};
 		_this.updateDimensions.bind(_this);
 		return _this;
@@ -22090,7 +22095,7 @@ var Home = function (_Component) {
 								_react2.default.createElement(
 									'div',
 									{ className: 'col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 zero-padding zero-margin' },
-									_react2.default.createElement('input', { type: 'text', placeholder: 'Enter location', id: 'userlocation', className: 'form-control form-userlocation form-input zero-padding', onChange: this.onChange.bind(this) })
+									_react2.default.createElement('input', { type: 'text', placeholder: 'Enter location', id: 'userlocation', className: 'form-control form-userlocation form-input', onChange: this.onChange.bind(this) })
 								),
 								_react2.default.createElement(
 									'div',
