@@ -10,12 +10,7 @@ class Home extends Component {
 	constructor() {
 		super()
 		this.state = {
-			form: <MiniSignupForm />,
-			userLocation: {
-				address: '',
-				coordinates: null
-			},
-			userMarker: null
+			form: <MiniSignupForm />
 		}
 		this.updateDimensions.bind(this);
 		this.centerMapOnAddress.bind(this);

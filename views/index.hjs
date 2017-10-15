@@ -29,7 +29,7 @@
 		function myMap() {
 			// Map object specification
 			var mapOptions = {
-				center: new google.maps.LatLng(34.111603, -117.531065),
+				center: new google.maps.LatLng(34.020442, -118.501748),
         		zoom: 12,
         		mapTypeId: 'roadmap'
 			}
