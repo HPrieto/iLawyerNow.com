@@ -13,29 +13,64 @@
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
 	<!-- Lato font CDN -->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <!-- Navbar Hamburger Animation CDN -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300' rel='stylesheet' type='text/css'>
+    <!-- inline CSS -->
     <style type="text/css" media="screen">
         body {
           background-color: #E1E1E0;
         }
+        html {
+		    -ms-text-size-adjust: 100%;
+		    -webkit-text-size-adjust: 100%
+		}
     </style>
 </head>
 <body>
 	<!-- React Code Starting div -->
 	<div id='root'></div>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<!-- Google Maps Initialization -->
 	<script type='text/javascript'>
 		var map;
-		/* Initializes mapView object */
 		function myMap() {
-			// Map object specification
 			var mapOptions = {
 				center: new google.maps.LatLng(34.020442, -118.501748),
         		zoom: 12,
         		mapTypeId: 'roadmap'
 			}
-			// Set map to DOM element
 			map = new google.maps.Map(document.getElementById("map"), mapOptions);
 		}
+		/* Navbar Hamburger Animation JS */
+		$(document).ready(function(){
+			var Menu = {
+			  el: {
+			    ham: $('.menu'),
+			    menuTop: $('.menu-top'),
+			    menuMiddle: $('.menu-middle'),
+			    menuBottom: $('.menu-bottom')
+			  },
+			  init: function() {
+			    Menu.bindUIactions();
+			  },
+			  bindUIactions: function() {
+			    Menu.el.ham
+			        .on(
+			          'click',
+			        function(event) {
+			        Menu.activateMenu(event);
+			        event.preventDefault();
+			      }
+			    );
+			  },
+			  activateMenu: function() {
+			    Menu.el.menuTop.toggleClass('menu-top-click');
+			    Menu.el.menuMiddle.toggleClass('menu-middle-click');
+			    Menu.el.menuBottom.toggleClass('menu-bottom-click'); 
+			  }
+			};
+			Menu.init();
+		});
 	</script>
 	<!-- webpack optimized package -->
     <script type='text/javascript' src='/build/bundle.js'></script>

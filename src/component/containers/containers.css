@@ -195,7 +195,8 @@ demi white: #f8f8f9;
 	margin: 0 auto;
 }
 
-.home-navbar-btn {
+#home-navbar-collapse {
+	color: black;
 	font-family: 'Ubuntu' !important;
 	border-radius: 0;
 }
@@ -218,7 +219,12 @@ demi white: #f8f8f9;
 	color: black;
 }
 
-.btn-lawyer {
+.icon-bar {
+	color: black;
+	background-color: black;
+}
+
+.home-navbar-green-btn {
 	font-family: 'Ubuntu' !important;
 	font-size: 0.95em;
 	font-weight: lighter;
@@ -231,17 +237,12 @@ demi white: #f8f8f9;
 	border-radius: 0!important;
 }
 
-.btn-lawyer:hover {
+.home-navbar-green-btn: hover {
 	background-color: #306130!important;
 	color: white !important;
 }
 
-.navbar-right {
-	margin-top: 0;
-	padding-top: 0;
-}
-
-.navbtn-right {
+#home-navbar-collapse ul {
 	font-weight: medium;
 	font-size: 1.1em;
 	margin-top: 0!important;
@@ -318,3 +319,46 @@ demi white: #f8f8f9;
 		width: 90%;
 	}
 }
+
+/* Navbar Animation CSS */
+.menu {
+  cursor: pointer;
+  margin: 0 auto;
+  padding-left: 1.25em;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+.menu-global {
+  backface-visibility: hidden;
+  position: absolute;
+  left: 0;
+  border-top: 2px solid black;
+  width: 60%;
+  transition: 0.55s;
+}
+.menu-top {
+  top: 20px;
+}
+.menu-middle {
+  top: 25px;
+}
+.menu-bottom {
+  top: 30px;
+}
+.menu-top-click {
+  backface-visibility: hidden;
+  top: 25px;
+  transform: rotate(50deg);
+  transition: 0.55s 0.5s;
+}
+.menu-middle-click {
+  opacity: 0;
+}
+.menu-bottom-click {
+  backface-visibility: hidden;
+  top: 25px;
+  transform: rotate(-410deg);
+  transition: 0.55s 0.5s;
+}
+/* Navbar Animation CSS END */

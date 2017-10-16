@@ -1486,9 +1486,64 @@ var Navbar = function (_React$Component) {
 						'div',
 						{ className: 'navbar-header' },
 						_react2.default.createElement(
+							'div',
+							{ className: 'navbar-toggle menu', 'data-toggle': 'collapse', 'data-target': '#home-navbar-collapse', id: 'nav-icon4' },
+							_react2.default.createElement('span', { className: 'menu-global menu-top' }),
+							_react2.default.createElement('span', { className: 'menu-global menu-middle' }),
+							_react2.default.createElement('span', { className: 'menu-global menu-bottom' })
+						),
+						_react2.default.createElement(
 							'a',
 							{ className: 'navbar-brand home-navbar-brand' },
 							'iLAWYER'
+						)
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'collapse navbar-collapse', id: 'home-navbar-collapse' },
+						_react2.default.createElement(
+							'ul',
+							{ className: 'nav navbar-nav' },
+							_react2.default.createElement(
+								'li',
+								null,
+								_react2.default.createElement(
+									'a',
+									null,
+									'Member'
+								)
+							),
+							_react2.default.createElement(
+								'li',
+								null,
+								_react2.default.createElement(
+									'a',
+									null,
+									'Attorney'
+								)
+							)
+						),
+						_react2.default.createElement(
+							'ul',
+							{ className: 'nav navbar-nav navbar-right' },
+							_react2.default.createElement(
+								'li',
+								null,
+								_react2.default.createElement(
+									'a',
+									null,
+									'HELP'
+								)
+							),
+							_react2.default.createElement(
+								'li',
+								null,
+								_react2.default.createElement(
+									'a',
+									null,
+									'SIGN IN'
+								)
+							)
 						)
 					)
 				)
@@ -21822,9 +21877,7 @@ var Home = function (_Component) {
 
 	_createClass(Home, [{
 		key: 'componentWillMount',
-		value: function componentWillMount() {
-			// Initialize geocoder
-		}
+		value: function componentWillMount() {}
 	}, {
 		key: 'componentDidMount',
 		value: function componentDidMount() {
@@ -22574,7 +22627,7 @@ exports = module.exports = __webpack_require__(10)(undefined);
 
 
 // module
-exports.push([module.i, ".signup-lawyer-form-container {\n\twidth: 425px;\n\theight: 850px;\n\tbackground-color: #F8F8F9;\n\tposition: absolute;\n\tmargin-top: 100px;\n\tright: 5%;\n\tborder-radius: 0;\n}\n\n.form-padding-container {\n\twidth: 95%;\n\theight: 90%;\n\tposition: relative;\n\tbackground-color: #F8F8F9;\n\tmargin: 0 auto;\n}\n\n.form-header-row {\n\ttext-align: left;\n}\n\n.form-padding-container h1 {\n\tfont-weight: 300;\n\tfont-size: 1.9em;\n\tmargin-top: 50px;\n\tmargin-left: -10%;\n}\n\n.form-padding-container button {\n\tmargin-left: -10%;\n\tcolor: #377037;\n\tbackground-color: transparent;\n\tborder: none;\n\tpadding: 0;\n\tfont-weight: 400;\n\tfont-size: 1.1em;\n}\n\n.signup-form-button: hover {\n\tcolor: #285228;\n}\n\n.electronics-icon {\n\twidth: 64px;\n\theight: 64px;\n\tposition: relative;\n\tmargin: 0 auto;\n\tmargin-top: 50%;\n}\n\n.separator {\n\tmargin-top: 15px;\n    display: flex;\n    align-items: center;\n    text-align: center;\n    color: #CECECE;\n    padding-left: 20px;\n    padding-right: 20px;\n    font-size: 0.9em;\n}\n\n.separator::before, .separator::after {\n    content: '';\n    flex: 1;\n    border-bottom: 1px solid #CECECE;\n}\n\n.separator::before {\n    margin-right: .25em;\n}\n\n.separator::after {\n    margin-left: .25em;\n}\n\n.signup-form-container {\n\tpadding-top: 0;\n\tmargin-top: -20px;\n}\n\n.signup-form-container h1 {\n\ttext-align: left;\n\tmargin-left: -10%;\n}\n\n.agree-icon {\n\twidth: 64px;\n\theight: 64px;\n\tposition: relative;\n\tmargin: 30% auto;\n}\n\n.signup-form {\n\twidth: 100%;\n}\n\n.signup-form:placeholder-shown {\n\tcolor: #CECECE;\n}\n\n.form-input {\n\theight: 50px;\n\tfont-size: 1.1em;\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300;\n\t/* color: #CECECE; */\n\tcolor: black;\n\tborder-color: #CECECE !important;\n}\n\n.form-fname {\n\tmargin-left: 35px;\n\twidth: 170px !important;\n}\n\n.form-lname {\n\tmargin-left: -15px;\n\twidth: 170px !important;\n}\n\n.form-input:focus {\n\tborder-color: #CECECE;\n\tbox-shadow: none;\n}\n\n.signup-row {\n\tmargin-top: 20px;\n\tmargin-left: 20px;\n\twidth: 368px;\n}\n\n.signup-btn {\n\tbackground-color: #377037 !important;\n\twidth: 335px !important;\n\tmargin-top: 20px;\n\tmargin-left: 37px !important;\n\theight: 50px;\n\ttext-align: left;\n\tcolor: #F8F8F9 !important;\n\tpadding-left: 15px !important;\n\tfont-size: 0.8em;\n\tborder-radius: 0;\n}\n\n.signup-form p {\n\ttext-align: left;\n\tmargin-left: 35px;\n\twidth: 340px;\n}\n\n.signup-text {\n\tmargin-top: 20px;\n}\n\n.signup-text a {\n\tcolor: #377037;\n}\n\n.signup-tag:hover {\n\ttext-decoration: none;\n\tcursor: pointer;\n}\n\n.disclaimer {\n\tfont-size: 0.8em;\n}\n\n/* GRID xl -> beyond */\n@media screen and (min-width: 1201px) {\n\t.signup-lawyer-form-container {\n\t\twidth: 425px;\n\t\theight: 850px;\n\t\tbackground-color: #F8F8F9;\n\t\tposition: absolute;\n\t\tmargin-top: 100px;\n\t\tright: 10%;\n\t}\n}\n\n/* \ngrey border color: #CECECE;\nform grey background : #F8F8F9;\nform dark grey : #F1F1F1;\ngreen button light: #377037\ngreen button dark: #285228;\nlight grey: #C6C6C6;\nmed grey: #939393;\ndemi white: #f8f8f9;\n*/\n\n.home-navbar {\n\twidth: 170vh;\n\tbackground-color: white;\n\tmargin: 0 auto;\n}\n\n.home-navbar-btn {\n\tfont-family: 'Ubuntu' !important;\n\tborder-radius: 0;\n}\n\n.home-navbar-brand {\n\tcolor:black;\n\tfont-family: 'Ubuntu';\n\tfont-size: 1.5em;\n\tfont-weight: 500;\n\tletter-spacing: 0px;\n\tmargin-top: 5px;\n\tcursor: pointer;\n}\n\n.home-navbar-brand:hover {\n\tcolor: black;\n}\n\n.home-navbar-brand:focus {\n\tcolor: black;\n}\n\n.btn-lawyer {\n\tfont-family: 'Ubuntu' !important;\n\tfont-size: 0.95em;\n\tfont-weight: lighter;\n\tpadding-top: 10px;\n\tpadding-bottom: 10px;\n\tmargin-top: 5px;\n\tmargin-left: 20px;\n\tbackground-color: #377037;\n\tcolor: white;\n\tborder-radius: 0!important;\n}\n\n.btn-lawyer:hover {\n\tbackground-color: #306130!important;\n\tcolor: white !important;\n}\n\n.navbar-right {\n\tmargin-top: 0;\n\tpadding-top: 0;\n}\n\n.navbtn-right {\n\tfont-weight: medium;\n\tfont-size: 1.1em;\n\tmargin-top: 0!important;\n\tmargin-right: 5px;\n}\n\n.navbtn-left {\n\tfont-weight: lighter;\n\tfont-size: 1.2em;\n\tmargin-top: 0!important;\n\tmargin-left: 10px;\n}\n\n.home-navbar-btn {\n\tpadding: 14px 5px 10px 5px;\n\tborder-top-color: transparent;\n\tborder-top-width: 4px;\n\tborder-right: none;\n\tborder-left: none;\n\tborder-bottom: none;\n}\n\n.home-navbar-btn:hover {\n\tborder-top-color: #377037;\n\tcolor: #377037;\n\tbackground-color: transparent;\n\theight: 100%!important;\n}\n\n.home-navbar-btn:focus {\n\toutline: none !important;\n\tbox-shadow: none !important;\n\tbackground-color: transparent;\n\tborder-color: #265328;\n\tcolor: #265328;\n}\n\n@media screen and (max-width: 1655px) {\n\t.home-navbar {\n\t\twidth: 100% !important;\n\t}\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) {\n\t.home-navbar-container {\n\t\twidth: 95% !important;\n\t}\n}\n\n/* GRID sm -> med */\n@media screen and (min-width: 576px) and (max-width: 768px) {\n}\n\n@media screen and (min-width: 576px) and (max-width: 992px) {\n\t.home-navbar-container {\n\t\twidth: 90% !important;\n\t}\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 769px) and (max-width: 992px) {\n}\n\n/* GRID lg -> xl */\n@media screen and (min-width: 993px) and (max-width: 1200px) {\n\t.home-navbar-container {\n\t\twidth: 90% !important;\n\t}\n}\n\n@media screen and (min-width: 1201px) {\n\t.home-navbar-container {\n\t\twidth: 90%;\n\t}\n}", ""]);
+exports.push([module.i, ".signup-lawyer-form-container {\n\twidth: 425px;\n\theight: 850px;\n\tbackground-color: #F8F8F9;\n\tposition: absolute;\n\tmargin-top: 100px;\n\tright: 5%;\n\tborder-radius: 0;\n}\n\n.form-padding-container {\n\twidth: 95%;\n\theight: 90%;\n\tposition: relative;\n\tbackground-color: #F8F8F9;\n\tmargin: 0 auto;\n}\n\n.form-header-row {\n\ttext-align: left;\n}\n\n.form-padding-container h1 {\n\tfont-weight: 300;\n\tfont-size: 1.9em;\n\tmargin-top: 50px;\n\tmargin-left: -10%;\n}\n\n.form-padding-container button {\n\tmargin-left: -10%;\n\tcolor: #377037;\n\tbackground-color: transparent;\n\tborder: none;\n\tpadding: 0;\n\tfont-weight: 400;\n\tfont-size: 1.1em;\n}\n\n.signup-form-button: hover {\n\tcolor: #285228;\n}\n\n.electronics-icon {\n\twidth: 64px;\n\theight: 64px;\n\tposition: relative;\n\tmargin: 0 auto;\n\tmargin-top: 50%;\n}\n\n.separator {\n\tmargin-top: 15px;\n    display: flex;\n    align-items: center;\n    text-align: center;\n    color: #CECECE;\n    padding-left: 20px;\n    padding-right: 20px;\n    font-size: 0.9em;\n}\n\n.separator::before, .separator::after {\n    content: '';\n    flex: 1;\n    border-bottom: 1px solid #CECECE;\n}\n\n.separator::before {\n    margin-right: .25em;\n}\n\n.separator::after {\n    margin-left: .25em;\n}\n\n.signup-form-container {\n\tpadding-top: 0;\n\tmargin-top: -20px;\n}\n\n.signup-form-container h1 {\n\ttext-align: left;\n\tmargin-left: -10%;\n}\n\n.agree-icon {\n\twidth: 64px;\n\theight: 64px;\n\tposition: relative;\n\tmargin: 30% auto;\n}\n\n.signup-form {\n\twidth: 100%;\n}\n\n.signup-form:placeholder-shown {\n\tcolor: #CECECE;\n}\n\n.form-input {\n\theight: 50px;\n\tfont-size: 1.1em;\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300;\n\t/* color: #CECECE; */\n\tcolor: black;\n\tborder-color: #CECECE !important;\n}\n\n.form-fname {\n\tmargin-left: 35px;\n\twidth: 170px !important;\n}\n\n.form-lname {\n\tmargin-left: -15px;\n\twidth: 170px !important;\n}\n\n.form-input:focus {\n\tborder-color: #CECECE;\n\tbox-shadow: none;\n}\n\n.signup-row {\n\tmargin-top: 20px;\n\tmargin-left: 20px;\n\twidth: 368px;\n}\n\n.signup-btn {\n\tbackground-color: #377037 !important;\n\twidth: 335px !important;\n\tmargin-top: 20px;\n\tmargin-left: 37px !important;\n\theight: 50px;\n\ttext-align: left;\n\tcolor: #F8F8F9 !important;\n\tpadding-left: 15px !important;\n\tfont-size: 0.8em;\n\tborder-radius: 0;\n}\n\n.signup-form p {\n\ttext-align: left;\n\tmargin-left: 35px;\n\twidth: 340px;\n}\n\n.signup-text {\n\tmargin-top: 20px;\n}\n\n.signup-text a {\n\tcolor: #377037;\n}\n\n.signup-tag:hover {\n\ttext-decoration: none;\n\tcursor: pointer;\n}\n\n.disclaimer {\n\tfont-size: 0.8em;\n}\n\n/* GRID xl -> beyond */\n@media screen and (min-width: 1201px) {\n\t.signup-lawyer-form-container {\n\t\twidth: 425px;\n\t\theight: 850px;\n\t\tbackground-color: #F8F8F9;\n\t\tposition: absolute;\n\t\tmargin-top: 100px;\n\t\tright: 10%;\n\t}\n}\n\n/* \ngrey border color: #CECECE;\nform grey background : #F8F8F9;\nform dark grey : #F1F1F1;\ngreen button light: #377037\ngreen button dark: #285228;\nlight grey: #C6C6C6;\nmed grey: #939393;\ndemi white: #f8f8f9;\n*/\n\n.home-navbar {\n\twidth: 170vh;\n\tbackground-color: white;\n\tmargin: 0 auto;\n}\n\n#home-navbar-collapse {\n\tcolor: black;\n\tfont-family: 'Ubuntu' !important;\n\tborder-radius: 0;\n}\n\n.home-navbar-brand {\n\tcolor:black;\n\tfont-family: 'Ubuntu';\n\tfont-size: 1.5em;\n\tfont-weight: 500;\n\tletter-spacing: 0px;\n\tmargin-top: 5px;\n\tcursor: pointer;\n}\n\n.home-navbar-brand:hover {\n\tcolor: black;\n}\n\n.home-navbar-brand:focus {\n\tcolor: black;\n}\n\n.icon-bar {\n\tcolor: black;\n\tbackground-color: black;\n}\n\n.home-navbar-green-btn {\n\tfont-family: 'Ubuntu' !important;\n\tfont-size: 0.95em;\n\tfont-weight: lighter;\n\tpadding-top: 10px;\n\tpadding-bottom: 10px;\n\tmargin-top: 5px;\n\tmargin-left: 20px;\n\tbackground-color: #377037;\n\tcolor: white;\n\tborder-radius: 0!important;\n}\n\n.home-navbar-green-btn: hover {\n\tbackground-color: #306130!important;\n\tcolor: white !important;\n}\n\n#home-navbar-collapse ul {\n\tfont-weight: medium;\n\tfont-size: 1.1em;\n\tmargin-top: 0!important;\n\tmargin-right: 5px;\n}\n\n.navbtn-left {\n\tfont-weight: lighter;\n\tfont-size: 1.2em;\n\tmargin-top: 0!important;\n\tmargin-left: 10px;\n}\n\n.home-navbar-btn {\n\tpadding: 14px 5px 10px 5px;\n\tborder-top-color: transparent;\n\tborder-top-width: 4px;\n\tborder-right: none;\n\tborder-left: none;\n\tborder-bottom: none;\n}\n\n.home-navbar-btn:hover {\n\tborder-top-color: #377037;\n\tcolor: #377037;\n\tbackground-color: transparent;\n\theight: 100%!important;\n}\n\n.home-navbar-btn:focus {\n\toutline: none !important;\n\tbox-shadow: none !important;\n\tbackground-color: transparent;\n\tborder-color: #265328;\n\tcolor: #265328;\n}\n\n@media screen and (max-width: 1655px) {\n\t.home-navbar {\n\t\twidth: 100% !important;\n\t}\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) {\n\t.home-navbar-container {\n\t\twidth: 95% !important;\n\t}\n}\n\n/* GRID sm -> med */\n@media screen and (min-width: 576px) and (max-width: 768px) {\n}\n\n@media screen and (min-width: 576px) and (max-width: 992px) {\n\t.home-navbar-container {\n\t\twidth: 90% !important;\n\t}\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 769px) and (max-width: 992px) {\n}\n\n/* GRID lg -> xl */\n@media screen and (min-width: 993px) and (max-width: 1200px) {\n\t.home-navbar-container {\n\t\twidth: 90% !important;\n\t}\n}\n\n@media screen and (min-width: 1201px) {\n\t.home-navbar-container {\n\t\twidth: 90%;\n\t}\n}\n\n/* Navbar Animation CSS */\n.menu {\n  cursor: pointer;\n  margin: 0 auto;\n  padding-left: 1.25em;\n  position: relative;\n  width: 40px;\n  height: 40px;\n}\n.menu-global {\n  backface-visibility: hidden;\n  position: absolute;\n  left: 0;\n  border-top: 2px solid black;\n  width: 60%;\n  transition: 0.55s;\n}\n.menu-top {\n  top: 20px;\n}\n.menu-middle {\n  top: 25px;\n}\n.menu-bottom {\n  top: 30px;\n}\n.menu-top-click {\n  backface-visibility: hidden;\n  top: 25px;\n  transform: rotate(50deg);\n  transition: 0.55s 0.5s;\n}\n.menu-middle-click {\n  opacity: 0;\n}\n.menu-bottom-click {\n  backface-visibility: hidden;\n  top: 25px;\n  transform: rotate(-410deg);\n  transition: 0.55s 0.5s;\n}\n/* Navbar Animation CSS END */", ""]);
 
 // exports
 

@@ -16,7 +16,6 @@ class Home extends Component {
 		this.centerMapOnAddress.bind(this);
 	}
 	componentWillMount() {
-		// Initialize geocoder
 	}
 	componentDidMount() {
 		this.updateDimensions();
