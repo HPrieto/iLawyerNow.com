@@ -29,7 +29,8 @@
 <body>
 	<!-- React Code Starting div -->
 	<div id='root'></div>
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<!-- jQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- Google Maps Initialization -->
 	<script type='text/javascript'>
 		var map;
@@ -74,8 +75,6 @@
 	</script>
 	<!-- webpack optimized package -->
     <script type='text/javascript' src='/build/bundle.js'></script>
-	<!-- jQuery CDN -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- Bootstrap CDN -->
 	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
 	<!-- Google Maps JavaScript Library -->
