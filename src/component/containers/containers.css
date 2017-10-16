@@ -348,7 +348,7 @@ demi white: #f8f8f9;
 }
 .menu-top-click {
   backface-visibility: hidden;
-  top: 25px;
+  top: 30px;
   transform: rotate(50deg);
   transition: 0.55s 0.5s;
 }
@@ -357,7 +357,7 @@ demi white: #f8f8f9;
 }
 .menu-bottom-click {
   backface-visibility: hidden;
-  top: 25px;
+  top: 30px;
   transform: rotate(-410deg);
   transition: 0.55s 0.5s;
 }
