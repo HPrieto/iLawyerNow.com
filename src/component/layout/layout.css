@@ -363,17 +363,25 @@
 		margin-top: 10px !important;
 	}
 	.footer-top {
-		padding-bottom:125px !important;
+		padding-bottom:115px !important;
 		padding-top: 25px !important;
 	}
 	.footer-bottom {
-		padding-top: 50px !important;
+		padding-top: 30px !important;
 		padding-bottom: 50px !important;
 	}
 }
 
 /* mid -> beyond */
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 993px) {
+	.footer-top {
+		padding-bottom:75px !important;
+		padding-top: 50px !important;
+	}
+	.footer-bottom {
+		padding-top: 40px !important;
+		padding-bottom: 75px !important;
+	}
 }
 
 /* mid -> large */
