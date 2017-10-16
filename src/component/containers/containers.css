@@ -338,13 +338,13 @@ demi white: #f8f8f9;
   transition: 0.55s;
 }
 .menu-top {
-  top: 20px;
-}
-.menu-middle {
   top: 25px;
 }
-.menu-bottom {
+.menu-middle {
   top: 30px;
+}
+.menu-bottom {
+  top: 35px;
 }
 .menu-top-click {
   backface-visibility: hidden;
