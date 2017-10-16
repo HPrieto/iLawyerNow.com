@@ -190,6 +190,7 @@ demi white: #f8f8f9;
 */
 
 .home-navbar {
+	min-width: 200px;
 	width: 170vh;
 	background-color: white;
 	margin: 0 auto;
@@ -334,7 +335,7 @@ demi white: #f8f8f9;
   position: absolute;
   left: 0;
   border-top: 2px solid black;
-  width: 60%;
+  width: 55%;
   transition: 0.55s;
 }
 .menu-top {
