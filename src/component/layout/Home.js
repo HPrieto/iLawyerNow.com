@@ -149,7 +149,7 @@ class Home extends Component {
 							<h3>Pricing</h3>
 							<h2>Attorneys, anywhere</h2>
 							<div className='map-section-input col-xs-12 col-sm-8 col-md-8'>
-								<div className='col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10'>
+								<div className='col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 zero-padding'>
 									<input type='text' placeholder="Enter your location" id='userlocation' className='form-control form-userlocation form-input' onChange={this.onAddressChange.bind(this)} />
 								</div>
 								<div className='col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 zero-padding zero-margin'>

@@ -22128,7 +22128,7 @@ var Home = function (_Component) {
 								{ className: 'map-section-input col-xs-12 col-sm-8 col-md-8' },
 								_react2.default.createElement(
 									'div',
-									{ className: 'col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10' },
+									{ className: 'col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 zero-padding' },
 									_react2.default.createElement('input', { type: 'text', placeholder: 'Enter your location', id: 'userlocation', className: 'form-control form-userlocation form-input', onChange: this.onAddressChange.bind(this) })
 								),
 								_react2.default.createElement(
