@@ -166,22 +166,6 @@
 	font-size: 0.8em;
 }
 
-/* GRID xs -> sm */
-@media screen and (max-width: 575px) {
-}
-
-/* GRID sm -> med */
-@media screen and (min-width: 576px) and (max-width: 768px) {
-}
-
-/* GRID med -> lg */
-@media screen and (min-width: 769px) and (max-width: 992px) {
-}
-
-/* GRID lg -> xl */
-@media screen and (min-width: 993px) and (max-width: 1200px) {
-}
-
 /* GRID xl -> beyond */
 @media screen and (min-width: 1201px) {
 	.signup-lawyer-form-container {
@@ -205,31 +189,32 @@ med grey: #939393;
 demi white: #f8f8f9;
 */
 
-.navbar {
+.home-navbar {
+	width: 170vh;
 	background-color: white;
 	margin: 0 auto;
-	width: 100%;
 }
 
-.navbtn {
+.home-navbar-btn {
 	font-family: 'Ubuntu' !important;
 	border-radius: 0;
 }
 
-.navbar-brand {
+.home-navbar-brand {
 	color:black;
-	font-size: 1.5em;
-	font-weight: bold;
 	font-family: 'Ubuntu';
-	letter-spacing: 3px;
+	font-size: 1.5em;
+	font-weight: 500;
+	letter-spacing: 0px;
 	margin-top: 5px;
+	cursor: pointer;
 }
 
-.navbar-brand:hover {
+.home-navbar-brand:hover {
 	color: black;
 }
 
-.navbar-brand:focus {
+.home-navbar-brand:focus {
 	color: black;
 }
 
@@ -270,7 +255,7 @@ demi white: #f8f8f9;
 	margin-left: 10px;
 }
 
-.navbtn {
+.home-navbar-btn {
 	padding: 14px 5px 10px 5px;
 	border-top-color: transparent;
 	border-top-width: 4px;
@@ -279,17 +264,57 @@ demi white: #f8f8f9;
 	border-bottom: none;
 }
 
-.navbtn:hover {
+.home-navbar-btn:hover {
 	border-top-color: #377037;
 	color: #377037;
 	background-color: transparent;
 	height: 100%!important;
 }
 
-.navbtn:focus {
+.home-navbar-btn:focus {
 	outline: none !important;
 	box-shadow: none !important;
 	background-color: transparent;
 	border-color: #265328;
 	color: #265328;
+}
+
+@media screen and (max-width: 1655px) {
+	.home-navbar {
+		width: 100% !important;
+	}
+}
+
+/* GRID xs -> sm */
+@media screen and (max-width: 575px) {
+	.home-navbar-container {
+		width: 95% !important;
+	}
+}
+
+/* GRID sm -> med */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+	.home-navbar-container {
+		width: 90% !important;
+	}
+}
+
+/* GRID med -> lg */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+}
+
+/* GRID lg -> xl */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+	.home-navbar-container {
+		width: 90% !important;
+	}
+}
+
+@media screen and (min-width: 1201px) {
+	.home-navbar-container {
+		width: 90%;
+	}
 }

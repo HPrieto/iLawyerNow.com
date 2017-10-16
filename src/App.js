@@ -9,6 +9,7 @@ class App extends Component {
 	render() {
 		return (
 			<div style={{padding: 0, margin: 0}}>
+				<Navbar />
 				<Home />
 			</div>
 		)
