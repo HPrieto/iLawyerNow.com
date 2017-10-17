@@ -286,7 +286,7 @@ demi white: #f8f8f9;
 /* GRID xs -> sm */
 @media screen and (max-width: 575px) {
 	.home-navbar-container {
-		width: 95% !important;
+		width: 100% !important;
 	}
 }
 
@@ -333,10 +333,10 @@ demi white: #f8f8f9;
 		position: absolute;
 	}
 	.home-navbar-collapse-top {
-		padding-top: 20px !important;
+		padding-top: 25px !important;
 	}
 	.home-navbar-collapse-bottom {
-		padding-bottom: 20px !important;
+		padding-bottom: 25px !important;
 	}
 	.home-navbar-li {
 		margin: 0 auto;
@@ -347,6 +347,9 @@ demi white: #f8f8f9;
 	}
 	.home-navbar-uncollapse-btn {
 		display: none;
+	}
+	#home-collapse-btn-home {
+		padding-top: 45px !important;
 	}
 }
 

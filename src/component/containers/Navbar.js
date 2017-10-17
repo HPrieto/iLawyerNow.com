@@ -16,7 +16,7 @@ class Navbar extends React.Component {
 					</div>
 					<div className='collapse navbar-collapse zero-padding zero-margin' id='home-navbar-collapse'>
 						<ul className='nav navbar-nav zero-padding zero-margin'>
-							<li className='home-navbar-li'><button className='home-navbar-btn home-navbar-btn-left home-navbar-btn-bottom-border home-navbar-collapse-top home-navbar-collapse-bottom home-navbar-collapse-btn'>Home</button></li>
+							<li className='home-navbar-li'><button className='home-navbar-btn home-navbar-btn-left home-navbar-btn-bottom-border home-navbar-collapse-top home-navbar-collapse-bottom home-navbar-collapse-btn' id="home-collapse-btn-home">Home</button></li>
 							<li className='home-navbar-li'><button className='home-navbar-btn home-navbar-btn-left home-navbar-collapse-top home-navbar-collapse-btn'>Download the App</button></li>
 							<li className='home-navbar-li'><button className='home-navbar-btn home-navbar-btn-left home-navbar-uncollapse-btn'>Member</button></li>
 							<li className='home-navbar-li'><button className='home-navbar-btn home-navbar-btn-left home-navbar-uncollapse-btn'>Attorney</button></li>
