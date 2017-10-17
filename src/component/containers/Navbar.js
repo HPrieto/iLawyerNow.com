@@ -4,7 +4,7 @@ import './containers.css';
 class Navbar extends React.Component {
 	render() {
 		return (
-			<div className='navbar home-navbar'>
+			<div className='navbar navbar-fixed-top home-navbar'>
 				<div className='container-fluid home-navbar-container'>
 					<div className='navbar-header'>
 						<div className="navbar-toggle menu" data-toggle="collapse" data-target="#home-navbar-collapse" id="nav-icon4">
