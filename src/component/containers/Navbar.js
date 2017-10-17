@@ -4,7 +4,7 @@ import './containers.css';
 class Navbar extends React.Component {
 	render() {
 		return (
-			<div className='navbar navbar-fixed-top home-navbar'>
+			<div className='navbar home-navbar'>
 				<div className='container-fluid home-navbar-container'>
 					<div className='navbar-header'>
 						<div className="navbar-toggle menu" data-toggle="collapse" data-target="#home-navbar-collapse" id="nav-icon4">
@@ -15,13 +15,13 @@ class Navbar extends React.Component {
                 		<a className='navbar-brand home-navbar-brand'>iLAWYER</a>
 					</div>
 					<div className='collapse navbar-collapse' id='home-navbar-collapse'>
-						<ul className='nav navbar-nav'>
-							<li><a>Member</a></li>
-							<li><a>Attorney</a></li>
+						<ul className='nav navbar-nav zero-padding'>
+							<li><button className='home-navbar-btn home-navbar-btn-left'>Member</button></li>
+							<li><button className='home-navbar-btn home-navbar-btn-left'>Attorney</button></li>
 						</ul>
-						<ul className='nav navbar-nav navbar-right'>
-							<li><a>HELP</a></li>
-							<li><a>SIGN IN</a></li>
+						<ul className='nav navbar-nav navbar-right zero-padding'>
+							<li><button className='home-navbar-btn home-navbar-btn-right'>HELP</button></li>
+							<li><button className='home-navbar-btn-green'>BECOME A MEMBER</button></li>
 						</ul>
 					</div>
 				</div>

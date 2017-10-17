@@ -1,3 +1,23 @@
+.ubuntu-light {
+	font-family: 'Ubuntu';
+	font-weight: 300;
+}
+
+.ubuntu-medium {
+	font-family: 'Ubuntu';
+	font-weight: 400;
+}
+
+.ubuntu-bold {
+	font-family: 'Ubuntu';
+	font-weight: 500;
+}
+
+.ubuntu-heavy {
+	font-family: 'Ubuntu';
+	font-weight: 700;
+}
+
 .signup-lawyer-form-container {
 	width: 425px;
 	height: 850px;
@@ -257,30 +277,6 @@ demi white: #f8f8f9;
 	margin-left: 10px;
 }
 
-.home-navbar-btn {
-	padding: 14px 5px 10px 5px;
-	border-top-color: transparent;
-	border-top-width: 4px;
-	border-right: none;
-	border-left: none;
-	border-bottom: none;
-}
-
-.home-navbar-btn:hover {
-	border-top-color: #377037;
-	color: #377037;
-	background-color: transparent;
-	height: 100%!important;
-}
-
-.home-navbar-btn:focus {
-	outline: none !important;
-	box-shadow: none !important;
-	background-color: transparent;
-	border-color: #265328;
-	color: #265328;
-}
-
 @media screen and (max-width: 1655px) {
 	.home-navbar {
 		width: 100% !important;
@@ -296,6 +292,109 @@ demi white: #f8f8f9;
 
 /* GRID sm -> med */
 @media screen and (min-width: 576px) and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
+	.navbar-collapse.collapse{
+    	transition: height 0.2s ;
+	}
+	.navbar-collapse.collapsing {
+	    height: 0 !important;
+	}
+	.navbar-collapse.collapse.in{
+	    max-height: none;
+	    height: 100vh;
+	}
+	.home-navbar-btn {
+		color: black;
+		background-color: transparent;
+		border: none;
+		font-size: 16px;\
+		padding: 5px 5px 5px 15px !important;
+	}
+	.home-navbar-btn-left {
+		margin: 10px 5px 0px 0;
+	}
+	.home-navbar-btn-right {
+		margin: 5px 5px 0 0;
+	}
+}
+
+@media screen and (min-width: 769px) {
+	.home-navbar-btn {
+		color: black;
+		font-size: 16px;
+		margin: 0 5px 10px 15px;
+		padding: 16px 5px 10px 5px !important;
+		background-color: transparent;
+		border-top-color: transparent;
+		border-top-width: 4px;
+		border-right: none;
+		border-left: none;
+		border-bottom: none;
+	}
+
+	.home-navbar-btn:hover {
+		border-top-color: #377037 !important;
+		border-top-width: 4px;
+		border-right: none;
+		border-left: none;
+		border-bottom: none;
+		color: #377037 !important;
+		background-color: transparent !important;
+		height: 100% !important;
+	}
+
+	.home-navbar-btn:focus {
+		outline: none !important;
+		box-shadow: none !important;
+		background-color: transparent;
+		border-color: #265328;
+		color: #265328;
+	}
+
+	.home-navbar-btn-right {
+		font-weight: 400;
+		font-family: 'Ubuntu';
+	}
+
+	.home-navbar-btn-left {
+		font-weight: 300;
+		font-family: 'Ubuntu';
+	}
+
+	.home-navbar-btn-green {
+		color: white;
+		font-weight: 300;
+		font-size: 13px;
+		margin: 10px 15px 10px 15px;
+		padding: 5px 15px 10px 15px !important;
+		background-color: #377037;
+		border-top-color: transparent;
+		border-top-width: 4px;
+		border-right: none;
+		border-left: none;
+		border-bottom: none;
+	}
+
+	.home-navbar-btn-green:hover {
+		border-top-color: #377037 !important;
+		border-top-width: 4px;
+		border-right: none;
+		border-left: none;
+		border-bottom: none;
+		color: #377037 !important;
+		background-color: transparent !important;
+		height: 100% !important;
+	}
+
+	.home-navbar-btn-green:focus {
+		outline: none !important;
+		box-shadow: none !important;
+		background-color: transparent;
+		border-color: #265328;
+		color: #265328;
+	}
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -350,7 +449,7 @@ demi white: #f8f8f9;
 .menu-top-click {
   backface-visibility: hidden;
   top: 30px;
-  transform: rotate(50deg);
+  transform: rotate(45deg);
   transition: 0.55s 0.5s;
 }
 .menu-middle-click {
@@ -359,7 +458,7 @@ demi white: #f8f8f9;
 .menu-bottom-click {
   backface-visibility: hidden;
   top: 30px;
-  transform: rotate(-410deg);
+  transform: rotate(-405deg);
   transition: 0.55s 0.5s;
 }
 /* Navbar Animation CSS END */
