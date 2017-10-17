@@ -72,6 +72,9 @@
 			    Menu.el.body.toggleClass($('body').css('overflow', function(_, val) {
 			    	return val == 'hidden' ? 'scroll' : 'hidden';
 			    }));
+			    Menu.el.body.toggleClass($('body').css('position', function(_, val) {
+			    	return val == 'fixed' ? 'static' : 'fixed';
+			    }));
 			  }
 			};
 			Menu.init();
