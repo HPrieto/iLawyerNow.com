@@ -294,6 +294,7 @@ demi white: #f8f8f9;
 @media screen and (min-width: 576px) and (max-width: 768px) {
 }
 
+/* Mobile/Tablet width */
 @media screen and (max-width: 768px) {
 	.navbar-collapse.collapse{
     	transition: height 0.2s ;
@@ -306,20 +307,50 @@ demi white: #f8f8f9;
 	    height: 100vh;
 	}
 	.home-navbar-btn {
+		margin: 0 auto !important;
+		width: 100% !important;
+		text-align: left;
 		color: black;
 		background-color: transparent;
 		border: none;
-		font-size: 16px;\
-		padding: 5px 5px 5px 15px !important;
+		font-size: 19px;
+		line-height: 24px;
+		font-weight: 300 !important;
+		padding-top: 20px;
+		padding-left: 0 !important
 	}
-	.home-navbar-btn-left {
-		margin: 10px 5px 0px 0;
+	.home-navbar-btn-bottom-border {
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-color: #C0C0C0;
 	}
-	.home-navbar-btn-right {
-		margin: 5px 5px 0 0;
+	.home-navbar-btn-top-border {
+		border-top-width: 1px;
+		border-top-style: solid;
+		border-top-color: #C0C0C0;
+	}
+	.home-navbar-btn-green {
+		position: absolute;
+	}
+	.home-navbar-collapse-top {
+		padding-top: 20px !important;
+	}
+	.home-navbar-collapse-bottom {
+		padding-bottom: 20px !important;
+	}
+	.home-navbar-li {
+		margin: 0 auto;
+		width: 95%;
+	}
+	.home-navbar-collapse-btn {
+		display: block;
+	}
+	.home-navbar-uncollapse-btn {
+		display: none;
 	}
 }
 
+/* Desktop/Laptop width */
 @media screen and (min-width: 769px) {
 	.home-navbar-btn {
 		color: black;
@@ -394,6 +425,12 @@ demi white: #f8f8f9;
 		background-color: transparent;
 		border-color: #265328;
 		color: #265328;
+	}
+	.home-navbar-collapse-btn {
+		display: none;
+	}
+	.home-navbar-uncollapse-btn {
+		display: block;
 	}
 }
 
