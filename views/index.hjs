@@ -12,7 +12,7 @@
 	<!-- Ubuntu font CDN -->
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
 	<!-- Lato font CDN -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
     <!-- Navbar Hamburger Animation CDN -->
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300' rel='stylesheet' type='text/css'>
     <!-- inline CSS -->

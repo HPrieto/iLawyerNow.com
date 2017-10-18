@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 // Component Modules
 import Home   from './component/layout/Home.js';
+import Signin from './component/layout/Signin.js';
 import Navbar from './component/containers/Navbar.js';
 
 class App extends Component {

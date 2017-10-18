@@ -72,7 +72,7 @@ class Home extends Component {
 	render() {
 		let tanColor = '#F7F7F8';
 		return (
-			<div className="container home-container">
+			<div className="container main-container">
 				{this.state.form}
 				<div className="row" style={{backgroundColor: 'white'}}>
 					<div className='container row-container mission-section'>

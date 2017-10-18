@@ -26,6 +26,7 @@ class Navbar extends React.Component {
 						<ul className='nav navbar-nav navbar-right zero-padding zero-margin'>
 							<li className='home-navbar-li'><button className='home-navbar-btn home-navbar-btn-right home-navbar-btn-top-border home-navbar-collapse-top home-navbar-uncollapse-btn'>HELP</button></li>
 							<li className='home-navbar-li'><button className='home-navbar-btn home-navbar-btn-right home-navbar-btn-top-border home-navbar-collapse-top home-navbar-collapse-btn'>Help</button></li>
+							<li className='home-navbar-li'><button className='home-navbar-btn home-navbar-btn-right home-navbar-btn-top-border home-navbar-collapse-top home-navbar-uncollapse-btn'>SIGN IN</button></li>
 							<li className='home-navbar-li'><button className='home-navbar-btn-green home-navbar-uncollapse-btn'>BECOME A MEMBER</button></li>
 						</ul>
 					</div>

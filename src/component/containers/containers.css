@@ -412,13 +412,8 @@ demi white: #f8f8f9;
 	}
 
 	.home-navbar-btn-green:hover {
-		border-top-color: #377037 !important;
-		border-top-width: 4px;
-		border-right: none;
-		border-left: none;
-		border-bottom: none;
-		color: #377037 !important;
-		background-color: transparent !important;
+		color: white !important;
+		background-color: #244824 !important;
 		height: 100% !important;
 	}
 
