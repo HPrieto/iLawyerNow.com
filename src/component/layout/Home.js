@@ -76,7 +76,7 @@ class Home extends Component {
 				{this.state.form}
 				<div className="row" style={{backgroundColor: 'white'}}>
 					<div className='container row-container mission-section'>
-						<h1>Get help</h1>
+						<h1>Making connections</h1>
 						<h2>Your peace belongs to you</h2>
 					</div>
 				</div>
