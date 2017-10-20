@@ -124,7 +124,7 @@
 /* GRID xs -> sm */
 @media screen and (max-width: 575px) {
 	.footer-top h1 {
-		font-size: 1.2em;
+		font-size: 0.8em;
 	}
 }
 

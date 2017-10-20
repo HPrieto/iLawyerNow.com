@@ -9,9 +9,15 @@
 }
 
 .main-container {
-	min-width: 250px !important;
+	min-width: 250px;
 	width: 170vh;
 	font-family: 'Ubuntu';
+}
+
+@media screen and (max-width: 1655px) {
+	.main-container {
+		width: 100% !important;
+	}
 }
 
 .mission-section h1 {
@@ -422,18 +428,12 @@
 	}
 }
 
-@media screen and (max-width: 1655px) {
-	.main-container {
-		width: 100% !important;
-	}
-}
-
 .white-left-sign-container {
 	background-color: white;
 	margin-top: 110px;
 	margin-left: 0;
 	width: 88.5%;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
 
 .white-left-sign-container-body h1 {
@@ -457,17 +457,6 @@
 	font-weight: 300;
 }
 
-.white-left-sign-container-body p {
-	font-family: 'Lato';
-	font-weight: 300;
-	font-size: 1.25em;
-	line-height: 1.71429;
-	padding-bottom: 10px;
-	padding-top: 15px;
-	height: 80px;
-	width: 400px;
-}
-
 .white-left-sign-container-body-btn {
 	border-radius: 0;
 	background-color: #377037;
@@ -478,6 +467,12 @@
 .white-left-sign-container-body-btn:hover {
 	background-color: #285228;
 	color: white;
+}
+
+.image-row-container {
+	height: 500px;
+	width: 100%;
+	background-color: #377037;
 }
 
 @media screen and (max-width: 250px) {
@@ -491,16 +486,21 @@
 @media screen and (max-width: 575px) and (min-width: 351px) {
 }
 
-@media screen and (max-width: 767px) {
-	.hide-xs {
+@media screen and (max-width: 768px) {
+	.hide-in-mobile {
 		display: none;
+		min-width: 100% !important;
 	}
-	.show-xs {
+	.show-in-mobile {
 		display: block;
+	}
+	.transparent-on-mobile {
+		color: transparent;
+		line-height: 0;
 	}
 	.white-left-sign-container {
 		margin-top: 80px;
-		width: 95%;
+		width: 95% !important;
 		margin-bottom: 25px !important;
 	}
 	.white-left-sign-container-body h1 {
@@ -517,7 +517,7 @@
 		text-align: left;
 		width: 100%;
 		padding: 11px 20px;
-		margin-top: 20px;
+		margin-top: 0px;
 	}
 	.white-left-sign-container-body-btn-inverse {
 		text-align: left;
@@ -531,14 +531,30 @@
 		background-color: #377037;
 		color: white;
 	}
+	.image-row-container {
+		height: 350px;
+	}
 }
 
 /* GRID sm -> med */
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
+}
+
+@media screen and (min-width: 769px) {
+	.white-left-sign-container-body h4 {
+		font-family: 'Lato';
+		font-weight: 300;
+		font-size: 1.25em;
+		line-height: 1.71429;
+		padding-bottom: 10px;
+		padding-top: 15px;
+		height: 80px;
+		width: 400px;
+	}
 }
 
 /* GRID med -> lg */
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
 	.white-left-sign-container-body {
 		width: 85% !important;
 	}
@@ -549,7 +565,7 @@
 	.white-left-sign-container-body h3 {
 		font-size: 1.7em;
 	}
-	.white-left-sign-container-body p {
+	.white-left-sign-container-body h4 {
 		font-size: 1.15em;
 		width: 250px;
 	}
@@ -566,7 +582,7 @@
 	.white-left-sign-container-body h3 {
 		font-size: 1.7em;
 	}
-	.white-left-sign-container-body p {
+	.white-left-sign-container-body h4 {
 		font-size: 1.15em;
 		width: 250px;
 	}

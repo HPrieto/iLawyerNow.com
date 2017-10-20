@@ -6,7 +6,7 @@
 	<link rel="icon" href="lawyer_tab.png">
 	<meta charset="utf-8">
 	<!-- Mobile Phone Layout meta -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
 	<!-- Bootstrap CSS CDN -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!-- Ubuntu font CDN -->
@@ -50,9 +50,7 @@
 			    menuTop: $('.menu-top'),
 			    menuMiddle: $('.menu-middle'),
 			    menuBottom: $('.menu-bottom'),
-			    body: $('body'),
-			    collapseBtn: $('.home-navbar-collapse-btn'),
-			    uncollapseBtn: $('.home-navbar-uncollapse-btn')
+			    body: $('body')
 			  },
 			  init: function() {
 			    Menu.bindUIactions();

@@ -210,7 +210,7 @@ demi white: #f8f8f9;
 */
 
 .home-navbar {
-	min-width: 200px;
+	min-width: 220px;
 	width: 170vh;
 	background-color: white;
 	margin: 0 auto;
@@ -473,13 +473,13 @@ demi white: #f8f8f9;
   transition: 0.55s;
 }
 .menu-top {
-  top: 25px;
+  top: 23px;
 }
 .menu-middle {
-  top: 30px;
+  top: 28px;
 }
 .menu-bottom {
-  top: 35px;
+  top: 33px;
 }
 .menu-top-click {
   backface-visibility: hidden;
