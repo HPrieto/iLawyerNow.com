@@ -4,7 +4,6 @@ import './layout.css';
 // Module components
 import AttorneySignupForm from '../containers/AttorneySignupForm.js';
 import MiniSignupForm from '../presentation/MiniSignupForm.js';
-import Footer from '../presentation/Footer.js';
 import Navbar from '../containers/Navbar.js';
 
 class Home extends Component {
@@ -169,7 +168,6 @@ class Home extends Component {
 						
 					</div>
 				</div>
-				<Footer buttonNames={['LAWYER SIGN UP', 'MEMBER SIGN UP']} buttonIds={['LawyerSignup', 'MemberSignup']} />
 			</div>
 		)
 	}
