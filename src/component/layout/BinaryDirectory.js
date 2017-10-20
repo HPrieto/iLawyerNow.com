@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './layout.css';
 
+import Footer from '../presentation/Footer.js';
+
 class BinaryDirectory extends Component {
 	componentWillMount() {
 		console.log('Binary Directory')
@@ -34,6 +36,7 @@ class BinaryDirectory extends Component {
 						</div>
 					</div>
 				</div>
+				<Footer buttonNames={['LAWYER SIGN UP', 'MEMBER SIGN UP']} buttonIds={['LawyerSignup', 'MemberSignup']} />
 			</div>
 		)
 	}
