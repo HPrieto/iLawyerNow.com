@@ -1697,7 +1697,7 @@ var App = function (_Component) {
 				'div',
 				{ style: { padding: 0, margin: 0 } },
 				_react2.default.createElement(_Navbar2.default, null),
-				_react2.default.createElement(_Home2.default, null)
+				_react2.default.createElement(_Signin2.default, null)
 			);
 		}
 	}]);
@@ -21933,6 +21933,10 @@ var _MiniSignupForm = __webpack_require__(44);
 
 var _MiniSignupForm2 = _interopRequireDefault(_MiniSignupForm);
 
+var _Footer = __webpack_require__(51);
+
+var _Footer2 = _interopRequireDefault(_Footer);
+
 var _Navbar = __webpack_require__(19);
 
 var _Navbar2 = _interopRequireDefault(_Navbar);
@@ -22256,97 +22260,7 @@ var Home = function (_Component) {
 					{ className: 'row', style: { backgroundColor: tanColor } },
 					_react2.default.createElement('div', { className: 'container row-container' })
 				),
-				_react2.default.createElement(
-					'div',
-					{ className: 'row', style: { backgroundColor: 'black' } },
-					_react2.default.createElement(
-						'div',
-						{ className: 'container row-container footer-section' },
-						_react2.default.createElement(
-							'div',
-							{ className: 'zero-padding zero-margin footer-top' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'zero-padding zero-margin col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4' },
-								_react2.default.createElement(
-									'h1',
-									{ className: 'zero-margin zero-padding' },
-									'The Law Club'
-								)
-							),
-							_react2.default.createElement(
-								'div',
-								{ className: 'zero-padding zero-margin col-xs-6 col-sm-6 col-md-8 col-lg-8 col-xl-8' },
-								_react2.default.createElement(
-									'div',
-									{ className: 'zero-padding zero-margin col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6' },
-									_react2.default.createElement(
-										'button',
-										{ className: 'btn footer-lawyer-btn', id: 'LawyerSignup', onClick: this.onClick.bind(this) },
-										'LAWYER SIGN UP'
-									)
-								),
-								_react2.default.createElement(
-									'div',
-									{ className: 'zero-padding zero-margin col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6' },
-									_react2.default.createElement(
-										'button',
-										{ className: 'btn footer-member-btn', id: 'MemberSignup', onClick: this.onClick.bind(this) },
-										'MEMBER SIGN UP'
-									)
-								)
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'footer-bottom' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'zero-padding zero-margin col-xs-6 col-sm-6 col-md-4 col-md-4 col-md-4' },
-								_react2.default.createElement(
-									'h4',
-									{ className: 'zero-padding zero-margin' },
-									'\xAEThe Law Club Technologies'
-								)
-							),
-							_react2.default.createElement(
-								'div',
-								{ className: 'zero-padding zero-margin col-xs-6 col-sm-6 col-md-8 col-md-8 col-md-8' },
-								_react2.default.createElement(
-									'div',
-									{ className: 'zero-padding zero-margin col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6' },
-									_react2.default.createElement(
-										'div',
-										{ className: 'zero-padding zero-margin col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12' },
-										_react2.default.createElement(
-											'button',
-											{ className: 'footer-bottom-link', id: 'privacy', onClick: this.onClick.bind(this) },
-											'Privacy'
-										)
-									),
-									_react2.default.createElement(
-										'div',
-										{ className: 'zero-padding zero-margin col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12' },
-										_react2.default.createElement(
-											'button',
-											{ className: 'footer-bottom-link', id: 'accessibility', onClick: this.onClick.bind(this) },
-											'Accessibility'
-										)
-									)
-								),
-								_react2.default.createElement(
-									'div',
-									{ className: 'zero-padding zero-margin col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6' },
-									_react2.default.createElement(
-										'button',
-										{ className: 'footer-bottom-link zero-margin', id: 'terms', onClick: this.onClick.bind(this) },
-										'Terms'
-									)
-								)
-							)
-						)
-					)
-				)
+				_react2.default.createElement(_Footer2.default, { buttonNames: ['LAWYER SIGN UP', 'MEMBER SIGN UP'], buttonIds: ['LawyerSignup', 'MemberSignup'] })
 			);
 		}
 	}]);
@@ -22365,7 +22279,7 @@ exports = module.exports = __webpack_require__(10)(undefined);
 
 
 // module
-exports.push([module.i, ".row-container-shifted-right {\n\tpadding: 0 0 0 0;\n\tmargin-right: 0 !important;\n}\n\n.row-container-shifted-left {\n\tpadding: 0 0 0 0;\n\tmargin-left: 0 !important;\n}\n\n.main-container {\n\tmin-width: 250px !important;\n\twidth: 170vh;\n\tfont-family: 'Ubuntu';\n}\n\n.mission-section h1 {\n\tfont-family: 'Ubuntu';\n\tfont-weight: lighter;\n\tfont-size: 3.0em;\n\tpadding-top: 80px;\n}\n\n.mission-section h2 {\n\tmargin-top: -5px;\n\tfont-family: 'Lato';\n\tfont-weight: lighter;\n\tpadding-bottom: 50px;\n\tfont-size: 3.0em;\n}\n\n.image-section {\n\tbackground-position: center center;\n\tbackground-repeat: no-repeat;\n\tbackground-size: cover;\n\twidth: 100%;\n}\n\n.product-section {\n\tmargin-bottom: 25px;\n}\n\n.product-section img {\n\twidth: 150px;\n\theight: 150px;\n}\n\n.product-section h1 {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300 !important;\n\tfont-size: 1.8em !important;\n}\n\n.product-section p {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300 !important;\n\tfont-size: 1.15em !important;\n\tline-height: 1.7;\n}\n\n.product-section-signup {\n\tmargin-bottom: 75px;\n}\n\n.green-btn {\n\tbackground-color: #377037;\n\tcolor: white;\n\tpadding: 10px 20px;\n\tfont-family: 'Ubuntu';\n\tfont-size: 1.1em;\n\tborder-radius: 0;\n\tfont-weight: 400;\n\tmargin-top: 10px;\n}\n\n.green-btn:hover {\n\tcolor: white !important;\n}\n\n.inverse-btn {\n\tbackground-color: transparent;\n\tcolor: #377037;\n\tpadding-top: 10px;\n\tpadding-bottom: 10px;\n\tpadding-left: 0;\n\tfont-family: 'Ubuntu';\n\tfont-size: 1.1em;\n\tfont-weight: 500;\n\tmargin-top: 10px;\n\tmargin-bottom: 10px;\n}\n\n.inverse-btn:hover {\n\tcolor: #377037 !important;\n}\n\n.founder-section h3 {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 100;\n}\n\n.founder-section h1 {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300;\n}\n\n.founder-section p {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 200;\n}\n\n.map-section-txt h2 {\n\tmargin-top: 0;\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300;\n\tpadding-bottom: 15px !important;\n}\n\n.map-section-txt h3 {\n\tfont-family: 'Lato';\n\tfont-weight: 100;\n\tpadding-top: 100px;\n}\n\n.map-container {\n\tbackground-color: white;\n\twidth: 100%;\n\theight: 575px;\n}\n\n.map-section-input {\n\twidth: 100%;\n\tborder-style: solid !important;\n\tborder-width: 0.1em !important;\n\tborder-color: #CECECE !important;\n}\n\n.form-userlocation {\n\tborder-radius: 0;\n\tborder: none;\n}\n\n.footer-section {\n\tpadding-top: 30px;\n\tpadding-bottom: 30px;\n\tfont-family: 'Ubuntu';\n}\n\n.footer-top {\n\tpadding-bottom: 60px !important;\n\tborder-bottom-width: 1px;\n\tborder-bottom-style: solid;\n\tborder-bottom-color: #282727;\n}\n\n.footer-top h1 {\n\tcolor: white;\n\tfont-weight: 500;\n\tfont-size: 1.5em;\n}\n\n.footer-bottom {\n\tpadding-top: 20px;\n}\n\n.footer-lawyer-btn {\n\tfont-weight: 500;\n\tborder-radius: 0;\n\tborder-width: 2px;\n\tborder-color: white;\n\tcolor: black;\n\tbackground-color: white;\n\twidth: 150px;\n}\n\n.footer-member-btn {\n\tfont-weight: 500;\n\tborder-radius: 0;\n\tborder-width: 2px;\n\tborder-color: white;\n\tbackground-color: black;\n\tcolor: white;\n\twidth: 150px;\n}\n\n.footer-member-btn: hover {\n\tcolor: white !important;\n}\n\n.footer-bottom h4 {\n\tfont-size: 0.8em;\n\tcolor: #C0C0C0;\n}\n\n.footer-bottom-link {\n\tborder: none;\n\tbackground-color: transparent;\n\tcolor: #C0C0C0;\n\tfont-size: 0.8em;\n\tpadding-left: 0;\n}\n\n.footer-bottom-link: hover {\n\ttext-decoration: none !important;\n\tborder: none;\n\tcursor: pointer;\n}\n\n.zero-padding {\n\tpadding: 0 0 0 0;\n}\n\n.zero-margin {\n\tmargin: 0 0 0 0;\n}\n\n@media screen and (max-width: 350px) {\n\t.mission-section h1 {\n\t\tfont-size: 1.8em !important;\n\t}\n\t.mission-section h2 {\n\t\tfont-size: 1.8em !important;\n\t}\n}\n\n@media screen and (min-width: 351px) and (max-width: 575px) {\n\t.mission-section h1 {\n\t\tfont-size: 2.0em !important;\n\t}\n\t.mission-section h2 {\n\t\tfont-size: 2.0em !important;\n\t}\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) {\n\t.row-container {\n\t\twidth: 95%;\n\t}\n\t.image-section {\n\t\theight: 200px;\n\t}\n\t.founder-section h1 {\n\t\tfont-size: 1.0em !important;\n\t}\n\t.founder-section h3 {\n\t\tfont-size: 1.2em !important;\n\t}\n\t.footer-top h1 {\n\t\tfont-size: 1.2em;\n\t}\n\t.map-section-input {\n\t\twidth: 100% !important;\n\t}\n}\n\n/* GRID sm -> med */\n@media screen and (min-width: 576px) and (max-width: 768px) {\n\t.footer-top h1 {\n\t\tfont-size: 1.0em;\n\t}\n\t.map-section-input {\n\t\twidth: 60%;\n\t}\n}\n\n/* GRID xs -> lg */\n@media screen and (max-width: 769px) {\n\t.map-container {\n\t\theight: 350px;\n\t}\n\t#map {\n\t\twidth: 100%;\n\t\theight: 350px;\n\t}\n\t.map-section-txt h3 {\n\t\tpadding-top: 40px !important;\n\t}\n\t.map-section-input {\n\t\tmargin-bottom: 60px !important;\n\t}\n}\n\n@media screen and (min-width: 576px) and (max-width: 992px) {\n\t.mission-section h1 {\n\t\tfont-size: 2.2em !important;\n\t}\n\t.mission-section h2 {\n\t\tfont-size: 2.2em !important;\n\t}\n\t.row-container {\n\t\twidth: 90%;\n\t}\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 769px) and (max-width: 992px) {\n\t.map-container {\n\t\theight: 400px;\n\t\tmargin-bottom: 20px;\n\t\tpadding-right: 10px;\n\t}\n\t#map {\n\t\twidth: 100%;\n\t\theight: 400px;\n\t\tmargin: 20px auto;\n\t}\n\t.row-container {\n\t\twidth: 90%;\n\t}\n}\n\n/* GRID lg -> xl */\n@media screen and (min-width: 993px) and (max-width: 1200px) {\n\t.founder-section-txt {\n\t\tmargin-top: 75px;\n\t}\n\t.mission-section h1 {\n\t\tfont-size: 2.4em !important;\n\t}\n\t.mission-section h2 {\n\t\tfont-size: 2.4em !important;\n\t}\n}\n\n/* GRID xl -> beyond */\n@media screen and (min-width: 1201px) {\n\t.founder-section-txt {\n\t\tmargin-top: 75px;\n\t}\n}\n\n@media screen (max-width: 1260px) and (min-width: 993px) {\n}\n\n@media screen (min-width: 1261px) and (max-width: 1550px) {\n}\n\n/* small -> mid */\n@media screen and (max-width: 992px) {\n\t.mission-section h1 {\n\t\tpadding-top: 60px !important;\n\t}\n\t.mission-section h2 {\n\t\tpadding-bottom: 25px !important;\n\t}\n\t.row-container-shifted-right {\n\t\twidth: 100%;\n\t}\n\t.row-container-shifted-left {\n\t\twidth: 100%;\n\t}\n\t.product-section {\n\t\tmargin-top: 75px;\n\t}\n\t.product-section-colrow {\n\t\tmargin-top: 25px !important;\n\t}\n\t.founder-section h1 {\n\t\tfont-size: 2.0em !important;\n\t\tmargin-top: 0;\n\t}\n\t.founder-section h3 {\n\t\tfont-size: 2.0em !important;\n\t}\n\t.founder-section p {\n\t\tfont-size: 1.2em !important;\n\t\tline-height: 1.5;\n\t\tmargin-top: 20px;\n\t}\n\t.founder-section-txt button {\n\t\tpadding-top: 10px !important;\n\t}\n\t.founder-section-txt {\n\t\tmargin-top: 75px;\n\t\tmargin-bottom: 50px; \n\t}\n\t.footer-member-btn {\n\t\tmargin-top: 10px !important;\n\t}\n\t.footer-top {\n\t\tpadding-bottom:115px !important;\n\t\tpadding-top: 25px !important;\n\t}\n\t.footer-bottom {\n\t\tpadding-top: 30px !important;\n\t\tpadding-bottom: 50px !important;\n\t}\n}\n\n/* mid -> beyond */\n@media screen and (min-width: 993px) {\n\t.footer-top {\n\t\tpadding-bottom:75px !important;\n\t\tpadding-top: 50px !important;\n\t}\n\t.footer-bottom {\n\t\tpadding-top: 40px !important;\n\t\tpadding-bottom: 75px !important;\n\t}\n}\n\n/* mid -> large */\n@media screen and (min-width: 991px) and (max-width: 1024px) {\n\t.row-container {\n\t\twidth: 90%;\n\t}\n\t.row-container-shifted-right {\n\t\twidth: 95%;\n\t}\n\t.row-container-shifted-left {\n\t\twidth: 95%;\n\t}\n}\n\n/* xl -> small */\n@media screen and (max-width: 990px) {\n\t.image-section {\n\t\theight: 350px;\n\t}\n}\n\n/* small -> max */\n@media screen and (min-width: 991px) {\n\t.image-section {\n\t\theight: 500px;\n\t}\n}\n\n/* large -> max */\n@media screen and (min-width: 1025px) {\n\t.row-container {\n\t\twidth: 70%;\n\t}\n\t.row-container-shifted-right {\n\t\twidth: 85%;\n\t}\n\t.row-container-shifted-left {\n\t\twidth: 85%;\n\t}\n}\n\n/* md -> larger */\n@media screen and (min-width: 992px) and (max-width: 1550px) {\n\t.product-section {\n\t\tmargin-top: 195px;\n\t}\n\t.founder-section h3 {\n\t\tfont-size: 1.8em !important;\n\t}\n\t.founder-section h1 {\n\t\tfont-size: 2.2em !important;\n\t\tmargin-top: 0;\n\t}\n\t.founder-section p {\n\t\tfont-size: 1.2em !important;\n\t\tline-height: 1.733;\n\t}\n\t.map-section-txt h2 {\n\t\tfont-size: 2.0em !important;\n\t}\n\t.map-section-txt {\n\t\tmargin-top: 60px;\n\t}\n\t#map {\n\t\twidth: 90%;\n\t\theight: 450px;\n\t\tmargin: 75px auto;\n\t}\n\t.map-container {\n\t\theight: 525px;\n\t}\n}\n\n@media screen and (min-width: 1550px) {\n\t.mission-section h1 {\n\t\tfont-size: 4.0em !important;\n\t\tpadding-top: 90px !important;\n\t}\n\t.mission-section h2 {\n\t\tfont-size: 4.0em !important;\n\t}\n\t.product-section {\n\t\tmargin-top: 155px;\n\t}\n\t.founder-section h3 {\n\t\tfont-size: 2.5em !important;\n\t}\n\t.founder-section h1 {\n\t\tfont-size: 3.0em !important;\n\t\tmargin-top: 0;\n\t}\n\t.founder-section p {\n\t\tfont-size: 1.3em !important;\n\t\tline-height: 1.733;\n\t}\n\t.map-section-txt h2 {\n\t\tfont-size: 3.0em;\n\t}\n\t.map-section-txt h3 {\n\t\tfont-size: 2.7em;\n\t}\n\t.map-section-txt {\n\t\tmargin-top: 75px;\n\t}\n\t#map {\n\t\twidth: 90%;\n\t\theight: 500px;\n\t\tmargin: 75px auto;\n\t}\n}\n\n@media screen and (max-width: 1655px) {\n\t.main-container {\n\t\twidth: 100% !important;\n\t}\n}\n\n.white-left-sign-container {\n\tbackground-color: white;\n\tmargin-top: 110px;\n\tmargin-left: 0;\n\twidth: 88.5%;\n}\n\n.white-left-sign-container-body h1 {\n\tfont-size: 3.5em;\n\tfont-weight: 300;\n\tfont-family: 'Lato';\n\tpadding-top: 35px;\n}\n\n.white-left-sign-container-body {\n\tmargin: 0 auto;\n\twidth: 60%;\n}\n\n.white-left-sign-container-body-bottom {\n\tmargin-top: 60px;\n}\n\n.white-left-sign-container-body h3 {\n\tfont-weight: 300;\n}\n\n.white-left-sign-container-body p {\n\tfont-family: 'Lato';\n\tfont-weight: 300;\n\tfont-size: 1.2em;\n\tline-height: 1.71429;\n\tpadding-bottom: 10px;\n\tpadding-top: 15px;\n}\n\n.white-left-sign-container-body-btn {\n\tborder-radius: 0;\n\tbackground-color: #377037;\n\tcolor: white;\n\tpadding: 11px 20px;\n}\n\n.white-left-sign-container-body-btn:hover {\n\tbackground-color: #285228;\n\tcolor: white;\n}", ""]);
+exports.push([module.i, ".row-container-shifted-right {\n\tpadding: 0 0 0 0;\n\tmargin-right: 0 !important;\n}\n\n.row-container-shifted-left {\n\tpadding: 0 0 0 0;\n\tmargin-left: 0 !important;\n}\n\n.main-container {\n\tmin-width: 250px !important;\n\twidth: 170vh;\n\tfont-family: 'Ubuntu';\n}\n\n.mission-section h1 {\n\tfont-family: 'Ubuntu';\n\tfont-weight: lighter;\n\tfont-size: 3.0em;\n\tpadding-top: 80px;\n}\n\n.mission-section h2 {\n\tmargin-top: -5px;\n\tfont-family: 'Lato';\n\tfont-weight: lighter;\n\tpadding-bottom: 50px;\n\tfont-size: 3.0em;\n}\n\n.image-section {\n\tbackground-position: center center;\n\tbackground-repeat: no-repeat;\n\tbackground-size: cover;\n\twidth: 100%;\n}\n\n.product-section {\n\tmargin-bottom: 25px;\n}\n\n.product-section img {\n\twidth: 150px;\n\theight: 150px;\n}\n\n.product-section h1 {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300 !important;\n\tfont-size: 1.8em !important;\n}\n\n.product-section p {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300 !important;\n\tfont-size: 1.15em !important;\n\tline-height: 1.7;\n}\n\n.product-section-signup {\n\tmargin-bottom: 75px;\n}\n\n.green-btn {\n\tbackground-color: #377037;\n\tcolor: white;\n\tpadding: 10px 20px;\n\tfont-family: 'Ubuntu';\n\tfont-size: 1.1em;\n\tborder-radius: 0;\n\tfont-weight: 400;\n\tmargin-top: 10px;\n}\n\n.green-btn:hover {\n\tcolor: white !important;\n}\n\n.inverse-btn {\n\tbackground-color: transparent;\n\tcolor: #377037;\n\tpadding-top: 10px;\n\tpadding-bottom: 10px;\n\tpadding-left: 0;\n\tfont-family: 'Ubuntu';\n\tfont-size: 1.1em;\n\tfont-weight: 500;\n\tmargin-top: 10px;\n\tmargin-bottom: 10px;\n}\n\n.inverse-btn:hover {\n\tcolor: #377037 !important;\n}\n\n.founder-section h3 {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 100;\n}\n\n.founder-section h1 {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300;\n}\n\n.founder-section p {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 200;\n}\n\n.map-section-txt h2 {\n\tmargin-top: 0;\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300;\n\tpadding-bottom: 15px !important;\n}\n\n.map-section-txt h3 {\n\tfont-family: 'Lato';\n\tfont-weight: 100;\n\tpadding-top: 100px;\n}\n\n.map-container {\n\tbackground-color: white;\n\twidth: 100%;\n\theight: 575px;\n}\n\n.map-section-input {\n\twidth: 100%;\n\tborder-style: solid !important;\n\tborder-width: 0.1em !important;\n\tborder-color: #CECECE !important;\n}\n\n.form-userlocation {\n\tborder-radius: 0;\n\tborder: none;\n}\n\n.zero-padding {\n\tpadding: 0 0 0 0;\n}\n\n.zero-margin {\n\tmargin: 0 0 0 0;\n}\n\n@media screen and (max-width: 350px) {\n\t.mission-section h1 {\n\t\tfont-size: 1.8em !important;\n\t}\n\t.mission-section h2 {\n\t\tfont-size: 1.8em !important;\n\t}\n}\n\n@media screen and (min-width: 351px) and (max-width: 575px) {\n\t.mission-section h1 {\n\t\tfont-size: 2.0em !important;\n\t}\n\t.mission-section h2 {\n\t\tfont-size: 2.0em !important;\n\t}\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) {\n\t.row-container {\n\t\twidth: 95%;\n\t}\n\t.image-section {\n\t\theight: 200px;\n\t}\n\t.founder-section h1 {\n\t\tfont-size: 1.0em !important;\n\t}\n\t.founder-section h3 {\n\t\tfont-size: 1.2em !important;\n\t}\n\t.map-section-input {\n\t\twidth: 100% !important;\n\t}\n}\n\n/* GRID sm -> med */\n@media screen and (min-width: 576px) and (max-width: 768px) {\n\t.map-section-input {\n\t\twidth: 60%;\n\t}\n}\n\n/* GRID xs -> lg */\n@media screen and (max-width: 769px) {\n\t.map-container {\n\t\theight: 350px;\n\t}\n\t#map {\n\t\twidth: 100%;\n\t\theight: 350px;\n\t}\n\t.map-section-txt h3 {\n\t\tpadding-top: 40px !important;\n\t}\n\t.map-section-input {\n\t\tmargin-bottom: 60px !important;\n\t}\n}\n\n@media screen and (min-width: 576px) and (max-width: 992px) {\n\t.mission-section h1 {\n\t\tfont-size: 2.2em !important;\n\t}\n\t.mission-section h2 {\n\t\tfont-size: 2.2em !important;\n\t}\n\t.row-container {\n\t\twidth: 90%;\n\t}\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 769px) and (max-width: 992px) {\n\t.map-container {\n\t\theight: 400px;\n\t\tmargin-bottom: 20px;\n\t\tpadding-right: 10px;\n\t}\n\t#map {\n\t\twidth: 100%;\n\t\theight: 400px;\n\t\tmargin: 20px auto;\n\t}\n\t.row-container {\n\t\twidth: 90%;\n\t}\n}\n\n/* GRID lg -> xl */\n@media screen and (min-width: 993px) and (max-width: 1200px) {\n\t.founder-section-txt {\n\t\tmargin-top: 75px;\n\t}\n\t.mission-section h1 {\n\t\tfont-size: 2.4em !important;\n\t}\n\t.mission-section h2 {\n\t\tfont-size: 2.4em !important;\n\t}\n}\n\n/* GRID xl -> beyond */\n@media screen and (min-width: 1201px) {\n\t.founder-section-txt {\n\t\tmargin-top: 75px;\n\t}\n}\n\n@media screen (max-width: 1260px) and (min-width: 993px) {\n}\n\n@media screen (min-width: 1261px) and (max-width: 1550px) {\n}\n\n/* small -> mid */\n@media screen and (max-width: 992px) {\n\t.mission-section h1 {\n\t\tpadding-top: 60px !important;\n\t}\n\t.mission-section h2 {\n\t\tpadding-bottom: 25px !important;\n\t}\n\t.row-container-shifted-right {\n\t\twidth: 100%;\n\t}\n\t.row-container-shifted-left {\n\t\twidth: 100%;\n\t}\n\t.product-section {\n\t\tmargin-top: 75px;\n\t}\n\t.product-section-colrow {\n\t\tmargin-top: 25px !important;\n\t}\n\t.founder-section h1 {\n\t\tfont-size: 2.0em !important;\n\t\tmargin-top: 0;\n\t}\n\t.founder-section h3 {\n\t\tfont-size: 2.0em !important;\n\t}\n\t.founder-section p {\n\t\tfont-size: 1.2em !important;\n\t\tline-height: 1.5;\n\t\tmargin-top: 20px;\n\t}\n\t.founder-section-txt button {\n\t\tpadding-top: 10px !important;\n\t}\n\t.founder-section-txt {\n\t\tmargin-top: 75px;\n\t\tmargin-bottom: 50px; \n\t}\n\t.footer-member-btn {\n\t\tmargin-top: 10px !important;\n\t}\n}\n\n/* mid -> beyond */\n@media screen and (min-width: 993px) {\n}\n\n/* mid -> large */\n@media screen and (min-width: 991px) and (max-width: 1024px) {\n\t.row-container {\n\t\twidth: 90%;\n\t}\n\t.row-container-shifted-right {\n\t\twidth: 95%;\n\t}\n\t.row-container-shifted-left {\n\t\twidth: 95%;\n\t}\n}\n\n/* xl -> small */\n@media screen and (max-width: 990px) {\n\t.image-section {\n\t\theight: 350px;\n\t}\n}\n\n/* small -> max */\n@media screen and (min-width: 991px) {\n\t.image-section {\n\t\theight: 500px;\n\t}\n}\n\n/* large -> max */\n@media screen and (min-width: 1025px) {\n\t.row-container {\n\t\twidth: 70%;\n\t}\n\t.row-container-shifted-right {\n\t\twidth: 85%;\n\t}\n\t.row-container-shifted-left {\n\t\twidth: 85%;\n\t}\n}\n\n/* md -> larger */\n@media screen and (min-width: 992px) and (max-width: 1550px) {\n\t.product-section {\n\t\tmargin-top: 195px;\n\t}\n\t.founder-section h3 {\n\t\tfont-size: 1.8em !important;\n\t}\n\t.founder-section h1 {\n\t\tfont-size: 2.2em !important;\n\t\tmargin-top: 0;\n\t}\n\t.founder-section p {\n\t\tfont-size: 1.2em !important;\n\t\tline-height: 1.733;\n\t}\n\t.map-section-txt h2 {\n\t\tfont-size: 2.0em !important;\n\t}\n\t.map-section-txt {\n\t\tmargin-top: 60px;\n\t}\n\t#map {\n\t\twidth: 90%;\n\t\theight: 450px;\n\t\tmargin: 75px auto;\n\t}\n\t.map-container {\n\t\theight: 525px;\n\t}\n}\n\n@media screen and (min-width: 1550px) {\n\t.mission-section h1 {\n\t\tfont-size: 4.0em !important;\n\t\tpadding-top: 90px !important;\n\t}\n\t.mission-section h2 {\n\t\tfont-size: 4.0em !important;\n\t}\n\t.product-section {\n\t\tmargin-top: 155px;\n\t}\n\t.founder-section h3 {\n\t\tfont-size: 2.5em !important;\n\t}\n\t.founder-section h1 {\n\t\tfont-size: 3.0em !important;\n\t\tmargin-top: 0;\n\t}\n\t.founder-section p {\n\t\tfont-size: 1.3em !important;\n\t\tline-height: 1.733;\n\t}\n\t.map-section-txt h2 {\n\t\tfont-size: 3.0em;\n\t}\n\t.map-section-txt h3 {\n\t\tfont-size: 2.7em;\n\t}\n\t.map-section-txt {\n\t\tmargin-top: 75px;\n\t}\n\t#map {\n\t\twidth: 90%;\n\t\theight: 500px;\n\t\tmargin: 75px auto;\n\t}\n}\n\n@media screen and (max-width: 1655px) {\n\t.main-container {\n\t\twidth: 100% !important;\n\t}\n}\n\n.white-left-sign-container {\n\tbackground-color: white;\n\tmargin-top: 110px;\n\tmargin-left: 0;\n\twidth: 88.5%;\n\tmargin-bottom: 100px;\n}\n\n.white-left-sign-container-body h1 {\n\tfont-size: 3.5em;\n\tfont-weight: 300;\n\tfont-family: 'Lato';\n\tpadding-top: 35px;\n}\n\n.white-left-sign-container-body {\n\tmargin: 0 auto;\n\twidth: 60%;\n}\n\n.white-left-sign-container-body-bottom {\n\tmargin-top: 60px;\n\theight: 300px;\n}\n\n.white-left-sign-container-body h3 {\n\tfont-weight: 300;\n}\n\n.white-left-sign-container-body p {\n\tfont-family: 'Lato';\n\tfont-weight: 300;\n\tfont-size: 1.25em;\n\tline-height: 1.71429;\n\tpadding-bottom: 10px;\n\tpadding-top: 15px;\n\theight: 80px;\n\twidth: 400px;\n}\n\n.white-left-sign-container-body-btn {\n\tborder-radius: 0;\n\tbackground-color: #377037;\n\tcolor: white;\n\tpadding: 11px 20px;\n}\n\n.white-left-sign-container-body-btn:hover {\n\tbackground-color: #285228;\n\tcolor: white;\n}\n\n@media screen and (max-width: 250px) {\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) {\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) and (min-width: 351px) {\n}\n\n@media screen and (max-width: 767px) {\n\t.hide-xs {\n\t\tdisplay: none;\n\t}\n\t.show-xs {\n\t\tdisplay: block;\n\t}\n\t.white-left-sign-container {\n\t\tmargin-top: 80px;\n\t\twidth: 95%;\n\t\tmargin-bottom: 25px !important;\n\t}\n\t.white-left-sign-container-body h1 {\n\t\tfont-size: 2.4em !important;\n\t}\n\t.white-left-sign-container-body {\n\t\twidth: 95% !important;\n\t}\n\t.white-left-sign-container-body-bottom {\n\t\tmargin-top: 40px;\n\t\theight: 150px;\n\t}\n\t.white-left-sign-container-body-btn {\n\t\ttext-align: left;\n\t\twidth: 100%;\n\t\tpadding: 11px 20px;\n\t\tmargin-top: 20px;\n\t}\n\t.white-left-sign-container-body-btn-inverse {\n\t\ttext-align: left;\n\t\tborder-width: 2px;\n\t\tborder-color: #377037;\n\t\tbackground-color: white;\n\t\tcolor: #377037;\n\t\tpadding: 11px 20px;\n\t}\n\t.white-left-sign-container-body-btn-inverse: hover {\n\t\tbackground-color: #377037;\n\t\tcolor: white;\n\t}\n}\n\n/* GRID sm -> med */\n@media screen and (min-width: 576px) and (max-width: 767px) {\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 768px) and (max-width: 992px) {\n\t.white-left-sign-container-body {\n\t\twidth: 85% !important;\n\t}\n\t.white-left-sign-container-body h1 {\n\t\tfont-size: 2.8em !important;\n\t\tpadding-top: 20px;\n\t}\n\t.white-left-sign-container-body h3 {\n\t\tfont-size: 1.7em;\n\t}\n\t.white-left-sign-container-body p {\n\t\tfont-size: 1.15em;\n\t\twidth: 250px;\n\t}\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 992px) and (max-width: 1260px) {\n\t.white-left-sign-container-body {\n\t\twidth: 70% !important;\n\t}\n\t.white-left-sign-container-body h1 {\n\t\tfont-size: 3.0em !important;\n\t}\n\t.white-left-sign-container-body h3 {\n\t\tfont-size: 1.7em;\n\t}\n\t.white-left-sign-container-body p {\n\t\tfont-size: 1.15em;\n\t\twidth: 250px;\n\t}\n}", ""]);
 
 // exports
 
@@ -22685,7 +22599,7 @@ exports = module.exports = __webpack_require__(10)(undefined);
 
 
 // module
-exports.push([module.i, ".ubuntu-light {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300;\n}\n\n.ubuntu-medium {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 400;\n}\n\n.ubuntu-bold {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 500;\n}\n\n.ubuntu-heavy {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 700;\n}\n\n.signup-lawyer-form-container {\n\twidth: 425px;\n\theight: 850px;\n\tbackground-color: #F8F8F9;\n\tposition: absolute;\n\tmargin-top: 100px;\n\tright: 5%;\n\tborder-radius: 0;\n}\n\n.form-padding-container {\n\twidth: 95%;\n\theight: 90%;\n\tposition: relative;\n\tbackground-color: #F8F8F9;\n\tmargin: 0 auto;\n}\n\n.form-header-row {\n\ttext-align: left;\n}\n\n.form-padding-container h1 {\n\tfont-weight: 300;\n\tfont-size: 1.9em;\n\tmargin-top: 50px;\n\tmargin-left: -10%;\n}\n\n.form-padding-container button {\n\tmargin-left: -10%;\n\tcolor: #377037;\n\tbackground-color: transparent;\n\tborder: none;\n\tpadding: 0;\n\tfont-weight: 400;\n\tfont-size: 1.1em;\n}\n\n.signup-form-button: hover {\n\tcolor: #285228;\n}\n\n.electronics-icon {\n\twidth: 64px;\n\theight: 64px;\n\tposition: relative;\n\tmargin: 0 auto;\n\tmargin-top: 50%;\n}\n\n.separator {\n\tmargin-top: 15px;\n    display: flex;\n    align-items: center;\n    text-align: center;\n    color: #CECECE;\n    padding-left: 20px;\n    padding-right: 20px;\n    font-size: 0.9em;\n}\n\n.separator::before, .separator::after {\n    content: '';\n    flex: 1;\n    border-bottom: 1px solid #CECECE;\n}\n\n.separator::before {\n    margin-right: .25em;\n}\n\n.separator::after {\n    margin-left: .25em;\n}\n\n.signup-form-container {\n\tpadding-top: 0;\n\tmargin-top: -20px;\n}\n\n.signup-form-container h1 {\n\ttext-align: left;\n\tmargin-left: -10%;\n}\n\n.agree-icon {\n\twidth: 64px;\n\theight: 64px;\n\tposition: relative;\n\tmargin: 30% auto;\n}\n\n.signup-form {\n\twidth: 100%;\n}\n\n.signup-form:placeholder-shown {\n\tcolor: #CECECE;\n}\n\n.form-input {\n\theight: 50px;\n\tfont-size: 1.1em;\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300;\n\t/* color: #CECECE; */\n\tcolor: black;\n\tborder-color: #CECECE !important;\n}\n\n.form-fname {\n\tmargin-left: 35px;\n\twidth: 170px !important;\n}\n\n.form-lname {\n\tmargin-left: -15px;\n\twidth: 170px !important;\n}\n\n.form-input:focus {\n\tborder-color: #CECECE;\n\tbox-shadow: none;\n}\n\n.signup-row {\n\tmargin-top: 20px;\n\tmargin-left: 20px;\n\twidth: 368px;\n}\n\n.signup-btn {\n\tbackground-color: #377037 !important;\n\twidth: 335px !important;\n\tmargin-top: 20px;\n\tmargin-left: 37px !important;\n\theight: 50px;\n\ttext-align: left;\n\tcolor: #F8F8F9 !important;\n\tpadding-left: 15px !important;\n\tfont-size: 0.8em;\n\tborder-radius: 0;\n}\n\n.signup-form p {\n\ttext-align: left;\n\tmargin-left: 35px;\n\twidth: 340px;\n}\n\n.signup-text {\n\tmargin-top: 20px;\n}\n\n.signup-text a {\n\tcolor: #377037;\n}\n\n.signup-tag:hover {\n\ttext-decoration: none;\n\tcursor: pointer;\n}\n\n.disclaimer {\n\tfont-size: 0.8em;\n}\n\n/* GRID xl -> beyond */\n@media screen and (min-width: 1201px) {\n\t.signup-lawyer-form-container {\n\t\twidth: 425px;\n\t\theight: 850px;\n\t\tbackground-color: #F8F8F9;\n\t\tposition: absolute;\n\t\tmargin-top: 100px;\n\t\tright: 10%;\n\t}\n}\n\n/* \ngrey border color: #CECECE;\nform grey background : #F8F8F9;\nform dark grey : #F1F1F1;\ngreen button light: #377037\ngreen button dark: #285228;\nlight grey: #C6C6C6;\nmed grey: #939393;\ndemi white: #f8f8f9;\n*/\n\n.home-navbar {\n\tmin-width: 200px;\n\twidth: 170vh;\n\tbackground-color: white;\n\tmargin: 0 auto;\n}\n\n#home-navbar-collapse {\n\tcolor: black;\n\tfont-family: 'Ubuntu' !important;\n\tborder-radius: 0;\n}\n\n.home-navbar-brand {\n\tcolor:black;\n\tfont-family: 'Ubuntu';\n\tfont-size: 1.5em;\n\tfont-weight: 500;\n\tletter-spacing: 0px;\n\tmargin-top: 5px;\n\tcursor: pointer;\n}\n\n.home-navbar-brand:hover {\n\tcolor: black;\n}\n\n.home-navbar-brand:focus {\n\tcolor: black;\n}\n\n.icon-bar {\n\tcolor: black;\n\tbackground-color: black;\n}\n\n.home-navbar-green-btn {\n\tfont-family: 'Ubuntu' !important;\n\tfont-size: 0.95em;\n\tfont-weight: lighter;\n\tpadding-top: 10px;\n\tpadding-bottom: 10px;\n\tmargin-top: 5px;\n\tmargin-left: 20px;\n\tbackground-color: #377037;\n\tcolor: white;\n\tborder-radius: 0!important;\n}\n\n.home-navbar-green-btn: hover {\n\tbackground-color: #306130!important;\n\tcolor: white !important;\n}\n\n#home-navbar-collapse ul {\n\tfont-weight: medium;\n\tfont-size: 1.1em;\n\tmargin-top: 0!important;\n\tmargin-right: 5px;\n}\n\n.navbtn-left {\n\tfont-weight: lighter;\n\tfont-size: 1.2em;\n\tmargin-top: 0!important;\n\tmargin-left: 10px;\n}\n\n@media screen and (max-width: 1655px) {\n\t.home-navbar {\n\t\twidth: 100% !important;\n\t}\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) {\n\t.home-navbar-container {\n\t\twidth: 100% !important;\n\t}\n}\n\n/* GRID sm -> med */\n@media screen and (min-width: 576px) and (max-width: 768px) {\n}\n\n/* Mobile/Tablet width */\n@media screen and (max-width: 768px) {\n\t.navbar-collapse.collapse{\n    \ttransition: height 0.2s ;\n\t}\n\t.navbar-collapse.collapsing {\n\t    height: 0 !important;\n\t}\n\t.navbar-collapse.collapse.in{\n\t    max-height: none;\n\t    height: 100vh;\n\t}\n\t.home-navbar-btn {\n\t\tmargin: 0 auto !important;\n\t\twidth: 100% !important;\n\t\ttext-align: left;\n\t\tcolor: black;\n\t\tbackground-color: transparent;\n\t\tborder: none;\n\t\tfont-size: 19px;\n\t\tline-height: 24px;\n\t\tfont-weight: 300 !important;\n\t\tpadding-top: 20px;\n\t\tpadding-left: 0 !important\n\t}\n\t.home-navbar-btn-bottom-border {\n\t\tborder-bottom-width: 1px;\n\t\tborder-bottom-style: solid;\n\t\tborder-bottom-color: #C0C0C0;\n\t}\n\t.home-navbar-btn-top-border {\n\t\tborder-top-width: 1px;\n\t\tborder-top-style: solid;\n\t\tborder-top-color: #C0C0C0;\n\t}\n\t.home-navbar-btn-green {\n\t\tposition: absolute;\n\t}\n\t.home-navbar-collapse-top {\n\t\tpadding-top: 25px !important;\n\t}\n\t.home-navbar-collapse-bottom {\n\t\tpadding-bottom: 25px !important;\n\t}\n\t.home-navbar-li {\n\t\tmargin: 0 auto;\n\t\twidth: 90% !important;\n\t}\n\t.home-navbar-collapse-btn {\n\t\tdisplay: block;\n\t}\n\t.home-navbar-uncollapse-btn {\n\t\tdisplay: none;\n\t}\n\t#home-collapse-btn-home {\n\t\tpadding-top: 45px !important;\n\t}\n}\n\n/* Desktop/Laptop width */\n@media screen and (min-width: 769px) {\n\t.home-navbar-btn {\n\t\tcolor: black;\n\t\tfont-size: 16px;\n\t\tmargin: 0 5px 10px 15px;\n\t\tpadding: 16px 5px 10px 5px !important;\n\t\tbackground-color: transparent;\n\t\tborder-top-color: transparent;\n\t\tborder-top-width: 4px;\n\t\tborder-right: none;\n\t\tborder-left: none;\n\t\tborder-bottom: none;\n\t}\n\n\t.home-navbar-btn:hover {\n\t\tborder-top-color: #377037 !important;\n\t\tborder-top-width: 4px;\n\t\tborder-right: none;\n\t\tborder-left: none;\n\t\tborder-bottom: none;\n\t\tcolor: #377037 !important;\n\t\tbackground-color: transparent !important;\n\t\theight: 100% !important;\n\t}\n\n\t.home-navbar-btn:focus {\n\t\toutline: none !important;\n\t\tbox-shadow: none !important;\n\t\tbackground-color: transparent;\n\t\tborder-color: #265328;\n\t\tcolor: #265328;\n\t}\n\n\t.home-navbar-btn-right {\n\t\tfont-weight: 400;\n\t\tfont-family: 'Ubuntu';\n\t}\n\n\t.home-navbar-btn-left {\n\t\tfont-weight: 300;\n\t\tfont-family: 'Ubuntu';\n\t}\n\n\t.home-navbar-btn-green {\n\t\tcolor: white;\n\t\tfont-weight: 300;\n\t\tfont-size: 13px;\n\t\tmargin: 10px 15px 10px 15px;\n\t\tpadding: 5px 15px 10px 15px !important;\n\t\tbackground-color: #377037;\n\t\tborder-top-color: transparent;\n\t\tborder-top-width: 4px;\n\t\tborder-right: none;\n\t\tborder-left: none;\n\t\tborder-bottom: none;\n\t}\n\n\t.home-navbar-btn-green:hover {\n\t\tcolor: white !important;\n\t\tbackground-color: #244824 !important;\n\t\theight: 100% !important;\n\t}\n\n\t.home-navbar-btn-green:focus {\n\t\toutline: none !important;\n\t\tbox-shadow: none !important;\n\t\tbackground-color: transparent;\n\t\tborder-color: #265328;\n\t\tcolor: #265328;\n\t}\n\t.home-navbar-collapse-btn {\n\t\tdisplay: none;\n\t}\n\t.home-navbar-uncollapse-btn {\n\t\tdisplay: block;\n\t}\n}\n\n@media screen and (min-width: 576px) and (max-width: 992px) {\n\t.home-navbar-container {\n\t\twidth: 100% !important;\n\t}\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 769px) and (max-width: 992px) {\n}\n\n/* GRID lg -> xl */\n@media screen and (min-width: 993px) and (max-width: 1200px) {\n\t.home-navbar-container {\n\t\twidth: 90% !important;\n\t}\n}\n\n@media screen and (min-width: 1201px) {\n\t.home-navbar-container {\n\t\twidth: 90%;\n\t}\n}\n\n/* Navbar Animation CSS */\n.menu {\n  cursor: pointer;\n  margin: 0 auto;\n  padding-left: 1.25em;\n  position: relative;\n  width: 40px;\n  height: 40px;\n}\n.menu-global {\n  backface-visibility: hidden;\n  position: absolute;\n  left: 0;\n  border-top: 2px solid black;\n  width: 55%;\n  transition: 0.55s;\n}\n.menu-top {\n  top: 25px;\n}\n.menu-middle {\n  top: 30px;\n}\n.menu-bottom {\n  top: 35px;\n}\n.menu-top-click {\n  backface-visibility: hidden;\n  top: 30px;\n  transform: rotate(45deg);\n  transition: 0.55s 0.5s;\n}\n.menu-middle-click {\n  opacity: 0;\n}\n.menu-bottom-click {\n  backface-visibility: hidden;\n  top: 30px;\n  transform: rotate(-405deg);\n  transition: 0.55s 0.5s;\n}\n/* Navbar Animation CSS END */", ""]);
+exports.push([module.i, ".ubuntu-light {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300;\n}\n\n.ubuntu-medium {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 400;\n}\n\n.ubuntu-bold {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 500;\n}\n\n.ubuntu-heavy {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 700;\n}\n\n.signup-lawyer-form-container {\n\twidth: 425px;\n\theight: 850px;\n\tbackground-color: #F8F8F9;\n\tposition: absolute;\n\tmargin-top: 100px;\n\tright: 5%;\n\tborder-radius: 0;\n}\n\n.form-padding-container {\n\twidth: 95%;\n\theight: 90%;\n\tposition: relative;\n\tbackground-color: #F8F8F9;\n\tmargin: 0 auto;\n}\n\n.form-header-row {\n\ttext-align: left;\n}\n\n.form-padding-container h1 {\n\tfont-weight: 300;\n\tfont-size: 1.9em;\n\tmargin-top: 50px;\n\tmargin-left: -10%;\n}\n\n.form-padding-container button {\n\tmargin-left: -10%;\n\tcolor: #377037;\n\tbackground-color: transparent;\n\tborder: none;\n\tpadding: 0;\n\tfont-weight: 400;\n\tfont-size: 1.1em;\n}\n\n.signup-form-button: hover {\n\tcolor: #285228;\n}\n\n.electronics-icon {\n\twidth: 64px;\n\theight: 64px;\n\tposition: relative;\n\tmargin: 0 auto;\n\tmargin-top: 50%;\n}\n\n.separator {\n\tmargin-top: 15px;\n    display: flex;\n    align-items: center;\n    text-align: center;\n    color: #CECECE;\n    padding-left: 20px;\n    padding-right: 20px;\n    font-size: 0.9em;\n}\n\n.separator::before, .separator::after {\n    content: '';\n    flex: 1;\n    border-bottom: 1px solid #CECECE;\n}\n\n.separator::before {\n    margin-right: .25em;\n}\n\n.separator::after {\n    margin-left: .25em;\n}\n\n.signup-form-container {\n\tpadding-top: 0;\n\tmargin-top: -20px;\n}\n\n.signup-form-container h1 {\n\ttext-align: left;\n\tmargin-left: -10%;\n}\n\n.agree-icon {\n\twidth: 64px;\n\theight: 64px;\n\tposition: relative;\n\tmargin: 30% auto;\n}\n\n.signup-form {\n\twidth: 100%;\n}\n\n.signup-form:placeholder-shown {\n\tcolor: #CECECE;\n}\n\n.form-input {\n\theight: 50px;\n\tfont-size: 1.1em;\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300;\n\t/* color: #CECECE; */\n\tcolor: black;\n\tborder-color: #CECECE !important;\n}\n\n.form-fname {\n\tmargin-left: 35px;\n\twidth: 170px !important;\n}\n\n.form-lname {\n\tmargin-left: -15px;\n\twidth: 170px !important;\n}\n\n.form-input:focus {\n\tborder-color: #CECECE;\n\tbox-shadow: none;\n}\n\n.signup-row {\n\tmargin-top: 20px;\n\tmargin-left: 20px;\n\twidth: 368px;\n}\n\n.signup-btn {\n\tbackground-color: #377037 !important;\n\twidth: 335px !important;\n\tmargin-top: 20px;\n\tmargin-left: 37px !important;\n\theight: 50px;\n\ttext-align: left;\n\tcolor: #F8F8F9 !important;\n\tpadding-left: 15px !important;\n\tfont-size: 0.8em;\n\tborder-radius: 0;\n}\n\n.signup-form p {\n\ttext-align: left;\n\tmargin-left: 35px;\n\twidth: 340px;\n}\n\n.signup-text {\n\tmargin-top: 20px;\n}\n\n.signup-text a {\n\tcolor: #377037;\n}\n\n.signup-tag:hover {\n\ttext-decoration: none;\n\tcursor: pointer;\n}\n\n.disclaimer {\n\tfont-size: 0.8em;\n}\n\n/* GRID xl -> beyond */\n@media screen and (min-width: 1201px) {\n\t.signup-lawyer-form-container {\n\t\twidth: 425px;\n\t\theight: 850px;\n\t\tbackground-color: #F8F8F9;\n\t\tposition: absolute;\n\t\tmargin-top: 100px;\n\t\tright: 10%;\n\t}\n}\n\n/* \ngrey border color: #CECECE;\nform grey background : #F8F8F9;\nform dark grey : #F1F1F1;\ngreen button light: #377037\ngreen button dark: #285228;\nlight grey: #C6C6C6;\nmed grey: #939393;\ndemi white: #f8f8f9;\n*/\n\n.home-navbar {\n\tmin-width: 200px;\n\twidth: 170vh;\n\tbackground-color: white;\n\tmargin: 0 auto;\n}\n\n#home-navbar-collapse {\n\tcolor: black;\n\tfont-family: 'Ubuntu' !important;\n\tborder-radius: 0;\n}\n\n.home-navbar-brand {\n\tcolor:black;\n\tfont-family: 'Ubuntu';\n\tfont-size: 1.5em;\n\tfont-weight: 500;\n\tletter-spacing: 0px;\n\tmargin-top: 5px;\n\tcursor: pointer;\n}\n\n.home-navbar-brand:hover {\n\tcolor: black;\n}\n\n.home-navbar-brand:focus {\n\tcolor: black;\n}\n\n.icon-bar {\n\tcolor: black;\n\tbackground-color: black;\n}\n\n.home-navbar-green-btn {\n\tfont-family: 'Ubuntu' !important;\n\tfont-size: 0.95em;\n\tfont-weight: lighter;\n\tpadding-top: 10px;\n\tpadding-bottom: 10px;\n\tmargin-top: 5px;\n\tmargin-left: 20px;\n\tbackground-color: #377037;\n\tcolor: white;\n\tborder-radius: 0!important;\n}\n\n.home-navbar-green-btn: hover {\n\tbackground-color: #306130!important;\n\tcolor: white !important;\n}\n\n#home-navbar-collapse ul {\n\tfont-weight: medium;\n\tfont-size: 1.1em;\n\tmargin-top: 0!important;\n\tmargin-right: 5px;\n}\n\n.navbtn-left {\n\tfont-weight: lighter;\n\tfont-size: 1.2em;\n\tmargin-top: 0!important;\n\tmargin-left: 10px;\n}\n\n@media screen and (max-width: 1655px) {\n\t.home-navbar {\n\t\twidth: 100% !important;\n\t}\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) {\n\t.home-navbar-container {\n\t\twidth: 100% !important;\n\t}\n}\n\n/* GRID sm -> med */\n@media screen and (min-width: 576px) and (max-width: 768px) {\n}\n\n/* Mobile/Tablet width */\n@media screen and (max-width: 767px) {\n\t.navbar-collapse.collapse{\n    \ttransition: height 0.2s ;\n\t}\n\t.navbar-collapse.collapsing {\n\t    height: 0 !important;\n\t}\n\t.navbar-collapse.collapse.in{\n\t    max-height: none;\n\t    height: 100vh;\n\t}\n\t.home-navbar-btn {\n\t\tmargin: 0 auto !important;\n\t\twidth: 100% !important;\n\t\ttext-align: left;\n\t\tcolor: black;\n\t\tbackground-color: transparent;\n\t\tborder: none;\n\t\tfont-size: 19px;\n\t\tline-height: 24px;\n\t\tfont-weight: 300 !important;\n\t\tpadding-top: 20px;\n\t\tpadding-left: 0 !important\n\t}\n\t.home-navbar-btn-bottom-border {\n\t\tborder-bottom-width: 1px;\n\t\tborder-bottom-style: solid;\n\t\tborder-bottom-color: #C0C0C0;\n\t}\n\t.home-navbar-btn-top-border {\n\t\tborder-top-width: 1px;\n\t\tborder-top-style: solid;\n\t\tborder-top-color: #C0C0C0;\n\t}\n\t.home-navbar-btn-green {\n\t\tposition: absolute;\n\t}\n\t.home-navbar-collapse-top {\n\t\tpadding-top: 25px !important;\n\t}\n\t.home-navbar-collapse-bottom {\n\t\tpadding-bottom: 25px !important;\n\t}\n\t.home-navbar-li {\n\t\tmargin: 0 auto;\n\t\twidth: 90% !important;\n\t}\n\t.home-navbar-collapse-btn {\n\t\tdisplay: block;\n\t}\n\t.home-navbar-uncollapse-btn {\n\t\tdisplay: none;\n\t}\n\t#home-collapse-btn-home {\n\t\tpadding-top: 45px !important;\n\t}\n}\n\n/* Desktop/Laptop width */\n@media screen and (min-width: 768px) {\n\t.home-navbar-btn {\n\t\tcolor: black;\n\t\tfont-size: 16px;\n\t\tmargin: 0 5px 10px 15px;\n\t\tpadding: 16px 5px 10px 5px !important;\n\t\tbackground-color: transparent;\n\t\tborder-top-color: transparent;\n\t\tborder-top-width: 4px;\n\t\tborder-right: none;\n\t\tborder-left: none;\n\t\tborder-bottom: none;\n\t}\n\n\t.home-navbar-btn:hover {\n\t\tborder-top-color: #377037 !important;\n\t\tborder-top-width: 4px;\n\t\tborder-right: none;\n\t\tborder-left: none;\n\t\tborder-bottom: none;\n\t\tcolor: #377037 !important;\n\t\tbackground-color: transparent !important;\n\t\theight: 100% !important;\n\t}\n\n\t.home-navbar-btn:focus {\n\t\toutline: none !important;\n\t\tbox-shadow: none !important;\n\t\tbackground-color: transparent;\n\t\tborder-color: #265328;\n\t\tcolor: #265328;\n\t}\n\n\t.home-navbar-btn-right {\n\t\tfont-weight: 400;\n\t\tfont-family: 'Ubuntu';\n\t}\n\n\t.home-navbar-btn-left {\n\t\tfont-weight: 300;\n\t\tfont-family: 'Ubuntu';\n\t}\n\n\t.home-navbar-btn-green {\n\t\tcolor: white;\n\t\tfont-weight: 300;\n\t\tfont-size: 13px;\n\t\tmargin: 10px 15px 10px 15px;\n\t\tpadding: 5px 15px 10px 15px !important;\n\t\tbackground-color: #377037;\n\t\tborder-top-color: transparent;\n\t\tborder-top-width: 4px;\n\t\tborder-right: none;\n\t\tborder-left: none;\n\t\tborder-bottom: none;\n\t}\n\n\t.home-navbar-btn-green:hover {\n\t\tcolor: white !important;\n\t\tbackground-color: #244824 !important;\n\t\theight: 100% !important;\n\t}\n\n\t.home-navbar-btn-green:focus {\n\t\toutline: none !important;\n\t\tbox-shadow: none !important;\n\t\tbackground-color: transparent;\n\t\tborder-color: #265328;\n\t\tcolor: #265328;\n\t}\n\t.home-navbar-collapse-btn {\n\t\tdisplay: none;\n\t}\n\t.home-navbar-uncollapse-btn {\n\t\tdisplay: block;\n\t}\n}\n\n@media screen and (min-width: 576px) and (max-width: 992px) {\n\t.home-navbar-container {\n\t\twidth: 100% !important;\n\t}\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 769px) and (max-width: 992px) {\n}\n\n/* GRID lg -> xl */\n@media screen and (min-width: 993px) and (max-width: 1200px) {\n\t.home-navbar-container {\n\t\twidth: 90% !important;\n\t}\n}\n\n@media screen and (min-width: 1201px) {\n\t.home-navbar-container {\n\t\twidth: 90%;\n\t}\n}\n\n/* Navbar Animation CSS */\n.menu {\n  cursor: pointer;\n  margin: 0 auto;\n  padding-left: 1.25em;\n  position: relative;\n  width: 40px;\n  height: 40px;\n}\n.menu-global {\n  backface-visibility: hidden;\n  position: absolute;\n  left: 0;\n  border-top: 2px solid black;\n  width: 55%;\n  transition: 0.55s;\n}\n.menu-top {\n  top: 25px;\n}\n.menu-middle {\n  top: 30px;\n}\n.menu-bottom {\n  top: 35px;\n}\n.menu-top-click {\n  backface-visibility: hidden;\n  top: 30px;\n  transform: rotate(45deg);\n  transition: 0.55s 0.5s;\n}\n.menu-middle-click {\n  opacity: 0;\n}\n.menu-bottom-click {\n  backface-visibility: hidden;\n  top: 30px;\n  transform: rotate(-405deg);\n  transition: 0.55s 0.5s;\n}\n/* Navbar Animation CSS END */", ""]);
 
 // exports
 
@@ -22819,7 +22733,7 @@ exports = module.exports = __webpack_require__(10)(undefined);
 
 
 // module
-exports.push([module.i, ".mini-signup-form {\n\tbackground-color: #377037;\n\tposition: absolute!important;\n\twidth: 180px;\n\theight: 180px;\n\tmargin-top: 475px;\n\tright: 20%;\n\tborder: none;\n}\n\n.mini-signup-form h2 {\n\tfont-family: 'Ubuntu';\n\tcolor: white;\n\tfont-weight: 100;\n\tfont-size: 1.4em;\n\ttext-align: left;\n\tpadding-left: 15px;\n\tpadding-right: 15px;\n}\n\n.mini-signup-form h3 {\n\tfont-family: 'Ubuntu';\n\tfont-size: 1.1em;\n\tcolor: white;\n\tfont-weight: 500;\n\ttext-align: right;\n\tpadding: 20px;\n}\n\n@media screen and (max-width: 250px) {\n\t.mini-signup-form {\n\t\tleft: 5% !important;\n\t}\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) {\n\t.mini-signup-form {\n\t\tright: 15% !important;\n\t}\n\t.mini-signup-form {\n\t\tmargin-top: 425px !important;\n\t}\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) and (min-width: 351px) {\n}\n\n/* GRID sm -> med */\n@media screen and (min-width: 576px) and (max-width: 768px) {\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 769px) and (max-width: 992px) {\n}", ""]);
+exports.push([module.i, ".mini-signup-form {\n\tbackground-color: #377037;\n\tposition: absolute!important;\n\twidth: 180px;\n\theight: 180px;\n\tmargin-top: 475px;\n\tright: 20%;\n\tborder: none;\n}\n\n.mini-signup-form h2 {\n\tfont-family: 'Ubuntu';\n\tcolor: white;\n\tfont-weight: 100;\n\tfont-size: 1.4em;\n\ttext-align: left;\n\tpadding-left: 15px;\n\tpadding-right: 15px;\n}\n\n.mini-signup-form h3 {\n\tfont-family: 'Ubuntu';\n\tfont-size: 1.1em;\n\tcolor: white;\n\tfont-weight: 500;\n\ttext-align: right;\n\tpadding: 20px;\n}\n\n@media screen and (max-width: 250px) {\n\t.mini-signup-form {\n\t\tleft: 5% !important;\n\t}\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) {\n\t.mini-signup-form {\n\t\tright: 15% !important;\n\t}\n\t.mini-signup-form {\n\t\tmargin-top: 425px !important;\n\t}\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) and (min-width: 351px) {\n}\n\n/* GRID sm -> med */\n@media screen and (min-width: 576px) and (max-width: 768px) {\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 769px) and (max-width: 992px) {\n}\n\n.footer-section {\n\tpadding-top: 30px;\n\tpadding-bottom: 30px;\n\tfont-family: 'Ubuntu';\n}\n\n.footer-top {\n\tpadding-bottom: 60px !important;\n\tborder-bottom-width: 1px;\n\tborder-bottom-style: solid;\n\tborder-bottom-color: #282727;\n}\n\n.footer-top h1 {\n\tcolor: white;\n\tfont-weight: 500;\n\tfont-size: 1.5em;\n}\n\n.footer-bottom {\n\tpadding-top: 20px;\n}\n\n.footer-lawyer-btn {\n\tfont-weight: 500;\n\tborder-radius: 0;\n\tborder-width: 2px;\n\tborder-color: white;\n\tcolor: black;\n\tbackground-color: white;\n\twidth: 150px;\n}\n\n.footer-member-btn {\n\tfont-weight: 500;\n\tborder-radius: 0;\n\tborder-width: 2px;\n\tborder-color: white;\n\tbackground-color: black;\n\tcolor: white;\n\twidth: 150px;\n}\n\n.footer-member-btn: hover {\n\tcolor: white !important;\n}\n\n.footer-bottom h4 {\n\tfont-size: 0.8em;\n\tcolor: #C0C0C0;\n}\n\n.footer-bottom-link {\n\tborder: none;\n\tbackground-color: transparent;\n\tcolor: #C0C0C0;\n\tfont-size: 0.8em;\n\tpadding-left: 0;\n}\n\n.footer-bottom-link: hover {\n\ttext-decoration: none !important;\n\tborder: none;\n\tcursor: pointer;\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) {\n\t.footer-top h1 {\n\t\tfont-size: 1.2em;\n\t}\n}\n\n/* GRID sm -> med */\n@media screen and (min-width: 576px) and (max-width: 768px) {\n\t.footer-top h1 {\n\t\tfont-size: 1.0em;\n\t}\n}\n\n/* small -> mid */\n@media screen and (max-width: 992px) {\n\t.footer-member-btn {\n\t\tmargin-top: 10px !important;\n\t}\n\t.footer-top {\n\t\tpadding-bottom:115px !important;\n\t\tpadding-top: 25px !important;\n\t}\n\t.footer-bottom {\n\t\tpadding-top: 30px !important;\n\t\tpadding-bottom: 50px !important;\n\t}\n}\n\n/* mid -> beyond */\n@media screen and (min-width: 993px) {\n\t.footer-top {\n\t\tpadding-bottom:75px !important;\n\t\tpadding-top: 50px !important;\n\t}\n\t.footer-bottom {\n\t\tpadding-top: 40px !important;\n\t\tpadding-bottom: 75px !important;\n\t}\n}", ""]);
 
 // exports
 
@@ -22861,6 +22775,10 @@ var _react2 = _interopRequireDefault(_react);
 
 __webpack_require__(17);
 
+var _Footer = __webpack_require__(51);
+
+var _Footer2 = _interopRequireDefault(_Footer);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22868,6 +22786,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+// import components
+
 
 var Signin = function (_Component) {
 	_inherits(Signin, _Component);
@@ -22884,7 +22805,7 @@ var Signin = function (_Component) {
 			var tanColor = '#F7F7F8';
 			return _react2.default.createElement(
 				'div',
-				{ className: 'container main-container' },
+				{ className: 'container main-container sign-container' },
 				_react2.default.createElement(
 					'div',
 					{ className: 'row', style: { backgroundColor: tanColor } },
@@ -22904,15 +22825,15 @@ var Signin = function (_Component) {
 								{ className: 'white-left-sign-container-body-bottom zero-margin zero-padding' },
 								_react2.default.createElement(
 									'div',
-									{ className: 'col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 zero-padding zero-margin' },
+									{ className: 'col-xs-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 zero-padding zero-margin' },
 									_react2.default.createElement(
 										'h3',
-										null,
+										{ className: 'hide-xs' },
 										'Attorney'
 									),
 									_react2.default.createElement(
 										'p',
-										null,
+										{ className: 'hide-xs' },
 										'Find everything you need to track your success on the road.'
 									),
 									_react2.default.createElement(
@@ -22924,23 +22845,167 @@ var Signin = function (_Component) {
 								),
 								_react2.default.createElement(
 									'div',
-									{ className: 'col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 zero-padding zero-margin' },
+									{ className: 'col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 zero-padding zero-margin' },
 									_react2.default.createElement(
 										'h3',
-										null,
+										{ className: 'hide-xs' },
 										'Member'
 									),
 									_react2.default.createElement(
 										'p',
-										null,
+										{ className: 'hide-xs' },
 										'Manage your payment options, review trip history, and more.'
 									),
 									_react2.default.createElement(
 										'button',
-										{ className: 'btn white-left-sign-container-body-btn' },
+										{ className: 'btn white-left-sign-container-body-btn white-left-sign-container-body-btn-inverse' },
 										'MEMBER SIGN IN\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0',
 										_react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-right' })
 									)
+								)
+							)
+						)
+					)
+				),
+				_react2.default.createElement(_Footer2.default, { buttonNames: ['LAWYER SIGN UP', 'MEMBER SIGN UP'], buttonIds: ['LawyerSignup', 'MemberSignup'] })
+			);
+		}
+	}]);
+
+	return Signin;
+}(_react.Component);
+
+exports.default = Signin;
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__(45);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Footer = function (_Component) {
+	_inherits(Footer, _Component);
+
+	function Footer() {
+		_classCallCheck(this, Footer);
+
+		return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).call(this));
+	}
+
+	_createClass(Footer, [{
+		key: 'onClick',
+		value: function onClick(event) {
+			console.log('Footer Clicked: ' + event.target.id);
+		}
+	}, {
+		key: 'render',
+		value: function render() {
+			return _react2.default.createElement(
+				'div',
+				{ className: 'row', style: { backgroundColor: 'black' } },
+				_react2.default.createElement(
+					'div',
+					{ className: 'container row-container footer-section' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'zero-padding zero-margin footer-top' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'zero-padding zero-margin col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4' },
+							_react2.default.createElement(
+								'h1',
+								{ className: 'zero-margin zero-padding' },
+								'The Law Club'
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'zero-padding zero-margin col-xs-6 col-sm-6 col-md-8 col-lg-8 col-xl-8' },
+							_react2.default.createElement(
+								'div',
+								{ className: 'zero-padding zero-margin col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6' },
+								_react2.default.createElement(
+									'button',
+									{ className: 'btn footer-lawyer-btn', id: this.props.buttonIds[0], onClick: this.onClick.bind(this) },
+									this.props.buttonNames[0]
+								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'zero-padding zero-margin col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6' },
+								_react2.default.createElement(
+									'button',
+									{ className: 'btn footer-member-btn', id: this.props.buttonIds[1], onClick: this.onClick.bind(this) },
+									this.props.buttonNames[1]
+								)
+							)
+						)
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'footer-bottom' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'zero-padding zero-margin col-xs-6 col-sm-6 col-md-4 col-md-4 col-md-4' },
+							_react2.default.createElement(
+								'h4',
+								{ className: 'zero-padding zero-margin' },
+								'\xAEThe Law Club Technologies'
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'zero-padding zero-margin col-xs-6 col-sm-6 col-md-8 col-md-8 col-md-8' },
+							_react2.default.createElement(
+								'div',
+								{ className: 'zero-padding zero-margin col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'zero-padding zero-margin col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12' },
+									_react2.default.createElement(
+										'button',
+										{ className: 'footer-bottom-link', id: 'privacy', onClick: this.onClick.bind(this) },
+										'Privacy'
+									)
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'zero-padding zero-margin col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12' },
+									_react2.default.createElement(
+										'button',
+										{ className: 'footer-bottom-link', id: 'accessibility', onClick: this.onClick.bind(this) },
+										'Accessibility'
+									)
+								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'zero-padding zero-margin col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6' },
+								_react2.default.createElement(
+									'button',
+									{ className: 'footer-bottom-link zero-margin', id: 'terms', onClick: this.onClick.bind(this) },
+									'Terms'
 								)
 							)
 						)
@@ -22950,10 +23015,10 @@ var Signin = function (_Component) {
 		}
 	}]);
 
-	return Signin;
+	return Footer;
 }(_react.Component);
 
-exports.default = Signin;
+exports.default = Footer;
 
 /***/ })
 /******/ ]);

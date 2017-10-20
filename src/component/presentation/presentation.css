@@ -54,3 +54,110 @@
 /* GRID med -> lg */
 @media screen and (min-width: 769px) and (max-width: 992px) {
 }
+
+.footer-section {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-family: 'Ubuntu';
+}
+
+.footer-top {
+	padding-bottom: 60px !important;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #282727;
+}
+
+.footer-top h1 {
+	color: white;
+	font-weight: 500;
+	font-size: 1.5em;
+}
+
+.footer-bottom {
+	padding-top: 20px;
+}
+
+.footer-lawyer-btn {
+	font-weight: 500;
+	border-radius: 0;
+	border-width: 2px;
+	border-color: white;
+	color: black;
+	background-color: white;
+	width: 150px;
+}
+
+.footer-member-btn {
+	font-weight: 500;
+	border-radius: 0;
+	border-width: 2px;
+	border-color: white;
+	background-color: black;
+	color: white;
+	width: 150px;
+}
+
+.footer-member-btn: hover {
+	color: white !important;
+}
+
+.footer-bottom h4 {
+	font-size: 0.8em;
+	color: #C0C0C0;
+}
+
+.footer-bottom-link {
+	border: none;
+	background-color: transparent;
+	color: #C0C0C0;
+	font-size: 0.8em;
+	padding-left: 0;
+}
+
+.footer-bottom-link: hover {
+	text-decoration: none !important;
+	border: none;
+	cursor: pointer;
+}
+
+/* GRID xs -> sm */
+@media screen and (max-width: 575px) {
+	.footer-top h1 {
+		font-size: 1.2em;
+	}
+}
+
+/* GRID sm -> med */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+	.footer-top h1 {
+		font-size: 1.0em;
+	}
+}
+
+/* small -> mid */
+@media screen and (max-width: 992px) {
+	.footer-member-btn {
+		margin-top: 10px !important;
+	}
+	.footer-top {
+		padding-bottom:115px !important;
+		padding-top: 25px !important;
+	}
+	.footer-bottom {
+		padding-top: 30px !important;
+		padding-bottom: 50px !important;
+	}
+}
+
+/* mid -> beyond */
+@media screen and (min-width: 993px) {
+	.footer-top {
+		padding-bottom:75px !important;
+		padding-top: 50px !important;
+	}
+	.footer-bottom {
+		padding-top: 40px !important;
+		padding-bottom: 75px !important;
+	}
+}

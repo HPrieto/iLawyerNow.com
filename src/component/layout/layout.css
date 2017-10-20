@@ -140,72 +140,6 @@
 	border: none;
 }
 
-.footer-section {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	font-family: 'Ubuntu';
-}
-
-.footer-top {
-	padding-bottom: 60px !important;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #282727;
-}
-
-.footer-top h1 {
-	color: white;
-	font-weight: 500;
-	font-size: 1.5em;
-}
-
-.footer-bottom {
-	padding-top: 20px;
-}
-
-.footer-lawyer-btn {
-	font-weight: 500;
-	border-radius: 0;
-	border-width: 2px;
-	border-color: white;
-	color: black;
-	background-color: white;
-	width: 150px;
-}
-
-.footer-member-btn {
-	font-weight: 500;
-	border-radius: 0;
-	border-width: 2px;
-	border-color: white;
-	background-color: black;
-	color: white;
-	width: 150px;
-}
-
-.footer-member-btn: hover {
-	color: white !important;
-}
-
-.footer-bottom h4 {
-	font-size: 0.8em;
-	color: #C0C0C0;
-}
-
-.footer-bottom-link {
-	border: none;
-	background-color: transparent;
-	color: #C0C0C0;
-	font-size: 0.8em;
-	padding-left: 0;
-}
-
-.footer-bottom-link: hover {
-	text-decoration: none !important;
-	border: none;
-	cursor: pointer;
-}
-
 .zero-padding {
 	padding: 0 0 0 0;
 }
@@ -246,9 +180,6 @@
 	.founder-section h3 {
 		font-size: 1.2em !important;
 	}
-	.footer-top h1 {
-		font-size: 1.2em;
-	}
 	.map-section-input {
 		width: 100% !important;
 	}
@@ -256,9 +187,6 @@
 
 /* GRID sm -> med */
 @media screen and (min-width: 576px) and (max-width: 768px) {
-	.footer-top h1 {
-		font-size: 1.0em;
-	}
 	.map-section-input {
 		width: 60%;
 	}
@@ -378,26 +306,10 @@
 	.footer-member-btn {
 		margin-top: 10px !important;
 	}
-	.footer-top {
-		padding-bottom:115px !important;
-		padding-top: 25px !important;
-	}
-	.footer-bottom {
-		padding-top: 30px !important;
-		padding-bottom: 50px !important;
-	}
 }
 
 /* mid -> beyond */
 @media screen and (min-width: 993px) {
-	.footer-top {
-		padding-bottom:75px !important;
-		padding-top: 50px !important;
-	}
-	.footer-bottom {
-		padding-top: 40px !important;
-		padding-bottom: 75px !important;
-	}
 }
 
 /* mid -> large */
@@ -521,6 +433,7 @@
 	margin-top: 110px;
 	margin-left: 0;
 	width: 88.5%;
+	margin-bottom: 100px;
 }
 
 .white-left-sign-container-body h1 {
@@ -537,6 +450,7 @@
 
 .white-left-sign-container-body-bottom {
 	margin-top: 60px;
+	height: 300px;
 }
 
 .white-left-sign-container-body h3 {
@@ -546,10 +460,12 @@
 .white-left-sign-container-body p {
 	font-family: 'Lato';
 	font-weight: 300;
-	font-size: 1.2em;
+	font-size: 1.25em;
 	line-height: 1.71429;
 	padding-bottom: 10px;
 	padding-top: 15px;
+	height: 80px;
+	width: 400px;
 }
 
 .white-left-sign-container-body-btn {
@@ -562,4 +478,96 @@
 .white-left-sign-container-body-btn:hover {
 	background-color: #285228;
 	color: white;
+}
+
+@media screen and (max-width: 250px) {
+}
+
+/* GRID xs -> sm */
+@media screen and (max-width: 575px) {
+}
+
+/* GRID xs -> sm */
+@media screen and (max-width: 575px) and (min-width: 351px) {
+}
+
+@media screen and (max-width: 767px) {
+	.hide-xs {
+		display: none;
+	}
+	.show-xs {
+		display: block;
+	}
+	.white-left-sign-container {
+		margin-top: 80px;
+		width: 95%;
+		margin-bottom: 25px !important;
+	}
+	.white-left-sign-container-body h1 {
+		font-size: 2.4em !important;
+	}
+	.white-left-sign-container-body {
+		width: 95% !important;
+	}
+	.white-left-sign-container-body-bottom {
+		margin-top: 40px;
+		height: 150px;
+	}
+	.white-left-sign-container-body-btn {
+		text-align: left;
+		width: 100%;
+		padding: 11px 20px;
+		margin-top: 20px;
+	}
+	.white-left-sign-container-body-btn-inverse {
+		text-align: left;
+		border-width: 2px;
+		border-color: #377037;
+		background-color: white;
+		color: #377037;
+		padding: 11px 20px;
+	}
+	.white-left-sign-container-body-btn-inverse: hover {
+		background-color: #377037;
+		color: white;
+	}
+}
+
+/* GRID sm -> med */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+}
+
+/* GRID med -> lg */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	.white-left-sign-container-body {
+		width: 85% !important;
+	}
+	.white-left-sign-container-body h1 {
+		font-size: 2.8em !important;
+		padding-top: 20px;
+	}
+	.white-left-sign-container-body h3 {
+		font-size: 1.7em;
+	}
+	.white-left-sign-container-body p {
+		font-size: 1.15em;
+		width: 250px;
+	}
+}
+
+/* GRID med -> lg */
+@media screen and (min-width: 992px) and (max-width: 1260px) {
+	.white-left-sign-container-body {
+		width: 70% !important;
+	}
+	.white-left-sign-container-body h1 {
+		font-size: 3.0em !important;
+	}
+	.white-left-sign-container-body h3 {
+		font-size: 1.7em;
+	}
+	.white-left-sign-container-body p {
+		font-size: 1.15em;
+		width: 250px;
+	}
 }
