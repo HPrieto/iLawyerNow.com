@@ -11,7 +11,7 @@ class App extends Component {
 		return (
 			<div style={{padding: 0, margin: 0}}>
 				<Navbar />
-				<Signin />
+				<Home />
 			</div>
 		)
 	}

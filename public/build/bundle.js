@@ -1697,7 +1697,7 @@ var App = function (_Component) {
 				'div',
 				{ style: { padding: 0, margin: 0 } },
 				_react2.default.createElement(_Navbar2.default, null),
-				_react2.default.createElement(_Signin2.default, null)
+				_react2.default.createElement(_Home2.default, null)
 			);
 		}
 	}]);
