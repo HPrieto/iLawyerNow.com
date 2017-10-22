@@ -18,9 +18,7 @@ class App extends Component {
 		return (
 			<div style={{padding: 0, margin: 0}}>
 				<Navbar />
-				<BinaryDirectory header={"Sign In"} titles={["Attorney","Member"]}
-						descriptions={["Find everything you need to track your success on the road.","Manage your payment options, review trip history, and more."]}
-						buttonNames={["ATTORNEY SIGN IN","MEMBER SIGN IN"]}/>
+				<Home />
 			</div>
 		)
 	}
