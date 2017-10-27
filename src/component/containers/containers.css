@@ -209,6 +209,10 @@ med grey: #939393;
 demi white: #f8f8f9;
 */
 
+link: hover {
+	background-color: transparent;
+}
+
 .home-navbar {
 	min-width: 220px;
 	width: 170vh;
@@ -223,6 +227,8 @@ demi white: #f8f8f9;
 }
 
 .home-navbar-brand {
+	border: none;
+	background-color: transparent;
 	color:black;
 	font-family: 'Ubuntu';
 	font-size: 1.5em;
@@ -243,6 +249,10 @@ demi white: #f8f8f9;
 .icon-bar {
 	color: black;
 	background-color: black;
+}
+
+.home-navbar-btn {
+	color: black !important; 
 }
 
 .home-navbar-green-btn {
@@ -356,7 +366,7 @@ demi white: #f8f8f9;
 /* Desktop/Laptop width */
 @media screen and (min-width: 768px) {
 	.home-navbar-btn {
-		color: black;
+		color: black !important;
 		font-size: 16px;
 		margin: 0 5px 10px 15px;
 		padding: 16px 5px 10px 5px !important;
@@ -377,6 +387,7 @@ demi white: #f8f8f9;
 		color: #377037 !important;
 		background-color: transparent !important;
 		height: 100% !important;
+		text-decoration: none;
 	}
 
 	.home-navbar-btn:focus {
@@ -385,6 +396,7 @@ demi white: #f8f8f9;
 		background-color: transparent;
 		border-color: #265328;
 		color: #265328;
+		text-decoration: none;
 	}
 
 	.home-navbar-btn-right {

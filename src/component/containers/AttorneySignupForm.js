@@ -84,7 +84,9 @@ class AttorneySignupForm extends Component {
 							</div>
 							<button onClick={this.submitForm.bind(this)} className="btn signup-btn">ATTORNEY SIGN UP &nbsp;&nbsp;<span className="glyphicon glyphicon-chevron-right"></span></button>
 							<p className="signup-text">Or <a className="signup-tag">sign in </a> with your iLawyer account.</p>
-							<p className="disclaimer">By proceeding, I agree that Uber or its representatives may contact me by email, phone, or SMS (including by automatic telephone dialing system) at the email address or number I provide, including for marketing purposes. I have read and understand the relevant Driver Privacy Statement.</p>
+							<p className="disclaimer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+													  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+													  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						</div>
 					</div>
 				</div>

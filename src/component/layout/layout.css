@@ -428,7 +428,7 @@
 	}
 }
 
-.white-left-sign-container {
+.white-left-binary-container {
 	background-color: white;
 	margin-top: 110px;
 	margin-left: 0;
@@ -436,35 +436,35 @@
 	margin-bottom: 50px;
 }
 
-.white-left-sign-container-body h1 {
+.white-left-binary-container-body h1 {
 	font-size: 3.5em;
 	font-weight: 300;
 	font-family: 'Lato';
 	padding-top: 35px;
 }
 
-.white-left-sign-container-body {
+.white-left-binary-container-body {
 	margin: 0 auto;
 	width: 60%;
 }
 
-.white-left-sign-container-body-bottom {
+.white-left-binary-container-body-bottom {
 	margin-top: 60px;
 	height: 300px;
 }
 
-.white-left-sign-container-body h3 {
+.white-left-binary-container-body h3 {
 	font-weight: 300;
 }
 
-.white-left-sign-container-body-btn {
+.white-left-binary-container-body-btn {
 	border-radius: 0;
 	background-color: #377037;
 	color: white;
 	padding: 11px 20px;
 }
 
-.white-left-sign-container-body-btn:hover {
+.white-left-binary-container-body-btn:hover {
 	background-color: #285228;
 	color: white;
 }
@@ -498,28 +498,28 @@
 		color: transparent;
 		line-height: 0;
 	}
-	.white-left-sign-container {
+	.white-left-binary-container {
 		margin-top: 80px;
 		width: 95% !important;
 		margin-bottom: 25px !important;
 	}
-	.white-left-sign-container-body h1 {
+	.white-left-binary-container-body h1 {
 		font-size: 2.4em !important;
 	}
-	.white-left-sign-container-body {
+	.white-left-binary-container-body {
 		width: 95% !important;
 	}
-	.white-left-sign-container-body-bottom {
+	.white-left-binary-container-body-bottom {
 		margin-top: 40px;
 		height: 150px;
 	}
-	.white-left-sign-container-body-btn {
+	.white-left-binary-container-body-btn {
 		text-align: left;
 		width: 100%;
 		padding: 11px 20px;
 		margin-top: 0px;
 	}
-	.white-left-sign-container-body-btn-inverse {
+	.white-left-binary-container-body-btn-inverse {
 		text-align: left;
 		border-width: 2px;
 		border-color: #377037;
@@ -527,7 +527,7 @@
 		color: #377037;
 		padding: 11px 20px;
 	}
-	.white-left-sign-container-body-btn-inverse: hover {
+	.white-left-binary-container-body-btn-inverse: hover {
 		background-color: #377037;
 		color: white;
 	}
@@ -541,7 +541,7 @@
 }
 
 @media screen and (min-width: 769px) {
-	.white-left-sign-container-body h4 {
+	.white-left-binary-container-body h4 {
 		font-family: 'Lato';
 		font-weight: 300;
 		font-size: 1.25em;
@@ -555,17 +555,17 @@
 
 /* GRID med -> lg */
 @media screen and (min-width: 769px) and (max-width: 991px) {
-	.white-left-sign-container-body {
+	.white-left-binary-container-body {
 		width: 85% !important;
 	}
-	.white-left-sign-container-body h1 {
+	.white-left-binary-container-body h1 {
 		font-size: 2.8em !important;
 		padding-top: 20px;
 	}
-	.white-left-sign-container-body h3 {
+	.white-left-binary-container-body h3 {
 		font-size: 1.7em;
 	}
-	.white-left-sign-container-body h4 {
+	.white-left-binary-container-body h4 {
 		font-size: 1.15em;
 		width: 250px;
 	}
@@ -573,17 +573,29 @@
 
 /* GRID med -> lg */
 @media screen and (min-width: 992px) and (max-width: 1260px) {
-	.white-left-sign-container-body {
+	.white-left-binary-container-body {
 		width: 70% !important;
 	}
-	.white-left-sign-container-body h1 {
+	.white-left-binary-container-body h1 {
 		font-size: 3.0em !important;
 	}
-	.white-left-sign-container-body h3 {
+	.white-left-binary-container-body h3 {
 		font-size: 1.7em;
 	}
-	.white-left-sign-container-body h4 {
+	.white-left-binary-container-body h4 {
 		font-size: 1.15em;
 		width: 250px;
 	}
+}
+
+.signup-container {
+	background-color: #E2E9EE;
+	height: 100vh;
+	font-family: 'Ubuntu';
+}
+
+.signup-body {
+	margin: 0 auto;
+	width: 170vh;
+	text-align: center;
 }
