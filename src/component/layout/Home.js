@@ -51,7 +51,7 @@ class Home extends Component {
 	centerMapOnAddress(address) {
 		var geocoder = new google.maps.Geocoder();
 		geocoder.geocode( { 'address': address }, (results, status) => {
-			if (status == 'OK' && address.length > 5) {
+			if ((status == 'OK' && address.length > 5)) {
 				let coordinates = results[0].geometry.location;
 				var mapOptions = {
 					center: coordinates,

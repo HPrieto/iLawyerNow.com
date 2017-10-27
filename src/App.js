@@ -8,22 +8,39 @@ import Signup from './component/layout/Signup.js';
 import Navbar from './component/containers/Navbar.js';
 import BinaryDirectory from './component/layout/BinaryDirectory.js';
 
+function SigninDirectory() {
+	return <BinaryDirectory header={"Sign In"} 
+							titles={["Attorney","Member"]}
+							descriptions={["Find everything you need to track your success on the road.","Manage your payment options, review trip history, and more."]}
+							buttonNames={["ATTORNEY SIGN IN","MEMBER SIGN IN"]}/>;
+}
+
+function LoginDirectory() {
+	return <BinaryDirectory header={"Log In"} 
+							titles={["Attorney","Member"]}
+							descriptions={["Find everything you need to track your success on the road.","Manage your payment options, review trip history, and more."]}
+							buttonNames={["ATTORNEY LOG IN","MEMBER LOG IN"]}/>;
+}
+
 function SignupDirectory() {
-	return <BinaryDirectory header={"Sign In"} titles={["Attorney","Member"]}
-						descriptions={["Find everything you need to track your success on the road.","Manage your payment options, review trip history, and more."]}
-						buttonNames={["ATTORNEY SIGN IN","MEMBER SIGN IN"]}/>;
+	return <BinaryDirectory header={"Sign Up"} 
+							titles={["Attorney","Member"]}
+							descriptions={["Find everything you need to track your success on the road.","Manage your payment options, review trip history, and more."]}
+							buttonNames={["ATTORNEY SIGN UP","MEMBER SIGN UP"]}/>;
 }
 
 function AttorneyDirectory() {
-	return <BinaryDirectory header={"Attorney"} titles={["Sign Up","Sign In"]}
-						descriptions={["Find everything you need to track your success on the road.","Manage your payment options, review trip history, and more."]}
-						buttonNames={["ATTORNEY SIGN UP","ATTORNEY SIGN IN"]}/>;
+	return <BinaryDirectory header={"Attorney"} 
+							titles={["Sign Up","Sign In"]}
+							descriptions={["Find everything you need to track your success on the road.","Manage your payment options, review trip history, and more."]}
+							buttonNames={["ATTORNEY SIGN UP","ATTORNEY SIGN IN"]}/>;
 }
 
 function MemberDirectory() {
-	return <BinaryDirectory header={"Member"} titles={["Sign Up","Sign In"]}
-						descriptions={["Find everything you need to track your success on the road.","Manage your payment options, review trip history, and more."]}
-						buttonNames={["MEMBER SIGN UP","MEMBER SIGN IN"]}/>;
+	return <BinaryDirectory header={"Member"} 
+							titles={["Sign Up","Sign In"]}
+							descriptions={["Find everything you need to track your success on the road.","Manage your payment options, review trip history, and more."]}
+							buttonNames={["MEMBER SIGN UP","MEMBER SIGN IN"]}/>;
 }
 
 class App extends Component {
@@ -38,10 +55,12 @@ class App extends Component {
 			<Router>
 				<div style={{padding: 0, margin: 0}}>
 					<Navbar />
-					<Route exact path='/' component={Home} />
-					<Route path='/signin' component={SignupDirectory} />
+					<Route exact path='/'   component={Home} />
+					<Route path='/signin'   component={SigninDirectory} />
+					<Route path='/signup'   component={SignupDirectory} />
 					<Route path='/attorney' component={AttorneyDirectory} />
-					<Route path='/member' component={MemberDirectory} />
+					<Route path='/member'   component={MemberDirectory} />
+					<Route path='/login'    component={LoginDirectory} />
 				</div>
 			</Router>
 		)

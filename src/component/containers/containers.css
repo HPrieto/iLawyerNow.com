@@ -1,3 +1,7 @@
+*:focus {
+    outline: 0 !important;
+}
+
 .ubuntu-light {
 	font-family: 'Ubuntu';
 	font-weight: 300;
