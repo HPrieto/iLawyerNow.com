@@ -1,3 +1,7 @@
+body {
+	font-family: 'Ubuntu';
+}
+
 .row-container-shifted-right {
 	padding: 0 0 0 0;
 	margin-right: 0 !important;
@@ -588,14 +592,60 @@
 	}
 }
 
-.signup-container {
-	background-color: #E2E9EE;
-	height: 100vh;
-	font-family: 'Ubuntu';
+.signup-header-section {
+	text-align: left;
 }
 
-.signup-body {
-	margin: 0 auto;
-	width: 170vh;
-	text-align: center;
+@media screen and (max-width: 250px) {
+}
+
+@media screen and (max-width: 250px) and (max-width: ) {
+}
+
+/* GRID xs -> sm */
+@media screen and (max-width: 575px) {
+}
+
+/* GRID xs -> sm */
+@media screen and (max-width: 575px) and (min-width: 351px) {
+}
+
+/* GRID sm -> med */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+}
+
+
+/* GRID sm -> med */
+@media screen and (max-width: 768px) {
+}
+
+/* GRID med -> beyond */
+@media screen and (min-width: 769px) {
+	.signup-header-section h1 {
+		margin-top: 150px;
+		font-size: 4.0em;
+		font-weight: 300;
+	}
+	.signup-header-section h2 {
+		margin-top: -10px;
+		font-size: 4.0em;
+		font-family: 'Lato';
+		font-weight: 200;
+		padding-bottom: 75px;
+	}
+	.signup-image-section {
+		height: 600px;
+	}
+}
+
+/* GRID med -> lg */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+}
+
+/* md -> larger */
+@media screen and (min-width: 992px) and (max-width: 1550px) {
+}
+
+/* larger -> beyond */
+@media screen and (min-width: 1551px) {
 }
