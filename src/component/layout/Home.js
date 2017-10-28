@@ -74,18 +74,22 @@ class Home extends Component {
 		return (
 			<div className="container main-container">
 				{this.state.form}
-				<div className="row" style={{backgroundColor: 'white'}}>
+				<div className="row"
+					 style={{backgroundColor: 'white'}}>
 					<div className='container row-container mission-section'>
 						<h1>Making connections</h1>
 						<h2>Your peace belongs to you</h2>
 					</div>
 				</div>
-				<div className="row" style={{backgroundColor: 'black'}}>
+				<div className="row"
+					 style={{backgroundColor: 'black'}}>
 					<img className='image-section'/>
 				</div>
-				<div className="row" style={{backgroundColor: 'white'}}>
+				<div className="row"
+					 style={{backgroundColor: 'white'}}>
 					<div className='container row-container product-section'>
-						<div className="zero-padding zero-margin col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-colrow" style={{margin: 0,padding: 0}}>
+						<div className="zero-padding zero-margin col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-colrow"
+							 style={{margin: 0,padding: 0}}>
 							<div className="col-xs-12 col-sm-3 col-md-12 col-lg-12">
 								<img src={require('../img/oath_icon.png')}/>
 							</div>
@@ -96,7 +100,8 @@ class Home extends Component {
 								Ut enim ad minim veniam.</p>
 							</div>
 						</div>
-						<div className="zero-padding zero-margin col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-colrow" style={{margin: 0,padding: 0}}>
+						<div className="zero-padding zero-margin col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-colrow"
+							 style={{margin: 0,padding: 0}}>
 							<div className="col-xs-12 col-sm-3 col-md-12 col-lg-12">
 								<img src={require('../img/court_icon.png')}/>
 							</div>
@@ -107,7 +112,8 @@ class Home extends Component {
 								Ut enim ad minim veniam.</p>
 							</div>
 						</div>
-						<div className="zero-padding zero-margin col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-colrow" style={{margin: 0,padding: 0}}>
+						<div className="zero-padding zero-margin col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-colrow"
+							 style={{margin: 0,padding: 0}}>
 							<div className="col-xs-12 col-sm-3 col-md-12 col-lg-12">
 								<img src={require('../img/book_icon.png')}/>
 							</div>
@@ -122,10 +128,15 @@ class Home extends Component {
 				</div>
 				<div className="row" style={{backgroundColor: 'white'}}>
 					<div className='container row-container product-section-signup'>
-						<button onClick={this.onClick.bind(this)} className='btn green-btn' id="DefendantSignup">MEMBER SIGN UP&nbsp;&nbsp;&nbsp;&nbsp;<span className="glyphicon glyphicon-chevron-right"/></button>
+						<button onClick={this.onClick.bind(this)}
+								className='btn green-btn'
+								id="DefendantSignup">MEMBER SIGN UP&nbsp;&nbsp;&nbsp;&nbsp;
+							<span className="glyphicon glyphicon-chevron-right"/>
+						</button>
 					</div>
 				</div>
-				<div className="row" style={{backgroundColor: tanColor}}>
+				<div className="row"
+					 style={{backgroundColor: tanColor}}>
 					<div className='container row-container-shifted-right founder-section'>
 						<div className="col-xs-12 col-sm-10 col-md-6 col-lg-6 col-xl-6 founder-section-colrow">
 							<div className="founder-section-txt zero-margin zero-padding">
@@ -134,7 +145,11 @@ class Home extends Component {
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
 								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-								<button onClick={this.onClick.bind(this)} className="btn inverse-btn" id="AttorneySignup">ATTORNEY SIGN UP&nbsp;&nbsp;&nbsp;<span className="glyphicon glyphicon-chevron-right"/></button>
+								<button onClick={this.onClick.bind(this)}
+										className="btn inverse-btn"
+										id="AttorneySignup">ATTORNEY SIGN UP&nbsp;&nbsp;&nbsp;
+									<span className="glyphicon glyphicon-chevron-right"/>
+								</button>
 							</div>
 						</div>
 						<div className="zero-padding zero-margin col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 founder-section-colrow">
@@ -142,17 +157,27 @@ class Home extends Component {
 						</div>
 					</div>
 				</div>
-				<div className="row" style={{backgroundColor: 'white'}}>
+				<div className="row"
+					 style={{backgroundColor: 'white'}}>
 					<div className='container row-container-shifted-right map-section'>
 						<div className="col-xs-12 col-sm-5 col-md-4 col-lg-4 col-xl-4 map-section-txt">
 							<h3>Pricing</h3>
 							<h2>Attorneys, anywhere</h2>
 							<div className='map-section-input col-xs-12 col-sm-8 col-md-8'>
 								<div className='col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 zero-padding'>
-									<input type='text' placeholder="Enter your location" id='userlocation' className='form-control form-userlocation form-input' onChange={this.onAddressChange.bind(this)} />
+									<input type='text'
+										   placeholder="Enter your location"
+										   id='userlocation'
+										   className='form-control form-userlocation form-input'
+										   onChange={this.onAddressChange.bind(this)} />
 								</div>
 								<div className='col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 zero-padding zero-margin'>
-									<span id='userlocation' onClick={this.destinationClicked.bind(this)} className="input-group-addon" style={{border: 'none', height: 50, backgroundColor: 'white', color: '#C6C6C6', fontSize: '1.5em'}}><i className="glyphicon glyphicon-map-marker"></i></span>
+									<span id='userlocation'
+										  onClick={this.destinationClicked.bind(this)}
+										  className="input-group-addon"
+										  style={{border:'none',height:50,backgroundColor:'white',color:'#C6C6C6',fontSize:'1.5em'}}>
+										<i className="glyphicon glyphicon-map-marker"></i>
+									</span>
 								</div>
 							</div>
 						</div>
@@ -168,7 +193,8 @@ class Home extends Component {
 						
 					</div>
 				</div>
-				<Footer buttonNames={['LAWYER SIGN UP', 'MEMBER SIGN UP']} buttonIds={['LawyerSignup', 'MemberSignup']} />
+				<Footer buttonNames={['LAWYER SIGN UP', 'MEMBER SIGN UP']}
+						buttonIds={['LawyerSignup', 'MemberSignup']} />
 			</div>
 		)
 	}

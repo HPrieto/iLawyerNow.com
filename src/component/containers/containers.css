@@ -513,3 +513,87 @@ link: hover {
   transition: 0.55s 0.5s;
 }
 /* Navbar Animation CSS END */
+
+.signup-form-container {
+	margin-top: 25px;
+}
+
+.signup-form-container input {
+	border-radius: 0;
+	font-size: 14px !important;
+	font-weight: 500 !important;
+	line-height: 24px !important;
+}
+
+.signup-form-container div {
+	padding: 0 0 0 0;
+}
+
+.signup-form-container form {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+.signup-form-container input {
+	border-width: 0.5px;
+	border-color: #D0D0CF !important;
+}
+
+.signup-form-container input:focus {
+	border-color: #13888F;
+	border-style: solid;
+	box-shadow: none;
+}
+
+.signup-form-container button {
+	margin-top: 15px;
+	width: 100%;
+	border-radius: 0;
+	text-align: left;
+	background-color: #13888F;
+	color: white;
+	font-weight: 600;
+	font-size: 14px;
+	padding: 11px 20px 11px 20px;
+	line-height: 18px;
+	border: 2px solid #13888F;
+}
+
+@media screen and (max-width: 250px) {
+}
+
+@media screen and (max-width: 250px) and (max-width: ) {
+}
+
+/* GRID xs -> sm */
+@media screen and (max-width: 575px) {
+}
+
+/* GRID xs -> sm */
+@media screen and (max-width: 575px) and (min-width: 351px) {
+}
+
+/* GRID sm -> med */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+}
+
+
+/* GRID sm -> med */
+@media screen and (max-width: 768px) {
+}
+
+/* GRID med -> beyond */
+@media screen and (min-width: 769px) {
+}
+
+/* GRID med -> lg */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+}
+
+/* md -> larger */
+@media screen and (min-width: 992px) and (max-width: 1550px) {
+}
+
+/* larger -> beyond */
+@media screen and (min-width: 1551px) {
+}
