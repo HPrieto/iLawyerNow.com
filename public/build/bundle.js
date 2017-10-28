@@ -3109,39 +3109,50 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 // Component Modules
 
 
+/* Binary Directories */
 function SigninDirectory() {
 	return _react2.default.createElement(_BinaryDirectory2.default, { header: "Sign In",
 		titles: ["Attorney", "Member"],
 		descriptions: ["Find everything you need to track your success on the road.", "Manage your payment options, review trip history, and more."],
-		buttonNames: ["ATTORNEY SIGN IN", "MEMBER SIGN IN"] });
+		buttonNames: ["ATTORNEY SIGN IN", "MEMBER SIGN IN"],
+		to: ["/attorney/signin", "/member/signin"] });
 }
 
 function LoginDirectory() {
 	return _react2.default.createElement(_BinaryDirectory2.default, { header: "Log In",
 		titles: ["Attorney", "Member"],
 		descriptions: ["Find everything you need to track your success on the road.", "Manage your payment options, review trip history, and more."],
-		buttonNames: ["ATTORNEY LOG IN", "MEMBER LOG IN"] });
+		buttonNames: ["ATTORNEY LOG IN", "MEMBER LOG IN"],
+		to: ["/attorney/signin", "/member/signin"] });
 }
 
 function SignupDirectory() {
 	return _react2.default.createElement(_BinaryDirectory2.default, { header: "Sign Up",
 		titles: ["Attorney", "Member"],
 		descriptions: ["Find everything you need to track your success on the road.", "Manage your payment options, review trip history, and more."],
-		buttonNames: ["ATTORNEY SIGN UP", "MEMBER SIGN UP"] });
+		buttonNames: ["ATTORNEY SIGN UP", "MEMBER SIGN UP"],
+		to: ["/attorney/signup", "/member/signup"] });
 }
 
 function AttorneyDirectory() {
 	return _react2.default.createElement(_BinaryDirectory2.default, { header: "Attorney",
 		titles: ["Sign Up", "Sign In"],
 		descriptions: ["Find everything you need to track your success on the road.", "Manage your payment options, review trip history, and more."],
-		buttonNames: ["ATTORNEY SIGN UP", "ATTORNEY SIGN IN"] });
+		buttonNames: ["ATTORNEY SIGN UP", "ATTORNEY SIGN IN"],
+		to: ["/attorney/signup", "/attorney/signin"] });
 }
 
 function MemberDirectory() {
 	return _react2.default.createElement(_BinaryDirectory2.default, { header: "Member",
 		titles: ["Sign Up", "Sign In"],
 		descriptions: ["Find everything you need to track your success on the road.", "Manage your payment options, review trip history, and more."],
-		buttonNames: ["MEMBER SIGN UP", "MEMBER SIGN IN"] });
+		buttonNames: ["MEMBER SIGN UP", "MEMBER SIGN IN"],
+		to: ["/member/signup", "/member/signin"] });
+}
+
+/* Attorney/Member Signup Pages */
+function AttorneySignup() {
+	return _react2.default.createElement(_Signup2.default, null);
 }
 
 var App = function (_Component) {
@@ -3178,9 +3189,11 @@ var App = function (_Component) {
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/home', component: _Home2.default }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/signin', component: SigninDirectory }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/signup', component: SignupDirectory }),
-						_react2.default.createElement(_reactRouterDom.Route, { path: '/attorney', component: AttorneyDirectory }),
+						_react2.default.createElement(_reactRouterDom.Route, { path: '/attorney/signup', component: AttorneySignup }),
+						_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/attorney', component: AttorneyDirectory }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/member', component: MemberDirectory }),
-						_react2.default.createElement(_reactRouterDom.Route, { path: '/login', component: LoginDirectory })
+						_react2.default.createElement(_reactRouterDom.Route, { path: '/login', component: LoginDirectory }),
+						_react2.default.createElement(_reactRouterDom.Route, { component: _Home2.default })
 					)
 				)
 			);
@@ -26939,7 +26952,8 @@ var AttorneySignupForm = function (_Component) {
 						_react2.default.createElement(
 							'div',
 							{ className: 'col-md-4' },
-							_react2.default.createElement('img', { className: 'electronics-icon', src: __webpack_require__(88) })
+							_react2.default.createElement('img', { className: 'electronics-icon',
+								src: __webpack_require__(88) })
 						),
 						_react2.default.createElement(
 							'div',
@@ -26968,7 +26982,8 @@ var AttorneySignupForm = function (_Component) {
 						_react2.default.createElement(
 							'div',
 							{ className: 'col-md-4' },
-							_react2.default.createElement('img', { className: 'agree-icon', src: __webpack_require__(89) })
+							_react2.default.createElement('img', { className: 'agree-icon',
+								src: __webpack_require__(89) })
 						),
 						_react2.default.createElement(
 							'div',
@@ -26988,12 +27003,20 @@ var AttorneySignupForm = function (_Component) {
 								_react2.default.createElement(
 									'div',
 									{ className: 'col-md-6' },
-									_react2.default.createElement('input', { type: 'text', placeholder: 'First Name', id: 'firstname', className: 'form-control form-fname form-input', onChange: this.onChange.bind(this) })
+									_react2.default.createElement('input', { type: 'text',
+										placeholder: 'First Name',
+										id: 'firstname',
+										className: 'form-control form-fname form-input',
+										onChange: this.onChange.bind(this) })
 								),
 								_react2.default.createElement(
 									'div',
 									{ className: 'col-md-6' },
-									_react2.default.createElement('input', { type: 'text', placeholder: 'Last Name', id: 'lastname', className: 'form-control form-lname form-input', onChange: this.onChange.bind(this) })
+									_react2.default.createElement('input', { type: 'text',
+										placeholder: 'Last Name',
+										id: 'lastname',
+										className: 'form-control form-lname form-input',
+										onChange: this.onChange.bind(this) })
 								)
 							),
 							_react2.default.createElement(
@@ -27002,17 +27025,29 @@ var AttorneySignupForm = function (_Component) {
 								_react2.default.createElement(
 									'div',
 									{ className: 'col-md-12' },
-									_react2.default.createElement('input', { type: 'text', placeholder: 'Email', id: 'email', className: 'form-control form-input form-email', onChange: this.onChange.bind(this) })
+									_react2.default.createElement('input', { type: 'text',
+										placeholder: 'Email',
+										id: 'email',
+										className: 'form-control form-input form-email',
+										onChange: this.onChange.bind(this) })
 								),
 								_react2.default.createElement(
 									'div',
 									{ className: 'col-md-12' },
-									_react2.default.createElement('input', { type: 'text', placeholder: 'Phone', id: 'phone', className: 'form-control form-input form-phone', onChange: this.onChange.bind(this) })
+									_react2.default.createElement('input', { type: 'text',
+										placeholder: 'Phone',
+										id: 'phone',
+										className: 'form-control form-input form-phone',
+										onChange: this.onChange.bind(this) })
 								),
 								_react2.default.createElement(
 									'div',
 									{ className: 'col-md-12' },
-									_react2.default.createElement('input', { type: 'password', placeholder: 'Create Password', id: 'password', className: 'form-control form-input form-pass', onChange: this.onChange.bind(this) })
+									_react2.default.createElement('input', { type: 'password',
+										placeholder: 'Create Password',
+										id: 'password',
+										className: 'form-control form-input form-pass',
+										onChange: this.onChange.bind(this) })
 								)
 							),
 							_react2.default.createElement(
@@ -27021,7 +27056,11 @@ var AttorneySignupForm = function (_Component) {
 								_react2.default.createElement(
 									'div',
 									{ className: 'col-md-12' },
-									_react2.default.createElement('input', { type: 'text', placeholder: 'City', id: 'city', className: 'form-control form-input form-city', onChange: this.onChange.bind(this) })
+									_react2.default.createElement('input', { type: 'text',
+										placeholder: 'City',
+										id: 'city',
+										className: 'form-control form-input form-city',
+										onChange: this.onChange.bind(this) })
 								)
 							),
 							_react2.default.createElement(
@@ -27030,25 +27069,30 @@ var AttorneySignupForm = function (_Component) {
 								_react2.default.createElement(
 									'div',
 									{ className: 'col-md-12' },
-									_react2.default.createElement('input', { type: 'text', placeholder: 'Bar Number', id: 'barnumber', className: 'form-control form-input form-id', onChange: this.onChange.bind(this) })
+									_react2.default.createElement('input', { type: 'text',
+										placeholder: 'Bar Number',
+										id: 'barnumber',
+										className: 'form-control form-input form-id',
+										onChange: this.onChange.bind(this) })
 								)
 							),
 							_react2.default.createElement(
 								'button',
-								{ onClick: this.submitForm.bind(this), className: 'btn signup-btn' },
+								{ onClick: this.submitForm.bind(this),
+									className: 'btn signup-btn' },
 								'ATTORNEY SIGN UP \xA0\xA0',
 								_react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-right' })
 							),
 							_react2.default.createElement(
 								'p',
 								{ className: 'signup-text' },
-								'Or ',
+								'Or',
 								_react2.default.createElement(
 									'a',
 									{ className: 'signup-tag' },
 									'sign in '
 								),
-								' with your iLawyer account.'
+								'with your iLawyer account.'
 							),
 							_react2.default.createElement(
 								'p',
@@ -27221,6 +27265,10 @@ var _react2 = _interopRequireDefault(_react);
 
 __webpack_require__(22);
 
+var _SignupForm = __webpack_require__(99);
+
+var _SignupForm2 = _interopRequireDefault(_SignupForm);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -27228,6 +27276,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* Import Components */
+
 
 var Signup = function (_Component) {
 	_inherits(Signup, _Component);
@@ -27251,7 +27302,8 @@ var Signup = function (_Component) {
 						'h1',
 						null,
 						'Become a Law Club Member'
-					)
+					),
+					_react2.default.createElement(_SignupForm2.default, null)
 				)
 			);
 		}
@@ -27528,6 +27580,8 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactRouterDom = __webpack_require__(30);
+
 __webpack_require__(22);
 
 var _Footer = __webpack_require__(40);
@@ -27589,8 +27643,8 @@ var BinaryDirectory = function (_Component) {
 										this.props.descriptions[0]
 									),
 									_react2.default.createElement(
-										'button',
-										{ className: 'btn white-left-binary-container-body-btn' },
+										_reactRouterDom.Link,
+										{ to: this.props.to[0], className: 'btn white-left-binary-container-body-btn' },
 										_react2.default.createElement(
 											'div',
 											{ className: 'col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 zero-padding zero-margin' },
@@ -27617,8 +27671,8 @@ var BinaryDirectory = function (_Component) {
 										this.props.descriptions[1]
 									),
 									_react2.default.createElement(
-										'button',
-										{ className: 'btn white-left-binary-container-body-btn white-left-binary-container-body-btn-inverse' },
+										_reactRouterDom.Link,
+										{ to: this.props.to[1], className: 'btn white-left-binary-container-body-btn white-left-binary-container-body-btn-inverse' },
 										_react2.default.createElement(
 											'div',
 											{ className: 'col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 zero-padding zero-margin' },
@@ -27649,6 +27703,59 @@ var BinaryDirectory = function (_Component) {
 }(_react.Component);
 
 exports.default = BinaryDirectory;
+
+/***/ }),
+/* 98 */,
+/* 99 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__(38);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var SignupForm = function (_Component) {
+	_inherits(SignupForm, _Component);
+
+	function SignupForm() {
+		_classCallCheck(this, SignupForm);
+
+		return _possibleConstructorReturn(this, (SignupForm.__proto__ || Object.getPrototypeOf(SignupForm)).apply(this, arguments));
+	}
+
+	_createClass(SignupForm, [{
+		key: 'render',
+		value: function render() {
+			return _react2.default.createElement(
+				'div',
+				null,
+				'Signup Form'
+			);
+		}
+	}]);
+
+	return SignupForm;
+}(_react.Component);
+
+exports.default = SignupForm;
 
 /***/ })
 /******/ ]);

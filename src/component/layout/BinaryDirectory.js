@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './layout.css';
 
 import Footer from '../presentation/Footer.js';
@@ -16,18 +17,18 @@ class BinaryDirectory extends Component {
 								<div className='col-xs-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 zero-padding zero-margin'>
 									<h3 className='hide-in-mobile'>{this.props.titles[0]}</h3>
 									<h4 className='transparent-on-mobile'>{this.props.descriptions[0]}</h4>
-									<button className='btn white-left-binary-container-body-btn'>
+									<Link to={this.props.to[0]} className='btn white-left-binary-container-body-btn'>
 										<div className='col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 zero-padding zero-margin'>{this.props.buttonNames[0]}</div>
 										<div className='col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 zero-padding zero-margin'><span className="glyphicon glyphicon-chevron-right"/></div>
-									</button>
+									</Link>
 								</div>
 								<div className='col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 zero-padding zero-margin'>
 									<h3 className='hide-in-mobile'>{this.props.titles[1]}</h3>
 									<h4 className='transparent-on-mobile'>{this.props.descriptions[1]}</h4>
-									<button className='btn white-left-binary-container-body-btn white-left-binary-container-body-btn-inverse'>
+									<Link to={this.props.to[1]} className='btn white-left-binary-container-body-btn white-left-binary-container-body-btn-inverse'>
 										<div className='col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 zero-padding zero-margin'>{this.props.buttonNames[1]}</div>
 										<div className='col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 zero-padding zero-margin'><span className="glyphicon glyphicon-chevron-right"/></div>
-									</button>
+									</Link>
 								</div>
 							</div>
 						</div>
