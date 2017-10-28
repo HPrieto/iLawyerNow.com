@@ -3159,6 +3159,9 @@ var App = function (_Component) {
 	}
 
 	_createClass(App, [{
+		key: 'componentWillMount',
+		value: function componentWillMount() {}
+	}, {
 		key: 'render',
 		value: function render() {
 			return _react2.default.createElement(
@@ -3168,12 +3171,17 @@ var App = function (_Component) {
 					'div',
 					{ style: { padding: 0, margin: 0 } },
 					_react2.default.createElement(_Navbar2.default, null),
-					_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Home2.default }),
-					_react2.default.createElement(_reactRouterDom.Route, { path: '/signin', component: SigninDirectory }),
-					_react2.default.createElement(_reactRouterDom.Route, { path: '/signup', component: SignupDirectory }),
-					_react2.default.createElement(_reactRouterDom.Route, { path: '/attorney', component: AttorneyDirectory }),
-					_react2.default.createElement(_reactRouterDom.Route, { path: '/member', component: MemberDirectory }),
-					_react2.default.createElement(_reactRouterDom.Route, { path: '/login', component: LoginDirectory })
+					_react2.default.createElement(
+						_reactRouterDom.Switch,
+						null,
+						_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Home2.default }),
+						_react2.default.createElement(_reactRouterDom.Route, { path: '/home', component: _Home2.default }),
+						_react2.default.createElement(_reactRouterDom.Route, { path: '/signin', component: SigninDirectory }),
+						_react2.default.createElement(_reactRouterDom.Route, { path: '/signup', component: SignupDirectory }),
+						_react2.default.createElement(_reactRouterDom.Route, { path: '/attorney', component: AttorneyDirectory }),
+						_react2.default.createElement(_reactRouterDom.Route, { path: '/member', component: MemberDirectory }),
+						_react2.default.createElement(_reactRouterDom.Route, { path: '/login', component: LoginDirectory })
+					)
 				)
 			);
 		}
@@ -27296,6 +27304,9 @@ var Navbar = function (_React$Component) {
 	}
 
 	_createClass(Navbar, [{
+		key: 'componentWillMount',
+		value: function componentWillMount() {}
+	}, {
 		key: 'onClick',
 		value: function onClick(event) {
 			this.toggleHamburger();

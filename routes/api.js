@@ -16,7 +16,6 @@ router.get('/:resource', (req, res, next) => {
 		})
 		return
 	}
-
 	// Perform controller GET http method
 	controller.find(req.query, (err, results) => {
 		if (err) {

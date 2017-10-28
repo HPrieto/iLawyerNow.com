@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 
 // Component Modules
 import Home   from './component/layout/Home.js';
@@ -50,17 +50,22 @@ class App extends Component {
 			navbar: true
 		}
 	}
+	componentWillMount() {
+	}
 	render() {
 		return (
 			<Router>
 				<div style={{padding: 0, margin: 0}}>
 					<Navbar />
-					<Route exact path='/'   component={Home} />
-					<Route path='/signin'   component={SigninDirectory} />
-					<Route path='/signup'   component={SignupDirectory} />
-					<Route path='/attorney' component={AttorneyDirectory} />
-					<Route path='/member'   component={MemberDirectory} />
-					<Route path='/login'    component={LoginDirectory} />
+					<Switch>
+						<Route exact path='/'	component={Home} />
+						<Route path='/home'		component={Home} />
+						<Route path='/signin'	component={SigninDirectory} />
+						<Route path='/signup'	component={SignupDirectory} />
+						<Route path='/attorney'	component={AttorneyDirectory} />
+						<Route path='/member'	component={MemberDirectory} />
+						<Route path='/login'	component={LoginDirectory} />
+					</Switch>
 				</div>
 			</Router>
 		)

@@ -1,11 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 import './containers.css';
 
 class Navbar extends React.Component {
 	constructor() {
 		super()
 		this.toggleHamburger.bind(this);
+	}
+	componentWillMount() {
 	}
 	onClick(event) {
 		this.toggleHamburger();
