@@ -56,8 +56,7 @@ class SignupForm extends Component {
 								    	   className="form-control input-lg"
 								    	   id="signup-first-input"
 								    	   placeholder="First Name"
-								    	   onChange={this.onChange.bind(this)}
-								    	   style={{borderRight:'none'}}/>
+								    	   onChange={this.onChange.bind(this)}/>
 								</div>
 								<div className='col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6'>
 									<input type="text"
@@ -70,15 +69,13 @@ class SignupForm extends Component {
 								    	className="form-control input-lg"
 								    	id="signup-phone-input"
 								    	placeholder="Phone"
-								    	onChange={this.onChange.bind(this)}
-								    	style={{borderTop:'none'}}/>
+								    	onChange={this.onChange.bind(this)}/>
 
 					    	   	<input 	type="password"
 					    	   			className="form-control input-lg"
 					    	   			id="signup-pass-input"
 					    	   			placeholder="Create Password"
-					    	   			onChange={this.onChange.bind(this)}
-					    	   			style={{borderTop:'none'}}/>
+					    	   			onChange={this.onChange.bind(this)}/>
 					    	   	</div>
 							</div>
 							<div className='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>
