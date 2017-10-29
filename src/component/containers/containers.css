@@ -459,6 +459,10 @@ link: hover {
 	color: #9C9B9B;
 }
 
+.form-control {
+	border: 1px solid #0F7278;
+}
+
 input::-webkit-input-placeholder {
 color: #9C9B9B !important;
 }
