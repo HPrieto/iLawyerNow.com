@@ -13,18 +13,20 @@ class Signup extends Component {
 	render() {
 		let tanColor = '#F7F7F8';
 		return (
-			<div className="container main-container">
+			<div className="container main-container signup-container">
 				<div className="row"
 					 style={{backgroundColor: 'white'}}>
 					<div className='container row-container mission-section'>
-						<h1>Become a mobile Attorney</h1>
-						<h2>Earn money on your schedule</h2>
+						<div className='col-xs-12 col-sm-7 col-md-8 col-lg-12 col-xl-12'>
+							<h1>Become a mobile Attorney</h1>
+							<h2>Earn money on your schedule</h2>
+						</div>
 					</div>
 				</div>
 				<SignupForm />
 				<div className="row"
 					 style={{backgroundColor: 'black'}}>
-					<img className='image-section'/>
+					<img className='image-section signup-container-bg'/>
 				</div>
 				<div className="row"
 					 style={{backgroundColor: 'white'}}>

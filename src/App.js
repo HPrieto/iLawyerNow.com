@@ -74,7 +74,7 @@ class App extends Component {
 						<Route path='/signin'	component={SigninDirectory} />
 						<Route path='/signup'	component={SignupDirectory} />
 						<Route path='/attorney/signup' component={AttorneySignup} />
-						<Route exact path='/attorney'	component={AttorneyDirectory} />
+						<Route exact path='/attorney'	component={Signup} />
 						<Route path='/member'	component={MemberDirectory} />
 						<Route path='/login'	component={LoginDirectory} />
 						<Route component={Home}/>

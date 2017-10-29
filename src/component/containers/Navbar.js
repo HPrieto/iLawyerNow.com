@@ -10,6 +10,7 @@ class Navbar extends React.Component {
 	componentWillMount() {
 	}
 	onClick(event) {
+		console.log('Event Clicked: ' + event.target.value)
 		this.toggleHamburger();
 	}
 	toggleHamburger() {
@@ -73,7 +74,7 @@ class Navbar extends React.Component {
 								</Link>
 								<li className='home-navbar-li'>
 									<button onClick={this.onClick.bind(this)}
-											data-toggle="collapse" 
+											data-toggle="collapse"
 											data-target="#home-navbar-collapse" 
 											className='home-navbar-btn home-navbar-btn-left home-navbar-collapse-top home-navbar-collapse-btn'>
 											Download the App
@@ -82,9 +83,10 @@ class Navbar extends React.Component {
 								<li className='home-navbar-li'>
 									<button onClick={this.onClick.bind(this)}
 											className='home-navbar-btn home-navbar-btn-left home-navbar-collapse-btn' 
-											data-toggle="collapse" 
+											data-toggle="collapse"
 											data-target="#home-navbar-collapse">
-										<Link to='/signup' style={{textDecoration: 'none', color: 'black', ':hover': {color: '#377037'}}}>
+										<Link to='/signup'
+											  style={{textDecoration:'none',color:'black',':hover':{color: '#377037'}}}>
 											Sign Up
 										</Link>
 									</button>

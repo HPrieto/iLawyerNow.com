@@ -617,6 +617,9 @@ body {
 
 /* GRID sm -> med */
 @media screen and (max-width: 768px) {
+	.signup-container-bg {
+		height: 400px;
+	}
 }
 
 /* GRID med -> beyond */
@@ -635,6 +638,9 @@ body {
 	}
 	.signup-image-section {
 		height: 600px;
+	}
+	.signup-container-bg {
+		height: 500px;
 	}
 }
 

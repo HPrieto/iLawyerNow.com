@@ -3190,7 +3190,7 @@ var App = function (_Component) {
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/signin', component: SigninDirectory }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/signup', component: SignupDirectory }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/attorney/signup', component: AttorneySignup }),
-						_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/attorney', component: AttorneyDirectory }),
+						_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/attorney', component: _Signup2.default }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/member', component: MemberDirectory }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/login', component: LoginDirectory }),
 						_react2.default.createElement(_reactRouterDom.Route, { component: _Home2.default })
@@ -26789,7 +26789,7 @@ exports = module.exports = __webpack_require__(24)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n\tfont-family: 'Ubuntu';\n}\n\n.row-container-shifted-right {\n\tpadding: 0 0 0 0;\n\tmargin-right: 0 !important;\n}\n\n.row-container-shifted-left {\n\tpadding: 0 0 0 0;\n\tmargin-left: 0 !important;\n}\n\n.main-container {\n\tmin-width: 250px;\n\twidth: 170vh;\n\tfont-family: 'Ubuntu';\n}\n\n@media screen and (max-width: 1655px) {\n\t.main-container {\n\t\twidth: 100% !important;\n\t}\n}\n\n.mission-section h1 {\n\tfont-family: 'Ubuntu';\n\tfont-weight: lighter;\n\tfont-size: 3.0em;\n\tpadding-top: 80px;\n}\n\n.mission-section h2 {\n\tmargin-top: -5px;\n\tfont-family: 'Lato';\n\tfont-weight: lighter;\n\tpadding-bottom: 50px;\n\tfont-size: 3.0em;\n}\n\n.image-section {\n\tbackground-position: center center;\n\tbackground-repeat: no-repeat;\n\tbackground-size: cover;\n\twidth: 100%;\n}\n\n.product-section {\n\tmargin-bottom: 25px;\n}\n\n.product-section img {\n\twidth: 150px;\n\theight: 150px;\n}\n\n.product-section h1 {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300 !important;\n\tfont-size: 1.8em !important;\n}\n\n.product-section p {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300 !important;\n\tfont-size: 1.15em !important;\n\tline-height: 1.7;\n}\n\n.product-section-signup {\n\tmargin-bottom: 75px;\n}\n\n.green-btn {\n\tbackground-color: #377037;\n\tcolor: white;\n\tpadding: 10px 20px;\n\tfont-family: 'Ubuntu';\n\tfont-size: 1.1em;\n\tborder-radius: 0;\n\tfont-weight: 400;\n\tmargin-top: 10px;\n}\n\n.green-btn:hover {\n\tcolor: white !important;\n}\n\n.inverse-btn {\n\tbackground-color: transparent;\n\tcolor: #377037;\n\tpadding-top: 10px;\n\tpadding-bottom: 10px;\n\tpadding-left: 0;\n\tfont-family: 'Ubuntu';\n\tfont-size: 1.1em;\n\tfont-weight: 500;\n\tmargin-top: 10px;\n\tmargin-bottom: 10px;\n}\n\n.inverse-btn:hover {\n\tcolor: #377037 !important;\n}\n\n.founder-section h3 {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 100;\n}\n\n.founder-section h1 {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300;\n}\n\n.founder-section p {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 200;\n}\n\n.map-section-txt h2 {\n\tmargin-top: 0;\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300;\n\tpadding-bottom: 15px !important;\n}\n\n.map-section-txt h3 {\n\tfont-family: 'Lato';\n\tfont-weight: 100;\n\tpadding-top: 100px;\n}\n\n.map-container {\n\tbackground-color: white;\n\twidth: 100%;\n\theight: 575px;\n}\n\n.map-section-input {\n\twidth: 100%;\n\tborder-style: solid !important;\n\tborder-width: 0.1em !important;\n\tborder-color: #CECECE !important;\n}\n\n.form-userlocation {\n\tborder-radius: 0;\n\tborder: none;\n}\n\n.zero-padding {\n\tpadding: 0 0 0 0;\n}\n\n.zero-margin {\n\tmargin: 0 0 0 0;\n}\n\n@media screen and (max-width: 350px) {\n\t.mission-section h1 {\n\t\tfont-size: 1.8em !important;\n\t}\n\t.mission-section h2 {\n\t\tfont-size: 1.8em !important;\n\t}\n}\n\n@media screen and (min-width: 351px) and (max-width: 575px) {\n\t.mission-section h1 {\n\t\tfont-size: 2.0em !important;\n\t}\n\t.mission-section h2 {\n\t\tfont-size: 2.0em !important;\n\t}\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) {\n\t.row-container {\n\t\twidth: 95%;\n\t}\n\t.image-section {\n\t\theight: 200px;\n\t}\n\t.founder-section h1 {\n\t\tfont-size: 1.0em !important;\n\t}\n\t.founder-section h3 {\n\t\tfont-size: 1.2em !important;\n\t}\n\t.map-section-input {\n\t\twidth: 100% !important;\n\t}\n}\n\n/* GRID sm -> med */\n@media screen and (min-width: 576px) and (max-width: 768px) {\n\t.map-section-input {\n\t\twidth: 60%;\n\t}\n}\n\n/* GRID xs -> lg */\n@media screen and (max-width: 769px) {\n\t.map-container {\n\t\theight: 350px;\n\t}\n\t#map {\n\t\twidth: 100%;\n\t\theight: 350px;\n\t}\n\t.map-section-txt h3 {\n\t\tpadding-top: 40px !important;\n\t}\n\t.map-section-input {\n\t\tmargin-bottom: 60px !important;\n\t}\n}\n\n@media screen and (min-width: 576px) and (max-width: 992px) {\n\t.mission-section h1 {\n\t\tfont-size: 2.2em !important;\n\t}\n\t.mission-section h2 {\n\t\tfont-size: 2.2em !important;\n\t}\n\t.row-container {\n\t\twidth: 90%;\n\t}\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 769px) and (max-width: 992px) {\n\t.map-container {\n\t\theight: 400px;\n\t\tmargin-bottom: 20px;\n\t\tpadding-right: 10px;\n\t}\n\t#map {\n\t\twidth: 100%;\n\t\theight: 400px;\n\t\tmargin: 20px auto;\n\t}\n\t.row-container {\n\t\twidth: 90%;\n\t}\n}\n\n/* GRID lg -> xl */\n@media screen and (min-width: 993px) and (max-width: 1200px) {\n\t.founder-section-txt {\n\t\tmargin-top: 75px;\n\t}\n\t.mission-section h1 {\n\t\tfont-size: 2.4em !important;\n\t}\n\t.mission-section h2 {\n\t\tfont-size: 2.4em !important;\n\t}\n}\n\n/* GRID xl -> beyond */\n@media screen and (min-width: 1201px) {\n\t.founder-section-txt {\n\t\tmargin-top: 75px;\n\t}\n}\n\n@media screen (max-width: 1260px) and (min-width: 993px) {\n}\n\n@media screen (min-width: 1261px) and (max-width: 1550px) {\n}\n\n/* small -> mid */\n@media screen and (max-width: 992px) {\n\t.mission-section h1 {\n\t\tpadding-top: 60px !important;\n\t}\n\t.mission-section h2 {\n\t\tpadding-bottom: 25px !important;\n\t}\n\t.row-container-shifted-right {\n\t\twidth: 100%;\n\t}\n\t.row-container-shifted-left {\n\t\twidth: 100%;\n\t}\n\t.product-section {\n\t\tmargin-top: 75px;\n\t}\n\t.product-section-colrow {\n\t\tmargin-top: 25px !important;\n\t}\n\t.founder-section h1 {\n\t\tfont-size: 2.0em !important;\n\t\tmargin-top: 0;\n\t}\n\t.founder-section h3 {\n\t\tfont-size: 2.0em !important;\n\t}\n\t.founder-section p {\n\t\tfont-size: 1.2em !important;\n\t\tline-height: 1.5;\n\t\tmargin-top: 20px;\n\t}\n\t.founder-section-txt button {\n\t\tpadding-top: 10px !important;\n\t}\n\t.founder-section-txt {\n\t\tmargin-top: 75px;\n\t\tmargin-bottom: 50px; \n\t}\n\t.footer-member-btn {\n\t\tmargin-top: 10px !important;\n\t}\n}\n\n/* mid -> beyond */\n@media screen and (min-width: 993px) {\n}\n\n/* mid -> large */\n@media screen and (min-width: 991px) and (max-width: 1024px) {\n\t.row-container {\n\t\twidth: 90%;\n\t}\n\t.row-container-shifted-right {\n\t\twidth: 95%;\n\t}\n\t.row-container-shifted-left {\n\t\twidth: 95%;\n\t}\n}\n\n/* xl -> small */\n@media screen and (max-width: 990px) {\n\t.image-section {\n\t\theight: 350px;\n\t}\n}\n\n/* small -> max */\n@media screen and (min-width: 991px) {\n\t.image-section {\n\t\theight: 500px;\n\t}\n}\n\n/* large -> max */\n@media screen and (min-width: 1025px) {\n\t.row-container {\n\t\twidth: 70%;\n\t}\n\t.row-container-shifted-right {\n\t\twidth: 85%;\n\t}\n\t.row-container-shifted-left {\n\t\twidth: 85%;\n\t}\n}\n\n/* md -> larger */\n@media screen and (min-width: 992px) and (max-width: 1550px) {\n\t.product-section {\n\t\tmargin-top: 195px;\n\t}\n\t.founder-section h3 {\n\t\tfont-size: 1.8em !important;\n\t}\n\t.founder-section h1 {\n\t\tfont-size: 2.2em !important;\n\t\tmargin-top: 0;\n\t}\n\t.founder-section p {\n\t\tfont-size: 1.2em !important;\n\t\tline-height: 1.733;\n\t}\n\t.map-section-txt h2 {\n\t\tfont-size: 2.0em !important;\n\t}\n\t.map-section-txt {\n\t\tmargin-top: 60px;\n\t}\n\t#map {\n\t\twidth: 90%;\n\t\theight: 450px;\n\t\tmargin: 75px auto;\n\t}\n\t.map-container {\n\t\theight: 525px;\n\t}\n}\n\n@media screen and (min-width: 1550px) {\n\t.mission-section h1 {\n\t\tfont-size: 4.0em !important;\n\t\tpadding-top: 90px !important;\n\t}\n\t.mission-section h2 {\n\t\tfont-size: 4.0em !important;\n\t}\n\t.product-section {\n\t\tmargin-top: 155px;\n\t}\n\t.founder-section h3 {\n\t\tfont-size: 2.5em !important;\n\t}\n\t.founder-section h1 {\n\t\tfont-size: 3.0em !important;\n\t\tmargin-top: 0;\n\t}\n\t.founder-section p {\n\t\tfont-size: 1.3em !important;\n\t\tline-height: 1.733;\n\t}\n\t.map-section-txt h2 {\n\t\tfont-size: 3.0em;\n\t}\n\t.map-section-txt h3 {\n\t\tfont-size: 2.7em;\n\t}\n\t.map-section-txt {\n\t\tmargin-top: 75px;\n\t}\n\t#map {\n\t\twidth: 90%;\n\t\theight: 500px;\n\t\tmargin: 75px auto;\n\t}\n}\n\n.white-left-binary-container {\n\tbackground-color: white;\n\tmargin-top: 110px;\n\tmargin-left: 0;\n\twidth: 88.5%;\n\tmargin-bottom: 50px;\n}\n\n.white-left-binary-container-body h1 {\n\tfont-size: 3.5em;\n\tfont-weight: 300;\n\tfont-family: 'Lato';\n\tpadding-top: 35px;\n}\n\n.white-left-binary-container-body {\n\tmargin: 0 auto;\n\twidth: 60%;\n}\n\n.white-left-binary-container-body-bottom {\n\tmargin-top: 60px;\n\theight: 300px;\n}\n\n.white-left-binary-container-body h3 {\n\tfont-weight: 300;\n}\n\n.white-left-binary-container-body-btn {\n\tborder-radius: 0;\n\tbackground-color: #377037;\n\tcolor: white;\n\tpadding: 11px 20px;\n}\n\n.white-left-binary-container-body-btn:hover {\n\tbackground-color: #285228;\n\tcolor: white;\n}\n\n.image-row-container {\n\theight: 500px;\n\twidth: 100%;\n\tbackground-color: #377037;\n}\n\n@media screen and (max-width: 250px) {\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) {\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) and (min-width: 351px) {\n}\n\n@media screen and (max-width: 768px) {\n\t.hide-in-mobile {\n\t\tdisplay: none;\n\t\tmin-width: 100% !important;\n\t}\n\t.show-in-mobile {\n\t\tdisplay: block;\n\t}\n\t.transparent-on-mobile {\n\t\tcolor: transparent;\n\t\tline-height: 0;\n\t}\n\t.white-left-binary-container {\n\t\tmargin-top: 80px;\n\t\twidth: 95% !important;\n\t\tmargin-bottom: 25px !important;\n\t}\n\t.white-left-binary-container-body h1 {\n\t\tfont-size: 2.4em !important;\n\t}\n\t.white-left-binary-container-body {\n\t\twidth: 95% !important;\n\t}\n\t.white-left-binary-container-body-bottom {\n\t\tmargin-top: 40px;\n\t\theight: 150px;\n\t}\n\t.white-left-binary-container-body-btn {\n\t\ttext-align: left;\n\t\twidth: 100%;\n\t\tpadding: 11px 20px;\n\t\tmargin-top: 0px;\n\t}\n\t.white-left-binary-container-body-btn-inverse {\n\t\ttext-align: left;\n\t\tborder-width: 2px;\n\t\tborder-color: #377037;\n\t\tbackground-color: white;\n\t\tcolor: #377037;\n\t\tpadding: 11px 20px;\n\t}\n\t.white-left-binary-container-body-btn-inverse: hover {\n\t\tbackground-color: #377037;\n\t\tcolor: white;\n\t}\n\t.image-row-container {\n\t\theight: 350px;\n\t}\n}\n\n/* GRID sm -> med */\n@media screen and (min-width: 576px) and (max-width: 768px) {\n}\n\n@media screen and (min-width: 769px) {\n\t.white-left-binary-container-body h4 {\n\t\tfont-family: 'Lato';\n\t\tfont-weight: 300;\n\t\tfont-size: 1.25em;\n\t\tline-height: 1.71429;\n\t\tpadding-bottom: 10px;\n\t\tpadding-top: 15px;\n\t\theight: 80px;\n\t\twidth: 400px;\n\t}\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 769px) and (max-width: 991px) {\n\t.white-left-binary-container-body {\n\t\twidth: 85% !important;\n\t}\n\t.white-left-binary-container-body h1 {\n\t\tfont-size: 2.8em !important;\n\t\tpadding-top: 20px;\n\t}\n\t.white-left-binary-container-body h3 {\n\t\tfont-size: 1.7em;\n\t}\n\t.white-left-binary-container-body h4 {\n\t\tfont-size: 1.15em;\n\t\twidth: 250px;\n\t}\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 992px) and (max-width: 1260px) {\n\t.white-left-binary-container-body {\n\t\twidth: 70% !important;\n\t}\n\t.white-left-binary-container-body h1 {\n\t\tfont-size: 3.0em !important;\n\t}\n\t.white-left-binary-container-body h3 {\n\t\tfont-size: 1.7em;\n\t}\n\t.white-left-binary-container-body h4 {\n\t\tfont-size: 1.15em;\n\t\twidth: 250px;\n\t}\n}\n\n.signup-header-section {\n\ttext-align: left;\n}\n\n@media screen and (max-width: 250px) {\n}\n\n@media screen and (max-width: 250px) and (max-width: ) {\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) {\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) and (min-width: 351px) {\n}\n\n/* GRID sm -> med */\n@media screen and (min-width: 576px) and (max-width: 768px) {\n}\n\n\n/* GRID sm -> med */\n@media screen and (max-width: 768px) {\n}\n\n/* GRID med -> beyond */\n@media screen and (min-width: 769px) {\n\t.signup-header-section h1 {\n\t\tmargin-top: 150px;\n\t\tfont-size: 4.0em;\n\t\tfont-weight: 300;\n\t}\n\t.signup-header-section h2 {\n\t\tmargin-top: -10px;\n\t\tfont-size: 4.0em;\n\t\tfont-family: 'Lato';\n\t\tfont-weight: 200;\n\t\tpadding-bottom: 75px;\n\t}\n\t.signup-image-section {\n\t\theight: 600px;\n\t}\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 769px) and (max-width: 992px) {\n}\n\n/* md -> larger */\n@media screen and (min-width: 992px) and (max-width: 1550px) {\n}\n\n/* larger -> beyond */\n@media screen and (min-width: 1551px) {\n}", ""]);
+exports.push([module.i, "body {\n\tfont-family: 'Ubuntu';\n}\n\n.row-container-shifted-right {\n\tpadding: 0 0 0 0;\n\tmargin-right: 0 !important;\n}\n\n.row-container-shifted-left {\n\tpadding: 0 0 0 0;\n\tmargin-left: 0 !important;\n}\n\n.main-container {\n\tmin-width: 250px;\n\twidth: 170vh;\n\tfont-family: 'Ubuntu';\n}\n\n@media screen and (max-width: 1655px) {\n\t.main-container {\n\t\twidth: 100% !important;\n\t}\n}\n\n.mission-section h1 {\n\tfont-family: 'Ubuntu';\n\tfont-weight: lighter;\n\tfont-size: 3.0em;\n\tpadding-top: 80px;\n}\n\n.mission-section h2 {\n\tmargin-top: -5px;\n\tfont-family: 'Lato';\n\tfont-weight: lighter;\n\tpadding-bottom: 50px;\n\tfont-size: 3.0em;\n}\n\n.image-section {\n\tbackground-position: center center;\n\tbackground-repeat: no-repeat;\n\tbackground-size: cover;\n\twidth: 100%;\n}\n\n.product-section {\n\tmargin-bottom: 25px;\n}\n\n.product-section img {\n\twidth: 150px;\n\theight: 150px;\n}\n\n.product-section h1 {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300 !important;\n\tfont-size: 1.8em !important;\n}\n\n.product-section p {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300 !important;\n\tfont-size: 1.15em !important;\n\tline-height: 1.7;\n}\n\n.product-section-signup {\n\tmargin-bottom: 75px;\n}\n\n.green-btn {\n\tbackground-color: #377037;\n\tcolor: white;\n\tpadding: 10px 20px;\n\tfont-family: 'Ubuntu';\n\tfont-size: 1.1em;\n\tborder-radius: 0;\n\tfont-weight: 400;\n\tmargin-top: 10px;\n}\n\n.green-btn:hover {\n\tcolor: white !important;\n}\n\n.inverse-btn {\n\tbackground-color: transparent;\n\tcolor: #377037;\n\tpadding-top: 10px;\n\tpadding-bottom: 10px;\n\tpadding-left: 0;\n\tfont-family: 'Ubuntu';\n\tfont-size: 1.1em;\n\tfont-weight: 500;\n\tmargin-top: 10px;\n\tmargin-bottom: 10px;\n}\n\n.inverse-btn:hover {\n\tcolor: #377037 !important;\n}\n\n.founder-section h3 {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 100;\n}\n\n.founder-section h1 {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300;\n}\n\n.founder-section p {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 200;\n}\n\n.map-section-txt h2 {\n\tmargin-top: 0;\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300;\n\tpadding-bottom: 15px !important;\n}\n\n.map-section-txt h3 {\n\tfont-family: 'Lato';\n\tfont-weight: 100;\n\tpadding-top: 100px;\n}\n\n.map-container {\n\tbackground-color: white;\n\twidth: 100%;\n\theight: 575px;\n}\n\n.map-section-input {\n\twidth: 100%;\n\tborder-style: solid !important;\n\tborder-width: 0.1em !important;\n\tborder-color: #CECECE !important;\n}\n\n.form-userlocation {\n\tborder-radius: 0;\n\tborder: none;\n}\n\n.zero-padding {\n\tpadding: 0 0 0 0;\n}\n\n.zero-margin {\n\tmargin: 0 0 0 0;\n}\n\n@media screen and (max-width: 350px) {\n\t.mission-section h1 {\n\t\tfont-size: 1.8em !important;\n\t}\n\t.mission-section h2 {\n\t\tfont-size: 1.8em !important;\n\t}\n}\n\n@media screen and (min-width: 351px) and (max-width: 575px) {\n\t.mission-section h1 {\n\t\tfont-size: 2.0em !important;\n\t}\n\t.mission-section h2 {\n\t\tfont-size: 2.0em !important;\n\t}\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) {\n\t.row-container {\n\t\twidth: 95%;\n\t}\n\t.image-section {\n\t\theight: 200px;\n\t}\n\t.founder-section h1 {\n\t\tfont-size: 1.0em !important;\n\t}\n\t.founder-section h3 {\n\t\tfont-size: 1.2em !important;\n\t}\n\t.map-section-input {\n\t\twidth: 100% !important;\n\t}\n}\n\n/* GRID sm -> med */\n@media screen and (min-width: 576px) and (max-width: 768px) {\n\t.map-section-input {\n\t\twidth: 60%;\n\t}\n}\n\n/* GRID xs -> lg */\n@media screen and (max-width: 769px) {\n\t.map-container {\n\t\theight: 350px;\n\t}\n\t#map {\n\t\twidth: 100%;\n\t\theight: 350px;\n\t}\n\t.map-section-txt h3 {\n\t\tpadding-top: 40px !important;\n\t}\n\t.map-section-input {\n\t\tmargin-bottom: 60px !important;\n\t}\n}\n\n@media screen and (min-width: 576px) and (max-width: 992px) {\n\t.mission-section h1 {\n\t\tfont-size: 2.2em !important;\n\t}\n\t.mission-section h2 {\n\t\tfont-size: 2.2em !important;\n\t}\n\t.row-container {\n\t\twidth: 90%;\n\t}\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 769px) and (max-width: 992px) {\n\t.map-container {\n\t\theight: 400px;\n\t\tmargin-bottom: 20px;\n\t\tpadding-right: 10px;\n\t}\n\t#map {\n\t\twidth: 100%;\n\t\theight: 400px;\n\t\tmargin: 20px auto;\n\t}\n\t.row-container {\n\t\twidth: 90%;\n\t}\n}\n\n/* GRID lg -> xl */\n@media screen and (min-width: 993px) and (max-width: 1200px) {\n\t.founder-section-txt {\n\t\tmargin-top: 75px;\n\t}\n\t.mission-section h1 {\n\t\tfont-size: 2.4em !important;\n\t}\n\t.mission-section h2 {\n\t\tfont-size: 2.4em !important;\n\t}\n}\n\n/* GRID xl -> beyond */\n@media screen and (min-width: 1201px) {\n\t.founder-section-txt {\n\t\tmargin-top: 75px;\n\t}\n}\n\n@media screen (max-width: 1260px) and (min-width: 993px) {\n}\n\n@media screen (min-width: 1261px) and (max-width: 1550px) {\n}\n\n/* small -> mid */\n@media screen and (max-width: 992px) {\n\t.mission-section h1 {\n\t\tpadding-top: 60px !important;\n\t}\n\t.mission-section h2 {\n\t\tpadding-bottom: 25px !important;\n\t}\n\t.row-container-shifted-right {\n\t\twidth: 100%;\n\t}\n\t.row-container-shifted-left {\n\t\twidth: 100%;\n\t}\n\t.product-section {\n\t\tmargin-top: 75px;\n\t}\n\t.product-section-colrow {\n\t\tmargin-top: 25px !important;\n\t}\n\t.founder-section h1 {\n\t\tfont-size: 2.0em !important;\n\t\tmargin-top: 0;\n\t}\n\t.founder-section h3 {\n\t\tfont-size: 2.0em !important;\n\t}\n\t.founder-section p {\n\t\tfont-size: 1.2em !important;\n\t\tline-height: 1.5;\n\t\tmargin-top: 20px;\n\t}\n\t.founder-section-txt button {\n\t\tpadding-top: 10px !important;\n\t}\n\t.founder-section-txt {\n\t\tmargin-top: 75px;\n\t\tmargin-bottom: 50px; \n\t}\n\t.footer-member-btn {\n\t\tmargin-top: 10px !important;\n\t}\n}\n\n/* mid -> beyond */\n@media screen and (min-width: 993px) {\n}\n\n/* mid -> large */\n@media screen and (min-width: 991px) and (max-width: 1024px) {\n\t.row-container {\n\t\twidth: 90%;\n\t}\n\t.row-container-shifted-right {\n\t\twidth: 95%;\n\t}\n\t.row-container-shifted-left {\n\t\twidth: 95%;\n\t}\n}\n\n/* xl -> small */\n@media screen and (max-width: 990px) {\n\t.image-section {\n\t\theight: 350px;\n\t}\n}\n\n/* small -> max */\n@media screen and (min-width: 991px) {\n\t.image-section {\n\t\theight: 500px;\n\t}\n}\n\n/* large -> max */\n@media screen and (min-width: 1025px) {\n\t.row-container {\n\t\twidth: 70%;\n\t}\n\t.row-container-shifted-right {\n\t\twidth: 85%;\n\t}\n\t.row-container-shifted-left {\n\t\twidth: 85%;\n\t}\n}\n\n/* md -> larger */\n@media screen and (min-width: 992px) and (max-width: 1550px) {\n\t.product-section {\n\t\tmargin-top: 195px;\n\t}\n\t.founder-section h3 {\n\t\tfont-size: 1.8em !important;\n\t}\n\t.founder-section h1 {\n\t\tfont-size: 2.2em !important;\n\t\tmargin-top: 0;\n\t}\n\t.founder-section p {\n\t\tfont-size: 1.2em !important;\n\t\tline-height: 1.733;\n\t}\n\t.map-section-txt h2 {\n\t\tfont-size: 2.0em !important;\n\t}\n\t.map-section-txt {\n\t\tmargin-top: 60px;\n\t}\n\t#map {\n\t\twidth: 90%;\n\t\theight: 450px;\n\t\tmargin: 75px auto;\n\t}\n\t.map-container {\n\t\theight: 525px;\n\t}\n}\n\n@media screen and (min-width: 1550px) {\n\t.mission-section h1 {\n\t\tfont-size: 4.0em !important;\n\t\tpadding-top: 90px !important;\n\t}\n\t.mission-section h2 {\n\t\tfont-size: 4.0em !important;\n\t}\n\t.product-section {\n\t\tmargin-top: 155px;\n\t}\n\t.founder-section h3 {\n\t\tfont-size: 2.5em !important;\n\t}\n\t.founder-section h1 {\n\t\tfont-size: 3.0em !important;\n\t\tmargin-top: 0;\n\t}\n\t.founder-section p {\n\t\tfont-size: 1.3em !important;\n\t\tline-height: 1.733;\n\t}\n\t.map-section-txt h2 {\n\t\tfont-size: 3.0em;\n\t}\n\t.map-section-txt h3 {\n\t\tfont-size: 2.7em;\n\t}\n\t.map-section-txt {\n\t\tmargin-top: 75px;\n\t}\n\t#map {\n\t\twidth: 90%;\n\t\theight: 500px;\n\t\tmargin: 75px auto;\n\t}\n}\n\n.white-left-binary-container {\n\tbackground-color: white;\n\tmargin-top: 110px;\n\tmargin-left: 0;\n\twidth: 88.5%;\n\tmargin-bottom: 50px;\n}\n\n.white-left-binary-container-body h1 {\n\tfont-size: 3.5em;\n\tfont-weight: 300;\n\tfont-family: 'Lato';\n\tpadding-top: 35px;\n}\n\n.white-left-binary-container-body {\n\tmargin: 0 auto;\n\twidth: 60%;\n}\n\n.white-left-binary-container-body-bottom {\n\tmargin-top: 60px;\n\theight: 300px;\n}\n\n.white-left-binary-container-body h3 {\n\tfont-weight: 300;\n}\n\n.white-left-binary-container-body-btn {\n\tborder-radius: 0;\n\tbackground-color: #377037;\n\tcolor: white;\n\tpadding: 11px 20px;\n}\n\n.white-left-binary-container-body-btn:hover {\n\tbackground-color: #285228;\n\tcolor: white;\n}\n\n.image-row-container {\n\theight: 500px;\n\twidth: 100%;\n\tbackground-color: #377037;\n}\n\n@media screen and (max-width: 250px) {\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) {\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) and (min-width: 351px) {\n}\n\n@media screen and (max-width: 768px) {\n\t.hide-in-mobile {\n\t\tdisplay: none;\n\t\tmin-width: 100% !important;\n\t}\n\t.show-in-mobile {\n\t\tdisplay: block;\n\t}\n\t.transparent-on-mobile {\n\t\tcolor: transparent;\n\t\tline-height: 0;\n\t}\n\t.white-left-binary-container {\n\t\tmargin-top: 80px;\n\t\twidth: 95% !important;\n\t\tmargin-bottom: 25px !important;\n\t}\n\t.white-left-binary-container-body h1 {\n\t\tfont-size: 2.4em !important;\n\t}\n\t.white-left-binary-container-body {\n\t\twidth: 95% !important;\n\t}\n\t.white-left-binary-container-body-bottom {\n\t\tmargin-top: 40px;\n\t\theight: 150px;\n\t}\n\t.white-left-binary-container-body-btn {\n\t\ttext-align: left;\n\t\twidth: 100%;\n\t\tpadding: 11px 20px;\n\t\tmargin-top: 0px;\n\t}\n\t.white-left-binary-container-body-btn-inverse {\n\t\ttext-align: left;\n\t\tborder-width: 2px;\n\t\tborder-color: #377037;\n\t\tbackground-color: white;\n\t\tcolor: #377037;\n\t\tpadding: 11px 20px;\n\t}\n\t.white-left-binary-container-body-btn-inverse: hover {\n\t\tbackground-color: #377037;\n\t\tcolor: white;\n\t}\n\t.image-row-container {\n\t\theight: 350px;\n\t}\n}\n\n/* GRID sm -> med */\n@media screen and (min-width: 576px) and (max-width: 768px) {\n}\n\n@media screen and (min-width: 769px) {\n\t.white-left-binary-container-body h4 {\n\t\tfont-family: 'Lato';\n\t\tfont-weight: 300;\n\t\tfont-size: 1.25em;\n\t\tline-height: 1.71429;\n\t\tpadding-bottom: 10px;\n\t\tpadding-top: 15px;\n\t\theight: 80px;\n\t\twidth: 400px;\n\t}\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 769px) and (max-width: 991px) {\n\t.white-left-binary-container-body {\n\t\twidth: 85% !important;\n\t}\n\t.white-left-binary-container-body h1 {\n\t\tfont-size: 2.8em !important;\n\t\tpadding-top: 20px;\n\t}\n\t.white-left-binary-container-body h3 {\n\t\tfont-size: 1.7em;\n\t}\n\t.white-left-binary-container-body h4 {\n\t\tfont-size: 1.15em;\n\t\twidth: 250px;\n\t}\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 992px) and (max-width: 1260px) {\n\t.white-left-binary-container-body {\n\t\twidth: 70% !important;\n\t}\n\t.white-left-binary-container-body h1 {\n\t\tfont-size: 3.0em !important;\n\t}\n\t.white-left-binary-container-body h3 {\n\t\tfont-size: 1.7em;\n\t}\n\t.white-left-binary-container-body h4 {\n\t\tfont-size: 1.15em;\n\t\twidth: 250px;\n\t}\n}\n\n.signup-header-section {\n\ttext-align: left;\n}\n\n@media screen and (max-width: 250px) {\n}\n\n@media screen and (max-width: 250px) and (max-width: ) {\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) {\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) and (min-width: 351px) {\n}\n\n/* GRID sm -> med */\n@media screen and (min-width: 576px) and (max-width: 768px) {\n}\n\n\n/* GRID sm -> med */\n@media screen and (max-width: 768px) {\n\t.signup-container-bg {\n\t\theight: 400px;\n\t}\n}\n\n/* GRID med -> beyond */\n@media screen and (min-width: 769px) {\n\t.signup-header-section h1 {\n\t\tmargin-top: 150px;\n\t\tfont-size: 4.0em;\n\t\tfont-weight: 300;\n\t}\n\t.signup-header-section h2 {\n\t\tmargin-top: -10px;\n\t\tfont-size: 4.0em;\n\t\tfont-family: 'Lato';\n\t\tfont-weight: 200;\n\t\tpadding-bottom: 75px;\n\t}\n\t.signup-image-section {\n\t\theight: 600px;\n\t}\n\t.signup-container-bg {\n\t\theight: 500px;\n\t}\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 769px) and (max-width: 992px) {\n}\n\n/* md -> larger */\n@media screen and (min-width: 992px) and (max-width: 1550px) {\n}\n\n/* larger -> beyond */\n@media screen and (min-width: 1551px) {\n}", ""]);
 
 // exports
 
@@ -26962,165 +26962,11 @@ var AttorneySignupForm = function (_Component) {
 		value: function render() {
 			return _react2.default.createElement(
 				'div',
-				{ className: 'container signup-lawyer-form-container' },
+				{ className: 'container' },
 				_react2.default.createElement(
 					'div',
-					{ className: 'form-padding-container' },
-					_react2.default.createElement(
-						'div',
-						{ className: 'row form-header-row' },
-						_react2.default.createElement(
-							'div',
-							{ className: 'col-md-4' },
-							_react2.default.createElement('img', { className: 'electronics-icon',
-								src: __webpack_require__(88) })
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'col-md-8' },
-							_react2.default.createElement(
-								'h1',
-								null,
-								'Need an Attorney?'
-							),
-							_react2.default.createElement(
-								'button',
-								{ className: 'signup-form-button' },
-								'MEMBER SIGN UP \xA0\xA0',
-								_react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-right' })
-							)
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'separator' },
-						'OR'
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'row signup-form-container' },
-						_react2.default.createElement(
-							'div',
-							{ className: 'col-md-4' },
-							_react2.default.createElement('img', { className: 'agree-icon',
-								src: __webpack_require__(89) })
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'col-md-8' },
-							_react2.default.createElement(
-								'h1',
-								null,
-								'Become an iLawyer'
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'input-group signup-form' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'row signup-row1' },
-								_react2.default.createElement(
-									'div',
-									{ className: 'col-md-6' },
-									_react2.default.createElement('input', { type: 'text',
-										placeholder: 'First Name',
-										id: 'firstname',
-										className: 'form-control form-fname form-input',
-										onChange: this.onChange.bind(this) })
-								),
-								_react2.default.createElement(
-									'div',
-									{ className: 'col-md-6' },
-									_react2.default.createElement('input', { type: 'text',
-										placeholder: 'Last Name',
-										id: 'lastname',
-										className: 'form-control form-lname form-input',
-										onChange: this.onChange.bind(this) })
-								)
-							),
-							_react2.default.createElement(
-								'div',
-								{ className: 'row signup-row' },
-								_react2.default.createElement(
-									'div',
-									{ className: 'col-md-12' },
-									_react2.default.createElement('input', { type: 'text',
-										placeholder: 'Email',
-										id: 'email',
-										className: 'form-control form-input form-email',
-										onChange: this.onChange.bind(this) })
-								),
-								_react2.default.createElement(
-									'div',
-									{ className: 'col-md-12' },
-									_react2.default.createElement('input', { type: 'text',
-										placeholder: 'Phone',
-										id: 'phone',
-										className: 'form-control form-input form-phone',
-										onChange: this.onChange.bind(this) })
-								),
-								_react2.default.createElement(
-									'div',
-									{ className: 'col-md-12' },
-									_react2.default.createElement('input', { type: 'password',
-										placeholder: 'Create Password',
-										id: 'password',
-										className: 'form-control form-input form-pass',
-										onChange: this.onChange.bind(this) })
-								)
-							),
-							_react2.default.createElement(
-								'div',
-								{ className: 'row signup-row' },
-								_react2.default.createElement(
-									'div',
-									{ className: 'col-md-12' },
-									_react2.default.createElement('input', { type: 'text',
-										placeholder: 'City',
-										id: 'city',
-										className: 'form-control form-input form-city',
-										onChange: this.onChange.bind(this) })
-								)
-							),
-							_react2.default.createElement(
-								'div',
-								{ className: 'row signup-row' },
-								_react2.default.createElement(
-									'div',
-									{ className: 'col-md-12' },
-									_react2.default.createElement('input', { type: 'text',
-										placeholder: 'Bar Number',
-										id: 'barnumber',
-										className: 'form-control form-input form-id',
-										onChange: this.onChange.bind(this) })
-								)
-							),
-							_react2.default.createElement(
-								'button',
-								{ onClick: this.submitForm.bind(this),
-									className: 'btn signup-btn' },
-								'ATTORNEY SIGN UP \xA0\xA0',
-								_react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-right' })
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'signup-text' },
-								'Or',
-								_react2.default.createElement(
-									'a',
-									{ className: 'signup-tag' },
-									'sign in '
-								),
-								'with your iLawyer account.'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'disclaimer' },
-								'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-							)
-						)
-					)
+					{ className: 'separator' },
+					'OR'
 				)
 			);
 		}
@@ -27140,24 +26986,14 @@ exports = module.exports = __webpack_require__(24)(undefined);
 
 
 // module
-exports.push([module.i, "*:focus {\n    outline: 0 !important;\n}\n\n.ubuntu-light {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300;\n}\n\n.ubuntu-medium {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 400;\n}\n\n.ubuntu-bold {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 500;\n}\n\n.ubuntu-heavy {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 700;\n}\n\n.signup-lawyer-form-container {\n\twidth: 425px;\n\theight: 850px;\n\tbackground-color: #F8F8F9;\n\tposition: absolute;\n\tmargin-top: 100px;\n\tright: 5%;\n\tborder-radius: 0;\n}\n\n.form-padding-container {\n\twidth: 95%;\n\theight: 90%;\n\tposition: relative;\n\tbackground-color: #F8F8F9;\n\tmargin: 0 auto;\n}\n\n.form-header-row {\n\ttext-align: left;\n}\n\n.form-padding-container h1 {\n\tfont-weight: 300;\n\tfont-size: 1.9em;\n\tmargin-top: 50px;\n\tmargin-left: -10%;\n}\n\n.form-padding-container button {\n\tmargin-left: -10%;\n\tcolor: #377037;\n\tbackground-color: transparent;\n\tborder: none;\n\tpadding: 0;\n\tfont-weight: 400;\n\tfont-size: 1.1em;\n}\n\n.signup-form-button: hover {\n\tcolor: #285228;\n}\n\n.electronics-icon {\n\twidth: 64px;\n\theight: 64px;\n\tposition: relative;\n\tmargin: 0 auto;\n\tmargin-top: 50%;\n}\n\n.separator {\n\tmargin-top: 15px;\n    display: flex;\n    align-items: center;\n    text-align: center;\n    color: #CECECE;\n    padding-left: 20px;\n    padding-right: 20px;\n    font-size: 0.9em;\n}\n\n.separator::before, .separator::after {\n    content: '';\n    flex: 1;\n    border-bottom: 1px solid #CECECE;\n}\n\n.separator::before {\n    margin-right: .25em;\n}\n\n.separator::after {\n    margin-left: .25em;\n}\n\n.signup-form-container {\n\tpadding-top: 0;\n\tmargin-top: -20px;\n}\n\n.signup-form-container h1 {\n\ttext-align: left;\n\tmargin-left: -10%;\n}\n\n.agree-icon {\n\twidth: 64px;\n\theight: 64px;\n\tposition: relative;\n\tmargin: 30% auto;\n}\n\n.signup-form {\n\twidth: 100%;\n}\n\n.signup-form:placeholder-shown {\n\tcolor: #CECECE;\n}\n\n.form-input {\n\theight: 50px;\n\tfont-size: 1.1em;\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300;\n\t/* color: #CECECE; */\n\tcolor: black;\n\tborder-color: #CECECE !important;\n}\n\n.form-fname {\n\tmargin-left: 35px;\n\twidth: 170px !important;\n}\n\n.form-lname {\n\tmargin-left: -15px;\n\twidth: 170px !important;\n}\n\n.form-input:focus {\n\tborder-color: #CECECE;\n\tbox-shadow: none;\n}\n\n.signup-row {\n\tmargin-top: 20px;\n\tmargin-left: 20px;\n\twidth: 368px;\n}\n\n.signup-btn {\n\tbackground-color: #377037 !important;\n\twidth: 335px !important;\n\tmargin-top: 20px;\n\tmargin-left: 37px !important;\n\theight: 50px;\n\ttext-align: left;\n\tcolor: #F8F8F9 !important;\n\tpadding-left: 15px !important;\n\tfont-size: 0.8em;\n\tborder-radius: 0;\n}\n\n.signup-form p {\n\ttext-align: left;\n\tmargin-left: 35px;\n\twidth: 340px;\n}\n\n.signup-text {\n\tmargin-top: 20px;\n}\n\n.signup-text a {\n\tcolor: #377037;\n}\n\n.signup-tag:hover {\n\ttext-decoration: none;\n\tcursor: pointer;\n}\n\n.disclaimer {\n\tfont-size: 0.8em;\n}\n\n/* GRID xl -> beyond */\n@media screen and (min-width: 1201px) {\n\t.signup-lawyer-form-container {\n\t\twidth: 425px;\n\t\theight: 850px;\n\t\tbackground-color: #F8F8F9;\n\t\tposition: absolute;\n\t\tmargin-top: 100px;\n\t\tright: 10%;\n\t}\n}\n\n/* \ngrey border color: #CECECE;\nform grey background : #F8F8F9;\nform dark grey : #F1F1F1;\ngreen button light: #377037\ngreen button dark: #285228;\nlight grey: #C6C6C6;\nmed grey: #939393;\ndemi white: #f8f8f9;\n*/\n\nlink: hover {\n\tbackground-color: transparent;\n}\n\n.home-navbar {\n\tmin-width: 220px;\n\twidth: 170vh;\n\tbackground-color: white;\n\tmargin: 0 auto;\n}\n\n#home-navbar-collapse {\n\tcolor: black;\n\tfont-family: 'Ubuntu' !important;\n\tborder-radius: 0;\n}\n\n.home-navbar-brand {\n\tborder: none;\n\tbackground-color: transparent;\n\tcolor:black;\n\tfont-family: 'Ubuntu';\n\tfont-size: 1.5em;\n\tfont-weight: 500;\n\tletter-spacing: 0px;\n\tmargin-top: 5px;\n\tcursor: pointer;\n}\n\n.home-navbar-brand:hover {\n\tcolor: black;\n}\n\n.home-navbar-brand:focus {\n\tcolor: black;\n}\n\n.icon-bar {\n\tcolor: black;\n\tbackground-color: black;\n}\n\n.home-navbar-btn {\n\tcolor: black !important; \n}\n\n.home-navbar-green-btn {\n\tfont-family: 'Ubuntu' !important;\n\tfont-size: 0.95em;\n\tfont-weight: lighter;\n\tpadding-top: 10px;\n\tpadding-bottom: 10px;\n\tmargin-top: 5px;\n\tmargin-left: 20px;\n\tbackground-color: #377037;\n\tcolor: white;\n\tborder-radius: 0!important;\n}\n\n.home-navbar-green-btn: hover {\n\tbackground-color: #306130!important;\n\tcolor: white !important;\n}\n\n#home-navbar-collapse ul {\n\tfont-weight: medium;\n\tfont-size: 1.1em;\n\tmargin-top: 0!important;\n\tmargin-right: 5px;\n}\n\n.navbtn-left {\n\tfont-weight: lighter;\n\tfont-size: 1.2em;\n\tmargin-top: 0!important;\n\tmargin-left: 10px;\n}\n\n@media screen and (max-width: 1655px) {\n\t.home-navbar {\n\t\twidth: 100% !important;\n\t}\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) {\n\t.home-navbar-container {\n\t\twidth: 100% !important;\n\t}\n}\n\n/* GRID sm -> med */\n@media screen and (min-width: 576px) and (max-width: 768px) {\n}\n\n/* Mobile/Tablet width */\n@media screen and (max-width: 767px) {\n\t.navbar-collapse.collapse{\n    \ttransition: height 0.2s ;\n\t}\n\t.navbar-collapse.collapsing {\n\t    height: 0 !important;\n\t}\n\t.navbar-collapse.collapse.in{\n\t    max-height: none;\n\t    height: 100vh;\n\t}\n\t.home-navbar-btn {\n\t\tmargin: 0 auto !important;\n\t\twidth: 100% !important;\n\t\ttext-align: left;\n\t\tcolor: black;\n\t\tbackground-color: transparent;\n\t\tborder: none;\n\t\tfont-size: 19px;\n\t\tline-height: 24px;\n\t\tfont-weight: 300 !important;\n\t\tpadding-top: 20px;\n\t\tpadding-left: 0 !important\n\t}\n\t.home-navbar-btn-bottom-border {\n\t\tborder-bottom-width: 1px;\n\t\tborder-bottom-style: solid;\n\t\tborder-bottom-color: #C0C0C0;\n\t}\n\t.home-navbar-btn-top-border {\n\t\tborder-top-width: 1px;\n\t\tborder-top-style: solid;\n\t\tborder-top-color: #C0C0C0;\n\t}\n\t.home-navbar-btn-green {\n\t\tposition: absolute;\n\t}\n\t.home-navbar-collapse-top {\n\t\tpadding-top: 25px !important;\n\t}\n\t.home-navbar-collapse-bottom {\n\t\tpadding-bottom: 25px !important;\n\t}\n\t.home-navbar-li {\n\t\tmargin: 0 auto;\n\t\twidth: 90% !important;\n\t}\n\t.home-navbar-collapse-btn {\n\t\tdisplay: block;\n\t}\n\t.home-navbar-uncollapse-btn {\n\t\tdisplay: none;\n\t}\n\t#home-collapse-btn-home {\n\t\tpadding-top: 45px !important;\n\t}\n}\n\n/* Desktop/Laptop width */\n@media screen and (min-width: 768px) {\n\t.home-navbar-btn {\n\t\tcolor: black !important;\n\t\tfont-size: 16px;\n\t\tmargin: 0 5px 10px 15px;\n\t\tpadding: 16px 5px 10px 5px !important;\n\t\tbackground-color: transparent;\n\t\tborder-top-color: transparent;\n\t\tborder-top-width: 4px;\n\t\tborder-right: none;\n\t\tborder-left: none;\n\t\tborder-bottom: none;\n\t}\n\n\t.home-navbar-btn:hover {\n\t\tborder-top-color: #377037 !important;\n\t\tborder-top-width: 4px;\n\t\tborder-right: none;\n\t\tborder-left: none;\n\t\tborder-bottom: none;\n\t\tcolor: #377037 !important;\n\t\tbackground-color: transparent !important;\n\t\theight: 100% !important;\n\t\ttext-decoration: none;\n\t}\n\n\t.home-navbar-btn:focus {\n\t\toutline: none !important;\n\t\tbox-shadow: none !important;\n\t\tbackground-color: transparent;\n\t\tborder-color: #265328;\n\t\tcolor: #265328;\n\t\ttext-decoration: none;\n\t}\n\n\t.home-navbar-btn-right {\n\t\tfont-weight: 400;\n\t\tfont-family: 'Ubuntu';\n\t}\n\n\t.home-navbar-btn-left {\n\t\tfont-weight: 300;\n\t\tfont-family: 'Ubuntu';\n\t}\n\n\t.home-navbar-btn-green {\n\t\tcolor: white;\n\t\tfont-weight: 300;\n\t\tfont-size: 13px;\n\t\tmargin: 10px 15px 10px 15px;\n\t\tpadding: 5px 15px 10px 15px !important;\n\t\tbackground-color: #377037;\n\t\tborder-top-color: transparent;\n\t\tborder-top-width: 4px;\n\t\tborder-right: none;\n\t\tborder-left: none;\n\t\tborder-bottom: none;\n\t}\n\n\t.home-navbar-btn-green:hover {\n\t\tcolor: white !important;\n\t\tbackground-color: #244824 !important;\n\t\theight: 100% !important;\n\t}\n\n\t.home-navbar-btn-green:focus {\n\t\toutline: none !important;\n\t\tbox-shadow: none !important;\n\t\tbackground-color: transparent;\n\t\tborder-color: #265328;\n\t\tcolor: #265328;\n\t}\n\t.home-navbar-collapse-btn {\n\t\tdisplay: none;\n\t}\n\t.home-navbar-uncollapse-btn {\n\t\tdisplay: block;\n\t}\n}\n\n@media screen and (min-width: 576px) and (max-width: 992px) {\n\t.home-navbar-container {\n\t\twidth: 100% !important;\n\t}\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 769px) and (max-width: 992px) {\n}\n\n/* GRID lg -> xl */\n@media screen and (min-width: 993px) and (max-width: 1200px) {\n\t.home-navbar-container {\n\t\twidth: 90% !important;\n\t}\n}\n\n@media screen and (min-width: 1201px) {\n\t.home-navbar-container {\n\t\twidth: 90%;\n\t}\n}\n\n/* Navbar Animation CSS */\n.menu {\n  cursor: pointer;\n  margin: 0 auto;\n  padding-left: 1.25em;\n  position: relative;\n  width: 40px;\n  height: 40px;\n}\n.menu-global {\n  backface-visibility: hidden;\n  position: absolute;\n  left: 0;\n  border-top: 2px solid black;\n  width: 55%;\n  transition: 0.55s;\n}\n.menu-top {\n  top: 23px;\n}\n.menu-middle {\n  top: 28px;\n}\n.menu-bottom {\n  top: 33px;\n}\n.menu-top-click {\n  backface-visibility: hidden;\n  top: 30px;\n  transform: rotate(45deg);\n  transition: 0.55s 0.5s;\n}\n.menu-middle-click {\n  opacity: 0;\n}\n.menu-bottom-click {\n  backface-visibility: hidden;\n  top: 30px;\n  transform: rotate(-405deg);\n  transition: 0.55s 0.5s;\n}\n/* Navbar Animation CSS END */\n\n.signup-form-container {\n\tmargin-top: 25px;\n}\n\n.signup-form-container input {\n\tborder-radius: 0;\n\tfont-size: 14px !important;\n\tfont-weight: 500 !important;\n\tline-height: 24px !important;\n}\n\n.signup-form-container div {\n\tpadding: 0 0 0 0;\n}\n\n.signup-form-container form {\n\tpadding: 0 0 0 0;\n\tmargin: 0 0 0 0;\n}\n\n.signup-form-container input {\n\tborder-width: 0.5px;\n\tborder-color: #D0D0CF !important;\n}\n\n.signup-form-container input:focus {\n\tborder-color: #13888F;\n\tborder-style: solid;\n\tbox-shadow: none;\n}\n\n.signup-form-container button {\n\tmargin-top: 15px;\n\twidth: 100%;\n\tborder-radius: 0;\n\ttext-align: left;\n\tbackground-color: #13888F;\n\tcolor: white;\n\tfont-weight: 600;\n\tfont-size: 14px;\n\tpadding: 11px 20px 11px 20px;\n\tline-height: 18px;\n\tborder: 2px solid #13888F;\n}\n\n@media screen and (max-width: 250px) {\n}\n\n@media screen and (max-width: 250px) and (max-width: ) {\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) {\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) and (min-width: 351px) {\n}\n\n/* GRID sm -> med */\n@media screen and (min-width: 576px) and (max-width: 768px) {\n}\n\n\n/* GRID sm -> med */\n@media screen and (max-width: 768px) {\n}\n\n/* GRID med -> beyond */\n@media screen and (min-width: 769px) {\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 769px) and (max-width: 992px) {\n}\n\n/* md -> larger */\n@media screen and (min-width: 992px) and (max-width: 1550px) {\n}\n\n/* larger -> beyond */\n@media screen and (min-width: 1551px) {\n}", ""]);
+exports.push([module.i, "*:focus {\n    outline: 0 !important;\n}\n\n.ubuntu-light {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 300;\n}\n\n.ubuntu-medium {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 400;\n}\n\n.ubuntu-bold {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 500;\n}\n\n.ubuntu-heavy {\n\tfont-family: 'Ubuntu';\n\tfont-weight: 700;\n}\n\n\n.electronics-icon {\n\twidth: 64px;\n\theight: 64px;\n\tposition: relative;\n\tmargin: 0 auto;\n\tmargin-top: 50%;\n}\n\n.separator {\n\tmargin-top: 15px;\n    display: flex;\n    align-items: center;\n    text-align: center;\n    color: #CECECE;\n    padding-left: 20px;\n    padding-right: 20px;\n    font-size: 0.9em;\n}\n\n.separator::before, .separator::after {\n    content: '';\n    flex: 1;\n    border-bottom: 1px solid #CECECE;\n}\n\n.separator::before {\n    margin-right: .25em;\n}\n\n.separator::after {\n    margin-left: .25em;\n}\n\n.agree-icon {\n\twidth: 64px;\n\theight: 64px;\n\tposition: relative;\n\tmargin: 30% auto;\n}\n\n\n/* GRID xl -> beyond */\n@media screen and (min-width: 1201px) {\n}\n\n/* \ngrey border color: #CECECE;\nform grey background : #F8F8F9;\nform dark grey : #F1F1F1;\ngreen button light: #377037\ngreen button dark: #285228;\nlight grey: #C6C6C6;\nmed grey: #939393;\ndemi white: #f8f8f9;\n*/\n\nlink: hover {\n\tbackground-color: transparent;\n}\n\n.home-navbar {\n\tmin-width: 220px;\n\twidth: 170vh;\n\tbackground-color: white;\n\tmargin: 0 auto;\n}\n\n#home-navbar-collapse {\n\tcolor: black;\n\tfont-family: 'Ubuntu' !important;\n\tborder-radius: 0;\n}\n\n.home-navbar-brand {\n\tborder: none;\n\tbackground-color: transparent;\n\tcolor:black;\n\tfont-family: 'Ubuntu';\n\tfont-size: 1.5em;\n\tfont-weight: 500;\n\tletter-spacing: 0px;\n\tmargin-top: 5px;\n\tcursor: pointer;\n}\n\n.home-navbar-brand:hover {\n\tcolor: black;\n}\n\n.home-navbar-brand:focus {\n\tcolor: black;\n}\n\n.icon-bar {\n\tcolor: black;\n\tbackground-color: black;\n}\n\n.home-navbar-btn {\n\tcolor: black !important; \n}\n\n.home-navbar-green-btn {\n\tfont-family: 'Ubuntu' !important;\n\tfont-size: 0.95em;\n\tfont-weight: lighter;\n\tpadding-top: 10px;\n\tpadding-bottom: 10px;\n\tmargin-top: 5px;\n\tmargin-left: 20px;\n\tbackground-color: #377037;\n\tcolor: white;\n\tborder-radius: 0!important;\n}\n\n.home-navbar-green-btn: hover {\n\tbackground-color: #306130!important;\n\tcolor: white !important;\n}\n\n#home-navbar-collapse ul {\n\tfont-weight: medium;\n\tfont-size: 1.1em;\n\tmargin-top: 0!important;\n\tmargin-right: 5px;\n}\n\n.navbtn-left {\n\tfont-weight: lighter;\n\tfont-size: 1.2em;\n\tmargin-top: 0!important;\n\tmargin-left: 10px;\n}\n\n@media screen and (max-width: 1655px) {\n\t.home-navbar {\n\t\twidth: 100% !important;\n\t}\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) {\n\t.home-navbar-container {\n\t\twidth: 100% !important;\n\t}\n}\n\n/* GRID sm -> med */\n@media screen and (min-width: 576px) and (max-width: 768px) {\n}\n\n/* Mobile/Tablet width */\n@media screen and (max-width: 767px) {\n\t.navbar-collapse.collapse{\n    \ttransition: height 0.2s ;\n\t}\n\t.navbar-collapse.collapsing {\n\t    height: 0 !important;\n\t}\n\t.navbar-collapse.collapse.in{\n\t    max-height: none;\n\t    height: 100vh;\n\t}\n\t.home-navbar-btn {\n\t\tmargin: 0 auto !important;\n\t\twidth: 100% !important;\n\t\ttext-align: left;\n\t\tcolor: black;\n\t\tbackground-color: transparent;\n\t\tborder: none;\n\t\tfont-size: 19px;\n\t\tline-height: 24px;\n\t\tfont-weight: 300 !important;\n\t\tpadding-top: 20px;\n\t\tpadding-left: 0 !important\n\t}\n\t.home-navbar-btn-bottom-border {\n\t\tborder-bottom-width: 1px;\n\t\tborder-bottom-style: solid;\n\t\tborder-bottom-color: #C0C0C0;\n\t}\n\t.home-navbar-btn-top-border {\n\t\tborder-top-width: 1px;\n\t\tborder-top-style: solid;\n\t\tborder-top-color: #C0C0C0;\n\t}\n\t.home-navbar-btn-green {\n\t\tposition: absolute;\n\t}\n\t.home-navbar-collapse-top {\n\t\tpadding-top: 25px !important;\n\t}\n\t.home-navbar-collapse-bottom {\n\t\tpadding-bottom: 25px !important;\n\t}\n\t.home-navbar-li {\n\t\tmargin: 0 auto;\n\t\twidth: 90% !important;\n\t}\n\t.home-navbar-collapse-btn {\n\t\tdisplay: block;\n\t}\n\t.home-navbar-uncollapse-btn {\n\t\tdisplay: none;\n\t}\n\t#home-collapse-btn-home {\n\t\tpadding-top: 45px !important;\n\t}\n}\n\n/* Desktop/Laptop width */\n@media screen and (min-width: 768px) {\n\t.home-navbar-btn {\n\t\tcolor: black !important;\n\t\tfont-size: 16px;\n\t\tmargin: 0 5px 10px 15px;\n\t\tpadding: 16px 5px 10px 5px !important;\n\t\tbackground-color: transparent;\n\t\tborder-top-color: transparent;\n\t\tborder-top-width: 4px;\n\t\tborder-right: none;\n\t\tborder-left: none;\n\t\tborder-bottom: none;\n\t}\n\n\t.home-navbar-btn:hover {\n\t\tborder-top-color: #377037 !important;\n\t\tborder-top-width: 4px;\n\t\tborder-right: none;\n\t\tborder-left: none;\n\t\tborder-bottom: none;\n\t\tcolor: #377037 !important;\n\t\tbackground-color: transparent !important;\n\t\theight: 100% !important;\n\t\ttext-decoration: none;\n\t}\n\n\t.home-navbar-btn:focus {\n\t\toutline: none !important;\n\t\tbox-shadow: none !important;\n\t\tbackground-color: transparent;\n\t\tborder-color: #265328;\n\t\tcolor: #265328;\n\t\ttext-decoration: none;\n\t}\n\n\t.home-navbar-btn-right {\n\t\tfont-weight: 400;\n\t\tfont-family: 'Ubuntu';\n\t}\n\n\t.home-navbar-btn-left {\n\t\tfont-weight: 300;\n\t\tfont-family: 'Ubuntu';\n\t}\n\n\t.home-navbar-btn-green {\n\t\tcolor: white;\n\t\tfont-weight: 300;\n\t\tfont-size: 13px;\n\t\tmargin: 10px 15px 10px 15px;\n\t\tpadding: 5px 15px 10px 15px !important;\n\t\tbackground-color: #377037;\n\t\tborder-top-color: transparent;\n\t\tborder-top-width: 4px;\n\t\tborder-right: none;\n\t\tborder-left: none;\n\t\tborder-bottom: none;\n\t}\n\n\t.home-navbar-btn-green:hover {\n\t\tcolor: white !important;\n\t\tbackground-color: #244824 !important;\n\t\theight: 100% !important;\n\t}\n\n\t.home-navbar-btn-green:focus {\n\t\toutline: none !important;\n\t\tbox-shadow: none !important;\n\t\tbackground-color: transparent;\n\t\tborder-color: #265328;\n\t\tcolor: #265328;\n\t}\n\t.home-navbar-collapse-btn {\n\t\tdisplay: none;\n\t}\n\t.home-navbar-uncollapse-btn {\n\t\tdisplay: block;\n\t}\n}\n\n@media screen and (min-width: 576px) and (max-width: 992px) {\n\t.home-navbar-container {\n\t\twidth: 100% !important;\n\t}\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 769px) and (max-width: 992px) {\n}\n\n/* GRID lg -> xl */\n@media screen and (min-width: 993px) and (max-width: 1200px) {\n\t.home-navbar-container {\n\t\twidth: 90% !important;\n\t}\n}\n\n@media screen and (min-width: 1201px) {\n\t.home-navbar-container {\n\t\twidth: 90%;\n\t}\n}\n\n/* Navbar Animation CSS */\n.menu {\n  cursor: pointer;\n  margin: 0 auto;\n  padding-left: 1.25em;\n  position: relative;\n  width: 40px;\n  height: 40px;\n}\n.menu-global {\n  backface-visibility: hidden;\n  position: absolute;\n  left: 0;\n  border-top: 2px solid black;\n  width: 55%;\n  transition: 0.55s;\n}\n.menu-top {\n  top: 23px;\n}\n.menu-middle {\n  top: 28px;\n}\n.menu-bottom {\n  top: 33px;\n}\n.menu-top-click {\n  backface-visibility: hidden;\n  top: 30px;\n  transform: rotate(45deg);\n  transition: 0.55s 0.5s;\n}\n.menu-middle-click {\n  opacity: 0;\n}\n.menu-bottom-click {\n  backface-visibility: hidden;\n  top: 30px;\n  transform: rotate(-405deg);\n  transition: 0.55s 0.5s;\n}\n/* Navbar Animation CSS END */\n\n.signup-form-container {\n\tmargin-top: 35px;\n}\n\n.signup-form-container input {\n\tborder-radius: 0! important;\n\tborder-color: #CECECE;\n\tfont-size: 14px !important;\n\tfont-weight: 500 !important;\n\tline-height: 24px !important;\n\tborder-width: 0.5px;\n}\n\n.signup-form-container div {\n\tpadding: 0 0 0 0;\n}\n\n.signup-form-container form {\n\tpadding: 0 0 0 0;\n\tmargin: 0 0 0 0;\n}\n\n.signup-form-container input:focus {\n\tborder-color: #13888F;\n\tborder-style: solid;\n\tborder-width: 1px;\n\tbox-shadow: none;\n}\n\n.signup-form-container input {\n\theight: 50px;\n}\n\n.signup-form-container button {\n\tmargin-top: 15px;\n\twidth: 100%;\n\tborder-radius: 0;\n\ttext-align: left;\n\tbackground-color: #13888F;\n\tcolor: white;\n\tfont-weight: 600;\n\tfont-size: 14px;\n\tpadding: 11px 20px 11px 20px;\n\tline-height: 18px;\n\tborder: 2px solid #13888F;\n\theight: 50px;\n}\n\n.signup-form-container button:hover {\n\tcolor: white;\n\tbackground-color: #0F7278;\n}\n\n.signup-form-container h4 {\n\tmargin-top: 30px;\n\tfont-size: 16px;\n\tfont-weight: 300;\n}\n\n.signup-form-container span {\n\tcolor: #13888F;\n}\n\n.signup-form-container span:hover {\n\tcolor: #0F7278;\n\tcursor: pointer;\n}\n\n.signup-form-container p {\n\tmargin-top: 15px;\n\tline-height: 1.6;\n\tfont-size: 12px;\n\tfont-weight: 300;\n\tmargin-bottom: 25px;\n}\n\n.signup-form-container input:placeholder-shown {\n\tcolor: #9C9B9B;\n}\n\ninput::-webkit-input-placeholder {\ncolor: #9C9B9B !important;\n}\n \ninput:-moz-placeholder { /* Firefox 18- */\ncolor: #9C9B9B !important;  \n}\n \ninput::-moz-placeholder {  /* Firefox 19+ */\ncolor: #9C9B9B !important;  \n}\n \ninput:-ms-input-placeholder {  \ncolor: #9C9B9B !important;  \n}\n\n@media screen and (max-width: 250px) {\n}\n\n@media screen and (max-width: 250px) and (max-width: ) {\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) {\n}\n\n/* GRID xs -> sm */\n@media screen and (max-width: 575px) and (min-width: 351px) {\n}\n\n/* GRID sm -> med */\n@media screen and (min-width: 576px) and (max-width: 768px) {\n}\n\n\n/* GRID sm -> med */\n@media screen and (max-width: 768px) {\n\t.signup-form-container h2 {\n\t\tdisplay: none;\n\t}\n}\n\n/* GRID med -> beyond */\n@media screen and (min-width: 769px) {\n\t.signup-form-container {\n\t\topacity: 100%;\n\t\tbackground-color: #F7F7F8;\n\t\tposition: absolute;\n\t\twidth: 400px;\n\t\tpadding: 25px 25px 20px 25px;\n\t\tborder-radius: 0;\n\t\tborder-top-width: 10px;\n\t\tborder-top-color: #EFEFEF;\n\t\tborder-top-style: solid;\n\t}\n\t.signup-form-container h2 {\n\t\tfont-weight: 300;\n\t\tfont-family: 'Lato';\n\t\tmargin-bottom: 30px;\n\t}\n}\n\n/* GRID med -> lg */\n@media screen and (min-width: 769px) and (max-width: 992px) {\n\t.signup-form-container {\n\t\tright: 25px;\n\t\ttop: 50px;\n\t}\n}\n\n/* md -> larger */\n@media screen and (min-width: 992px) and (max-width: 1550px) {\n\t.signup-form-container {\n\t\tright: 40px;\n\t}\n}\n\n@media screen and (min-width: 993px) {\n\t.signup-form-container {\n\t\ttop: 75px;\n\t}\n}\n\n/* larger -> beyond */\n@media screen and (min-width: 1551px) {\n\t.signup-form-container {\n\t\tright: 10%;\n\t}\n}", ""]);
 
 // exports
 
 
 /***/ }),
-/* 88 */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAA1VBMVEX///9Av6pLt6BLuKJKuaFLt6JKuKFKuKFKuKFMs6FKuKJKuKFKuKFKuKFNs5lLuaBKt6FKuKFVqqpKuKFJuKFKuaFKuKBKtaVKuaFIt6JKuKFJuaFKuKFKt6JKuKE+k4QgMzgeLDM0cmotO0M7SlRYaHQ3Q0l3npl7h5De3+Dm5ubO0NHd4+Jww7Kxt7uQmJyGjpOYz8TU1tiboKPNz9Cg18v19fXt7e28v8EzQEZ4yLft8vGCiYyz3dTH4t2zt7o5SFDk7+2SzcGPzMBWu6aYz8NSuqVDOi09AAAAH3RSTlMADE5wiqS+2PIbaLb4/wp0y/4DZOVM1R/APOpi+Y6wkQpH1wAAAetJREFUeAGk0wOaxEAUReEb88Wctq39b27aRuH/HJykhE8UVdMN07JtyzR0TVXAxXE9nx74nuuAURBGMb0RR2GA35I0o4+yNMEPeUFfFTm+KSv6qSrxUf1HDP5qfNBoEpNmA+8kLWLWSvAiaROH9muhRVxaL+MnTg08qJvEqVnjTvlH3P5K3FQkoMJVTnudbo9Rt0NHOc6Sgvb6PWZ9OioSnKR0CgyGTAaXAKU4CrJzYDhiMrwGsgAHIYkGKMRBJB6IsOfE4oHYAeCSeIBcAJ5MwAMUXybgK1BJJkAqNLmABl0uoMOQCxgw+QPjCV2ZsJgD09l8bzHfW67ozILNHFjP9zbbzXxvR2c2R2B+O+6DW4BjCOvb/eE1YHFM4n/pZZGgMBTG4BncHQ7BCqu73v9GOKlrsoO23/P3J7mAQYNlvOQB+vGNVKFrHqAX38oVuuUButFhEsQKSXmADo5zPkCWywGzf1wo+QBFKQdMX1ca04NJ7FJVteZzsB7jWs/qfITOnz+ygBUKS0vAEqWtOQClDcW1GqBHOqO4orwnpQqCYUKGIKhfomVbQB42cYORlCOm5MznbgzgwWBkLA56ENe7B74b/OSFsDi8yeJtHm80eavLm23e7vOBg488fOjiYx8fPPnoS4RvIv4/AA3+RM+wYl8+AAAAAElFTkSuQmCC"
-
-/***/ }),
-/* 89 */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,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"
-
-/***/ }),
+/* 88 */,
+/* 89 */,
 /* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27326,7 +27162,7 @@ var Signup = function (_Component) {
 			var tanColor = '#F7F7F8';
 			return _react2.default.createElement(
 				'div',
-				{ className: 'container main-container' },
+				{ className: 'container main-container signup-container' },
 				_react2.default.createElement(
 					'div',
 					{ className: 'row',
@@ -27335,14 +27171,18 @@ var Signup = function (_Component) {
 						'div',
 						{ className: 'container row-container mission-section' },
 						_react2.default.createElement(
-							'h1',
-							null,
-							'Become a mobile Attorney'
-						),
-						_react2.default.createElement(
-							'h2',
-							null,
-							'Earn money on your schedule'
+							'div',
+							{ className: 'col-xs-12 col-sm-7 col-md-8 col-lg-12 col-xl-12' },
+							_react2.default.createElement(
+								'h1',
+								null,
+								'Become a mobile Attorney'
+							),
+							_react2.default.createElement(
+								'h2',
+								null,
+								'Earn money on your schedule'
+							)
 						)
 					)
 				),
@@ -27351,7 +27191,7 @@ var Signup = function (_Component) {
 					'div',
 					{ className: 'row',
 						style: { backgroundColor: 'black' } },
-					_react2.default.createElement('img', { className: 'image-section' })
+					_react2.default.createElement('img', { className: 'image-section signup-container-bg' })
 				),
 				_react2.default.createElement(
 					'div',
@@ -27478,10 +27318,43 @@ var SignupForm = function (_Component) {
 	function SignupForm() {
 		_classCallCheck(this, SignupForm);
 
-		return _possibleConstructorReturn(this, (SignupForm.__proto__ || Object.getPrototypeOf(SignupForm)).apply(this, arguments));
+		var _this = _possibleConstructorReturn(this, (SignupForm.__proto__ || Object.getPrototypeOf(SignupForm)).call(this));
+
+		_this.state = {
+			attorney: true,
+			form: {
+				firstname: '',
+				lastname: '',
+				email: '',
+				phone: '',
+				password: '',
+				city: '',
+				barnumber: ''
+			}
+		};
+		return _this;
 	}
 
 	_createClass(SignupForm, [{
+		key: 'onChange',
+		value: function onChange(event) {
+			var formObject = Object.assign({}, this.state.form);
+			formObject[event.target.id] = event.target.value.trim();
+			console.log('Event Listening: ' + formObject[event.target.id]);
+			this.setState({ form: formObject });
+		}
+	}, {
+		key: 'submitForm',
+		value: function submitForm() {
+			console.log('FirstName: ' + this.state.form.firstname);
+			console.log('LastName : ' + this.state.form.lastname);
+			console.log('Email    : ' + this.state.form.email);
+			console.log('Phone Num: ' + this.state.form.phone);
+			console.log('Password : ' + this.state.form.password);
+			console.log('City     : ' + this.state.form.city);
+			console.log('BarNumber: ' + this.state.form.barnumber);
+		}
+	}, {
 		key: 'render',
 		value: function render() {
 			return _react2.default.createElement(
@@ -27490,58 +27363,133 @@ var SignupForm = function (_Component) {
 					style: { backgroundColor: '#F7F7F8' } },
 				_react2.default.createElement(
 					'div',
-					{ className: 'container row-container signup-form-container' },
+					{ className: 'container row-container' },
 					_react2.default.createElement(
-						'form',
-						null,
+						'div',
+						{ className: 'signup-form-container' },
 						_react2.default.createElement(
-							'div',
-							{ className: 'col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'form-group' },
-								_react2.default.createElement('input', { type: 'email',
-									className: 'form-control input-lg',
-									id: 'signup-email-input',
-									placeholder: 'Email' })
-							)
+							'h2',
+							null,
+							'Sign up now'
 						),
 						_react2.default.createElement(
-							'div',
-							{ className: 'col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12' },
+							'form',
+							null,
 							_react2.default.createElement(
 								'div',
-								{ className: 'col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6' },
-								_react2.default.createElement('input', { type: 'text',
-									className: 'form-control input-lg',
-									id: 'signup-first-input',
-									placeholder: 'First Name' })
+								{ className: 'col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'form-group' },
+									_react2.default.createElement('input', { type: 'email',
+										className: 'form-control input-lg',
+										id: 'signup-email-input',
+										placeholder: 'Email',
+										onChange: this.onChange.bind(this) })
+								)
 							),
 							_react2.default.createElement(
 								'div',
-								{ className: 'col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6' },
-								_react2.default.createElement('input', { type: 'text',
-									className: 'form-control input-lg',
-									id: 'signup-last-input',
-									placeholder: 'Last Name' })
+								{ className: 'col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'form-group' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6' },
+										_react2.default.createElement('input', { type: 'text',
+											className: 'form-control input-lg',
+											id: 'signup-first-input',
+											placeholder: 'First Name',
+											onChange: this.onChange.bind(this) })
+									),
+									_react2.default.createElement(
+										'div',
+										{ className: 'col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6' },
+										_react2.default.createElement('input', { type: 'text',
+											className: 'form-control input-lg',
+											id: 'signup-last-input',
+											placeholder: 'Last Name',
+											onChange: this.onChange.bind(this) })
+									),
+									_react2.default.createElement('input', { type: 'text',
+										className: 'form-control input-lg',
+										id: 'signup-phone-input',
+										placeholder: 'Phone' }),
+									_react2.default.createElement('input', { type: 'password',
+										className: 'form-control input-lg',
+										id: 'signup-pass-input',
+										placeholder: 'Create Password',
+										onChange: this.onChange.bind(this) })
+								)
 							),
-							_react2.default.createElement('input', { type: 'text',
-								className: 'form-control input-lg',
-								id: 'signup-phone-input',
-								placeholder: 'Phone' }),
-							_react2.default.createElement('input', { type: 'password',
-								className: 'form-control input-lg',
-								id: 'signup-pass-input',
-								placeholder: 'Create Password' })
-						),
-						_react2.default.createElement('div', { className: 'col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12' }),
-						_react2.default.createElement(
-							'div',
-							{ className: 'col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12' },
 							_react2.default.createElement(
-								'button',
-								{ className: 'btn btn-lg' },
-								'SIGNUP'
+								'div',
+								{ className: 'col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'form-group' },
+									_react2.default.createElement('input', { type: 'text',
+										className: 'form-control input-lg',
+										id: 'signup-bar-input',
+										placeholder: 'Bar Number',
+										onChange: this.onChange.bind(this) })
+								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'form-group' },
+									_react2.default.createElement('input', { type: 'text',
+										className: 'form-control input-lg',
+										id: 'signup-pass-input',
+										placeholder: 'Invite Code (Optional)',
+										onChange: this.onChange.bind(this) })
+								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12' },
+								_react2.default.createElement(
+									'button',
+									{ className: 'btn btn-lg' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 zero-padding zero-margin' },
+										'SIGN UP'
+									),
+									_react2.default.createElement(
+										'div',
+										{ className: 'col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 zero-padding zero-margin' },
+										_react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-right',
+											style: { color: 'white' } })
+									)
+								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'col-xs-12 col-sm-12 col-12-md col-12-lg col-xl-12' },
+								_react2.default.createElement(
+									'h4',
+									null,
+									'Have an account? ',
+									_react2.default.createElement(
+										'span',
+										null,
+										'Log In'
+									)
+								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'col-xs-12 col-sm-12 col-12-md col-12-lg col-xl-12' },
+								_react2.default.createElement(
+									'p',
+									null,
+									'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet.'
+								)
 							)
 						)
 					)
@@ -27602,6 +27550,7 @@ var Navbar = function (_React$Component) {
 	}, {
 		key: 'onClick',
 		value: function onClick(event) {
+			console.log('Event Clicked: ' + event.target.value);
 			this.toggleHamburger();
 		}
 	}, {
@@ -27723,7 +27672,8 @@ var Navbar = function (_React$Component) {
 											'data-target': '#home-navbar-collapse' },
 										_react2.default.createElement(
 											_reactRouterDom.Link,
-											{ to: '/signup', style: { textDecoration: 'none', color: 'black', ':hover': { color: '#377037' } } },
+											{ to: '/signup',
+												style: { textDecoration: 'none', color: 'black', ':hover': { color: '#377037' } } },
 											'Sign Up'
 										)
 									)
@@ -27855,7 +27805,8 @@ var BinaryDirectory = function (_Component) {
 				{ className: 'container main-container binary-container' },
 				_react2.default.createElement(
 					'div',
-					{ className: 'row', style: { backgroundColor: tanColor } },
+					{ className: 'row',
+						style: { backgroundColor: tanColor } },
 					_react2.default.createElement(
 						'div',
 						{ className: 'white-left-binary-container container' },
@@ -27885,7 +27836,8 @@ var BinaryDirectory = function (_Component) {
 									),
 									_react2.default.createElement(
 										_reactRouterDom.Link,
-										{ to: this.props.to[0], className: 'btn white-left-binary-container-body-btn' },
+										{ to: this.props.to[0],
+											className: 'btn white-left-binary-container-body-btn' },
 										_react2.default.createElement(
 											'div',
 											{ className: 'col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 zero-padding zero-margin' },
@@ -27913,7 +27865,8 @@ var BinaryDirectory = function (_Component) {
 									),
 									_react2.default.createElement(
 										_reactRouterDom.Link,
-										{ to: this.props.to[1], className: 'btn white-left-binary-container-body-btn white-left-binary-container-body-btn-inverse' },
+										{ to: this.props.to[1],
+											className: 'btn white-left-binary-container-body-btn white-left-binary-container-body-btn-inverse' },
 										_react2.default.createElement(
 											'div',
 											{ className: 'col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 zero-padding zero-margin' },
@@ -27932,10 +27885,12 @@ var BinaryDirectory = function (_Component) {
 				),
 				_react2.default.createElement(
 					'div',
-					{ className: 'row', style: { backgroundColor: tanColor } },
+					{ className: 'row',
+						style: { backgroundColor: tanColor } },
 					_react2.default.createElement('div', { className: 'container row-container image-row-container' })
 				),
-				_react2.default.createElement(_Footer2.default, { buttonNames: ['LAWYER SIGN UP', 'MEMBER SIGN UP'], buttonIds: ['LawyerSignup', 'MemberSignup'] })
+				_react2.default.createElement(_Footer2.default, { buttonNames: ['LAWYER SIGN UP', 'MEMBER SIGN UP'],
+					buttonIds: ['LawyerSignup', 'MemberSignup'] })
 			);
 		}
 	}]);
