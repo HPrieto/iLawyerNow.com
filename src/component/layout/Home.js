@@ -4,6 +4,7 @@ import './layout.css';
 // Module components
 import AttorneySignupForm from '../containers/AttorneySignupForm.js';
 import MiniSignupForm from '../presentation/MiniSignupForm.js';
+import IconComponent from '../presentation/IconComponent.js';
 import Footer from '../presentation/Footer.js';
 
 class Home extends Component {
@@ -26,7 +27,7 @@ class Home extends Component {
 	}
 	updateDimensions() {
 		let windowWidth = window.innerWidth;
-		let form = (windowWidth < 992) ? <MiniSignupForm /> : <AttorneySignupForm />; 
+		let form = (windowWidth < 992) ? <MiniSignupForm /> : <AttorneySignupForm />;
 		this.setState({
 			form: form
 		})
@@ -53,14 +54,14 @@ class Home extends Component {
 		geocoder.geocode( { 'address': address }, (results, status) => {
 			if ((status == 'OK' && address.length > 5)) {
 				let coordinates = results[0].geometry.location;
-				var mapOptions = {
+				let mapOptions = {
 					center: coordinates,
 	        		zoom: 12,
 	        		mapTypeId: 'roadmap'
 				}
 				let map = new google.maps.Map(document.getElementById('map'), mapOptions);
 			} else if (status == 'OK' && address.length <= 5) {
-				var mapOptions = {
+				let mapOptions = {
 					center: new google.maps.LatLng(34.020442, -118.501748),
 	        		zoom: 12,
 	        		mapTypeId: 'roadmap'
@@ -88,42 +89,21 @@ class Home extends Component {
 				<div className="row"
 					 style={{backgroundColor: 'white'}}>
 					<div className='container row-container product-section'>
-						<div className="zero-padding zero-margin col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-colrow"
-							 style={{margin: 0,padding: 0}}>
-							<div className="col-xs-12 col-sm-3 col-md-12 col-lg-12">
-								<img src={require('../img/oath_icon.png')}/>
-							</div>
-							<div className="col-xs-12 col-sm-8 col-md-12 col-lg-12">
-								<h1>Easiest way to justice</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-								Ut enim ad minim veniam.</p>
-							</div>
-						</div>
-						<div className="zero-padding zero-margin col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-colrow"
-							 style={{margin: 0,padding: 0}}>
-							<div className="col-xs-12 col-sm-3 col-md-12 col-lg-12">
-								<img src={require('../img/court_icon.png')}/>
-							</div>
-							<div className="col-xs-12 col-sm-8 col-md-12 col-lg-12">
-								<h1>Anywhere, anytime</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-								Ut enim ad minim veniam.</p>
-							</div>
-						</div>
-						<div className="zero-padding zero-margin col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-colrow"
-							 style={{margin: 0,padding: 0}}>
-							<div className="col-xs-12 col-sm-3 col-md-12 col-lg-12">
-								<img src={require('../img/book_icon.png')}/>
-							</div>
-							<div className="col-xs-12 col-sm-8 col-md-12 col-lg-12">
-								<h1>Low-cost to justice</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-								Ut enim ad minim veniam.</p>
-							</div>
-						</div>
+						<IconComponent  imageURL={require('../img/oath_icon.png')}
+										title='Easiest way to justice'
+										desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										Ut enim ad minim veniam.'/>
+						<IconComponent  imageURL={require('../img/court_icon.png')}
+										title='Anywhere, anytime'
+										desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										Ut enim ad minim veniam.'/>
+						<IconComponent  imageURL={require('../img/book_icon.png')}
+										title='Low-cost to justice'
+										desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										Ut enim ad minim veniam.'/>
 					</div>
 				</div>
 				<div className="row" style={{backgroundColor: 'white'}}>
@@ -142,8 +122,8 @@ class Home extends Component {
 							<div className="founder-section-txt zero-margin zero-padding">
 								<h3>Our commitment to lawyers</h3>
 								<h1>A better iLAWYER has arrived</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 								<button onClick={this.onClick.bind(this)}
 										className="btn inverse-btn"
@@ -163,12 +143,12 @@ class Home extends Component {
 						<div className="col-xs-12 col-sm-5 col-md-4 col-lg-4 col-xl-4 map-section-txt">
 							<h3>Pricing</h3>
 							<h2>Attorneys, anywhere</h2>
-							<div className='map-section-input col-xs-12 col-sm-8 col-md-8'>
+							<div className='map-section-input-container col-xs-12 col-sm-8 col-md-8'>
 								<div className='col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 zero-padding'>
 									<input type='text'
 										   placeholder="Enter your location"
 										   id='userlocation'
-										   className='form-control form-userlocation form-input'
+										   className='form-control form-input'
 										   onChange={this.onAddressChange.bind(this)} />
 								</div>
 								<div className='col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 zero-padding zero-margin'>
@@ -176,7 +156,7 @@ class Home extends Component {
 										  onClick={this.destinationClicked.bind(this)}
 										  className="input-group-addon"
 										  style={{border:'none',height:50,backgroundColor:'white',color:'#C6C6C6',fontSize:'1.5em'}}>
-										<i className="glyphicon glyphicon-map-marker"></i>
+										  <i className="glyphicon glyphicon-map-marker"/>
 									</span>
 								</div>
 							</div>
@@ -190,11 +170,10 @@ class Home extends Component {
 				</div>
 				<div className="row" style={{backgroundColor: tanColor}}>
 					<div className='container row-container'>
-						
 					</div>
 				</div>
 				<Footer buttonNames={['LAWYER SIGN UP', 'MEMBER SIGN UP']}
-						buttonIds={['LawyerSignup', 'MemberSignup']} />
+						buttonIds={['LawyerSignup', 'MemberSignup']}/>
 			</div>
 		)
 	}

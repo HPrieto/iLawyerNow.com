@@ -10,7 +10,7 @@ import BinaryDirectory from './component/layout/BinaryDirectory.js';
 
 /* Binary Directories */
 function SigninDirectory() {
-	return <BinaryDirectory header={"Sign In"} 
+	return <BinaryDirectory header={"Sign In"}
 							titles={["Attorney","Member"]}
 							descriptions={["Find everything you need to track your success on the road.","Manage your payment options, review trip history, and more."]}
 							buttonNames={["ATTORNEY SIGN IN","MEMBER SIGN IN"]}
@@ -18,7 +18,7 @@ function SigninDirectory() {
 }
 
 function LoginDirectory() {
-	return <BinaryDirectory header={"Log In"} 
+	return <BinaryDirectory header={"Log In"}
 							titles={["Attorney","Member"]}
 							descriptions={["Find everything you need to track your success on the road.","Manage your payment options, review trip history, and more."]}
 							buttonNames={["ATTORNEY LOG IN","MEMBER LOG IN"]}
@@ -26,7 +26,7 @@ function LoginDirectory() {
 }
 
 function SignupDirectory() {
-	return <BinaryDirectory header={"Sign Up"} 
+	return <BinaryDirectory header={"Sign Up"}
 							titles={["Attorney","Member"]}
 							descriptions={["Find everything you need to track your success on the road.","Manage your payment options, review trip history, and more."]}
 							buttonNames={["ATTORNEY SIGN UP","MEMBER SIGN UP"]}
@@ -34,7 +34,7 @@ function SignupDirectory() {
 }
 
 function AttorneyDirectory() {
-	return <BinaryDirectory header={"Attorney"} 
+	return <BinaryDirectory header={"Attorney"}
 							titles={["Sign Up","Sign In"]}
 							descriptions={["Find everything you need to track your success on the road.","Manage your payment options, review trip history, and more."]}
 							buttonNames={["ATTORNEY SIGN UP","ATTORNEY SIGN IN"]}
@@ -42,16 +42,34 @@ function AttorneyDirectory() {
 }
 
 function MemberDirectory() {
-	return <BinaryDirectory header={"Member"} 
+	return <BinaryDirectory header={"Member"}
 							titles={["Sign Up","Sign In"]}
 							descriptions={["Find everything you need to track your success on the road.","Manage your payment options, review trip history, and more."]}
 							buttonNames={["MEMBER SIGN UP","MEMBER SIGN IN"]}
 							to={["/member/signup","/member/signin"]}/>;
 }
 
+/* Attorney and Member Signup Layouts */
+
 /* Attorney/Member Signup Pages */
 function AttorneySignup() {
-	return <Signup />
+	return <Signup header={"Become a mobile Attorney"}
+				   subheader={"Earn money on your schedule"}
+				   images={[require('./component/img/moneytree.png'),require('./component/img/watch.png'),require('./component/img/smartphone.png')]}
+				   imageTitle={["Make great money","Set your own schedule","Signing up is easy"]}
+				   imageDesc={["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+				   			   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+				   			   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."]}/>;
+}
+
+function MemberSignup() {
+	return <Signup header={"Become a member"}
+				   subheader={"Get help when needed"}
+				   images={[require('./component/img/teamwork.png'),require('./component/img/lecturer.png'),require('./component/img/hammer_icon.png')]}
+				   imageTitle={["Make great money","Set your own schedule","Signing up is easy"]}
+				   imageDesc={["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+				   			   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+				   			   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."]}/>;
 }
 
 class App extends Component {
@@ -69,14 +87,15 @@ class App extends Component {
 				<div style={{padding: 0, margin: 0}}>
 					<Navbar />
 					<Switch>
-						<Route exact path='/'	component={Home} />
-						<Route path='/home'		component={Home} />
-						<Route path='/signin'	component={SigninDirectory} />
-						<Route path='/signup'	component={SignupDirectory} />
-						<Route path='/attorney/signup' component={AttorneySignup} />
-						<Route exact path='/attorney'	component={Signup} />
-						<Route path='/member'	component={MemberDirectory} />
-						<Route path='/login'	component={LoginDirectory} />
+						<Route exact path='/'			component={Home}/>
+						<Route path='/home'				component={Home}/>
+						<Route path='/signin'			component={SigninDirectory}/>
+						<Route path='/signup'			component={SignupDirectory}/>
+						<Route path='/attorney/signup' 	component={AttorneySignup}/>
+						<Route exact path='/attorney'	component={AttorneySignup}/>
+						<Route exact path='/member'		component={MemberSignup}/>
+						<Route path='/attorney/member' 	component={MemberSignup}/>
+						<Route path='/login'			component={LoginDirectory}/>
 						<Route component={Home}/>
 					</Switch>
 				</div>

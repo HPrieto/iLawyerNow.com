@@ -4,9 +4,15 @@ import './layout.css';
 
 /* Import Components */
 import SignupForm from '../containers/SignupForm.js';
+import IconComponent from '../presentation/IconComponent.js';
 import Footer from '../presentation/Footer.js';
 
 class Signup extends Component {
+	constructor(props) {
+	    super(props)
+	}
+	componentWillMount() {
+	}
 	onClick(event) {
 		console.log('Event Clicked: ' + event.target.value)
 	}
@@ -18,8 +24,8 @@ class Signup extends Component {
 					 style={{backgroundColor: 'white'}}>
 					<div className='container row-container mission-section'>
 						<div className='col-xs-12 col-sm-7 col-md-8 col-lg-12 col-xl-12'>
-							<h1>Become a mobile Attorney</h1>
-							<h2>Earn money on your schedule</h2>
+							<h1>{this.props.header}</h1>
+							<h2>{this.props.subheader}</h2>
 						</div>
 					</div>
 				</div>
@@ -31,42 +37,17 @@ class Signup extends Component {
 				<div className="row"
 					 style={{backgroundColor: 'white'}}>
 					<div className='container row-container product-section'>
-						<div className="zero-padding zero-margin col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-colrow"
-							 style={{margin: 0,padding: 0}}>
-							<div className="col-xs-12 col-sm-3 col-md-12 col-lg-12">
-								<img src={require('../img/moneytree.png')}/>
-							</div>
-							<div className="col-xs-12 col-sm-8 col-md-12 col-lg-12">
-								<h1>Make great money</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-								Ut enim ad minim veniam.</p>
-							</div>
-						</div>
-						<div className="zero-padding zero-margin col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-colrow"
-							 style={{margin: 0,padding: 0}}>
-							<div className="col-xs-12 col-sm-3 col-md-12 col-lg-12">
-								<img src={require('../img/watch.png')}/>
-							</div>
-							<div className="col-xs-12 col-sm-8 col-md-12 col-lg-12">
-								<h1>Set your own schedule</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-								Ut enim ad minim veniam.</p>
-							</div>
-						</div>
-						<div className="zero-padding zero-margin col-xs-12 col-sm-12 col-md-4 col-lg-4 product-section-colrow"
-							 style={{margin: 0,padding: 0}}>
-							<div className="col-xs-12 col-sm-3 col-md-12 col-lg-12">
-								<img src={require('../img/smartphone.png')}/>
-							</div>
-							<div className="col-xs-12 col-sm-8 col-md-12 col-lg-12">
-								<h1>Signing up is easy</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-								Ut enim ad minim veniam.</p>
-							</div>
-						</div>
+						<IconComponent  imageURL={this.props.images[0]}
+										title={this.props.imageTitle[0]}
+										desc={this.props.imageDesc[0]}/>
+
+						<IconComponent  imageURL={this.props.images[1]}
+										title={this.props.imageTitle[1]}
+										desc={this.props.imageDesc[1]}/>
+
+						<IconComponent  imageURL={this.props.images[2]}
+										title={this.props.imageTitle[2]}
+										desc={this.props.imageDesc[2]}/>
 					</div>
 				</div>
 				<Footer buttonNames={['LAWYER SIGN UP', 'MEMBER SIGN UP']}

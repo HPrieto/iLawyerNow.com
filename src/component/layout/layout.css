@@ -14,7 +14,7 @@ body {
 
 .main-container {
 	min-width: 250px;
-	width: 170vh;
+	width: 160vh;
 	font-family: 'Ubuntu';
 }
 
@@ -138,16 +138,24 @@ body {
 	height: 575px;
 }
 
-.map-section-input {
+.map-section-input-container {
 	width: 100%;
 	border-style: solid !important;
 	border-width: 0.1em !important;
 	border-color: #CECECE !important;
 }
 
-.form-userlocation {
+.map-section input {
 	border-radius: 0;
 	border: none;
+	box-shadow: none;
+	height: 50px !important;
+	width: 100%;
+	font-size: 21px;
+}
+
+.map-section input:focus {
+	box-shadow: none;
 }
 
 .zero-padding {
@@ -190,14 +198,14 @@ body {
 	.founder-section h3 {
 		font-size: 1.2em !important;
 	}
-	.map-section-input {
+	.map-section-input-container {
 		width: 100% !important;
 	}
 }
 
 /* GRID sm -> med */
 @media screen and (min-width: 576px) and (max-width: 768px) {
-	.map-section-input {
+	.map-section-input-container {
 		width: 60%;
 	}
 }
@@ -214,7 +222,7 @@ body {
 	.map-section-txt h3 {
 		padding-top: 40px !important;
 	}
-	.map-section-input {
+	.map-section-input-container {
 		margin-bottom: 60px !important;
 	}
 }
@@ -311,7 +319,7 @@ body {
 	}
 	.founder-section-txt {
 		margin-top: 75px;
-		margin-bottom: 50px; 
+		margin-bottom: 50px;
 	}
 	.footer-member-btn {
 		margin-top: 10px !important;
@@ -536,7 +544,7 @@ body {
 		color: white;
 	}
 	.image-row-container {
-		height: 350px;
+		height: 250px;
 	}
 }
 
@@ -620,18 +628,21 @@ body {
 	.signup-container-bg {
 		height: 400px;
 	}
+	.signup-header-section h1 {
+		margin-top: 150px;
+		font-size: 3.0em;
+		font-weight: 300;
+	}
 }
 
 /* GRID med -> beyond */
 @media screen and (min-width: 769px) {
 	.signup-header-section h1 {
 		margin-top: 150px;
-		font-size: 4.0em;
 		font-weight: 300;
 	}
 	.signup-header-section h2 {
 		margin-top: -10px;
-		font-size: 4.0em;
 		font-family: 'Lato';
 		font-weight: 200;
 		padding-bottom: 75px;
@@ -640,12 +651,22 @@ body {
 		height: 600px;
 	}
 	.signup-container-bg {
-		height: 500px;
+		height: 550px;
 	}
 }
 
 /* GRID med -> lg */
 @media screen and (min-width: 769px) and (max-width: 992px) {
+	.signup-header-section h1 {
+		font-size: 3.0em;
+	}
+}
+
+/* md -> beyond */
+@media screen and (min-width: 993px) {
+	.signup-header-section h1 {
+		font-size: 4.0em;
+	}
 }
 
 /* md -> larger */

@@ -68,7 +68,7 @@
 @media screen and (min-width: 1201px) {
 }
 
-/* 
+/*
 grey border color: #CECECE;
 form grey background : #F8F8F9;
 form dark grey : #F1F1F1;
@@ -85,7 +85,7 @@ link: hover {
 
 .home-navbar {
 	min-width: 220px;
-	width: 170vh;
+	width: 160vh;
 	background-color: white;
 	margin: 0 auto;
 }
@@ -122,7 +122,7 @@ link: hover {
 }
 
 .home-navbar-btn {
-	color: black !important; 
+	color: black !important;
 }
 
 .home-navbar-green-btn {
@@ -459,30 +459,26 @@ link: hover {
 	color: #9C9B9B;
 }
 
-.form-control {
-	border: 1px solid #0F7278;
-}
-
 input::-webkit-input-placeholder {
 color: #9C9B9B !important;
 }
- 
+
 input:-moz-placeholder { /* Firefox 18- */
-color: #9C9B9B !important;  
+color: #9C9B9B !important;
 }
- 
+
 input::-moz-placeholder {  /* Firefox 19+ */
-color: #9C9B9B !important;  
+color: #9C9B9B !important;
 }
- 
-input:-ms-input-placeholder {  
-color: #9C9B9B !important;  
+
+input:-ms-input-placeholder {
+color: #9C9B9B !important;
 }
 
 @media screen and (max-width: 250px) {
 }
 
-@media screen and (max-width: 250px) and (max-width: ) {
+@media screen and (max-width: 250px) and (max-width: 575px) {
 }
 
 /* GRID xs -> sm */
@@ -511,7 +507,6 @@ color: #9C9B9B !important;
 		opacity: 100%;
 		background-color: #F7F7F8;
 		position: absolute;
-		width: 400px;
 		padding: 25px 25px 20px 25px;
 		border-radius: 0;
 		border-top-width: 10px;
@@ -528,15 +523,17 @@ color: #9C9B9B !important;
 /* GRID med -> lg */
 @media screen and (min-width: 769px) and (max-width: 992px) {
 	.signup-form-container {
-		right: 25px;
+		right:35px;
 		top: 50px;
+        width: 325px;
 	}
 }
 
 /* md -> larger */
 @media screen and (min-width: 992px) and (max-width: 1550px) {
 	.signup-form-container {
-		right: 40px;
+		right: 85px;
+        width: 350px;
 	}
 }
 
@@ -549,6 +546,7 @@ color: #9C9B9B !important;
 /* larger -> beyond */
 @media screen and (min-width: 1551px) {
 	.signup-form-container {
-		right: 10%;
+		right: 15.5%;
+        width: 400px;
 	}
 }

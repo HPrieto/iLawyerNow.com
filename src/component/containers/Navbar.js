@@ -2,6 +2,9 @@ import React from 'react';
 import { Link, Route } from 'react-router-dom';
 import './containers.css';
 
+// Import Components
+import CollapseButton from '../presentation/CollapseButton.js';
+
 class Navbar extends React.Component {
 	constructor() {
 		super()
@@ -17,11 +20,11 @@ class Navbar extends React.Component {
 		$('.menu-top').toggleClass('menu-top-click');
 	    $('.menu-middle').toggleClass('menu-middle-click');
 	    $('.menu-bottom').toggleClass('menu-bottom-click');
-	    $('.body').toggleClass($('body').css('overflow', function(_, val) {
-	    	return val == 'hidden' ? 'scroll' : 'hidden';
+	    $('.body').toggleClass($('body').css('overflow',function(_, val) {
+	    	return val=='hidden'?'scroll':'hidden';
 	    }));
-	    $('.body').toggleClass($('body').css('position', function(_, val) {
-	    	return val == 'fixed' ? 'static' : 'fixed';
+	    $('.body').toggleClass($('body').css('position',function(_, val) {
+	    	return val=='fixed'?'static':'fixed';
 	    }));
 	    event.preventDefault();
 	}
@@ -30,9 +33,9 @@ class Navbar extends React.Component {
 			<div className='navbar navbar-fixed-top home-navbar'>
 				<div className='container-fluid home-navbar-container'>
 					<div className='navbar-header'>
-						<div className="navbar-toggle menu" 
-							 data-toggle="collapse" 
-							 data-target="#home-navbar-collapse" 
+						<div className="navbar-toggle menu"
+							 data-toggle="collapse"
+							 data-target="#home-navbar-collapse"
 							 id="nav-icon4">
 		                    <span className="menu-global menu-top"    />
 		                    <span className="menu-global menu-middle" />
@@ -61,12 +64,13 @@ class Navbar extends React.Component {
 								</button>
 							</li>
 							<div>
-								<Link to='/' style={{textDecoration: 'none'}}>
+								<Link to='/'
+									  style={{textDecoration: 'none'}}>
 									<li className='home-navbar-li'>
 										<button onClick={this.onClick.bind(this)}
 												className='home-navbar-btn home-navbar-btn-left home-navbar-btn-bottom-border home-navbar-collapse-top home-navbar-collapse-bottom home-navbar-collapse-btn'
-												id="home-collapse-btn-home" 
-												data-toggle="collapse" 
+												id="home-collapse-btn-home"
+												data-toggle="collapse"
 												data-target="#home-navbar-collapse">
 												Home
 										</button>
@@ -75,36 +79,37 @@ class Navbar extends React.Component {
 								<li className='home-navbar-li'>
 									<button onClick={this.onClick.bind(this)}
 											data-toggle="collapse"
-											data-target="#home-navbar-collapse" 
+											data-target="#home-navbar-collapse"
 											className='home-navbar-btn home-navbar-btn-left home-navbar-collapse-top home-navbar-collapse-btn'>
 											Download the App
 									</button>
 								</li>
 								<li className='home-navbar-li'>
-									<button onClick={this.onClick.bind(this)}
-											className='home-navbar-btn home-navbar-btn-left home-navbar-collapse-btn' 
-											data-toggle="collapse"
-											data-target="#home-navbar-collapse">
-										<Link to='/signup'
-											  style={{textDecoration:'none',color:'black',':hover':{color: '#377037'}}}>
-											Sign Up
-										</Link>
-									</button>
+									<Link to='/signup'
+										  style={{textDecoration:'none',color:'black',':hover':{color: '#377037'}}}>
+										<button onClick={this.onClick.bind(this)}
+												className='home-navbar-btn home-navbar-btn-left home-navbar-collapse-btn'
+												data-toggle="collapse"
+												data-target="#home-navbar-collapse">
+												Sign Up
+										</button>
+									</Link>
 								</li>
 									<li className='home-navbar-li'>
-										<button onClick={this.onClick.bind(this)} 
-												className='home-navbar-btn home-navbar-btn-left home-navbar-collapse-bottom home-navbar-collapse-btn' 
-												data-toggle="collapse" 
-												data-target="#home-navbar-collapse">
-												<Link to='/login' style={{textDecoration: 'none', color: 'black', ':hover': {color: '#377037'}}}>
-												Log In
-												</Link>
-										</button>
+										<Link to='/login'
+											  style={{textDecoration:'none',color:'black',':hover':{color: '#377037'}}}>
+											<button onClick={this.onClick.bind(this)}
+													className='home-navbar-btn home-navbar-btn-left home-navbar-collapse-bottom home-navbar-collapse-btn'
+													data-toggle="collapse"
+													data-target="#home-navbar-collapse">
+													Log In
+											</button>
+										</Link>
 									</li>
 								<li className='home-navbar-li'>
-									<button onClick={this.onClick.bind(this)} 
-											className='home-navbar-btn home-navbar-btn-top-border home-navbar-collapse-top home-navbar-collapse-btn' 
-											data-toggle="collapse" 
+									<button onClick={this.onClick.bind(this)}
+											className='home-navbar-btn home-navbar-btn-top-border home-navbar-collapse-top home-navbar-collapse-btn'
+											data-toggle="collapse"
 											data-target="#home-navbar-collapse">
 											Help
 									</button>
@@ -119,8 +124,9 @@ class Navbar extends React.Component {
 							</li>
 							<li className='home-navbar-li'>
 								<button className='home-navbar-btn home-navbar-btn-right home-navbar-btn-top-border home-navbar-uncollapse-btn'>
-									<Link to='/signin' style={{textDecoration: 'none', color: 'black', ':hover': {color: '#377037'}}}>
-									SIGN IN
+									<Link to='/signin'
+										  style={{textDecoration:'none',color:'black',margin:'0 0 0 0',padding:'0 0 0 0'}}>
+										SIGN IN
 									</Link>
 								</button>
 							</li>
