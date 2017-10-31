@@ -53,7 +53,8 @@ function MemberDirectory() {
 
 /* Attorney/Member Signup Pages */
 function AttorneySignup() {
-	return <Signup header={"Become a mobile Attorney"}
+	return <Signup attorney={true}
+				   header={"Become a mobile Attorney"}
 				   subheader={"Earn money on your schedule"}
 				   images={[require('./component/img/moneytree.png'),require('./component/img/watch.png'),require('./component/img/smartphone.png')]}
 				   imageTitle={["Make great money","Set your own schedule","Signing up is easy"]}
@@ -63,7 +64,8 @@ function AttorneySignup() {
 }
 
 function MemberSignup() {
-	return <Signup header={"Become a member"}
+	return <Signup attorney={false}
+				   header={"Become a member"}
 				   subheader={"Get help when needed"}
 				   images={[require('./component/img/teamwork.png'),require('./component/img/lecturer.png'),require('./component/img/hammer_icon.png')]}
 				   imageTitle={["Make great money","Set your own schedule","Signing up is easy"]}
@@ -87,15 +89,15 @@ class App extends Component {
 				<div style={{padding: 0, margin: 0}}>
 					<Navbar />
 					<Switch>
-						<Route exact path='/'			component={Home}/>
-						<Route path='/home'				component={Home}/>
-						<Route path='/signin'			component={SigninDirectory}/>
-						<Route path='/signup'			component={SignupDirectory}/>
-						<Route path='/attorney/signup' 	component={AttorneySignup}/>
-						<Route exact path='/attorney'	component={AttorneySignup}/>
-						<Route exact path='/member'		component={MemberSignup}/>
-						<Route path='/attorney/member' 	component={MemberSignup}/>
-						<Route path='/login'			component={LoginDirectory}/>
+						<Route exact path='/'				 component={Home}/>
+						<Route path='/home'					 component={Home}/>
+						<Route path='/signin'				 component={SigninDirectory}/>
+						<Route path='/signup'				 component={SignupDirectory}/>
+						<Route exact path='/attorney/signup' component={AttorneySignup}/>
+						<Route exact path='/attorney'		 component={AttorneySignup}/>
+						<Route exact path='/member'			 component={MemberSignup}/>
+						<Route exact path='/member/signup' component={MemberSignup}/>
+						<Route path='/login'				 component={LoginDirectory}/>
 						<Route component={Home}/>
 					</Switch>
 				</div>

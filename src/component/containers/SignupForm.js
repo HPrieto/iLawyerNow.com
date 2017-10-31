@@ -82,15 +82,6 @@ class SignupForm extends Component {
 								<div className='form-group'>
 									<input 	type="text"
 						    	   			className="form-control input-lg"
-						    	   			id="signup-bar-input"
-						    	   			placeholder="Bar Number"
-						    	   			onChange={this.onChange.bind(this)}/>
-						    	</div>
-							</div>
-							<div className='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>
-								<div className='form-group'>
-									<input 	type="text"
-						    	   			className="form-control input-lg"
 						    	   			id="signup-pass-input"
 						    	   			placeholder="Invite Code (Optional)"
 						    	   			onChange={this.onChange.bind(this)}/>
@@ -111,10 +102,10 @@ class SignupForm extends Component {
 								<h4>Have an account? <span>Log In</span></h4>
 							</div>
 							<div className='col-xs-12 col-sm-12 col-12-md col-12-lg col-xl-12'>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-									Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 									Ut enim ad minim veniam.Lorem ipsum dolor sit amet.
 								</p>
 							</div>

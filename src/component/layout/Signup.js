@@ -4,6 +4,7 @@ import './layout.css';
 
 /* Import Components */
 import SignupForm from '../containers/SignupForm.js';
+import AttorneySignupForm from '../containers/AttorneySignupForm.js';
 import IconComponent from '../presentation/IconComponent.js';
 import Footer from '../presentation/Footer.js';
 
@@ -12,6 +13,8 @@ class Signup extends Component {
 	    super(props)
 	}
 	componentWillMount() {
+	}
+	componentDidMount() {
 	}
 	onClick(event) {
 		console.log('Event Clicked: ' + event.target.value)
@@ -29,7 +32,7 @@ class Signup extends Component {
 						</div>
 					</div>
 				</div>
-				<SignupForm />
+				{(this.props.attorney)?<AttorneySignupForm/>:<SignupForm/>}
 				<div className="row"
 					 style={{backgroundColor: 'black'}}>
 					<img className='image-section signup-container-bg'/>
