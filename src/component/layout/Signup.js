@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './layout.css';
 
 /* Import Components */
-import SignupForm from '../containers/SignupForm.js';
+import MemberSignupForm from '../containers/MemberSignupForm.js';
 import AttorneySignupForm from '../containers/AttorneySignupForm.js';
 import IconComponent from '../presentation/IconComponent.js';
 import Footer from '../presentation/Footer.js';
@@ -32,7 +32,7 @@ class Signup extends Component {
 						</div>
 					</div>
 				</div>
-				{(this.props.attorney)?<AttorneySignupForm/>:<SignupForm/>}
+				{(this.props.attorney)?<AttorneySignupForm/>:<MemberSignupForm/>}
 				<div className="row"
 					 style={{backgroundColor: 'black'}}>
 					<img className='image-section signup-container-bg'/>

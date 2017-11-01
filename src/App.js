@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 
 // Component Modules
 import Home   from './component/layout/Home.js';
+import Signin from './component/layout/Signin.js';
 import Signup from './component/layout/Signup.js';
 import Navbar from './component/containers/Navbar.js';
 import BinaryDirectory from './component/layout/BinaryDirectory.js';
@@ -14,7 +15,7 @@ function SigninDirectory() {
 							titles={["Attorney","Member"]}
 							descriptions={["Find everything you need to track your success on the road.","Manage your payment options, review trip history, and more."]}
 							buttonNames={["ATTORNEY SIGN IN","MEMBER SIGN IN"]}
-							to={["/attorney/signin","/member/signin"]}/>;
+							to={["/signin/attorney","/signin/member"]}/>;
 }
 
 function LoginDirectory() {
@@ -22,7 +23,7 @@ function LoginDirectory() {
 							titles={["Attorney","Member"]}
 							descriptions={["Find everything you need to track your success on the road.","Manage your payment options, review trip history, and more."]}
 							buttonNames={["ATTORNEY LOG IN","MEMBER LOG IN"]}
-							to={["/attorney/signin","/member/signin"]}/>;
+							to={["/signin/attorney","/signin/member"]}/>;
 }
 
 function SignupDirectory() {
@@ -74,6 +75,15 @@ function MemberSignup() {
 				   			   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."]}/>;
 }
 
+/* Attorney/Member Signin */
+function MemberSignin() {
+	return <Signin />
+}
+
+function AttorneySignin() {
+	return <Signin />
+}
+
 class App extends Component {
 	constructor() {
 		super()
@@ -90,9 +100,11 @@ class App extends Component {
 					<Navbar />
 					<Switch>
 						<Route exact path='/'				 component={Home}/>
-						<Route path='/home'					 component={Home}/>
-						<Route path='/signin'				 component={SigninDirectory}/>
-						<Route path='/signup'				 component={SignupDirectory}/>
+						<Route exact path='/home'			 component={Home}/>
+						<Route exact path='/signin'			 component={SigninDirectory}/>
+						<Route exact path='/signin/member' 	 component={MemberSignin}/>
+						<Route exact path='/signin/attorney' component={AttorneySignin}/>
+						<Route exact path='/signup'			 component={SignupDirectory}/>
 						<Route exact path='/attorney/signup' component={AttorneySignup}/>
 						<Route exact path='/attorney'		 component={AttorneySignup}/>
 						<Route exact path='/member'			 component={MemberSignup}/>

@@ -48,6 +48,36 @@
     margin-left: .25em;
 }
 
+.green-btn {
+    border-color: #377037;
+    background-color: #377037;
+    color: white;
+}
+
+.green-btn:hover {
+    background-color: #306130;
+    color: white;
+}
+
+.green-txt {
+    color: #377037;
+}
+
+.green-txt:hover {
+    color: #306130;
+}
+
+.teal-btn {
+    border-color: #13888F;
+    background-color: #13888F;
+    color: white;
+}
+
+.teal-btn:hover {
+    background-color: #0F7278;;
+    color: white;
+}
+
 /* GRID xl -> beyond */
 @media screen and (min-width: 1201px) {
 }
@@ -396,13 +426,12 @@ link: hover {
 	width: 100%;
 	border-radius: 0;
 	text-align: left;
-	background-color: #13888F;
 	color: white;
 	font-weight: 600;
 	font-size: 14px;
 	padding: 11px 20px 11px 20px;
 	line-height: 18px;
-	border: 2px solid #13888F;
+	border: 2px solid;
 	height: 50px;
 }
 
@@ -421,12 +450,7 @@ link: hover {
 	font-weight: 300;
 }
 
-.signup-form-container span {
-	color: #13888F;
-}
-
 .signup-form-container span:hover {
-	color: #0F7278;
 	cursor: pointer;
 }
 
@@ -439,12 +463,10 @@ link: hover {
 }
 
 .signup-form-container a {
-    color: #13888F;
     font-size: 1.25em;
 }
 
 .signup-form-container a:hover {
-    color: #0F7278;
 	cursor: pointer;
     text-decoration: none;
 }

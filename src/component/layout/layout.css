@@ -676,3 +676,33 @@ body {
 /* larger -> beyond */
 @media screen and (min-width: 1551px) {
 }
+
+.signin-container {
+	position: absolute;
+	left: 50%;
+    transform: translate(-50%, 0);
+	height: 100vh;
+	width: 160vh;
+}
+
+.signin-form {
+	width: 600px;
+	margin: 150px auto;
+	background-color: red;
+}
+
+.signin-form h3 {
+	font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+	.signin-form {
+		width: 100% !important;
+	}
+}
+
+@media screen and (max-width: 1655px) {
+	.signin-container {
+		width: 100% !important;
+	}
+}

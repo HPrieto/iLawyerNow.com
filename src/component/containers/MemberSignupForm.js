@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './containers.css';
 
-class SignupForm extends Component {
+class MemberSignupForm extends Component {
 	constructor() {
 		super()
 		this.state = {
@@ -88,7 +88,7 @@ class SignupForm extends Component {
 						    	</div>
 							</div>
 							<div className='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>
-								<button className='btn btn-lg'>
+								<button className='btn btn-lg teal-btn'>
 									<div className='col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 zero-padding zero-margin'>
 											SIGN UP
 										</div>
@@ -99,7 +99,7 @@ class SignupForm extends Component {
 								</button>
 							</div>
 							<div className='col-xs-12 col-sm-12 col-12-md col-12-lg col-xl-12'>
-								<h4>Have an account? <span>Log In</span></h4>
+								<h4>Have an account? <span className='teal-txt'>Log In</span></h4>
 							</div>
 							<div className='col-xs-12 col-sm-12 col-12-md col-12-lg col-xl-12'>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -116,4 +116,4 @@ class SignupForm extends Component {
 		)
 	}
 }
-export default SignupForm;
+export default MemberSignupForm;

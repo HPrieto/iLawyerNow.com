@@ -48,7 +48,7 @@ class AttorneySignupForm extends Component {
 										<h3>Become a Member</h3>
 									</div>
 									<div className='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>
-										<a>SIGNUP <span className="glyphicon glyphicon-chevron-right"
+										<a className='green-txt'>SIGNUP <span className="glyphicon glyphicon-chevron-right"
 														style={{paddingLeft:'10px'}}/></a>
 									</div>
 								</div>
@@ -121,7 +121,7 @@ class AttorneySignupForm extends Component {
 						    	</div>
 							</div>
 							<div className='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>
-								<button className='btn btn-lg'>
+								<button className='btn btn-lg green-btn'>
 									<div className='col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 zero-padding zero-margin'>
 											SIGN UP
 										</div>
@@ -132,7 +132,7 @@ class AttorneySignupForm extends Component {
 								</button>
 							</div>
 							<div className='col-xs-12 col-sm-12 col-12-md col-12-lg col-xl-12'>
-								<h4>Have an account? <span>Log In</span></h4>
+								<h4>Have an account? <span className='green-txt'>Log In</span></h4>
 							</div>
 							<div className='col-xs-12 col-sm-12 col-12-md col-12-lg col-xl-12'>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
