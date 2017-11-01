@@ -28215,10 +28215,16 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Signin = function (_Component) {
     _inherits(Signin, _Component);
 
-    function Signin() {
+    function Signin(props) {
         _classCallCheck(this, Signin);
 
-        return _possibleConstructorReturn(this, (Signin.__proto__ || Object.getPrototypeOf(Signin)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (Signin.__proto__ || Object.getPrototypeOf(Signin)).call(this, props));
+
+        _this.state = {
+            username: '',
+            password: ''
+        };
+        return _this;
     }
 
     _createClass(Signin, [{
