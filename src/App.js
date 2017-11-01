@@ -96,7 +96,7 @@ class App extends Component {
 						<Route exact path='/attorney/signup' component={AttorneySignup}/>
 						<Route exact path='/attorney'		 component={AttorneySignup}/>
 						<Route exact path='/member'			 component={MemberSignup}/>
-						<Route exact path='/member/signup' component={MemberSignup}/>
+						<Route exact path='/member/signup'   component={MemberSignup}/>
 						<Route path='/login'				 component={LoginDirectory}/>
 						<Route component={Home}/>
 					</Switch>

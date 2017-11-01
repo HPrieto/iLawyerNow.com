@@ -408,11 +408,11 @@ link: hover {
 
 .signup-form-container button:hover {
 	color: white;
-	background-color: #0F7278;
 }
 
 .signup-form-container h3 {
     font-weight: 300;
+    font-size: 1.8em;
 }
 
 .signup-form-container h4 {
@@ -440,6 +440,7 @@ link: hover {
 
 .signup-form-container a {
     color: #13888F;
+    font-size: 1.25em;
 }
 
 .signup-form-container a:hover {
@@ -453,12 +454,14 @@ link: hover {
 }
 
 .electronics-icon {
+    margin-top: 15px;
 	width: 64px;
 	height: 64px;
     background-image: url('../img/electronics_icon.png');
 }
 
 .agree-icon {
+    margin-bottom: 20px;
     width: 64px;
 	height: 64px;
     background-image: url('../img/agree_icon.png');
