@@ -28,7 +28,7 @@ class Signup extends Component {
 					<div className='container row-container mission-section'>
 						<div className='col-xs-12 col-sm-7 col-md-8 col-lg-12 col-xl-12'>
 							<h1>{this.props.header}</h1>
-							<h2>{this.props.subheader}</h2>
+							<h2 className='hide-in-mobile'>{this.props.subheader}</h2>
 						</div>
 					</div>
 				</div>

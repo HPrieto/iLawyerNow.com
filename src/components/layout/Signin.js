@@ -8,12 +8,16 @@ class Signin extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            username: '',
+            email: '',
             password: ''
         }
     }
-    onInputChange(event) {
-        console.log(event.target.value)
+    onEmailChange(event) {
+        console.log(event.target.id + " : " + event.target.value)
+        this.setState({email:event.target.value})
+    }
+    onClick(event) {
+        console.log('Event: ' + this.state.email)
     }
     render() {
         console.log(this.props);
@@ -22,12 +26,17 @@ class Signin extends Component {
                 <div className='signin-form'>
                     <h3>Sign In</h3>
                     <input className='form-control'
+                           id='email'
                            placeholder='Email or Mobile Number'
-                           onChange={this.onInputChange.bind(this)}/>
-                    <button className='btn'>
-                        <div className='col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10'>NEXT</div>
+                           onChange={this.onEmailChange.bind(this)}/>
+                    <button className='btn'
+                            onClick={this.onClick.bind(this)}>
+                        <div className='col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10'>
+                            NEXT
+                        </div>
                         <div className='col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2'>
-                            <img src={require('../img/right-arrow.png')} style={{width:20,height:20}}/>
+                            <img src={require('../img/right-arrow.png')}
+                                 style={{width:20,height:20}}/>
                         </div>
                     </button>
                 </div>
