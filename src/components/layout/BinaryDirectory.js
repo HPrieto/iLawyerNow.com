@@ -24,12 +24,12 @@ class BinaryDirectory extends Component {
 									</h4>
 									<Link to={this.props.to[0]}
 										  className='btn white-left-binary-container-body-btn'>
-										<div className='col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 zero-padding zero-margin'>
-											{this.props.buttonNames[0]}
-										</div>
-										<div className='col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 zero-padding zero-margin'>
-											<span className="glyphicon glyphicon-chevron-right"/>
-										</div>
+										  <div className='col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10'>
+  											{this.props.buttonNames[0]}
+  										</div>
+  				                        <div className='col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2'>
+  				                            <img src={require('../img/right-arrow.png')} style={{width:20,height:20}}/>
+  				                        </div>
 									</Link>
 								</div>
 								<div className='col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 zero-padding zero-margin'>
@@ -40,13 +40,14 @@ class BinaryDirectory extends Component {
 										{this.props.descriptions[1]}
 									</h4>
 									<Link to={this.props.to[1]}
-										  className='btn white-left-binary-container-body-btn white-left-binary-container-body-btn-inverse'>
-										<div className='col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 zero-padding zero-margin'>
+										  className='btn white-left-binary-container-body-btn white-left-binary-container-body-btn-inverse'
+										  style={{minWidth:225}}>
+										<div className='col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10'>
 											{this.props.buttonNames[1]}
 										</div>
-										<div className='col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 zero-padding zero-margin'>
-											<span className="glyphicon glyphicon-chevron-right"/>
-										</div>
+				                        <div className='col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2'>
+				                            <img src={require('../img/right-arrow.png')} style={{width:20,height:20}}/>
+				                        </div>
 									</Link>
 								</div>
 							</div>

@@ -24,6 +24,12 @@ class Signin extends Component {
                     <input className='form-control'
                            placeholder='Email or Mobile Number'
                            onChange={this.onInputChange.bind(this)}/>
+                    <button className='btn'>
+                        <div className='col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10'>NEXT</div>
+                        <div className='col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2'>
+                            <img src={require('../img/right-arrow.png')} style={{width:20,height:20}}/>
+                        </div>
+                    </button>
                 </div>
             </div>
         )

@@ -709,6 +709,27 @@ body {
 	color: black;
 }
 
+.signin-form button:hover {
+	color: white;
+	background-color: #0F6166;
+	border-color: #0F6166;
+}
+
+.signin-form button {
+	width: 100%;
+	text-align: left;
+	background-color: #11939A;
+	color: white;
+	font-weight: 600;
+	font-size: 14px;
+	border-radius: 0;
+	border: 2px solid #11939A;
+	margin-top: 20px;
+	padding: 11px 20px;
+	text-transform: uppercase;
+	line-height: 18px;
+}
+
 input {
     -webkit-appearance: none;
     margin-bottom: 0!important;
