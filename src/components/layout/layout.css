@@ -683,24 +683,49 @@ body {
     transform: translate(-50%, 0);
 	height: 100vh;
 	width: 160vh;
+	min-width: 250px;
 }
 
 .signin-form {
 	width: 600px;
 	margin: 150px auto;
-	background-color: red;
+	min-width: 250px;
 }
 
 .signin-form h3 {
-	font-weight: 300;
+	font-family: 'Lato';
+	font-weight: 400;
+	font-size:1.9em;
+	margin-bottom: 20px;
 }
 
+.signin-form input {
+	border-radius: 0;
+	height: 44px;
+	padding: 8px 18px 8px 18px;
+	font-size: 14px;
+	border: 1px solid #E5E5E4;
+	outline: 0;
+	color: black;
+}
+
+input {
+    -webkit-appearance: none;
+    margin-bottom: 0!important;
+}
+
+.signin-form input:hover {
+	border-color: #D6D6D5;
+}
+
+/* GRID xs -> md */
 @media screen and (max-width: 768px) {
 	.signin-form {
 		width: 100% !important;
 	}
 }
 
+/* GRID xs -> xl */
 @media screen and (max-width: 1655px) {
 	.signin-container {
 		width: 100% !important;

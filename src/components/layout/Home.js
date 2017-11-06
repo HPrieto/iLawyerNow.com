@@ -7,6 +7,8 @@ import MiniSignupForm from '../presentation/MiniSignupForm.js';
 import IconComponent from '../presentation/IconComponent.js';
 import Footer from '../presentation/Footer.js';
 
+const google = window.google
+
 class Home extends Component {
 	constructor() {
 		super()
@@ -89,24 +91,28 @@ class Home extends Component {
 				<div className="row"
 					 style={{backgroundColor: 'white'}}>
 					<div className='container row-container product-section'>
-						<IconComponent  imageURL={require('../img/oath_icon.png')}
-										title='Easiest way to justice'
-										desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-										Ut enim ad minim veniam.'/>
-						<IconComponent  imageURL={require('../img/court_icon.png')}
-										title='Anywhere, anytime'
-										desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-										Ut enim ad minim veniam.'/>
-						<IconComponent  imageURL={require('../img/book_icon.png')}
-										title='Low-cost to justice'
-										desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-										Ut enim ad minim veniam.'/>
+						<IconComponent
+							imageURL={require('../img/oath_icon.png')}
+							title='Easiest way to justice'
+							desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam.'/>
+						<IconComponent
+							imageURL={require('../img/court_icon.png')}
+							title='Anywhere, anytime'
+							desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam.'/>
+						<IconComponent
+							imageURL={require('../img/book_icon.png')}
+							title='Low-cost to justice'
+							desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam.'/>
 					</div>
 				</div>
-				<div className="row" style={{backgroundColor: 'white'}}>
+				<div className="row"
+					 style={{backgroundColor: 'white'}}>
 					<div className='container row-container product-section-signup'>
 						<button onClick={this.onClick.bind(this)}
 								className='btn green-btn'

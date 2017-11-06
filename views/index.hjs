@@ -33,14 +33,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- Google Maps Initialization -->
 	<script type='text/javascript'>
-		var map;
 		function myMap() {
 			var mapOptions = {
 				center: new google.maps.LatLng(34.020442, -118.501748),
         		zoom: 12,
         		mapTypeId: 'roadmap'
 			}
-			map = new google.maps.Map(document.getElementById("map"), mapOptions);
+			let map = new google.maps.Map(document.getElementById("map"), mapOptions);
 		}
 		/* Navbar Hamburger Animation JS */
 		$(document).ready(function(){

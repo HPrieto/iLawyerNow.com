@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 
 // Component Modules
-import Home   from './component/layout/Home.js';
-import Signin from './component/layout/Signin.js';
-import Signup from './component/layout/Signup.js';
-import Navbar from './component/containers/Navbar.js';
-import BinaryDirectory from './component/layout/BinaryDirectory.js';
+import Home   from './components/layout/Home.js';
+import Signin from './components/layout/Signin.js';
+import Signup from './components/layout/Signup.js';
+import Navbar from './components/containers/Navbar.js';
+import BinaryDirectory from './components/layout/BinaryDirectory.js';
 
 /* Binary Directories */
 function SigninDirectory() {
@@ -57,7 +57,7 @@ function AttorneySignup() {
 	return <Signup attorney={true}
 				   header={"Become a mobile Attorney"}
 				   subheader={"Earn money on your schedule"}
-				   images={[require('./component/img/moneytree.png'),require('./component/img/watch.png'),require('./component/img/smartphone.png')]}
+				   images={[require('./components/img/moneytree.png'),require('./components/img/watch.png'),require('./components/img/smartphone.png')]}
 				   imageTitle={["Make great money","Set your own schedule","Signing up is easy"]}
 				   imageDesc={["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
 				   			   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
@@ -68,7 +68,7 @@ function MemberSignup() {
 	return <Signup attorney={false}
 				   header={"Become a member"}
 				   subheader={"Get help when needed"}
-				   images={[require('./component/img/teamwork.png'),require('./component/img/lecturer.png'),require('./component/img/hammer_icon.png')]}
+				   images={[require('./components/img/teamwork.png'),require('./components/img/lecturer.png'),require('./components/img/hammer_icon.png')]}
 				   imageTitle={["Make great money","Set your own schedule","Signing up is easy"]}
 				   imageDesc={["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
 				   			   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
