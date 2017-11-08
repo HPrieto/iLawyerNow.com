@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './layout.css';
 
 // Module components
@@ -19,6 +20,7 @@ class Home extends Component {
 		this.centerMapOnAddress.bind(this);
 	}
 	componentWillMount() {
+		scroll(0,0)
 	}
 	componentDidMount() {
 		this.updateDimensions();
@@ -116,11 +118,17 @@ class Home extends Component {
 				<div className="row"
 					 style={{backgroundColor: 'white'}}>
 					<div className='container row-container product-section-signup'>
-						<button onClick={this.onClick.bind(this)}
+						<Link 	to='/member/signup'
 								className='btn green-btn'
-								id="DefendantSignup">MEMBER SIGN UP&nbsp;&nbsp;&nbsp;&nbsp;
-							<span className="glyphicon glyphicon-chevron-right"/>
-						</button>
+								id="DefendantSignup">
+								<div className='col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10'>
+									MEMBER SIGN UP
+								</div>
+								<div className='col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2'>
+									<img src={require('../img/right-arrow.png')}
+										 style={{width:20,height:20}}/>
+								</div>
+						</Link>
 					</div>
 				</div>
 				<div className="row"
@@ -133,11 +141,12 @@ class Home extends Component {
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-								<button onClick={this.onClick.bind(this)}
-										className="btn inverse-btn"
-										id="AttorneySignup">ATTORNEY SIGN UP&nbsp;&nbsp;&nbsp;
+								<Link to='/attorney/signup'
+									  onClick={this.onClick.bind(this)}
+									  className="btn inverse-btn"
+									  id="AttorneySignup">ATTORNEY SIGN UP&nbsp;&nbsp;&nbsp;
 									<span className="glyphicon glyphicon-chevron-right"/>
-								</button>
+								</Link>
 							</div>
 						</div>
 						<div className="zero-padding zero-margin col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 founder-section-colrow">

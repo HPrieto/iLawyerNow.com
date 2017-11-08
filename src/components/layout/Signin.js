@@ -12,6 +12,9 @@ class Signin extends Component {
             password: ''
         }
     }
+    componentWillMount() {
+        scroll(0,0)
+    }
     onEmailChange(event) {
         console.log(event.target.id + " : " + event.target.value)
         this.setState({email:event.target.value})

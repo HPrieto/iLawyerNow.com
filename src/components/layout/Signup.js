@@ -13,6 +13,7 @@ class Signup extends Component {
 	    super(props)
 	}
 	componentWillMount() {
+		scroll(0,0)
 	}
 	componentDidMount() {
 	}

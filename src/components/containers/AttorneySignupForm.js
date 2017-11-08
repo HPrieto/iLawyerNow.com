@@ -49,8 +49,11 @@ class AttorneySignupForm extends Component {
 										<h3>Become a Member</h3>
 									</div>
 									<div className='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>
-										<Link to='/member/signup' className='green-txt'>SIGNUP <span className="glyphicon glyphicon-chevron-right"
-														style={{paddingLeft:'10px'}}/></Link>
+										<Link to='/member/signup'
+											  className='green-txt'>SIGNUP
+											  <span className="glyphicon glyphicon-chevron-right"
+														style={{paddingLeft:'10px'}}/>
+										</Link>
 									</div>
 								</div>
 							</div>
@@ -123,13 +126,13 @@ class AttorneySignupForm extends Component {
 							</div>
 							<div className='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>
 								<button className='btn btn-lg green-btn'>
-									<div className='col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 zero-padding zero-margin'>
-											SIGN UP
-										</div>
-										<div className='col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 zero-padding zero-margin'>
-											<span className="glyphicon glyphicon-chevron-right"
-												  style={{color:'white'}}/>
-										</div>
+									<div className='col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10'>
+										SIGN UP
+									</div>
+									<div className='col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2'>
+										<img src={require('../img/right-arrow.png')}
+											 style={{width:20,height:20}}/>
+									</div>
 								</button>
 							</div>
 							<div className='col-xs-12 col-sm-12 col-12-md col-12-lg col-xl-12'>

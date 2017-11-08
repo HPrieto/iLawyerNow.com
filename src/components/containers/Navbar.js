@@ -6,8 +6,8 @@ import './containers.css';
 import CollapseButton from '../presentation/CollapseButton.js';
 
 class Navbar extends React.Component {
-	constructor() {
-		super()
+	constructor(props) {
+		super(props)
 		this.toggleHamburger.bind(this);
 	}
 	componentWillMount() {

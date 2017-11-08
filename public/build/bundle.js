@@ -3181,8 +3181,9 @@ var AttorneySignupForm = function (_Component) {
 										{ className: 'col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12' },
 										_react2.default.createElement(
 											_reactRouterDom.Link,
-											{ to: '/member/signup', className: 'green-txt' },
-											'SIGNUP ',
+											{ to: '/member/signup',
+												className: 'green-txt' },
+											'SIGNUP',
 											_react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-right',
 												style: { paddingLeft: '10px' } })
 										)
@@ -3299,14 +3300,14 @@ var AttorneySignupForm = function (_Component) {
 									{ className: 'btn btn-lg green-btn' },
 									_react2.default.createElement(
 										'div',
-										{ className: 'col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 zero-padding zero-margin' },
+										{ className: 'col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10' },
 										'SIGN UP'
 									),
 									_react2.default.createElement(
 										'div',
-										{ className: 'col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 zero-padding zero-margin' },
-										_react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-right',
-											style: { color: 'white' } })
+										{ className: 'col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2' },
+										_react2.default.createElement('img', { src: __webpack_require__(29),
+											style: { width: 20, height: 20 } })
 									)
 								)
 							),
@@ -26806,6 +26807,8 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactRouterDom = __webpack_require__(8);
+
 __webpack_require__(14);
 
 var _AttorneySignupForm = __webpack_require__(42);
@@ -26855,7 +26858,9 @@ var Home = function (_Component) {
 
 	_createClass(Home, [{
 		key: 'componentWillMount',
-		value: function componentWillMount() {}
+		value: function componentWillMount() {
+			scroll(0, 0);
+		}
 	}, {
 		key: 'componentDidMount',
 		value: function componentDidMount() {
@@ -26991,12 +26996,21 @@ var Home = function (_Component) {
 						'div',
 						{ className: 'container row-container product-section-signup' },
 						_react2.default.createElement(
-							'button',
-							{ onClick: this.onClick.bind(this),
+							_reactRouterDom.Link,
+							{ to: '/member/signup',
 								className: 'btn green-btn',
 								id: 'DefendantSignup' },
-							'MEMBER SIGN UP\xA0\xA0\xA0\xA0',
-							_react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-right' })
+							_react2.default.createElement(
+								'div',
+								{ className: 'col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10' },
+								'MEMBER SIGN UP'
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2' },
+								_react2.default.createElement('img', { src: __webpack_require__(29),
+									style: { width: 20, height: 20 } })
+							)
 						)
 					)
 				),
@@ -27029,8 +27043,9 @@ var Home = function (_Component) {
 									'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
 								),
 								_react2.default.createElement(
-									'button',
-									{ onClick: this.onClick.bind(this),
+									_reactRouterDom.Link,
+									{ to: '/attorney/signup',
+										onClick: this.onClick.bind(this),
 										className: 'btn inverse-btn',
 										id: 'AttorneySignup' },
 									'ATTORNEY SIGN UP\xA0\xA0\xA0',
@@ -27412,6 +27427,11 @@ var Signin = function (_Component) {
     }
 
     _createClass(Signin, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            scroll(0, 0);
+        }
+    }, {
         key: 'onEmailChange',
         value: function onEmailChange(event) {
             console.log(event.target.id + " : " + event.target.value);
@@ -27526,7 +27546,9 @@ var Signup = function (_Component) {
 
 	_createClass(Signup, [{
 		key: 'componentWillMount',
-		value: function componentWillMount() {}
+		value: function componentWillMount() {
+			scroll(0, 0);
+		}
 	}, {
 		key: 'componentDidMount',
 		value: function componentDidMount() {}
@@ -27763,14 +27785,14 @@ var MemberSignupForm = function (_Component) {
 									{ className: 'btn btn-lg teal-btn' },
 									_react2.default.createElement(
 										'div',
-										{ className: 'col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 zero-padding zero-margin' },
+										{ className: 'col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10' },
 										'SIGN UP'
 									),
 									_react2.default.createElement(
 										'div',
-										{ className: 'col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 zero-padding zero-margin' },
-										_react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-right',
-											style: { color: 'white' } })
+										{ className: 'col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2' },
+										_react2.default.createElement('img', { src: __webpack_require__(29),
+											style: { width: 20, height: 20 } })
 									)
 								)
 							),
@@ -27852,10 +27874,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Navbar = function (_React$Component) {
 	_inherits(Navbar, _React$Component);
 
-	function Navbar() {
+	function Navbar(props) {
 		_classCallCheck(this, Navbar);
 
-		var _this = _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).call(this));
+		var _this = _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).call(this, props));
 
 		_this.toggleHamburger.bind(_this);
 		return _this;
@@ -28176,6 +28198,11 @@ var BinaryDirectory = function (_Component) {
 	}
 
 	_createClass(BinaryDirectory, [{
+		key: 'componentWillMount',
+		value: function componentWillMount() {
+			scroll(0, 0);
+		}
+	}, {
 		key: 'render',
 		value: function render() {
 			var tanColor = '#F7F7F8';

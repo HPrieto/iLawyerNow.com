@@ -8,6 +8,9 @@ class BinaryDirectory extends Component {
 	constructor(props) {
 		super(props)
 	}
+	componentWillMount() {
+		scroll(0,0)
+	}
 	render() {
 		let tanColor = '#F7F7F8';
 		return (
@@ -27,7 +30,7 @@ class BinaryDirectory extends Component {
 									</h4>
 									<Link to={this.props.to[0]}
 										  className='btn white-left-binary-container-body-btn'>
-										  <div className='col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10'>
+										<div className='col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10'>
   											{this.props.buttonNames[0]}
   										</div>
   				                        <div className='col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2'>
