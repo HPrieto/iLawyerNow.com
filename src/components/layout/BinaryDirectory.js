@@ -5,6 +5,9 @@ import './layout.css';
 import Footer from '../presentation/Footer.js';
 
 class BinaryDirectory extends Component {
+	constructor(props) {
+		super(props)
+	}
 	render() {
 		let tanColor = '#F7F7F8';
 		return (
@@ -28,7 +31,8 @@ class BinaryDirectory extends Component {
   											{this.props.buttonNames[0]}
   										</div>
   				                        <div className='col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2'>
-  				                            <img src={require('../img/right-arrow.png')} style={{width:20,height:20}}/>
+  				                            <img src={require('../img/right-arrow.png')}
+												 style={{width:20,height:20}}/>
   				                        </div>
 									</Link>
 								</div>
@@ -46,7 +50,8 @@ class BinaryDirectory extends Component {
 											{this.props.buttonNames[1]}
 										</div>
 				                        <div className='col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2'>
-				                            <img src={require('../img/right-arrow.png')} style={{width:20,height:20}}/>
+				                            <img src={(window.innerWidth < 678)?require('../img/right-arrow-green.png'):require('../img/right-arrow.png')}
+												 style={{width:20,height:20}}/>
 				                        </div>
 									</Link>
 								</div>
