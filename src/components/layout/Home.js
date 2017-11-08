@@ -42,6 +42,7 @@ class Home extends Component {
 	}
 	/* Handles address input change event */
 	onAddressChange(event) {
+		console.log('Event: ' + event.target.id + ' address changing!')
 		let address = event.target.value;
 		this.centerMapOnAddress(address);
 	}
@@ -52,6 +53,7 @@ class Home extends Component {
 	}
 	/* Centers MapView to address coordinate location */
 	centerMapOnAddress(address) {
+		console.log('Event: changing address to => ' + address)
 		var geocoder = new google.maps.Geocoder();
 		geocoder.geocode( { 'address': address }, (results, status) => {
 			if ((status == 'OK' && address.length > 5)) {

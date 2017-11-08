@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './containers.css';
 
 class MemberSignupForm extends Component {
@@ -99,7 +100,7 @@ class MemberSignupForm extends Component {
 								</button>
 							</div>
 							<div className='col-xs-12 col-sm-12 col-12-md col-12-lg col-xl-12'>
-								<h4>Have an account? <span className='teal-txt'>Log In</span></h4>
+								<h4>Have an account? <Link to='/signin/member'><span className='teal-txt'>Log In</span></Link></h4>
 							</div>
 							<div className='col-xs-12 col-sm-12 col-12-md col-12-lg col-xl-12'>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,

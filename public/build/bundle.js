@@ -3086,6 +3086,8 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactRouterDom = __webpack_require__(8);
+
 __webpack_require__(28);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -3178,8 +3180,8 @@ var AttorneySignupForm = function (_Component) {
 										'div',
 										{ className: 'col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12' },
 										_react2.default.createElement(
-											'a',
-											{ className: 'green-txt' },
+											_reactRouterDom.Link,
+											{ to: '/member/signup', className: 'green-txt' },
 											'SIGNUP ',
 											_react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-right',
 												style: { paddingLeft: '10px' } })
@@ -3316,9 +3318,13 @@ var AttorneySignupForm = function (_Component) {
 									null,
 									'Have an account? ',
 									_react2.default.createElement(
-										'span',
-										{ className: 'green-txt' },
-										'Log In'
+										_reactRouterDom.Link,
+										{ to: '/signin/attorney' },
+										_react2.default.createElement(
+											'span',
+											{ className: 'green-txt' },
+											'Log In'
+										)
 									)
 								)
 							),
@@ -26885,6 +26891,7 @@ var Home = function (_Component) {
 	}, {
 		key: 'onAddressChange',
 		value: function onAddressChange(event) {
+			console.log('Event: ' + event.target.id + ' address changing!');
 			var address = event.target.value;
 			this.centerMapOnAddress(address);
 		}
@@ -26901,6 +26908,7 @@ var Home = function (_Component) {
 	}, {
 		key: 'centerMapOnAddress',
 		value: function centerMapOnAddress(address) {
+			console.log('Event: changing address to => ' + address);
 			var geocoder = new google.maps.Geocoder();
 			geocoder.geocode({ 'address': address }, function (results, status) {
 				if (status == 'OK' && address.length > 5) {
@@ -27610,6 +27618,8 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactRouterDom = __webpack_require__(8);
+
 __webpack_require__(28);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -27772,9 +27782,13 @@ var MemberSignupForm = function (_Component) {
 									null,
 									'Have an account? ',
 									_react2.default.createElement(
-										'span',
-										{ className: 'teal-txt' },
-										'Log In'
+										_reactRouterDom.Link,
+										{ to: '/signin/member' },
+										_react2.default.createElement(
+											'span',
+											{ className: 'teal-txt' },
+											'Log In'
+										)
 									)
 								)
 							),
