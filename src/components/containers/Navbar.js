@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Route } from 'react-router-dom';
+import { Link, Route, History } from 'react-router-dom';
 import './containers.css';
 
 // Import Components
@@ -11,6 +11,9 @@ class Navbar extends React.Component {
 		this.toggleHamburger.bind(this);
 	}
 	componentWillMount() {
+	}
+	componentDidMount() {
+		console.log(window.location.pathname)
 	}
 	onClick(event) {
 		console.log('Event Clicked: ' + event.target.value)
@@ -37,15 +40,16 @@ class Navbar extends React.Component {
 							 data-toggle="collapse"
 							 data-target="#home-navbar-collapse"
 							 id="nav-icon4">
-		                    <span className="menu-global menu-top"    />
-		                    <span className="menu-global menu-middle" />
-		                    <span className="menu-global menu-bottom" />
+		                    <span className="menu-global menu-top"/>
+		                    <span className="menu-global menu-middle"/>
+		                    <span className="menu-global menu-bottom"/>
                 		</div>
                 		<Link to='/' className='navbar-brand home-navbar-brand'>
-                			THE LAW CLUB
+							THE LAW CLUB
                 		</Link>
 					</div>
-					<div className='collapse navbar-collapse zero-padding zero-margin' id='home-navbar-collapse'>
+					<div className='collapse navbar-collapse zero-padding zero-margin'
+						 id='home-navbar-collapse'>
 						<ul className='nav navbar-nav zero-padding zero-margin'>
 							<li className='home-navbar-li'>
 								<button className='home-navbar-btn home-navbar-btn-left home-navbar-uncollapse-btn'>
@@ -72,16 +76,13 @@ class Navbar extends React.Component {
 												id="home-collapse-btn-home"
 												data-toggle="collapse"
 												data-target="#home-navbar-collapse">
-												Home
+											Home
 										</button>
 									</li>
 								</Link>
 								<li className='home-navbar-li'>
-									<button onClick={this.onClick.bind(this)}
-											data-toggle="collapse"
-											data-target="#home-navbar-collapse"
-											className='home-navbar-btn home-navbar-btn-left home-navbar-collapse-top home-navbar-collapse-btn'>
-											Download the App
+									<button className='home-navbar-btn home-navbar-btn-left home-navbar-collapse-top home-navbar-collapse-btn'>
+										Download the App
 									</button>
 								</li>
 								<li className='home-navbar-li'>
@@ -91,7 +92,7 @@ class Navbar extends React.Component {
 												className='home-navbar-btn home-navbar-btn-left home-navbar-collapse-btn'
 												data-toggle="collapse"
 												data-target="#home-navbar-collapse">
-												Sign Up
+											Sign Up
 										</button>
 									</Link>
 								</li>
@@ -102,7 +103,7 @@ class Navbar extends React.Component {
 													className='home-navbar-btn home-navbar-btn-left home-navbar-collapse-bottom home-navbar-collapse-btn'
 													data-toggle="collapse"
 													data-target="#home-navbar-collapse">
-													Log In
+												Log In
 											</button>
 										</Link>
 									</li>
@@ -111,7 +112,7 @@ class Navbar extends React.Component {
 											className='home-navbar-btn home-navbar-btn-top-border home-navbar-collapse-top home-navbar-collapse-btn'
 											data-toggle="collapse"
 											data-target="#home-navbar-collapse">
-											Help
+										Help
 									</button>
 								</li>
 							</div>

@@ -55,24 +55,24 @@ function MemberDirectory() {
 /* Attorney/Member Signup Pages */
 function AttorneySignup() {
 	return <Signup attorney={true}
-				   header={"Become a mobile Attorney"}
+				   header={"Go Mobile"}
 				   subheader={"Earn money on your schedule"}
 				   images={[require('./components/img/moneytree.png'),require('./components/img/watch.png'),require('./components/img/smartphone.png')]}
 				   imageTitle={["Make great money","Set your own schedule","Signing up is easy"]}
-				   imageDesc={["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-				   			   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-				   			   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."]}/>;
+				   imageDesc={["Reach your top potential and compete with the top firms in your area without overspending on unnecessary advertisement platforms.",
+				   			   "Work day or night, on your own time by simply logging on when you are ready to work.'Reach millions'.",
+				   			   "Simply register, pay our one time membership fee and create your own personal network."]}/>;
 }
 
 function MemberSignup() {
 	return <Signup attorney={false}
 				   header={"Become a member"}
-				   subheader={"Get help when needed"}
-				   images={[require('./components/img/teamwork.png'),require('./components/img/lecturer.png'),require('./components/img/hammer_icon.png')]}
-				   imageTitle={["Make great money","Set your own schedule","Signing up is easy"]}
-				   imageDesc={["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-				   			   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-				   			   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."]}/>;
+				   subheader={"Get help when you need it most."} // lecturer, police traffic stop, factime icon
+				   images={[require('./components/img/lecturer.png'),require('./components/img/lecturer.png'),require('./components/img/hammer_icon.png')]}
+				   imageTitle={["Connect to an attorney","When you need it most","Create an account"]}
+				   imageDesc={["There is no advertisement company website, application, or direct connection to an attorney as reliable as iLawyerNow.com.",
+				   			   "If you need an attorney at a traffic stop, sudden legal confrontation, or for professional legal advice.",
+				   			   "Simply and easily create an account in seconds."]}/>;
 }
 
 /* Attorney/Member Signin */
