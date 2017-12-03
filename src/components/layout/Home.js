@@ -100,21 +100,21 @@ class Home extends Component {
 							title='Easiest way to justice'
 							desc="Stand up for your rights at the time of trouble with the right legal
 								  defense team. Don't argue with police, simply get the right legal
-								  representation on your smart phone at a low cost before having to end
+								  representation on your iphone, android or smartphone at a low cost before having to end
 								  up in court, beaten or killed."/>
 						<IconComponent
 							imageURL={require('../img/court_icon.png')}
 							title='Anywhere, anytime'
 							desc="Don't be a victim on your next traffic stop, call us when it's urgent, or if
-								  you simply are in need of a legal defensive live to fight another day and remain
-								  silent with with peace of mind while one of out iLawyerNow attorneys does the
+								  you simply are in need of a legal defense. Live to fight another day and remain
+								  silent with with peace of mind while one of out iLawyerNow attorney members does the
 								  talking."/>
 						<IconComponent
 							imageURL={require('../img/book_icon.png')}
 							title='Low-cost to justice'
-							desc="iLawyerNow.com is dedicated to helping individuals, business, Uber, Lyft, Truck
-								  driviers, delivery driviers and more. It you are having connection problems simply
-								  call (323)600-5366 Available on FaceTime with iPhone."/>
+							desc="iLawyerNow.com is dedicated to helping individuals, businesses, Uber, Lyft, Truck
+								  drivers, delivery drivers and more. If you are having connection problems simply
+								  call (323)600-5366. Available on FaceTime with iPhone."/>
 					</div>
 				</div>
 				<div className="row"
